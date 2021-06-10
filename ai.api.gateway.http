@@ -1,0 +1,25 @@
+@endpoint=http://ai.f.gateway.host.smallsaas.cn:81
+
+### Get Coaching List
+GET {{endpoint}}/api/crud/coachingAction/coachingActions
+
+
+### Get Coach Details
+GET {{endpoint}}/api/crud/coachingAction/coachingActions/17
+
+
+### New Coach 
+POST {{endpoint}}/api/crud/coachingAction/coachingActions
+content-type: application/json
+
+{
+  "actionName": "string",
+  "name": "string",
+  "prescriptionSymptoms": "string",
+  "videoName": "string",
+  "vidoSrc": "string"
+}
+
+### New Pose
+POST {{endpoint}}/api/crud/coachingAction/coachingActions
+content-type: application/json

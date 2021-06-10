@@ -1,0 +1,18 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+### 测试获取数据
+## GET https://api.mock.smallsaas.cn/custom/ids?id=10
+GET {{endpoint}}/custom?id=10 HTTP/1.1
+User-Agent: rest-client
+
+
+### 保存数据
+POST {{endpoint}}/custom/ids HTTP/1.1
+content-type: application/json
+
+{
+    "id": 10,
+    "name":"Hendry",
+    "salary":"61888",
+    "age":"26"
+}

@@ -1,0 +1,6 @@
+@endpoint=http://hode1.host.smallsaas.cn:1000
+
+## 测试redis配置
+GET {{endpoint}}/
+
+
