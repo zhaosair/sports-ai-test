@@ -1,11 +1,23 @@
 @endpoint=https://api.mock.smallsaas.cn
 
-### 测试获取数据
-GET {{endpoint}}/form?id=1 HTTP/1.1
-User-Agent: rest-client
+### 原测试数据
+POST http://47.119.113.172:8380/api.page.design.page/loadPageInfo
+content-type: application/json
 
-### 保存数据
-POST {{endpoint}}/form HTTP/1.1
+{
+    "id": 75
+}
+
+
+
+## 动态表单
+
+### 获取动态表单数据
+GET {{endpoint}}/form?id=10 HTTP/1.1
+# User-Agent: rest-client
+
+### 保存动态表单数据
+POST {{endpoint}}/form/10 HTTP/1.1
 content-type: application/json
 
 {
@@ -317,3 +329,68 @@ content-type: application/json
     "unFocusedComponentBorder": false
   }
 
+
+## 动态列表 
+
+### 获取动态列表设计数据 
+GET {{endpoint}}/form?id=100
+
+
+### 保存动态列表
+POST {{endpoint}}/form/100
+content-type: application/json
+
+{
+    "loadApi": "https://www.fastmock.site/mock/96df9e8fb08bfe844b3e565f5a3206fe/test/api/pub/getList",
+    "itemNavigation": "/articleDetail/index?id=&title",
+    "tabConfig":
+     {
+       "field":"type",
+       "show": true,
+       "list":[
+          {
+              "name":"全部",
+              "value":"0"
+          },
+          {
+              "name":"时尚搭配",
+              "value":"100"
+          },
+          {
+             "name":"行业咨询",
+             "value":"200"
+          }
+       ]
+    },
+    "response":
+    {
+        "list":"type.list",
+        "total":"type.total"
+    },
+    "request":
+    {
+       "fixed":"type",
+       "default":
+        {
+           "type":"0"
+        },
+       "pn":"pageNo",
+       "ps":"pageSize"
+    },
+    "modules":
+    [
+        {
+            "type":"custom_component",
+            "name":"自定义组件",
+            "key":"5243e64e-40ca-8b50-cdce-1623039409345"
+        }
+    ],
+    "moduleData":
+    {
+        "5243e64e-40ca-8b50-cdce-1623039409345":
+        {
+            "id":"5243e64e-40ca-8b50-cdce-1623039409345",
+            "name":"ArticleItem"
+        }
+    }
+}

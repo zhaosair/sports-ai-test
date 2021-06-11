@@ -1,13 +1,19 @@
 @endpoint=https://api.mock.smallsaas.cn
 
+
+### 列表测试数据
+
+
 ### 测试获取数据
 ## GET https://api.mock.smallsaas.cn/custom/ids?id=10
-GET {{endpoint}}/custom?id=10 HTTP/1.1
+GET {{endpoint}}/custom?id=17 HTTP/1.1
+content-type: application/json
 User-Agent: rest-client
 
 
 ### 保存数据
-POST {{endpoint}}/custom/ids HTTP/1.1
+//POST {{endpoint}}/custom/ids HTTP/1.1
+POST {{endpoint}}/custom/17 HTTP/1.1
 content-type: application/json
 
 {
@@ -16,3 +22,5 @@ content-type: application/json
     "salary":"61888",
     "age":"26"
 }
+
+
