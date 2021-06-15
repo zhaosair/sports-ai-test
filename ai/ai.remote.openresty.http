@@ -1,6 +1,3 @@
-@endpoint=http://hode1.host.smallsaas.cn:1000
+@endpoint=http://hode1.host.smallsaas.cn:10000
 
 ## 测试redis配置
-GET {{endpoint}}/
-
-
