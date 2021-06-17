@@ -1,0 +1,68 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+## 动态列表
+
+### 获取动态列表数据
+GET {{endpoint}}/data?id=10 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存动态列表数据
+POST {{endpoint}}/data/1 HTTP/1.1
+content-type: application/json
+
+{
+    "type": {
+      "list": [
+        {
+          "type": "100",
+          "title": "的撒开发和建设的规100",
+          "desc": "阿迪舒服哈森岛宽晃发的颂古非今阿萨德个发货速度发定时发送地方",
+          "time": "2020-01-01",
+          "img": "https://66861.s81i.faiusr.com/4/103/AFEIrYoEEAQYACDm84HWBSiN0KWQAjCKAjjHAUBn.png"
+        },
+        {
+          "type": "200",
+          "title": "的撒开发和建设的规200",
+          "desc": "阿迪舒服哈森岛宽晃发的颂古非今阿萨德个发货速度发定时发送地方",
+          "time": "2020-01-01",
+          "img": "https://66861.s81i.faiusr.com/4/103/AFEIrYoEEAQYACDm84HWBSiN0KWQAjCKAjjHAUBn.png"
+        }
+      ],
+      "total": 2
+    }
+  }
+
+
+## 动态页面
+
+### 获取动态页面数据
+GET {{endpoint}}/data?id=101 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存动态页面数据
+POST {{endpoint}}/data/101 HTTP/1.1
+content-type: application/json
+
+{
+    "record": [
+      {
+        "type": "100",
+        "title": "2020年第一季度",
+        "startTime": "2020-01-01",
+        "endTime": "2020-03-31",
+        "submitTime": "2020-3-25 12:12:12"
+      },
+      {
+        "type": "100",
+        "title": "2020年第一季度",
+        "startTime": "2020-01-01",
+        "endTime": "2020-03-31",
+        "submitTime": "2020-3-25 12:12:12"
+      }
+    ],
+    "total": 2
+}
+
