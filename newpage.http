@@ -1,0 +1,110 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+## 动态页面
+
+### 获取动态页面设计数据 
+GET {{endpoint}}/form?id=200
+
+
+### 保存动态列表
+POST {{endpoint}}/form/200
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "page_home",
+    "title": "场馆资讯",
+    "pageStyle": {},
+    "dataSource":
+    {
+      "api": "",
+      "response":
+      {
+        "data": "data"
+      }
+    },
+    "container":{
+      "padding": "10px",
+      "margin": "10px",
+      "fill": "white",
+      "stroke": 
+      {
+         "color": "lightgray",
+         "lineWidth": "1px"
+      },
+      "shadow":
+      {
+         "radius": 5
+      },
+      "corner": "8px",
+      "spacing": "1em"
+   },
+  "modules": [
+    {
+      "container":{},
+      "type": "autolist",
+      "key": "5243e64e-40ca-8b50-cdce-1623039409345",
+      "tips": "动态列表组件",
+      "binding":
+      {
+        "list":"list",
+        "total":"total"
+      },
+      "bindingTarget": "data"
+    },
+    {
+      "container":{},
+      "type": "autoform",
+      "key": "96afd71a-c8d5-11eb-aca5-0800271e55b7",
+      "tips": "动态表单组件",
+      "moduleDataSource": "https://api.mock.smallsaas.cn/data?id=10"
+    }
+  ], 
+  "moduleData":
+    {
+        "5243e64e-40ca-8b50-cdce-1623039409345":
+        {
+            "loadApi": "https://www.fastmock.site/mock/96df9e8fb08bfe844b3e565f5a3206fe/test/api/pub/getList",
+            "tabConfig":
+            {
+              "field":"type",
+              "show": true,
+              "list":[
+                  {
+                      "name":"全部",
+                      "value":"0"
+                  },
+                  {
+                      "name":"时尚搭配",
+                      "value":"100"
+                  },
+                  {
+                    "name":"行业咨询",
+                    "value":"200"
+                  }
+              ]
+            },
+            "response":
+            {
+                "list":"type.list",
+                "total":"type.total"
+            },
+            "request":
+            {
+              "fixed":"type",
+              "default":
+                {
+                  "type":"0"
+                },
+              "pn":"pageNo",
+              "ps":"pageSize"
+            },
+            "itemModule":
+            {
+                "type":"card-component",
+                "name":"ArticleItem"
+            }
+        }
+    }
+}
