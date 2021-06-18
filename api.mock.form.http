@@ -539,11 +539,11 @@ content-type: application/json
 ## 动态列表 
 
 ### 获取动态列表设计数据 
-GET {{endpoint}}/form?id=100
+GET {{endpoint}}/form?id=101
 
 
 ### 保存动态列表
-POST {{endpoint}}/form/100
+POST {{endpoint}}/form/101
 content-type: application/json
 
 {

@@ -1,0 +1,55 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 动态列表 
+
+### 获取动态列表设计数据 
+GET {{endpoint}}/form?id=100
+
+
+### 保存动态列表
+POST {{endpoint}}/form/100
+content-type: application/json
+
+{
+    "loadApi": "https://www.fastmock.site/mock/96df9e8fb08bfe844b3e565f5a3206fe/test/api/pub/getList",
+    "itemNavigation": "/articleDetail/index?id=&title",
+    "tabConfig":
+     {
+       "field":"type",
+       "show": true,
+       "list":[
+          {
+              "name":"全部",
+              "value":"0"
+          },
+          {
+              "name":"时尚搭配",
+              "value":"100"
+          },
+          {
+             "name":"行业咨询",
+             "value":"200"
+          }
+       ]
+    },
+    "response":
+    {
+        "list":"type.list",
+        "total":"type.total"
+    },
+    "request":
+    {
+       "fixed":"type",
+       "default":
+        {
+           "type":"0"
+        },
+       "pn":"pageNo",
+       "ps":"pageSize"
+    },
+    "itemModule":
+    {
+        "type":"card-component",
+        "name":"ArticleItem"
+    }
+}
