@@ -1,0 +1,171 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 动态列表 
+
+### 获取动态列表设计数据 
+GET {{endpoint}}/form?id=200
+
+
+### 保存动态列表
+POST {{endpoint}}/form/108
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "page_home",
+    "title": "市场监督",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+        "list": "type.list",
+        "total": "type.total"
+    },
+    "request": {
+    },
+    "modules": [
+      {
+        "type":"boxList",
+        "name":"",
+        "key":"q51477c6-cc66-d5v4-3322-1623488775885"
+      },
+      {
+        "type":"cardList",
+        "name":"",
+        "key":"y59992z8-bb88-a788-9922-1623488775885"
+      },
+      {
+        "type":"autolist",
+        "name":"",
+        "key":"e59992z8-bb88-a788-9922-1623488775885"
+      }
+    ],
+    "moduleData": {
+        "q51477c6-cc66-d5v4-3322-1623488775885": {
+            "navList": [
+                {
+                  "number":50,
+                  "title":"被执法"
+                },
+                {
+                  "number":15,
+                  "title":"场馆"
+                },
+                {
+                  "number":98,
+                  "title":"待整改"
+                },
+                {
+                  "number":150,
+                  "title":"卷宗"
+                }
+            ]
+        },
+        "y59992z8-bb88-a788-9922-1623488775885": {
+            "navList": [
+              {
+                "image":"map",
+                "title":"场馆导航",
+                "url":"../../pages/index/index",
+                "background":"#D6EFEE"
+              },
+              {
+                "image":"record",
+                "title":"执法记录",
+                "url":"../../pages/test/banner",
+                "background":"#EAFAFF"
+              },
+              {
+                "image":"transform",
+                "title":"整改复查",
+                "url":"../../pages/index/index",
+                "background":"#EDF0FA"
+              },
+              {
+                "image":"search",
+                "title":"企业查询",
+                "url":"../../pages/index/index",
+                "background":"#F6F4EE"
+              },
+              {
+                "image":"book",
+                "title":"执法卷宗",
+                "url":"../../pages/index/index",
+                "background":"#FAF8E7"
+              },
+              {
+                "image":"data",
+                "title":"数据分析",
+                "url":"../../pages/index/index",
+                "background":"#F8FDE9"
+              }
+            ]
+        },
+        "e59992z8-bb88-a788-9922-1623488775885": {
+        "loadApi": "https://www.fastmock.site/mock/96df9e8fb08bfe844b3e565f5a3206fe/test/api/pub/getList",
+        "tabConfig": {
+          "field": "type",
+          "show": false,
+          "list": [
+            {
+              "name": "全部",
+              "value": "201"
+            }
+          ]
+        },
+        "response": {
+          "list": "type.list",
+          "total": "type.total"
+        },
+        "request": {
+          "fixed": "type",
+          "default": {
+            "type": "0"
+          },
+          "pn": "pageNo",
+          "ps": "pageSize"
+        },
+        "itemModule": {
+          "type": "card-component",
+          "name": "StateItem"
+        }
+      }
+    }
+}
+
+
+## 列表数据
+
+### 获取动态页面数据
+GET {{endpoint}}/data?id=201 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存动态页面数据
+POST {{endpoint}}/data/201 HTTP/1.1
+content-type: application/json
+
+{
+  "code": 200,
+  "data": {
+    "daysPassed": 5,
+    "list":[
+					{
+						"url":"../../pages/test/cardtest",
+						"state":"enforcement",
+						"title":"安全出门检查",
+						"company":"北京海淀区体育局",
+						"start":"2021-03-30",
+						"end":"2021-04-05"
+					},
+					{
+						"url":"../../pages/test/cardtest",
+						"state":"rectification",
+						"title":"安全出门检查",
+						"company":"北京海淀区体育局",
+						"start":"2021-03-30",
+						"end":"2021-04-05"
+					}
+				],
+    "total": 2
+  }
+}
