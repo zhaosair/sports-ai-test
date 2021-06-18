@@ -3,66 +3,164 @@
 
 ## 动态列表
 
-### 获取动态列表数据
-GET {{endpoint}}/data?id=10 HTTP/1.1
+### 保存动态列表
+POST {{endpoint}}/form/110
 content-type: application/json
-User-Agent: rest-client
 
-### 保存动态列表数据
-POST {{endpoint}}/data/1 HTTP/1.1
+{  
+    "version": "1",
+    "name": "page_home",
+    "title": "场馆资讯",
+    "pageStyle": {},
+    "dataSource":
+    {
+      "api": "",
+      "response":
+      {
+        "data": "data"
+      }
+    },
+    "container":{
+      "padding": "10px",
+      "margin": "10px",
+      "fill": "white",
+      "stroke": 
+      {
+         "color": "lightgray",
+         "lineWidth": "1px"
+      },
+      "shadow":
+      {
+         "radius": 5
+      },
+      "corner": "8px",
+      "spacing": "1em"
+   },
+  "modules": [
+    {
+      "container":{},
+      "type": "autolist",
+      "key": "5243e64e-40ca-8b50-cdce-1623039409345",
+      "tips": "动态列表组件",
+      "binding":
+      {
+        "list":"list",
+        "total":"total"
+      },
+      "bindingTarget": "data"
+    },
+    {
+      "container":{},
+      "type": "autoform",
+      "key": "96afd71a-c8d5-11eb-aca5-0800271e55b7",
+      "tips": "动态表单组件",
+      "moduleDataSource": "https://api.mock.smallsaas.cn/data?id=110"
+    }
+  ], 
+  "moduleData":
+    {
+        "5243e64e-40ca-8b50-cdce-1623039409345":
+        {
+            "loadApi": "https://www.fastmock.site/mock/96df9e8fb08bfe844b3e565f5a3206fe/test/api/pub/getList",
+            "tabConfig":
+            {
+              "field":"type",
+              "show": true,
+              "list":[
+                  {
+                      "name":"全部",
+                      "value":"0"
+                  },
+                  {
+                      "name":"时尚搭配",
+                      "value":"100"
+                  },
+                  {
+                    "name":"行业咨询",
+                    "value":"200"
+                  }
+              ]
+            },
+            "response":
+            {
+                "list":"type.list",
+                "total":"type.total"
+            },
+            "request":
+            {
+              "fixed":"type",
+              "default":
+                {
+                  "type":"0"
+                },
+              "pn":"pageNo",
+              "ps":"pageSize"
+            },
+            "modules":
+            [
+                {
+                    "type":"custom_component",
+                    "name":"自定义组件",
+                    "key":"5243e64e-40ca-8b50-cdce-1623039409345"
+                }
+            ],
+            "moduleData":
+            {
+                "5243e64e-40ca-8b50-cdce-1623039409345":
+                {
+                    "id":"5243e64e-40ca-8b50-cdce-1623039409345",
+                    "name":"SelfInspectionRecordItem"
+                }
+            }
+        }
+    }
+}
+
+
+### 获取动态页面数据
+POST {{endpoint}}/data/110 HTTP/1.1
 content-type: application/json
+
+# {
+#     "record": [
+#       {
+#         "type": "100",
+#         "title": "2020年第一季度",
+#         "startTime": "2020-01-01",
+#         "endTime": "2020-03-31",
+#         "submitTime": "2020-3-25 12:12:12"
+#       },
+#       {
+#         "type": "100",
+#         "title": "2020年第一季度",
+#         "startTime": "2020-01-01",
+#         "endTime": "2020-03-31",
+#         "submitTime": "2020-3-25 12:12:12"
+#       }
+#     ],
+#     "total": 2
+# }
+
 
 {
     "type": {
       "list": [
         {
           "type": "100",
-          "title": "的撒开发和建设的规100",
-          "desc": "阿迪舒服哈森岛宽晃发的颂古非今阿萨德个发货速度发定时发送地方",
-          "time": "2020-01-01",
-          "img": "https://66861.s81i.faiusr.com/4/103/AFEIrYoEEAQYACDm84HWBSiN0KWQAjCKAjjHAUBn.png"
+          "title": "2020年第一季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-03-31",
+          "submitTime": "2020-3-25 12:12:12"
         },
         {
           "type": "200",
-          "title": "的撒开发和建设的规200",
-          "desc": "阿迪舒服哈森岛宽晃发的颂古非今阿萨德个发货速度发定时发送地方",
-          "time": "2020-01-01",
-          "img": "https://66861.s81i.faiusr.com/4/103/AFEIrYoEEAQYACDm84HWBSiN0KWQAjCKAjjHAUBn.png"
+          "title": "2020年第二季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-05-31",
+          "submitTime": "2020-3-25 12:12:12"
         }
       ],
-      "total": 2
+      "total": 3
     }
   }
-
-
-## 动态页面
-
-### 获取动态页面数据
-GET {{endpoint}}/data?id=101 HTTP/1.1
-content-type: application/json
-User-Agent: rest-client
-
-### 保存动态页面数据
-POST {{endpoint}}/data/101 HTTP/1.1
-content-type: application/json
-
-{
-    "record": [
-      {
-        "type": "100",
-        "title": "2020年第一季度",
-        "startTime": "2020-01-01",
-        "endTime": "2020-03-31",
-        "submitTime": "2020-3-25 12:12:12"
-      },
-      {
-        "type": "100",
-        "title": "2020年第一季度",
-        "startTime": "2020-01-01",
-        "endTime": "2020-03-31",
-        "submitTime": "2020-3-25 12:12:12"
-      }
-    ],
-    "total": 2
-}
 
