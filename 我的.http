@@ -6,7 +6,7 @@ GET  {{endpoint}}/data?id=100 HTTP/1.1
 content-type: application/json
 
 {
-    "avatar": "12",
+    "avatar": "",
     "userName": "张三",
     "enterpriseNumber": "Ab263549898",
     "domainName": "hajdshdjAb263549898",
