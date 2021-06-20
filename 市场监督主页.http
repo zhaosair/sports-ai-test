@@ -1,12 +1,12 @@
 @endpoint=https://api.mock.smallsaas.cn
 
-## 动态列表 
+## 动态页面 
 
-### 获取动态列表设计数据 
-GET {{endpoint}}/form?id=200
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=108
 
 
-### 保存动态列表
+### 保存动态页面
 POST {{endpoint}}/form/108
 content-type: application/json
 
@@ -17,10 +17,11 @@ content-type: application/json
     "pageStyle": {},
     "loadApi": "",
     "response": {
-        "list": "type.list",
-        "total": "type.total"
+      "data":"data"
     },
     "request": {
+    },
+    "moduleContainer":{
     },
     "modules": [
       {
@@ -29,15 +30,29 @@ content-type: application/json
         "key":"q51477c6-cc66-d5v4-3322-1623488775885"
       },
       {
-        "type":"cardList",
+        "type":"navlist",
         "name":"",
-        "key":"y59992z8-bb88-a788-9922-1623488775885"
+        "key":"y59992z8-bb88-a788-9922-1623488775885",
+        "container":{
+                "grid-template-columns":"repeat(3, 33.3333333%)"
+            }
       },
       {
-        "type":"autolist",
-        "name":"",
-        "key":"e59992z8-bb88-a788-9922-1623488775885"
-      }
+        "type":"navlist",
+        "name":"待办",
+        "key":"e59992z8-bb88-a788-9922-1623488775885",
+        "container":{
+          "background":"#EFEFEF"
+        }
+      },
+      {
+            "type": "navlist",
+            "name": "执法",
+            "key": "cd814de4-34de-fa95-1049-1623416664592",
+            "container":{
+                "grid-template-columns":"repeat(3, 33.3333333%)"
+            }
+        }
     ],
     "moduleData": {
         "q51477c6-cc66-d5v4-3322-1623488775885": {
@@ -63,109 +78,214 @@ content-type: application/json
         "y59992z8-bb88-a788-9922-1623488775885": {
             "navList": [
               {
-                "image":"map",
+                "svg":"map",
                 "title":"场馆导航",
-                "url":"../../pages/index/index",
-                "background":"#D6EFEE"
+                "nav":"../../pages/index/index",
+                "container":{
+                  "background":"#D6EFEE"
+                }
               },
               {
-                "image":"record",
+                "svg":"record",
                 "title":"执法记录",
-                "url":"../../pages/test/banner",
+                "nav":"../../pages/test/banner",
+                "container":{
                 "background":"#EAFAFF"
+                }
               },
               {
-                "image":"transform",
+                "svg":"transform",
                 "title":"整改复查",
-                "url":"../../pages/index/index",
-                "background":"#EDF0FA"
+                "nav":"../../pages/index/index",
+                "container":{
+                  "background":"#EDF0FA"
+                }
               },
               {
-                "image":"search",
+                "svg":"search",
                 "title":"企业查询",
-                "url":"../../pages/index/index",
+                "nav":"../../pages/index/index",
+                "container":{
                 "background":"#F6F4EE"
+                }
               },
               {
-                "image":"book",
+                "svg":"book",
                 "title":"执法卷宗",
-                "url":"../../pages/index/index",
+                "nav":"../../pages/index/index",
+                "container":{
                 "background":"#FAF8E7"
+                }
               },
               {
-                "image":"data",
+                "svg":"data",
                 "title":"数据分析",
-                "url":"../../pages/index/index",
+                "nav":"../../pages/index/index",
+                "container":{
                 "background":"#F8FDE9"
+                }
               }
-            ]
+            ],
+            "itemModule":
+            {
+              "name":"cardListItem"
+           }
         },
         "e59992z8-bb88-a788-9922-1623488775885": {
-        "loadApi": "https://www.fastmock.site/mock/96df9e8fb08bfe844b3e565f5a3206fe/test/api/pub/getList",
-        "tabConfig": {
-          "field": "type",
-          "show": false,
-          "list": [
+            "navList":[
             {
-              "name": "全部",
-              "value": "201"
+              "url":"../../pages/test/cardtest",
+              "state":"enforcement",
+              "title":"安全出门检查",
+              "company":"北京海淀区体育局",
+              "start":"2021-03-30",
+              "end":"2021-04-05"
+            },
+            {
+              "url":"../../pages/test/cardtest",
+              "state":"rectification",
+              "title":"安全出门检查",
+              "company":"北京海淀区体育局",
+              "start":"2021-03-30",
+              "end":"2021-04-05"
             }
-          ]
-        },
-        "response": {
-          "list": "type.list",
-          "total": "type.total"
-        },
-        "request": {
-          "fixed": "type",
-          "default": {
-            "type": "0"
-          },
-          "pn": "pageNo",
-          "ps": "pageSize"
-        },
-        "itemModule": {
-          "type": "card-component",
-          "name": "StateItem"
+          ],
+          "itemModule":
+            {
+              "name":"stateListItem"
+          }
+      },
+        "cd814de4-34de-fa95-1049-1623416664592": {
+            "navList": [
+                {
+                    "title": "安全出口",
+                    "nav": "test/cardtest",
+                    "svg":{
+                      "icon":"export",
+                      "color":"#43CF7C"
+                    }
+                },
+                {
+                    "title": "安全警示标志",
+                    "nav": "/?id=1",
+                    "svg":{
+                      "icon":"warning",
+                      "color":"#FFC300"
+                    }
+                },
+                {
+                    "title": "安全指示标志",
+                    "nav": "/?id=1",
+                    "svg":{
+                      "icon":"instructions",
+                      "color":"#2A82E4"
+                    }
+                },
+                {
+                    "title": "应急广播",
+                    "nav": "/?id=1",
+                    "svg":{
+                      "icon":"radio",
+                      "color":"#D43030"
+                    }
+                },
+                {
+                    "title": "安全生产与规章制度",
+                    "nav": "/?id=1",
+                    "svg":{
+                      "icon":"rules",
+                      "color":"#2A82E4"
+                    }
+                },
+                {
+                    "title": "行政许可",
+                    "nav": "/?id=1",
+                    "svg":{
+                      "icon":"adminLicence",
+                      "color":"#FFC300"
+                    }
+                },
+                {
+                    "title": "应急预案与演练",
+                    "nav": "/?id=1",
+                    "svg":{
+                      "icon":"drill",
+                      "color":"#D43030"
+                    }
+                },
+                {
+                    "title": "经营许可证",
+                    "required":true,
+                    "nav": "/?id=1",
+                    "svg":{
+                      "icon":"licence",
+                      "color":"#43CF7C"
+                    }
+                },
+                {
+                    "title": "悬挂公示",
+                    "nav": "/?id=1",
+                    "svg":{
+                      "icon":"publicity",
+                      "color":"#FFC300"
+                    }
+                },
+                {
+                    "title": "专职水上救生员",
+                    "nav": "/?id=1",
+                    "svg":{
+                      "icon":"lifeguard",
+                      "color":"#43CF7C"
+                    }
+                },
+                {
+                    "title":"执业证书从业人员",
+                    "nav":"/?id=1",
+                    "svg":{
+                      "icon":"employees",
+                      "color":"#2A82E4"
+                    }
+                }
+            ],
+          "itemModule":
+            {
+              "name":"MagicItem"
+          }
         }
-      }
     }
 }
 
 
-## 列表数据
+# ## 列表数据
 
-### 获取动态页面数据
-GET {{endpoint}}/data?id=201 HTTP/1.1
-content-type: application/json
-User-Agent: rest-client
+# ### 获取动态页面数据
+# GET {{endpoint}}/data?id=201 HTTP/1.1
+# content-type: application/json
+# User-Agent: rest-client
 
-### 保存动态页面数据
-POST {{endpoint}}/data/201 HTTP/1.1
-content-type: application/json
+# ### 保存动态页面数据
+# POST {{endpoint}}/data/201 HTTP/1.1
+# content-type: application/json
 
-{
-  "code": 200,
-  "data": {
-    "daysPassed": 5,
-    "list":[
-					{
-						"url":"../../pages/test/cardtest",
-						"state":"enforcement",
-						"title":"安全出门检查",
-						"company":"北京海淀区体育局",
-						"start":"2021-03-30",
-						"end":"2021-04-05"
-					},
-					{
-						"url":"../../pages/test/cardtest",
-						"state":"rectification",
-						"title":"安全出门检查",
-						"company":"北京海淀区体育局",
-						"start":"2021-03-30",
-						"end":"2021-04-05"
-					}
-				],
-    "total": 2
-  }
-}
+# {
+#   "daysPassed": 5,
+#   "list":[
+#         {
+#           "url":"../../pages/test/cardtest",
+#           "state":"enforcement",
+#           "title":"安全出门检查",
+#           "company":"北京海淀区体育局",
+#           "start":"2021-03-30",
+#           "end":"2021-04-05"
+#         },
+#         {
+#           "url":"../../pages/test/cardtest",
+#           "state":"rectification",
+#           "title":"安全出门检查",
+#           "company":"北京海淀区体育局",
+#           "start":"2021-03-30",
+#           "end":"2021-04-05"
+#         }
+#       ],
+#   "total": 2
+# }
