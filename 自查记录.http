@@ -7,83 +7,29 @@
 POST {{endpoint}}/form/110
 content-type: application/json
 
-{  
-    "version": "1",
-    "name": "page_home",
-    "title": "场馆资讯",
-    "pageStyle": {},
-    "dataSource":
+{
+    "loadApi": "https://api.mock.smallsaas.cn/data?id=110",
+    "itemNavigation": "",
+    "tabConfig": {},
+    "response":
     {
-      "api": "",
-      "response":
-      {
-        "data": "data"
-      }
+        "list":"type.list",
+        "total":"type.total"
     },
-    "container":{
-      "padding": "10px",
-      "margin": "10px",
-      "fill": "white",
-      "stroke": 
-      {
-         "color": "lightgray",
-         "lineWidth": "1px"
-      },
-      "shadow":
-      {
-         "radius": 5
-      },
-      "corner": "8px",
-      "spacing": "1em"
-   },
-  "modules": [
+    "request":
     {
-      "container":{},
-      "type": "autolist",
-      "key": "5243e64e-40ca-8b50-cdce-1623039409345",
-      "tips": "动态列表组件",
-      "binding":
-      {
-        "list":"list",
-        "total":"total"
-      },
-      "bindingTarget": "data"
-    },
-    {
-      "container":{},
-      "type": "autoform",
-      "key": "96afd71a-c8d5-11eb-aca5-0800271e55b7",
-      "tips": "动态表单组件",
-      "moduleDataSource": "https://api.mock.smallsaas.cn/data?id=110"
-    }
-  ], 
-  "moduleData":
-    {
-        "5243e64e-40ca-8b50-cdce-1623039409345":
+       "fixed":"type",
+       "default":
         {
-            "loadApi": "https://www.fastmock.site/mock/96df9e8fb08bfe844b3e565f5a3206fe/test/api/pub/getList",
-
-            "response":
-            {
-                "list":"type.list",
-                "total":"type.total"
-            },
-            "request":
-            {
-              "fixed":"type",
-              "default":
-                {
-                  "type":"0"
-                },
-              "pn":"pageNo",
-              "ps":"pageSize"
-            },
-            "itemModule":
-            {
-                "type":"card-component",
-                "name":"SelfInspectionRecordItem"
-            }
-        }
+           "type":"0"
+        },
+       "pn":"pageNo",
+       "ps":"pageSize"
+    },
+    "itemModule":
+    {
+        "type":"card-component",
+        "name":"SelfInspectionRecordItem"
     }
 }
 
@@ -92,48 +38,50 @@ content-type: application/json
 POST {{endpoint}}/data/110 HTTP/1.1
 content-type: application/json
 
-{
-    "record": [
-      {
-        "type": "100",
-        "title": "2020年第一季度",
-        "startTime": "2020-01-01",
-        "endTime": "2020-03-31",
-        "submitTime": "2020-3-25 12:12:12",
-        "status": "pass"
-      },
-      {
-        "type": "100",
-        "title": "2020年第一季度",
-        "startTime": "2020-01-01",
-        "endTime": "2020-03-31",
-        "submitTime": "2020-3-25 12:12:12",
-        "status": "failed"
-      }
-    ],
-    "total": 2
-}
-
-
 # {
-#     "type": {
-#       "list": [
-#         {
-#           "type": "100",
-#           "title": "2020年第一季度",
-#           "startTime": "2020-01-01",
-#           "endTime": "2020-03-31",
-#           "submitTime": "2020-3-25 12:12:12"
-#         },
-#         {
-#           "type": "200",
-#           "title": "2020年第二季度",
-#           "startTime": "2020-01-01",
-#           "endTime": "2020-05-31",
-#           "submitTime": "2020-3-25 12:12:12"
-#         }
-#       ],
-#       "total": 3
-#     }
-#   }
+#     "record": [
+#       {
+#         "type": "100",
+#         "title": "2020年第一季度",
+#         "startTime": "2020-01-01",
+#         "endTime": "2020-03-31",
+#         "submitTime": "2020-3-25 12:12:12",
+#         "status": "pass"
+#       },
+#       {
+#         "type": "100",
+#         "title": "2020年第一季度",
+#         "startTime": "2020-01-01",
+#         "endTime": "2020-03-31",
+#         "submitTime": "2020-3-25 12:12:12",
+#         "status": "failed"
+#       }
+#     ],
+#     "total": 2
+# }
+
+
+{
+    "type": {
+      "list": [
+        {
+          "type": "100",
+          "title": "2020年第一季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-03-31",
+          "submitTime": "2020-3-25 12:12:12",
+          "status": "pass"
+        },
+        {
+          "type": "200",
+          "title": "2020年第二季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-05-31",
+          "submitTime": "2020-3-25 12:12:12",
+          "status": "failed"
+        }
+      ],
+      "total": 3
+    }
+  }
 
