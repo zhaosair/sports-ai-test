@@ -38,21 +38,28 @@ content-type: application/json
             }
       },
       {
-        "type":"navlist",
+        "type": "autolist",
+        "tips": "动态列表组件",
+        "binding":
+        {
+          "list":"list",
+          "total":"total"
+        },
+        "bindingTarget": "data",
         "name":"待办",
         "key":"e59992z8-bb88-a788-9922-1623488775885",
         "container":{
-          "background":"#EFEFEF"
+          "height":"195px"
         }
       },
       {
-            "type": "navlist",
-            "name": "执法",
-            "key": "cd814de4-34de-fa95-1049-1623416664592",
-            "container":{
-                "grid-template-columns":"repeat(3, 33.3333333%)"
-            }
+        "type": "navlist",
+        "name": "执法",
+        "key": "cd814de4-34de-fa95-1049-1623416664592",
+        "container":{
+            "grid-template-columns":"repeat(3, 33.3333333%)"
         }
+      }
     ],
     "moduleData": {
         "q51477c6-cc66-d5v4-3322-1623488775885": {
@@ -131,30 +138,34 @@ content-type: application/json
               "name":"cardListItem"
            }
         },
-        "e59992z8-bb88-a788-9922-1623488775885": {
-            "navList":[
-            {
-              "url":"../../pages/test/cardtest",
-              "state":"enforcement",
-              "title":"安全出门检查",
-              "company":"北京海淀区体育局",
-              "start":"2021-03-30",
-              "end":"2021-04-05"
+         "e59992z8-bb88-a788-9922-1623488775885": {
+          "loadApi":"https://api.mock.smallsaas.cn/data?id=201",
+          "response":{
+              "list":"type.list",
+              "total":"type.total"
+          },
+          "itemNavigation": "/articleDetail/index?id=&title",
+          "tabConfig":{
+            "field":"type",
+            "show":true
+          },
+          "response":{
+            "list":"type.list",
+            "total":"type.total"
+          },
+          "request":{
+            "fixed":"type",
+            "default":{
+              "type":"0"
             },
-            {
-              "url":"../../pages/test/cardtest",
-              "state":"rectification",
-              "title":"安全出门检查",
-              "company":"北京海淀区体育局",
-              "start":"2021-03-30",
-              "end":"2021-04-05"
-            }
-          ],
-          "itemModule":
-            {
-              "name":"stateListItem"
+            "pn":"pageNo",
+            "ps":"pageSize"
+          },
+          "itemModule":{
+            "type":"custom_component",
+            "name":"StateItem"
           }
-      },
+         },
         "cd814de4-34de-fa95-1049-1623416664592": {
             "navList": [
                 {
@@ -256,36 +267,38 @@ content-type: application/json
 }
 
 
-# ## 列表数据
+## 列表数据
 
-# ### 获取动态页面数据
-# GET {{endpoint}}/data?id=201 HTTP/1.1
-# content-type: application/json
-# User-Agent: rest-client
+### 获取动态页面数据
+GET {{endpoint}}/data?id=201 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
 
-# ### 保存动态页面数据
-# POST {{endpoint}}/data/201 HTTP/1.1
-# content-type: application/json
+### 保存动态页面数据
+POST {{endpoint}}/data/201 HTTP/1.1
+content-type: application/json
 
-# {
-#   "daysPassed": 5,
-#   "list":[
-#         {
-#           "url":"../../pages/test/cardtest",
-#           "state":"enforcement",
-#           "title":"安全出门检查",
-#           "company":"北京海淀区体育局",
-#           "start":"2021-03-30",
-#           "end":"2021-04-05"
-#         },
-#         {
-#           "url":"../../pages/test/cardtest",
-#           "state":"rectification",
-#           "title":"安全出门检查",
-#           "company":"北京海淀区体育局",
-#           "start":"2021-03-30",
-#           "end":"2021-04-05"
-#         }
-#       ],
-#   "total": 2
-# }
+{
+  "type":{
+      "list":[
+          {
+            "url":"../../pages/test/cardtest",
+            "state":"enforcement",
+            "title":"安全出门检查",
+            "company":"北京海淀区体育局",
+            "start":"2021-03-30",
+            "end":"2021-04-05"
+          },
+          {
+            "url":"../../pages/test/cardtest",
+            "state":"rectification",
+            "title":"安全出门检查",
+            "company":"北京海淀区体育局",
+            "start":"2021-03-30",
+            "end":"2021-04-05"
+          }
+        ],
+        "total": 2
+  }
+}
+
