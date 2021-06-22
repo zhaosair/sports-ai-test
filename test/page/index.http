@@ -58,8 +58,29 @@ content-type: application/json
               },
             {
                 "svg":"record",
-                "title":"待继续补充",
-                "nav":"/",
+                "title":"banner",
+                "nav":"/pages/test/pages/banner",
+                "container":{
+                }
+              },
+              {
+                "svg":"record",
+                "title":"navlist",
+                "nav":"/pages/test/pages/navlist",
+                "container":{
+                }
+              },
+              {
+                "svg":"record",
+                "title":"boxList",
+                "nav":"/pages/test/pages/boxlist",
+                "container":{
+                }
+              },
+              {
+                "svg":"record",
+                "title":"autopage",
+                "nav":"/pages/test/pages/autopage",
                 "container":{
                 }
               }

@@ -398,33 +398,6 @@ content-type: application/json
             "__vModel__": "el-time-picker-time"
         },
         {
-        "__config__": {
-            "label": "时间范围",
-            "tag": "el-date-picker",
-            "tagIcon": "time-range",
-            "defaultValue": null,
-            "showLabel": true,
-            "labelWidth": null,
-            "layout": "colFormItem",
-            "required": true,
-            "regList": [],
-            "formId": 109,
-            "renderKey": 1621415374360
-            },
-            "placeholder": "请选择时间范围",
-            "type": "date",
-            "style": {
-            "width": "100%"
-            },
-            "disabled": false,
-            "clearable": true,
-            "start-placeholder":"2021-06-19",
-            "end-placeholder":"2021-06-21",
-            "format":"YYYY-MM-DD HH:mm:ss",
-            "readonly": false,
-            "__vModel__": "time-range"
-        },
-        {
             "__config__": {
             "label": "日期选择",
             "tag": "el-date-picker",
@@ -449,31 +422,6 @@ content-type: application/json
             "value-format": "yyyy-MM-dd",
             "readonly": false,
             "__vModel__": "field109"
-        },
-                {
-            "__config__": {
-            "label": "日期范围",
-            "tag": "el-date-picker",
-            "tagIcon": "date-range",
-            "defaultValue": null,
-            "showLabel": true,
-            "labelWidth": null,
-            "layout": "colFormItem",
-            "required": true,
-            "regList": [],
-            "formId": 109,
-            "renderKey": 1621415374360
-            },
-            "placeholder": "请选择日期范围",
-            "style": {
-            "width": "100%"
-            },
-            "disabled": false,
-            "clearable": true,
-            "format": "YYYY-MM-DD HH:mm:ss",
-            "value-format": "YYYY-MM-DD HH:mm:ss",
-            "readonly": false,
-            "__vModel__": "date-range"
         },
         {
             "__config__": {
