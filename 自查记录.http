@@ -139,7 +139,7 @@ content-type: application/json
     "type": {
       "list": [
         {
-          "id": "300",
+          "id": "311",
           "type": "100",
           "title": "2020年第一季度",
           "startTime": "2020-01-01",
@@ -148,7 +148,7 @@ content-type: application/json
           "status": "pass"
         },
         {
-          "id": "300",
+          "id": "321",
           "type": "200",
           "title": "2020年第二季度",
           "startTime": "2020-01-01",

@@ -13,7 +13,6 @@ content-type: application/json
     "name": "page_home", 
     "title": "自查详情", 
     "pageStyle": { }, 
-    "loadApi": "https://api.mock.smallsaas.cn/data?id=200", 
     "request": { }, 
     "response": {
         "data": "data"
@@ -37,15 +36,27 @@ content-type: application/json
           "type": "autoform", 
           "key": "96afd71a-c8d5-11eb-aca5-0800271e55b7", 
           "name": "动态表单组件", 
-          "container": { }
+          "container": { },
+          "binding":{
+            "companyName": "companyName",
+            "peple": "peple",
+            "address": "address",
+            "date": "date",
+            "phone": "phone",
+            "licenseImage": "licenseImage",
+            "businessImage": "businessImage",
+            "sceneImage": "sceneImage",
+            "check1": "check1",
+            "check2": "check2",
+            "check3": "check3"
+          }
         }, 
         {
           "type": "autolist",
           "tips": "动态列表组件",
-          "binding":
-          {
-            "list":"list",
-            "total":"total"
+          "binding": {
+            "processes.list":"list",
+            "processes.total":"total"
           },
           "bindingTarget": "data",
           "name":"审批记录",
@@ -54,10 +65,12 @@ content-type: application/json
             "height":""
           }
         }
-    ], 
+    ],
+    "dataSource":{
+       "api": "https://api.mock.smallsaas.cn/data?id=311"
+    },
     "moduleData": {
         "96afd71a-c8d5-11eb-aca5-0800271e55b7": {
-            "loadApi": "https://api.mock.smallsaas.cn/data?id=311", 
             "formBtns": false, 
             "fields": [
                 {
@@ -288,18 +301,9 @@ content-type: application/json
             ]
         },
         "bb5eb734-d258-11eb-90a6-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=312",
           "response":{
-              "list":"type.list",
-              "total":"type.total"
-          },
-          "tabConfig":{
-            "field":"type",
-            "show":true
-          },
-          "response":{
-            "list":"type.list",
-            "total":"type.total"
+            "list":"list",
+            "total":"total"
           },
           "request":{
             "fixed":"type",
@@ -322,35 +326,67 @@ POST {{endpoint}}/data/311 HTTP/1.1
 content-type: application/json
 
 {
-  "companyName": "北京天翔文化产业有限公司",
-  "peple": "王伟伟",
-  "address": "北京市海淀区文化产业园A8901",
-  "date": "2020年3年1日",
-  "phone": "13666000111",
-  "licenseImage": [{
-    "url": "require('../../static/images/empty.png')",
-    "isImage": true
-  }],
-  "businessImage": [{
-    "url": "require('../../static/images/empty.png')",
-    "isImage": true
-  }],
-  "sceneImage": [{
-      "url": "require('../../static/images/empty.png')",
-      "isImage": true
-    },
-    {
-      "url": "require('../../static/images/empty.png')",
-      "isImage": true
-    },
-    {
-      "url": "require('../../static/images/empty.png')",
-      "isImage": true
+    "id": "311",
+    "companyName": "北京天翔文化产业有限公司",
+    "peple": "王伟伟",
+    "address": "北京市海淀区文化产业园A8901",
+    "date": "2020年3年1日",
+    "phone": "13666000111",
+    "licenseImage": [{
+        "url": "require('../../static/images/empty.png')",
+        "isImage": true
+    }],
+    "businessImage": [{
+        "url": "require('../../static/images/empty.png')",
+        "isImage": true
+    }],
+    "sceneImage": [{
+        "url": "require('../../static/images/empty.png')",
+        "isImage": true
+        },
+        {
+        "url": "require('../../static/images/empty.png')",
+        "isImage": true
+        },
+        {
+        "url": "require('../../static/images/empty.png')",
+        "isImage": true
+        }
+    ],
+    "check1": "选项内容",
+    "check2": "选项#1",
+    "check3": "技术咨询",
+    "processes":{
+        "list":[
+            {
+                "recordSteps": [
+                {
+                    "textLabel": "审批时间: ",
+                    "text": "2020-12-20 12:12:12",
+                    "descLabel": "审批状态: ",
+                    "desc": "通过",
+                    "opinion": "",
+                    "inactiveIcon": "circle",
+                    "activeIcon": "checked",
+                    "isLink": false
+                    },
+                    {
+                    "textLabel": "审批时间: ",
+                    "text": "2020-12-20 12:12:12",
+                    "descLabel": "审批状态: ",
+                    "desc": "不通过",
+                    "opinionLabel": "审批意见: ",
+                    "opinion": "测试1234567",
+                    "inactiveIcon": "circle",
+                    "activeIcon": "checked",
+                    "isLink": false
+                    }
+                ]
+            }
+        ],
+        "total": 2
     }
-  ],
-  "check1": "选项内容",
-  "check2": "选项#1",
-  "check3": "技术咨询"
+
 }
 
 
@@ -360,33 +396,30 @@ POST {{endpoint}}/data/312 HTTP/1.1
 content-type: application/json
 
 {
-  "type":{
-      "list":[
-          {
-              "recordSteps": [{
-                "textLabel": "审批时间: ",
-                "text": "2020-12-20 12:12:12",
-                "descLabel": "审批状态: ",
-                "desc": "通过",
-                "opinion": "",
-                "inactiveIcon": "circle",
-                "activeIcon": "checked",
-                "isLink": false
-              },
-              {
-                "textLabel": "审批时间: ",
-                "text": "2020-12-20 12:12:12",
-                "descLabel": "审批状态: ",
-                "desc": "不通过",
-                "opinionLabel": "审批意见: ",
-                "opinion": "测试1234567",
-                "inactiveIcon": "circle",
-                "activeIcon": "checked",
-                "isLink": false
-              }
-            ]
-          }
-        ],
-        "total": 2
-  }
+    "records":[
+        {
+            "recordSteps": [{
+            "textLabel": "审批时间: ",
+            "text": "2020-12-20 12:12:12",
+            "descLabel": "审批状态: ",
+            "desc": "通过",
+            "opinion": "",
+            "inactiveIcon": "circle",
+            "activeIcon": "checked",
+            "isLink": false
+            },
+            {
+            "textLabel": "审批时间: ",
+            "text": "2020-12-20 12:12:12",
+            "descLabel": "审批状态: ",
+            "desc": "不通过",
+            "opinionLabel": "审批意见: ",
+            "opinion": "测试1234567",
+            "inactiveIcon": "circle",
+            "activeIcon": "checked",
+            "isLink": false
+            }]
+        }
+    ],
+    "total": 2
 }
