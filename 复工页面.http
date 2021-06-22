@@ -86,15 +86,19 @@ content-type: application/json
   ]
 }
 
-
 ### 页面测试数据
-GET {{endpoint}}/data?id=11 HTTP/1.1
+POST  {{endpoint}}/data/11 HTTP/1.1
 content-type: application/json
 
 {
-  "days": 5,
+  "days": 15,
   "enterpriseName": "GZ",
   "enterpriseAddress": "广州",
   "legalPerson": "张三",
   "number": 30
 }
+
+### 页面测试数据
+GET {{endpoint}}/data?id=11 HTTP/1.1
+content-type: application/json
+
