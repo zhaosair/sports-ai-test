@@ -361,7 +361,7 @@ content-type: application/json
             "formId": 109,
             "renderKey": 1621415374360
             },
-            "placeholder": "请选择滑块",
+            "placeholder": "请选择日期",
             "type": "date",
             "style": {
             "width": "100%"
