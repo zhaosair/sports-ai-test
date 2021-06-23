@@ -334,6 +334,10 @@ content-type: application/json
 
 ### 企业自查入江口
 
+GET {{endpoint}}/form?id=10 HTTP/1.1
+content-type: application/json
+###
+
 POST {{endpoint}}/form/10 HTTP/1.1
 content-type: application/json
 

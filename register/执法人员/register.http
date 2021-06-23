@@ -1,0 +1,40 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+### 执法人员注册页面
+## 获取页面数据
+GET {{endpoint}}/form?id=10001
+
+## 提交页面数据
+POST {{endpoint}}/form?id=10001
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "register_enforcement",
+    "title": "执法人员注册",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"autoform",
+        "name":"",
+        "key":"autoform-5552-7722-4555-1678451456423"
+      }
+    ],
+    "moduleData": {
+        "autoform-5552-7722-4555-1678451456423": {
+            "fields": [
+                {
+                    
+                }
+            ]
+        }
+    }
+}
