@@ -324,7 +324,7 @@ content-type: application/json
       },
       {
 "__config__": {
-          "label": "日期选择",
+          "label": "滑块",
           "tag": "el-slider",
           "tagIcon": "slider",
           "defaultValue": 50,

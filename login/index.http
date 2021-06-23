@@ -13,7 +13,7 @@ content-type: application/json
 {  
     "version": "1",
     "name": "register_index",
-    "title": "注册首页",
+    "title": "首页",
     "pageStyle": {},
     "loadApi": "",
     "response": {
