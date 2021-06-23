@@ -12,6 +12,7 @@ content-type: application/json
     "name": "page_home", 
     "title": "复工记录", 
     "pageStyle": { }, 
+    "loadApi": "https://api.mock.smallsaas.cn/data?id=200", 
     "request": { }, 
     "response": {
         "data": "data"
@@ -50,7 +51,7 @@ content-type: application/json
     "moduleData": {
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
           "loadApi":"https://api.mock.smallsaas.cn/data?id=120",
-          "itemNavigation": "/my/returnToWorkDetail?id",
+         "itemNavigation": "/my/returnToWorkDetail?id",
           "response":{
               "list":"type.list",
               "total":"type.total"
@@ -88,39 +89,39 @@ content-type: application/json
     "type": {
       "list": [
         { 
-						"id": "121", 
+						"id": "131", 
 						"year": "2021年",
 						"startTime": "4月1日",
 						"endTime": "4月5日",
 						"cellList":[
-							{"title": "4月1日", "path": "/4-1"},
-							{"title": "4月2日", "path": "/4-2"},
-							{"title": "4月3日", "path": "/4-3"},
-							{"title": "4月4日", "path": "/4-4"}
+							{"id": "121", "title": "4月1日"},
+							{"title": "4月2日"},
+							{"title": "4月3日"},
+							{"title": "4月4日"}
 						]
 					},
 					{
-						"id": "122", 
+						"id": "132", 
 						"year": "2021年",
 						"startTime": "5月1日",
 						"endTime": "5月5日",
 						"cellList":[
-							{"title": "5月1日", "path": "/5-1"},
-							{"title": "5月2日", "path": "/5-2"},
-							{"title": "5月3日", "path": "/5-3"},
-							{"title": "5月4日", "path": "/5-4"},
-							{"title": "5月5日", "path": "/5-5"}
+							{"id": "122", "title": "5月1日" },
+							{"title": "5月2日"},
+							{"title": "5月3日"},
+							{"title": "5月4日"},
+							{"title": "5月5日"}
 						]
 					},
 					{
-						"id": "123", 
+						"id": "133", 
 						"year": "2021年",
 						"startTime": "6月1日",
 						"endTime": "6月3日",
 						"cellList":[
-							{"title": "6月1日", "path": "/6-1"},
-							{"title": "6月2日", "path": "/6-2"},
-							{"title": "6月3日", "path": "/6-3"}
+							{"id": "123", "title": "6月1日"},
+							{"title": "6月2日"},
+							{"title": "6月3日"}
 						]
 					}
       ],
