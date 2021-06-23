@@ -42,6 +42,14 @@ content-type: application/json
             "container":{
             "grid-template-columns":"repeat(2, 50%)"
             } 
+        },
+        {
+            "type":"navlist",
+            "name":"subTitleCardItem",
+            "key":"d4a555sd-hf22-qqds-8412-16234da445885",
+            "container":{
+                "grid-template-columns":"repeat(2, 50%)"
+            }
         }
     ],
     "moduleData":{
@@ -217,6 +225,62 @@ content-type: application/json
                         "background":"#45D7AA"
                     }
                 }
+            ]
+        },
+                "d4a555sd-hf22-qqds-8412-16234da445885": {
+            "itemModule":{
+              "name":"subTitleCardItem"
+           },
+            "navList": [
+              {
+                "svg":"enforcement",
+                "title":"enforcement",
+                "subTitle":"enforcement副标题",
+                "nav":"/",
+                "container":{
+                }
+              },
+              {
+                "svg":"enterprise",
+                "title":"enterprise",
+                "subTitle":"enterprise副标题",
+                "nav":"/",
+                "container":{
+                }
+              },
+              {
+                "svg":"street",
+                "title":"street",
+                "subTitle":"street副标题",
+                "nav":"/",
+                "container":{
+                }
+              },
+              {
+                "svg":"management",
+                "title":"management",
+                "subTitle":"management副标题",
+                "nav":"/",
+                "container":{
+                }
+              },
+              {
+                "img":"https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=32822217,3902783693&fm=26&gp=0.jpg",
+                "title":"图片",
+                "subTitle":"图片副标题",
+                "nav":"/",
+                "container":{
+                }
+              },
+              {
+                "svg":"management",
+                "title":"container样式",
+                "subTitle":"container样式副标题",
+                "nav":"/",
+                "container":{
+                    "background":"#45D7AA"
+                }
+              }
             ]
         }
     }
