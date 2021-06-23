@@ -64,7 +64,7 @@ content-type: application/json
                 "svg":"enterprise",
                 "title":"企业用户",
                 "subTitle":"企业用户注册",
-                "nav":"../../pages/index/index",
+                "nav":"../../pages/companyHome/index",
                 "container":{
                 }
               },

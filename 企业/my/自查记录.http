@@ -4,13 +4,13 @@
 ## 动态列表
 
 ### 保存动态列表
-POST {{endpoint}}/form/120
+POST {{endpoint}}/form/110
 content-type: application/json
 
 {
     "version": "1", 
     "name": "page_home", 
-    "title": "复工记录", 
+    "title": "自查记录", 
     "pageStyle": { }, 
     "loadApi": "https://api.mock.smallsaas.cn/data?id=200", 
     "request": { }, 
@@ -41,7 +41,7 @@ content-type: application/json
             "total":"total"
           },
           "bindingTarget": "data",
-          "key":"a1417b8a-d351-11eb-bb26-0800271e55b7",
+          "key":"7d0e7714-d265-11eb-af94-0800271e55b7",
           "container":{
             "height":""
           }
@@ -49,9 +49,9 @@ content-type: application/json
         
     ], 
     "moduleData": {
-        "a1417b8a-d351-11eb-bb26-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=120",
-         "itemNavigation": "/my/returnToWorkDetail?id",
+        "7d0e7714-d265-11eb-af94-0800271e55b7": {
+          "loadApi":"https://api.mock.smallsaas.cn/data?id=110",
+         "itemNavigation": "/companyHome/my/selfInspectionDetail?id",
           "response":{
               "list":"type.list",
               "total":"type.total"
@@ -74,7 +74,7 @@ content-type: application/json
           },
           "itemModule":{
             "type":"custom_component",
-            "name":"ReturnToWorkRecordItem"
+            "name":"SelfInspectionRecordItem"
           }
         }
     }
@@ -82,48 +82,53 @@ content-type: application/json
 
 
 ### 获取页面数据
-POST {{endpoint}}/data/120 HTTP/1.1
+POST {{endpoint}}/data/110 HTTP/1.1
 content-type: application/json
+
+# {
+#     "record": [
+#       {
+#         "type": "100",
+#         "title": "2020年第一季度",
+#         "startTime": "2020-01-01",
+#         "endTime": "2020-03-31",
+#         "submitTime": "2020-3-25 12:12:12",
+#         "status": "pass"
+#       },
+#       {
+#         "type": "100",
+#         "title": "2020年第一季度",
+#         "startTime": "2020-01-01",
+#         "endTime": "2020-03-31",
+#         "submitTime": "2020-3-25 12:12:12",
+#         "status": "failed"
+#       }
+#     ],
+#     "total": 2
+# }
+
 
 {
     "type": {
       "list": [
-        { 
-						"id": "131", 
-						"year": "2021年",
-						"startTime": "4月1日",
-						"endTime": "4月5日",
-						"cellList":[
-							{"id": "121", "title": "4月1日"},
-							{"title": "4月2日"},
-							{"title": "4月3日"},
-							{"title": "4月4日"}
-						]
-					},
-					{
-						"id": "132", 
-						"year": "2021年",
-						"startTime": "5月1日",
-						"endTime": "5月5日",
-						"cellList":[
-							{"id": "122", "title": "5月1日" },
-							{"title": "5月2日"},
-							{"title": "5月3日"},
-							{"title": "5月4日"},
-							{"title": "5月5日"}
-						]
-					},
-					{
-						"id": "133", 
-						"year": "2021年",
-						"startTime": "6月1日",
-						"endTime": "6月3日",
-						"cellList":[
-							{"id": "123", "title": "6月1日"},
-							{"title": "6月2日"},
-							{"title": "6月3日"}
-						]
-					}
+        {
+          "id": "311",
+          "type": "100",
+          "title": "2020年第一季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-03-31",
+          "submitTime": "2020-3-25 12:12:12",
+          "status": "pass"
+        },
+        {
+          "id": "321",
+          "type": "200",
+          "title": "2020年第二季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-05-31",
+          "submitTime": "2020-3-25 12:12:12",
+          "status": "failed"
+        }
       ],
       "total": 3
     }
