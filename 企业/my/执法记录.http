@@ -1,0 +1,122 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+## 动态列表
+
+### 保存动态列表
+POST {{endpoint}}/form/140
+content-type: application/json
+
+{
+    "version": "1", 
+    "name": "page_home", 
+    "title": "执法记录", 
+    "pageStyle": { }, 
+    "request": { }, 
+    "response": {
+        "data": "data"
+    }, 
+    "container": {
+        "padding": "10px", 
+        "margin": "10px", 
+        "fill": "white", 
+        "stroke": {
+            "color": "lightgray", 
+            "lineWidth": "1px"
+        }, 
+        "shadow": {
+            "radius": 5
+        }, 
+        "corner": "8px", 
+        "spacing": "1em"
+    }, 
+    "modules": [
+        {
+          "type": "autolist",
+          "tips": "动态列表组件",
+          "binding":
+          {
+            "list":"list",
+            "total":"total"
+          },
+          "bindingTarget": "data",
+          "key":"7d0e7714-d265-11eb-af94-0800271e55b7",
+          "container":{
+            "height":""
+          }
+        }
+        
+    ], 
+    "moduleData": {
+        "7d0e7714-d265-11eb-af94-0800271e55b7": {
+          "loadApi":"https://api.mock.smallsaas.cn/data?id=140",
+          "itemNavigation": "/companyHome/my/lawEnforcementDetail?id",
+          "response":{
+              "list":"type.list",
+              "total":"type.total"
+          },
+          "tabConfig":{
+            "field":"type",
+            "show":true
+          },
+          "response":{
+            "list":"type.list",
+            "total":"type.total"
+          },
+          "request":{
+            "fixed":"type",
+            "default":{
+              "type":"0"
+            },
+            "pn":"pageNo",
+            "ps":"pageSize"
+          },
+          "itemModule":{
+            "type":"custom_component",
+            "name":"RecordStepsItem"
+          }
+        }
+    }
+}
+
+
+### 获取页面数据
+POST {{endpoint}}/data/140 HTTP/1.1
+content-type: application/json
+
+{
+    "type": {
+      "list": [
+          {
+              "recordSteps": [
+                  {
+                    "id": "141",
+                    "text": "2020-12-20 12:12:12",
+                    "descLabel": "执法对象: ",
+                    "desc": "北京天翔文化产业有限公司",
+                    "opinionLabel": "执法地点: ",
+                    "opinion": "北京海淀区清华园街道1101号",
+                    "inactiveIcon": "circle",
+                    "activeIcon": "checked",
+                    "isLink": true,
+                    "path": "/pages/companyHome/my/lawEnforcementDetail"
+                  },
+                  {
+                    "id": "142",
+                    "text": "2020-12-22 16:20:00",
+                    "descLabel": "执法对象: ",
+                    "desc": "北京天翔文化产业有限公司",
+                    "opinionLabel": "执法地点: ",
+                    "opinion": "北京海淀区清华园街道1101号",
+                    "inactiveIcon": "circle",
+                    "activeIcon": "checked",
+                    "isLink": true,
+                    "path": "/pages/companyHome/my/lawEnforcementDetail"
+                  }
+              ]
+          }
+      ],
+      "total": 3
+    }
+  }
+

@@ -4,14 +4,15 @@
 ## 动态列表
 
 ### 保存动态列表
-POST {{endpoint}}/form/140
+POST {{endpoint}}/form/110
 content-type: application/json
 
 {
     "version": "1", 
     "name": "page_home", 
-    "title": "执法记录", 
+    "title": "自查记录", 
     "pageStyle": { }, 
+    "loadApi": "https://api.mock.smallsaas.cn/data?id=200", 
     "request": { }, 
     "response": {
         "data": "data"
@@ -49,8 +50,8 @@ content-type: application/json
     ], 
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=140",
-          "itemNavigation": "/my/selfInspectionDetail?id",
+          "loadApi":"https://api.mock.smallsaas.cn/data?id=110",
+         "itemNavigation": "/companyHome/my/selfInspectionDetail?id",
           "response":{
               "list":"type.list",
               "total":"type.total"
@@ -73,7 +74,7 @@ content-type: application/json
           },
           "itemModule":{
             "type":"custom_component",
-            "name":"RecordStepsItem"
+            "name":"SelfInspectionRecordItem"
           }
         }
     }
@@ -81,40 +82,53 @@ content-type: application/json
 
 
 ### 获取页面数据
-POST {{endpoint}}/data/140 HTTP/1.1
+POST {{endpoint}}/data/110 HTTP/1.1
 content-type: application/json
+
+# {
+#     "record": [
+#       {
+#         "type": "100",
+#         "title": "2020年第一季度",
+#         "startTime": "2020-01-01",
+#         "endTime": "2020-03-31",
+#         "submitTime": "2020-3-25 12:12:12",
+#         "status": "pass"
+#       },
+#       {
+#         "type": "100",
+#         "title": "2020年第一季度",
+#         "startTime": "2020-01-01",
+#         "endTime": "2020-03-31",
+#         "submitTime": "2020-3-25 12:12:12",
+#         "status": "failed"
+#       }
+#     ],
+#     "total": 2
+# }
+
 
 {
     "type": {
       "list": [
-          {
-              "recordSteps": [
-                  {
-                    "id": "141",
-                    "text": "2020-12-20 12:12:12",
-                    "descLabel": "执法对象: ",
-                    "desc": "北京天翔文化产业有限公司",
-                    "opinionLabel": "执法地点: ",
-                    "opinion": "北京海淀区清华园街道1101号",
-                    "inactiveIcon": "circle",
-                    "activeIcon": "checked",
-                    "isLink": true,
-                    "path": "/pages/my/lawEnforcementDetail"
-                  },
-                  {
-                    "id": "142",
-                    "text": "2020-12-22 16:20:00",
-                    "descLabel": "执法对象: ",
-                    "desc": "北京天翔文化产业有限公司",
-                    "opinionLabel": "执法地点: ",
-                    "opinion": "北京海淀区清华园街道1101号",
-                    "inactiveIcon": "circle",
-                    "activeIcon": "checked",
-                    "isLink": true,
-                    "path": "/pages/my/lawEnforcementDetail"
-                  }
-              ]
-          }
+        {
+          "id": "311",
+          "type": "100",
+          "title": "2020年第一季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-03-31",
+          "submitTime": "2020-3-25 12:12:12",
+          "status": "pass"
+        },
+        {
+          "id": "321",
+          "type": "200",
+          "title": "2020年第二季度",
+          "startTime": "2020-01-01",
+          "endTime": "2020-05-31",
+          "submitTime": "2020-3-25 12:12:12",
+          "status": "failed"
+        }
       ],
       "total": 3
     }
