@@ -1,0 +1,169 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+## 动态页面
+
+### 复工
+POST {{endpoint}}/form/11 HTTP/1.1
+content-type: application/json
+
+{
+    "version": "1", 
+    "name": "page_home", 
+    "title": "复工", 
+    "pageStyle": { }, 
+    "request": { }, 
+    "response": {
+        "data": "data"
+    }, 
+    "container": {
+        "padding": "10px", 
+        "margin": "10px", 
+        "fill": "white", 
+        "stroke": {
+            "color": "lightgray", 
+            "lineWidth": "1px"
+        }, 
+        "shadow": {
+            "radius": 5
+        }, 
+        "corner": "8px", 
+        "spacing": "1em"
+    }, 
+    "modules": [
+        {
+          "type": "autoform", 
+          "key": "96afd71a-c8d5-11eb-aca5-0800271e55b7", 
+          "name": "动态表单组件", 
+          "container": { },
+          "binding":{
+            "days": "days",
+            "companyName": "companyName",
+            "peple": "peple",
+            "address": "address",
+            "date": "date",
+            "phone": "phone",
+            "number": "number"
+          }
+        }
+    ],
+    "dataSource":{
+       "api": "https://api.mock.smallsaas.cn/data?id=131"
+    },
+    "moduleData": {
+        "96afd71a-c8d5-11eb-aca5-0800271e55b7": {
+            "formBtns": true, 
+            "fields": [
+                {
+                  "__config__": {
+                    "label": "企业名称",
+                    "showLabel": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem"
+                  },
+                  "readonly": false,
+                  "inputBlock": true,
+                  "placeholder": "请输入企业名称",
+                  "__vModel__": "companyName"
+                },
+
+                {
+                  "__config__": {
+                    "label": "企业地址",
+                    "showLabel": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem"
+                  },
+                  "readonly": false,
+                  "inputBlock": true,
+                  "placeholder": "请输入企业地址",
+                  "__vModel__": "address"
+                },
+                {
+                  "__config__": {
+                    "label": "法定代表人",
+                    "showLabel": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem"
+                  },
+                  "readonly": false,
+                  "inputBlock": true,
+                  "placeholder": "请输入法定代表人",
+                  "__vModel__": "peple"
+                },
+                {
+                  "__config__": {
+                    "label": "进馆人数",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "tag": "el-input",
+                    "tagIcon": "number",
+                    "required": false,
+                    "layout": "colFormItem"
+                  },
+                  "placeholder": "请输入进馆人数",
+                  "readonly": false,
+                  "inputBlock": true,
+                  "__vModel__": "number"
+                }
+            ]
+        }
+    }
+}
+
+### 页面测试数据
+POST  {{endpoint}}/data/131 HTTP/1.1
+content-type: application/json
+
+{
+  "id": "131",
+  "days": 5,
+  "companyName": "北京天翔文化产业有限公司",
+  "peple": "王伟伟",
+  "address": "北京市海淀区文化产业园A8901",
+  "date": "2020年4年1日",
+  "phone": "13666000111",
+  "number": 32
+}
+
+### 页面测试数据2
+
+POST {{endpoint}}/data/132 HTTP/1.1
+content-type: application/json
+
+{
+    "id": "132",
+    "days": 10,
+    "companyName": "北京天翔文化产业有限公司",
+    "peple": "王伟伟",
+    "address": "北京市海淀区文化产业园A8901",
+    "date": "2020年4年1日",
+    "phone": "13666000111",
+    "number": 20
+
+}
+
+### 页面测试数据2
+
+POST {{endpoint}}/data/133 HTTP/1.1
+content-type: application/json
+
+{
+    "id": "132",
+    "days": 10,
+    "companyName": "北京天翔文化产业有限公司",
+    "peple": "王伟伟",
+    "address": "北京市海淀区文化产业园A8901",
+    "date": "2020年4年1日",
+    "phone": "13666000111",
+    "number": 15
+
+}
+
+
