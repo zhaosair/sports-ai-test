@@ -4,15 +4,14 @@
 ## 动态列表
 
 ### 保存动态列表
-POST {{endpoint}}/form/120
+POST {{endpoint}}/form/500
 content-type: application/json
 
 {
     "version": "1", 
     "name": "page_home", 
-    "title": "复工记录", 
+    "title": "我的上报", 
     "pageStyle": { }, 
-    "loadApi": "https://api.mock.smallsaas.cn/data?id=200", 
     "request": { }, 
     "response": {
         "data": "data"
@@ -50,7 +49,7 @@ content-type: application/json
     "moduleData": {
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
           "loadApi":"https://api.mock.smallsaas.cn/data?id=120",
-          "itemNavigation": "/companyHome/my/returnToWorkDetail?id",
+          "itemNavigation": "",
           "response":{
               "list":"type.list",
               "total":"type.total"
@@ -73,7 +72,7 @@ content-type: application/json
           },
           "itemModule":{
             "type":"custom_component",
-            "name":"ReturnToWorkRecordItem"
+            "name":"MyReportItem"
           }
         }
     }
@@ -81,7 +80,7 @@ content-type: application/json
 
 
 ### 获取页面数据
-POST {{endpoint}}/data/120 HTTP/1.1
+POST {{endpoint}}/data/500 HTTP/1.1
 content-type: application/json
 
 {
