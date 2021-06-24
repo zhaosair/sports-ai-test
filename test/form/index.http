@@ -323,7 +323,7 @@ content-type: application/json
         "__vModel__": "field106"
       },
       {
-"__config__": {
+      "__config__": {
           "label": "滑块",
           "tag": "el-slider",
           "tagIcon": "slider",
@@ -349,7 +349,7 @@ content-type: application/json
         "__vModel__": "slider"
       },
       {
-    "__config__": {
+       "__config__": {
           "label": "时间选择",
           "tag": "el-date-picker",
           "tagIcon": "time",

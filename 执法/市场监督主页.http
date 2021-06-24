@@ -111,7 +111,7 @@ content-type: application/json
               {
                 "svg":"search",
                 "title":"企业查询",
-                "nav":"../../pages/index/index",
+                "nav":"../../pages/enforcement/enterpriseDatabase",
                 "container":{
                 "background":"#F6F4EE"
                 }

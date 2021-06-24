@@ -99,7 +99,9 @@ content-type: application/json
         }
     }
 }
-
+###
+GET {{endpoint}}/data?id=311 HTTP/1.1
+content-type: application/json
 
 ### 获取页面数据
 POST {{endpoint}}/data/109 HTTP/1.1

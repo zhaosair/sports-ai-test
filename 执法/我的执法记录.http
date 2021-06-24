@@ -32,32 +32,32 @@ content-type: application/json
     ],
     "moduleData": {
          "46412315-8775-1545-5646-8711645452154": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=2001",
-        "itemNavigation": "/enforcement/enforcementForm?id",
-          "response":{
-              "list":"type.list",
-              "total":"type.total"
-          },
-          "tabConfig":{
-            "field":"type",
-            "show":true
-          },
-          "response":{
-            "list":"type.list",
-            "total":"type.total"
-          },
-          "request":{
-            "fixed":"type",
-            "default":{
-              "type":"0"
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2001",
+            "itemNavigation": "/enforcement/enforcementBook?id=[id]",
+            "response":{
+                "list":"type.list",
+                "total":"type.total"
             },
-            "pn":"pageNo",
-            "ps":"pageSize"
-          },
-          "itemModule":{
-            "type":"custom_component",
-            "name":"avatarStateItem"
-          }
+            "tabConfig":{
+                "field":"type",
+                "show":true
+            },
+            "response":{
+                "list":"type.list",
+                "total":"type.total"
+            },
+            "request":{
+                "fixed":"type",
+                "default":{
+                "type":"0"
+                },
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
+                "type":"custom_component",
+                "name":"avatarStateItem"
+            }
          }
     }
 }

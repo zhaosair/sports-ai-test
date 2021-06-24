@@ -1,0 +1,57 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+### 获取企业数据
+GET {{endpoint}}/data?id=12311 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存企业数据
+POST {{endpoint}}/data/12311 HTTP/1.1
+content-type: application/json
+
+{
+    "list":[
+        {
+            "name":"星视文化传媒有限公司",
+            "address":"青年公社102号楼4层416",
+            "state":{
+                "example":{
+                    "number":"10",
+                    "status":true
+                },
+                "self":{
+                    "number":"21",
+                    "status":true
+                }
+            }
+        },
+        {
+            "name":"北京雅诚安泰商贸有限公司",
+            "address":"朝阳北路102号楼7层715室",
+            "state":{
+                "example":{
+                    "number":"10",
+                    "status":false
+                },
+                "self":{
+                    "number":"21",
+                    "status":false
+                }
+            }
+        },
+        {
+            "name":"北京腾恬优选商贸有限公司",
+            "address":"朝阳北路102号楼青年汇内",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        }
+    ]
+}
