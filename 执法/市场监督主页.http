@@ -3,11 +3,11 @@
 ## 动态页面 
 
 ### 获取市场监督页面数据 
-GET {{endpoint}}/form?id=108
+GET {{endpoint}}/form?id=2000
 
 
 ### 保存动态页面
-POST {{endpoint}}/form/108
+POST {{endpoint}}/form/2000
 content-type: application/json
 
 {  
@@ -95,7 +95,7 @@ content-type: application/json
               {
                 "svg":"record",
                 "title":"执法记录",
-                "nav":"../../pages/test/banner",
+                "nav":"../../pages/enforcement/myEnforcement",
                 "container":{
                 "background":"#EAFAFF"
                 }
