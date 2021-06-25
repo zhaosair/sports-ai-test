@@ -33,7 +33,7 @@ content-type: application/json
     "moduleData": {
          "46412315-8775-1545-5646-8711645452154": {
             "loadApi":"https://api.mock.smallsaas.cn/data?id=2001",
-            "itemNavigation": "/enforcement/enforcementBook?id=[id]",
+            "itemNavigation": "/enforcement/enforcementBook?id=&id",
             "response":{
                 "list":"type.list",
                 "total":"type.total"
@@ -78,7 +78,7 @@ content-type: application/json
   "type":{
       "list":[
           {
-            "id":"2001-1",
+            "id":"2002",
             "img":"https://img.xiaopiu.com/userImages/img547178e902eb90.png",
             "formNumber":"23847563928174",
             "time":"2021-03-14 12:03:56",
