@@ -86,41 +86,83 @@ content-type: application/json
 {
     "type": {
       "list": [
-        { 
+          { 
 						"id": "501", 
 						"year": "2021年",
-						"month": "4月1日",
-            "title": "这里的环境怎么那么差",
-            "status": "toBeVerified",
-            "imgList": [
-              { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
-              { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
-            ],
-            "address": "朝阳北路102号楼7层715室(青年汇大厦)"
+            "record": [
+              {
+                "month": "4月1日",
+                "title": "这里的环境怎么那么差",
+                "status": "toBeVerified",
+                "imgList": [
+                  { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+                  { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+                ],
+                "address": "朝阳北路102号楼7层715室(青年汇大厦)"
+              },
+              {
+                "month": "5月1日",
+                "title": "这里的环境怎么那么差",
+                "status": "verified",
+                "imgList": [
+                  { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+                  { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+                ],
+                "address": "朝阳北路102号楼7层715室(青年汇大厦)"
+              }
+            ]
 					},
-					{
+          { 
 						"id": "502", 
-						"year": "2021年",
-						"month": "5月1日",
-            "title": "这里的环境一般",
-            "status": "verified",
-            "imgList": [
-              { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
-              { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
-            ],
-            "address": "朝阳北路102号楼7层715室(青年汇大厦)"
+						"year": "2020年",
+            "record": [
+              {
+                "month": "7月1日",
+                "title": "这里的环境怎么那么差",
+                "status": "toBeVerified",
+                "imgList": [
+                  { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+                  { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+                ],
+                "address": "朝阳北路102号楼7层715室(青年汇大厦)"
+              },
+              {
+                "month": "6月1日",
+                "title": "这里的环境怎么那么差",
+                "status": "validationFailed",
+                "imgList": [
+                  { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+                  { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+                ],
+                "address": "朝阳北路102号楼7层715室(青年汇大厦)"
+              }
+            ]
 					},
-					{
+          { 
 						"id": "503", 
-						"year": "2021年",
-						"month": "6月1日",
-            "title": "这里的环境怎么那么差",
-            "status": "validationFailed",
-            "imgList": [
-              { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
-              { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
-            ],
-            "address": "朝阳北路102号楼7层715室(青年汇大厦)"
+						"year": "2019年",
+            "record": [
+              {
+                "month": "7月1日",
+                "title": "这里的环境怎么那么差",
+                "status": "validationFailed",
+                "imgList": [
+                  { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+                  { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+                ],
+                "address": "朝阳北路102号楼7层715室(青年汇大厦)"
+              },
+              {
+                "month": "6月1日",
+                "title": "这里的环境怎么那么差",
+                "status": "verified",
+                "imgList": [
+                  { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+                  { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+                ],
+                "address": "朝阳北路102号楼7层715室(青年汇大厦)"
+              }
+            ]
 					}
       ],
       "total": 3

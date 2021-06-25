@@ -42,6 +42,15 @@ content-type: application/json
           }
         },
         {
+          "type": "cell",
+          "name": "标题栏",
+          "key": "e8940746-d595-11eb-bdca-0800271e55b7",
+          "container":{
+          },
+          "binding":{
+          }
+        },
+        {
           "type": "autolist",
           "tips": "动态列表组件",
           "binding":
@@ -61,6 +70,13 @@ content-type: application/json
     },
     "moduleData": {
         "851344s-ad44-55ea-ca11-4225534d52b7":{
+        },
+        "e8940746-d595-11eb-bdca-0800271e55b7":{
+          "param":{
+            "title": "场馆列表",
+            "content": "更多>>",
+            "path": ""
+          }
         },
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
           "itemNavigation": "/companyHome/my/returnToWorkDetail?id",

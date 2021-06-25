@@ -42,6 +42,16 @@ content-type: application/json
           }
         },
         {
+          "type": "cell",
+          "name": "标题栏",
+          "key": "e8940746-d595-11eb-bdca-0800271e55b7",
+          "container":{
+          },
+          "binding":{
+            "days":"days"
+          }
+        },
+        {
           "type": "autolist",
           "tips": "动态列表组件",
           "binding":
@@ -61,6 +71,14 @@ content-type: application/json
     },
     "moduleData": {
         "851344s-ad44-55ea-ca11-4225534d52b7":{
+        },
+        "e8940746-d595-11eb-bdca-0800271e55b7":{
+          "param":{
+            "title": "离自查上报还剩0天",
+            "content": "开始填报",
+            "textColor": "#008EF6",
+            "path": "/pages/company/check"
+          }
         },
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
           "itemNavigation": "/companyHome/my/returnToWorkDetail?id",
@@ -91,15 +109,13 @@ content-type: application/json
         }
     }
 }
-###
-GET {{endpoint}}/data?id=311 HTTP/1.1
-content-type: application/json
 
 ### 获取页面数据
 POST {{endpoint}}/data/109 HTTP/1.1
 content-type: application/json
 
 {
+    "days": 5,
     "applyList":{
         "list":[
           {

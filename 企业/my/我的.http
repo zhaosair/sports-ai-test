@@ -10,5 +10,6 @@ content-type: application/json
     "userName": "张三",
     "enterpriseNumber": "Ab263549898",
     "domainName": "hajdshdjAb263549898",
-    "job": "员工"
+    "job": "员工",
+    "type": "市民"
 }
