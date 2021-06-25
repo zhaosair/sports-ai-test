@@ -45,11 +45,9 @@ content-type: application/json
             }
         }
     ],
-    "dataSource":{
-       "api": "https://api.mock.smallsaas.cn/data?id=109"
-    },
     "moduleData":{
         "autoform-1524-5564-518a-j646d1222222":{
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2002",
             "fields": [
                     {
                         "__config__":{
@@ -212,4 +210,22 @@ content-type: application/json
             ]
         }
     }
+}
+
+
+### 获取表单数据
+GET {{endpoint}}/data?id=2002 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存表单数据
+POST {{endpoint}}/data/2002 HTTP/1.1
+content-type: application/json
+
+{
+    "enf_number":"23847563928174",
+    "enf_time":"2021-03-14 12:03:56",
+    "enf_company":"北京市海淀区体育局",
+    "enf_department":"市场管理科",
+    "enf_title":"对温泉阳光（北京）国际健身俱乐部有限公司在营业期间未建立安全生产例会记录的行政处罚案"
 }
