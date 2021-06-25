@@ -67,7 +67,7 @@ content-type: application/json
         }
     ],
     "dataSource":{
-       "api": "https://api.mock.smallsaas.cn/data?id=311"
+       "api": "https://api.mock.smallsaas.cn/data?"
     },
     "moduleData": {
         "96afd71a-c8d5-11eb-aca5-0800271e55b7": {

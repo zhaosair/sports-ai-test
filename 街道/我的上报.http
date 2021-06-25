@@ -48,11 +48,11 @@ content-type: application/json
     ], 
     "moduleData": {
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=120",
+          "loadApi":"https://api.mock.smallsaas.cn/data?id=500",
           "itemNavigation": "",
           "response":{
-              "list":"type.list",
-              "total":"type.total"
+              "list":"reportList.list",
+              "total":"reportList.total"
           },
           "tabConfig":{
             "field":"type",
@@ -87,40 +87,40 @@ content-type: application/json
     "type": {
       "list": [
         { 
-						"id": "131", 
+						"id": "501", 
 						"year": "2021年",
-						"startTime": "4月1日",
-						"endTime": "4月5日",
-						"cellList":[
-							{"id": "121", "title": "4月1日"},
-							{"title": "4月2日"},
-							{"title": "4月3日"},
-							{"title": "4月4日"}
-						]
+						"month": "4月1日",
+            "title": "这里的环境怎么那么差",
+            "status": "toBeVerified",
+            "imgList": [
+              { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+              { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+            ],
+            "address": "朝阳北路102号楼7层715室(青年汇大厦)"
 					},
 					{
-						"id": "132", 
+						"id": "502", 
 						"year": "2021年",
-						"startTime": "5月1日",
-						"endTime": "5月5日",
-						"cellList":[
-							{"id": "122", "title": "5月1日" },
-							{"title": "5月2日"},
-							{"title": "5月3日"},
-							{"title": "5月4日"},
-							{"title": "5月5日"}
-						]
+						"month": "5月1日",
+            "title": "这里的环境一般",
+            "status": "verified",
+            "imgList": [
+              { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+              { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+            ],
+            "address": "朝阳北路102号楼7层715室(青年汇大厦)"
 					},
 					{
-						"id": "133", 
+						"id": "503", 
 						"year": "2021年",
-						"startTime": "6月1日",
-						"endTime": "6月3日",
-						"cellList":[
-							{"id": "123", "title": "6月1日"},
-							{"title": "6月2日"},
-							{"title": "6月3日"}
-						]
+						"month": "6月1日",
+            "title": "这里的环境怎么那么差",
+            "status": "validationFailed",
+            "imgList": [
+              { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+              { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+            ],
+            "address": "朝阳北路102号楼7层715室(青年汇大厦)"
 					}
       ],
       "total": 3

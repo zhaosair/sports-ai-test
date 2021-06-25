@@ -12,7 +12,6 @@ content-type: application/json
     "name": "page_home", 
     "title": "自查记录", 
     "pageStyle": { }, 
-    "loadApi": "https://api.mock.smallsaas.cn/data?id=200", 
     "request": { }, 
     "response": {
         "data": "data"
