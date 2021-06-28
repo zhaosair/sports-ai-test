@@ -1,0 +1,11 @@
+
+Swagger Doc
+# https://rt.zbsoft.top/admin/swagger-ui.html
+
+Our Reference
+# https://github.com/kequandian/docs.api.smallsaas.cn/blob/master/%E7%99%BB%E5%BD%95%E6%B3%A8%E5%86%8C%E6%8E%A5%E5%8F%A3%E8%AF%B4%E6%98%8E.md
+
+@endpoint=https://rt.zbsoft.top
+
+### 用户登录
+GET {{endpoint}}/user/1
