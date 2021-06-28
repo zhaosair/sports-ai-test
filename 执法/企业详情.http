@@ -19,7 +19,7 @@ content-type: application/json
     "title":"企业详情",
     "pageStyle":{
         "padding":"10px",
-        "background":"#E1E1E1"
+        "background":"#EFEFEF"
     },
     "loadApi":"",
     "request":{
