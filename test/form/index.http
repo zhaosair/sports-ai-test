@@ -1,35 +1,43 @@
 @endpoint=https://api.mock.smallsaas.cn
 
-### 原测试数据
-POST http://47.119.113.172:8380/api.page.design.page/loadPageInfo
-content-type: application/json
 
-{
-    "id": 75
-}
-
-
-
-## 动态表单
-
-### 获取动态表单数据
-GET {{endpoint}}/form?id=10 HTTP/1.1
+###
+GET {{endpoint}}/form?id=1019 HTTP/1.1
 # User-Agent: rest-client
 
 ### 保存动态表单数据
-POST {{endpoint}}/form/10 HTTP/1.1
+
+
+POST {{endpoint}}/form/1019 HTTP/1.1
 content-type: application/json
 
 {
     "fields": [
+        {
+            "__config__":{
+            "label": "",
+            "labelWidth": null,
+            "showLabel": true,
+            "tag": "el-input",
+            "tagIcon": "input",
+            "defaultValue": "输入型组件",
+            "required": false,
+            "layout": "colFormItem",
+            "regList": [],
+            "formId": 101,
+            "renderKey": 1621415022993
+            },
+            "disabled": true,
+            "__vModel__": "Inputtitle"
+        },
       {
         "__config__": {
-          "label": "账号",
+          "label": "单行文本",
           "labelWidth": null,
           "showLabel": true,
           "tag": "el-input",
           "tagIcon": "input",
-          "defaultValue": "admin",
+          "defaultValue": "这是单行文本",
           "required": true,
           "layout": "colFormItem",
           "regList": [],
@@ -40,7 +48,7 @@ content-type: application/json
           "prepend": "",
           "append": ""
         },
-        "placeholder": "请输入账号",
+        "placeholder": "请输入单行文本",
         "style": {
           "width": "100%"
         },
@@ -51,7 +59,28 @@ content-type: application/json
         "show-word-limit": false,
         "readonly": false,
         "disabled": false,
-        "__vModel__": "account"
+        "__vModel__": "input"
+      },
+    {
+         "__config__": {
+          "label": "多行文本",
+          "autosize":5,
+          "showLabel": true,
+          "labelWidth": null,
+          "defaultValue": "这是多行文本",
+          "tag": "el-input",
+          "tagIcon": "textarea",
+          "layout": "colFormItem",
+          "required": true,
+          "regList": [],
+          "formId": 103,
+          "renderKey": 1621415255861
+        },
+        "readonly":false,
+        "clearable":true,
+        "maxlength":"100",
+        "placeholder":"请输入多行文本",
+        "__vModel__":"textarea"
       },
       {
         "__config__": {
@@ -60,6 +89,7 @@ content-type: application/json
           "labelWidth": null,
           "tag": "el-input",
           "tagIcon": "password",
+          "defaultValue":"123456",
           "layout": "colFormItem",
           "required": true,
           "regList": [
@@ -87,12 +117,48 @@ content-type: application/json
         "show-word-limit": false,
         "readonly": false,
         "disabled": false,
-        "__vModel__": "password"
+        "__vModel__": "InputPassword"
       },
+
+        {
+        "__config__": {
+          "label": "计数器",
+          "showLabel": true,
+          "labelWidth": null,
+          "defaultValue": 5,
+          "tag": "el-input-number",
+          "tagIcon": "number",
+          "layout": "colFormItem",
+          "required": true,
+          "regList": [],
+          "formId": 103,
+          "renderKey": 1621415255861
+        },
+        "placeholder":"多行文本",
+        "__vModel__":"number"
+        },
+        {
+            "__config__":{
+            "label": "",
+            "labelWidth": null,
+            "showLabel": true,
+            "tag": "el-input",
+            "tagIcon": "input",
+            "defaultValue": "选择型组件",
+            "required": false,
+            "layout": "colFormItem",
+            "regList": [],
+            "formId": 101,
+            "renderKey": 1621415022993
+            },
+            "disabled": true,
+            "__vModel__": "Selecttitle"
+        },
       {
         "__config__": {
-          "label": "性别",
+          "label": "下拉选择",
           "showLabel": true,
+          "defaultValue":1000,
           "labelWidth": null,
           "tag": "el-select",
           "tagIcon": "select",
@@ -104,17 +170,21 @@ content-type: application/json
         },
         "__slot__": {
           "options": [
+              {
+                  "label":"请选择选项",
+                  "value": 1000
+              },
             {
-              "label": "男",
+              "label": "选项1",
               "value": 1
             },
             {
-              "label": "女",
+              "label": "选项2",
               "value": 2
             }
           ]
         },
-        "placeholder": "请选择性别",
+        "placeholder": "请选择选项",
         "style": {
           "width": "100%"
         },
@@ -122,7 +192,42 @@ content-type: application/json
         "disabled": false,
         "filterable": false,
         "multiple": false,
-        "__vModel__": "sex"
+        "__vModel__": "select"
+      },
+      {
+        "__config__": {
+          "label": "级联选择(不支持)",
+          "showLabel": true,
+          "labelWidth": null,
+          "tag": "el-cascader",
+          "tagIcon": "cascader",
+          "layout": "colFormItem",
+          "required": true,
+          "regList": [],
+          "formId": 103,
+          "renderKey": 1621415255861
+        },
+        "__slot__": {
+          "options": [
+            {
+              "label": "选项1",
+              "value": 1
+            },
+            {
+              "label": "选项2",
+              "value": 2
+            }
+          ]
+        },
+        "placeholder": "请选择选项",
+        "style": {
+          "width": "100%"
+        },
+        "clearable": true,
+        "disabled": false,
+        "filterable": false,
+        "multiple": false,
+        "__vModel__": "select"
       },
       {
         "__config__": {
@@ -218,6 +323,56 @@ content-type: application/json
         "__vModel__": "field106"
       },
       {
+      "__config__": {
+          "label": "滑块",
+          "tag": "el-slider",
+          "tagIcon": "slider",
+          "defaultValue": 50,
+          "showLabel": true,
+          "labelWidth": null,
+          "layout": "colFormItem",
+          "required": true,
+          "regList": [],
+          "formId": 109,
+          "renderKey": 1621415374360
+        },
+        "placeholder": "请选择滑块",
+        "type": "date",
+        "style": {
+          "width": "100%"
+        },
+        "disabled": false,
+        "clearable": true,
+        "format": "yyyy-MM-dd",
+        "value-format": "yyyy-MM-dd",
+        "readonly": false,
+        "__vModel__": "slider"
+      },
+      {
+       "__config__": {
+          "label": "时间选择",
+          "tag": "el-date-picker",
+          "tagIcon": "time",
+          "defaultValue": null,
+          "showLabel": true,
+          "labelWidth": null,
+          "layout": "colFormItem",
+          "required": true,
+          "regList": [],
+          "formId": 109,
+          "renderKey": 1621415374360
+        },
+        "placeholder": "请选择时间选择",
+        "type": "date",
+        "style": {
+          "width": "100%"
+        },
+        "disabled": false,
+        "clearable": true,
+        "readonly": false,
+        "__vModel__": "el-time-picker-time"
+      },
+      {
         "__config__": {
           "label": "日期选择",
           "tag": "el-date-picker",
@@ -244,13 +399,64 @@ content-type: application/json
         "__vModel__": "field109"
       },
       {
+           "__config__": {
+          "label": "评分",
+          "showLabel": true,
+          "labelWidth": null,
+          "defaultValue": 3,
+          "tag": "el-rate",
+          "tagIcon": "rate",
+          "layout": "colFormItem",
+          "required": true,
+          "regList": [],
+          "formId": 103,
+          "renderKey": 1621415255861
+        },
+        "placeholder":"评分",
+        "__vModel__":"rate"
+      },
+      {
+        "__config__": {
+          "label": "颜色选择(不支持)",
+          "showLabel": true,
+          "labelWidth": null,
+          "defaultValue": "#1231ab",
+          "tag": "el-color-picker",
+          "tagIcon": "color",
+          "layout": "colFormItem",
+          "required": true,
+          "regList": [],
+          "formId": 103,
+          "renderKey": 1621415255861
+        },
+        "placeholder":"颜色选择",
+        "__vModel__":"rate"
+      },
+      {
+        "__config__": {
+          "label": "上传",
+          "showLabel": true,
+          "labelWidth": null,
+          "defaultValue": "",
+          "tag": "el-upload",
+          "tagIcon": "upload",
+          "layout": "colFormItem",
+          "required": true,
+          "regList": [],
+          "formId": 103,
+          "renderKey": 1621415255861
+        },
+        "placeholder":"上传",
+        "__vModel__":"upload"
+      },
+      {
         "__config__": {
           "layout": "rowFormItem",
           "tagIcon": "row",
           "layoutTree": true,
           "formId": 112,
           "renderKey": 1621415404383,
-          "componentName": "row112",
+          "componentName": "rowFormItem",
           "children": [
             {
               "__config__": {
@@ -328,279 +534,3 @@ content-type: application/json
     "formBtns": true,
     "unFocusedComponentBorder": false
   }
-
-
-## 原型页面
-
-### 企业自查入江口
-
-GET {{endpoint}}/form?id=10 HTTP/1.1
-content-type: application/json
-###
-
-POST {{endpoint}}/form/10 HTTP/1.1
-content-type: application/json
-
-{
-    "fields": [
-      {
-        "__config__": {
-          "layout": "rowFormItem",
-          "tagIcon": "row",
-          "componentName": "自查事项",
-          "children": [
-            {
-              "__config__": {
-                "label": "自查项 #1",
-                "showLabel": true,
-                "tag": "el-input",
-                "tagIcon": "input",
-                "required": false,
-                "layout": "colFormItem"
-              },
-              "readonly": false,
-              "inputBlock": true,
-              "placeholder": "请输入自查说明",
-              "__vModel__": "check1"
-            },
-            {
-              "__config__": {
-                "label": "自查项 #2",
-                "labelWidth": null,
-                "showLabel": true,
-                "tag": "el-radio-group",
-                "tagIcon": "input",
-                "required": false,
-                "layout": "colFormItem"
-              },
-              "__slot__": {
-                "options":[
-                  { "label": "选项 #1", "value": "1" },
-                  { "label": "选项 #1", "value": "2" }
-                ]
-              },
-              "readonly": false,
-              "inputBlock": true,
-              "placeholder": "请选择自查项 #2",
-              "__vModel__": "check2"
-            },
-            {
-              "__config__": {
-                "label": "自查项 #3",
-                "labelWidth": null,
-                "showLabel": true,
-                "tag": "el-checkbox-group",
-                "tagIcon": "input",
-                "required": false,
-                "layout": "colFormItem"
-              },
-              "__slot__": {
-                "options":[
-                  { "label": "是", "value": "1" },
-                  { "label": "否", "value": "2" },
-                  { "label": "不知道", "value": "3" },
-                  { "label": "技术咨询", "value": "4" }
-                ]
-              },
-              "readonly": false,
-              "inputBlock": true,
-              "__vModel__": "check3"
-            },
-            {
-              "__config__": {
-                "label": "自查项 #4",
-                "labelWidth": null,
-                "showLabel": true,
-                "tag": "el-input",
-                "tagIcon": "input",
-                "required": false,
-                "layout": "colFormItem"
-              },
-              "placeholder": "请输入自查项4",
-              "readonly": false,
-              "inputBlock": true,
-              "__vModel__": "date"
-            }
-          ]
-        }
-      }
-
-    ],
-    "formRef": "elForm",
-    "formModel": "formData",
-    "size": "medium",
-    "labelPosition": "left",
-    "labelWidth": 100,
-    "formRules": "rules",
-    "gutter": 0,
-    "disabled": false,
-    "formBtns": true,
-    "unFocusedComponentBorder": false
-  }
-
-
-
-
-### 复工
-
-POST {{endpoint}}/form/10 HTTP/1.1
-content-type: application/json
-
-{
-    "fields": [
-      {
-        "__config__": {
-          "layout": "rowFormItem",
-          "tagIcon": "row",
-          "layoutTree": true,
-          "formId": 112,
-          "renderKey": 1621415404383,
-          "componentName": "我的",
-          "children": [
-            {
-							"__config__": {
-								"label": "企业名称",
-								"showLabel": true,
-								"tag": "el-input",
-								"tagIcon": "input",
-								"required": false,
-								"layout": "colFormItem"
-							},
-							"readonly": false,
-							"inputBlock": true,
-							"placeholder": "请输入企业名称",
-							"__vModel__": "field1"
-						},
-
-						{
-							"__config__": {
-								"label": "企业地址",
-								"showLabel": true,
-								"tag": "el-input",
-								"tagIcon": "input",
-								"required": false,
-								"layout": "colFormItem"
-							},
-							"readonly": false,
-							"inputBlock": true,
-							"placeholder": "请输入企业地址",
-							"__vModel__": "field2"
-						},
-						{
-							"__config__": {
-								"label": "法定代表人",
-								"showLabel": true,
-								"tag": "el-input",
-								"tagIcon": "input",
-								"required": false,
-								"layout": "colFormItem"
-							},
-							"readonly": false,
-							"inputBlock": true,
-							"placeholder": "请输入法定代表人",
-							"__vModel__": "field2"
-						},
-						{
-							"__config__": {
-								"label": "进馆人数",
-								"labelWidth": null,
-								"showLabel": true,
-								"tag": "el-input",
-								"tagIcon": "number",
-								"required": false,
-								"layout": "colFormItem"
-							},
-							"placeholder": "请输入进馆人数",
-							"readonly": false,
-							"inputBlock": true,
-							"__vModel__": "field3"
-						}
-          ]
-        },
-        "type": "default",
-        "justify": "start",
-        "align": "top"
-      }
-    ],
-    "formRef": "elForm",
-    "formModel": "formData",
-    "size": "medium",
-    "labelPosition": "left",
-    "labelWidth": 100,
-    "formRules": "rules",
-    "gutter": 0,
-    "disabled": false,
-    "formBtns": false,
-    "unFocusedComponentBorder": false
-  }
-
-
-
-
-
-
-
-## 动态列表 
-
-### 获取动态列表设计数据 
-GET {{endpoint}}/form?id=101
-
-
-### 保存动态列表
-POST {{endpoint}}/form/101
-content-type: application/json
-
-{
-    "loadApi": "https://www.fastmock.site/mock/96df9e8fb08bfe844b3e565f5a3206fe/test/api/pub/getList",
-    "itemNavigation": "/articleDetail/index?id=&title",
-    "tabConfig":
-     {
-       "field":"type",
-       "show": true,
-       "list":[
-          {
-              "name":"全部",
-              "value":"0"
-          },
-          {
-              "name":"时尚搭配",
-              "value":"100"
-          },
-          {
-             "name":"行业咨询",
-             "value":"200"
-          }
-       ]
-    },
-    "response":
-    {
-        "list":"type.list",
-        "total":"type.total"
-    },
-    "request":
-    {
-       "fixed":"type",
-       "default":
-        {
-           "type":"0"
-        },
-       "pn":"pageNo",
-       "ps":"pageSize"
-    },
-    "modules":
-    [
-        {
-            "type":"custom_component",
-            "name":"自定义组件",
-            "key":"5243e64e-40ca-8b50-cdce-1623039409345"
-        }
-    ],
-    "moduleData":
-    {
-        "5243e64e-40ca-8b50-cdce-1623039409345":
-        {
-            "id":"5243e64e-40ca-8b50-cdce-1623039409345",
-            "name":"ArticleItem"
-        }
-    }
-}

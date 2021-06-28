@@ -1,0 +1,231 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+## 动态列表主页
+# 跳转路由
+# 前往各个子项
+# 本页只提供路由跳转功能
+### 获取列表主页数据
+GET {{endpoint}}/form?id=2002
+content-type: application/json
+
+
+### 保存列表主页数据
+POST {{endpoint}}/form/2002
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement_Book",
+    "title":"执法卷宗",
+    "pageStyle":{
+        "padding":"5px"
+    },
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"autoform-1524-5564-518a-j646d1222222",
+            "name":"",
+            "container":{
+            }
+        },
+        {
+            "type":"navlist",
+            "key":"65494216-4562-4561-4656-5464ads51655",
+            "name":"相关内容索引",
+            "container":{
+                "grid-template-columns":"repeat(1, 100%)"
+            }
+        }
+    ],
+    "moduleData":{
+        "autoform-1524-5564-518a-j646d1222222":{
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2002",
+            "fields": [
+                    {
+                        "__config__":{
+                        "label": "执法单号",
+                        "labelWidth": null,
+                        "showLabel": true,
+                        "tag": "el-input",
+                        "tagIcon": "input",
+                        "defaultValue": "23847563928174",
+                        "required": false,
+                        "layout": "colFormItem",
+                        "regList": [],
+                        "formId": 101,
+                        "renderKey": 1621415022993
+                        },
+                        "readonly": true,
+                        "__vModel__": "enf_number"
+                    },
+                    {
+                        "__config__":{
+                        "label": "执法时间",
+                        "labelWidth": null,
+                        "showLabel": true,
+                        "tag": "el-input",
+                        "tagIcon": "input",
+                        "defaultValue": "2021-03-14 12:03:56",
+                        "required": false,
+                        "layout": "colFormItem",
+                        "regList": [],
+                        "formId": 101,
+                        "renderKey": 1621415022993
+                        },
+                        "readonly": true,
+                        "__vModel__": "enf_time"
+                    },
+                    {
+                        "__config__":{
+                        "label": "执法单位",
+                        "labelWidth": null,
+                        "showLabel": true,
+                        "tag": "el-input",
+                        "tagIcon": "input",
+                        "defaultValue": "北京市海淀区体育局",
+                        "required": false,
+                        "layout": "colFormItem",
+                        "regList": [],
+                        "formId": 101,
+                        "renderKey": 1621415022993
+                        },
+                        "readonly": true,
+                        "__vModel__": "enf_company"
+                    },
+                    {
+                        "__config__":{
+                        "label": "执法科室",
+                        "labelWidth": null,
+                        "showLabel": true,
+                        "tag": "el-input",
+                        "tagIcon": "input",
+                        "defaultValue": "市场管理科",
+                        "required": false,
+                        "layout": "colFormItem",
+                        "regList": [],
+                        "formId": 101,
+                        "renderKey": 1621415022993
+                        },
+                        "readonly": true,
+                        "__vModel__": "enf_department"
+                    },
+                    {
+                        "__config__":{
+                        "label": "执法标题",
+                        "labelWidth": null,
+                        "showLabel": true,
+                        "tag": "el-input",
+                        "tagIcon": "textarea",
+                        "defaultValue": "对温泉阳光（北京）国际健身俱乐部有限公司在营业期间未建立安全生产例会记录的行政处罚案",
+                        "required": false,
+                        "layout": "colFormItem",
+                        "regList": [],
+                        "formId": 101,
+                        "renderKey": 1621415022993
+                        },
+                        "readonly": true,
+                        "__vModel__": "enf_title"
+                    }
+            ],
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "left",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 0,
+            "disabled": false,
+            "formBtns": false,
+            "unFocusedComponentBorder": false
+        },
+        "65494216-4562-4561-4656-5464ads51655":{
+            "itemModule":{
+                "name":"cardListItem"
+            },
+            "navList":[
+                {
+                    "title":"行政处罚决定书",
+                    "nav":"/"
+                },
+                {
+                    "title":"行政处罚决定书送达回证",
+                    "nav":"/"
+                },
+                {
+                    "title":"现场检查笔录",
+                    "nav":"/"
+                },
+                {
+                    "title":"谈话通知书（存根）",
+                    "nav":"/"
+                },
+                {
+                    "title":"立案审批表",
+                    "nav":"/"
+                },
+                {
+                    "title":"询问笔录",
+                    "nav":"/"
+                },
+                {
+                    "title":"授权委托书（法人委托）",
+                    "nav":"/"
+                },
+                {
+                    "title":"法人身份证复印件",
+                    "nav":"/"
+                },
+                {
+                    "title":"行政处罚事先告知书",
+                    "nav":"/"
+                },
+                {
+                    "title":"行政处罚事先告知书送达回证",
+                    "nav":"/"
+                },
+                {
+                    "title":"案件处理呈批表",
+                    "nav":"/"
+                },
+                {
+                    "title":"行政处罚缴款书（回执）",
+                    "nav":"/"
+                },
+                {
+                    "title":"复查现场检查笔录",
+                    "nav":"/"
+                },
+                {
+                    "title":"结案报告审批表",
+                    "nav":"/"
+                }
+            ]
+        }
+    }
+}
+
+
+### 获取表单数据
+GET {{endpoint}}/data?id=2002 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存表单数据
+POST {{endpoint}}/data/2002 HTTP/1.1
+content-type: application/json
+
+{
+    "enf_number":"23847563928174",
+    "enf_time":"2021-03-14 12:03:56",
+    "enf_company":"北京市海淀区体育局",
+    "enf_department":"市场管理科",
+    "enf_title":"对温泉阳光（北京）国际健身俱乐部有限公司在营业期间未建立安全生产例会记录的行政处罚案"
+}

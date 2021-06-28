@@ -1,0 +1,99 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 动态页面 
+
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=2010
+
+
+### 保存动态页面数据
+POST {{endpoint}}/form/2010
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "my_Search",
+    "title": "自查记录",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"autolist",
+        "name":"自查记录",
+        "key":"autolist-5475-1445-5926-14642145452154",
+        "binding": {
+          "list": "list",
+          "total": "total"
+        },
+        "bindingTarget": "data"
+      }
+    ],
+    "moduleData": {
+         "autolist-5475-1445-5926-14642145452154": {
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2010",
+            "itemNavigation": "/enforcement/more/MySearchTime/MySearchTime?id",
+            "response":{
+                "list":"type.list",
+                "total":"type.total"
+            },
+            "tabConfig":{
+                "field":"type",
+                "show":true
+            },
+            "response":{
+                "list":"type.list",
+                "total":"type.total"
+            },
+            "request":{
+                "fixed":"type",
+                "default":{
+                "type":"0"
+                },
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
+                "type":"custom_component",
+                "name":"recordItem"
+            }
+         }
+    }
+}
+
+
+## 列表数据
+
+### 获取列表数据
+GET {{endpoint}}/data?id=2010 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存列表数据
+POST {{endpoint}}/data/2010 HTTP/1.1
+content-type: application/json
+
+{
+  "type":{
+      "list":[
+            {
+                "id":"2011",
+                "title":"2021年6月9日",
+                "state":""
+            },
+            {
+                "id":"2011",
+                "title":"2021年6月9日",
+                "state":""
+            }
+        ],
+        "total": 2
+  }
+}
+

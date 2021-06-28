@@ -3,17 +3,17 @@
 ## 动态页面 
 
 ### 获取市场监督页面数据 
-GET {{endpoint}}/form?id=108
+GET {{endpoint}}/form?id=1030
 
 
-### 保存动态页面
-POST {{endpoint}}/form/108
+### 保存动态页面数据
+POST {{endpoint}}/form/1030
 content-type: application/json
 
 {  
     "version": "1",
     "name": "page_home",
-    "title": "市场监督",
+    "title": "自动页面实例展示",
     "pageStyle": {},
     "loadApi": "",
     "response": {
@@ -49,7 +49,7 @@ content-type: application/json
         "name":"待办",
         "key":"e59992z8-bb88-a788-9922-1623488775885",
         "container":{
-          "height":"195px"
+          "height":"265px"
         }
       },
       {
@@ -83,6 +83,9 @@ content-type: application/json
             ]
         },
         "y59992z8-bb88-a788-9922-1623488775885": {
+            "itemModule":{
+              "name":"cardListItem"
+           },
             "navList": [
               {
                 "svg":"map",
@@ -132,11 +135,7 @@ content-type: application/json
                 "background":"#F8FDE9"
                 }
               }
-            ],
-            "itemModule":
-            {
-              "name":"cardListItem"
-           }
+            ]
         },
          "e59992z8-bb88-a788-9922-1623488775885": {
           "loadApi":"https://api.mock.smallsaas.cn/data?id=201",
@@ -170,7 +169,7 @@ content-type: application/json
             "navList": [
                 {
                     "title": "安全出口",
-                    "nav": "test/cardtest",
+                    "nav": "/?id=1",
                     "svg":{
                       "icon":"export",
                       "color":"#43CF7C"
@@ -269,13 +268,13 @@ content-type: application/json
 
 ## 列表数据
 
-### 获取动态页面数据
-GET {{endpoint}}/data?id=201 HTTP/1.1
+### 获取列表数据
+GET {{endpoint}}/data?id=1030 HTTP/1.1
 content-type: application/json
 User-Agent: rest-client
 
-### 保存动态页面数据
-POST {{endpoint}}/data/201 HTTP/1.1
+### 保存列表数据
+POST {{endpoint}}/data/1030 HTTP/1.1
 content-type: application/json
 
 {

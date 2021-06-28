@@ -1,0 +1,132 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+## 动态列表
+
+### 保存动态列表
+POST {{endpoint}}/form/510
+content-type: application/json
+
+{
+    "version": "1", 
+    "name": "page_home", 
+    "title": "街道用户信息上报", 
+    "pageStyle": { }, 
+    "request": { }, 
+    "response": {
+        "data": "data"
+    }, 
+    "container": {
+        "padding": "10px", 
+        "margin": "10px", 
+        "fill": "white", 
+        "stroke": {
+            "color": "lightgray", 
+            "lineWidth": "1px"
+        }, 
+        "shadow": {
+            "radius": 5
+        }, 
+        "corner": "8px", 
+        "spacing": "1em"
+    }, 
+    "modules": [
+        {
+          "type": "autolist",
+          "tips": "动态列表组件",
+          "binding":
+          {
+            "list":"list",
+            "total":"total"
+          },
+          "bindingTarget": "data",
+          "key":"a1417b8a-d351-11eb-bb26-0800271e55b7",
+          "container":{
+            "height":""
+          }
+        }
+    ], 
+    "moduleData": {
+        "a1417b8a-d351-11eb-bb26-0800271e55b7": {
+          "loadApi":"https://api.mock.smallsaas.cn/data?id=510",
+          "itemNavigation": "",
+          "response":{
+              "list":"reportList.list",
+              "total":"reportList.total"
+          },
+          "tabConfig":{
+            "field":"type",
+            "show":true
+          },
+          "response":{
+            "list":"type.list",
+            "total":"type.total"
+          },
+          "request":{
+            "fixed":"type",
+            "default":{
+              "type":"0"
+            },
+            "pn":"pageNo",
+            "ps":"pageSize"
+          },
+          "itemModule":{
+            "type":"custom_component",
+            "name":"StreetUserReportItem"
+          }
+        }
+    }
+}
+
+
+### 获取页面数据
+POST {{endpoint}}/data/510 HTTP/1.1
+content-type: application/json
+
+{
+    "type": {
+      "list": [
+          { 
+						"id": "501", 
+						"name": " 张三",
+            "status": "toBeVerified",
+            "avatar": "https://img.xiaopiu.com/userImages/img215969455ab0.jpg",
+            "title": "场馆已关闭",
+            "imgList": [
+              { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+              { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+            ],
+            "address": "朝阳北路102号楼7层715室(青年汇大厦)",
+            "data": "2020-12-12 12:12:12"
+					},
+          { 
+						"id": "502", 
+						"name": " 李四",
+            "status": "verified",
+            "avatar": "",
+            "title": "场馆已经多天没有营业了， 怎么回事？",
+            "imgList": [
+              { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+              { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+            ],
+            "address": "朝阳北路102号楼7层715室(青年汇大厦)",
+            "data": "2020-12-12 12:12:12"
+					},
+          { 
+						"id": "503", 
+						"name": " 王五",
+            "status": "validationFailed",
+            "avatar": "https://img.xiaopiu.com/userImages/img215969455ab0.jpg",
+            "title": "场馆门口垃圾未按要求清理干净，影响生态环境",
+            "imgList": [
+              { "id": 1, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"},
+              { "id": 2, "url": "https://img01.yzcdn.cn/vant/cat.jpeg"}
+            ],
+            "address": "朝阳北路102号楼7层715室(青年汇大厦)",
+            "data": "2020-12-12 12:12:12"
+					}
+      ],
+      "total": 3
+    }
+  }
+
