@@ -10,3 +10,4 @@ Content-Type: application/json; charset=utf-8
     "video_url" : "./video1.mp4",
     "frame_position" : "00:00:02"
 }
+

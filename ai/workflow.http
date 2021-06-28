@@ -1,0 +1,21 @@
+
+@endpoint=https://api.uat.smallsaas.cn
+//@endpoint=http://workflow.f.gateway.host.smallsaas.cn:81
+
+### Test Code
+POST {{endpoint}}/api/code
+Content-Type: application/json
+
+{
+  "autoNumber": 0,
+  "code": "string",
+  "codeRule": "string",
+  "transferInfo": "string"
+}
+
+
+### 发起工作流
+
+
+### 查询工作流步聚
+
