@@ -9,3 +9,15 @@ Our Reference
 
 ### 用户登录
 GET {{endpoint}}/user/1
+
+
+### 用户授权
+POST {{endpoint}}/auth/oauth/token
+
+{
+    "auth": "033qZg000Q9IXL1l2A100Wi82N3qZg0q",
+    "from": 2,
+    "iv": "MH5z8H4QicJ28U/yUxlzNg==",
+    "encryptedData": "nu9r7cwmF5/ySzi7zB/r4Vx3ZBb/n2MyoIz3zjR9gqsnlj1V7YYrTlPdYCN3nOyrmyDcCnJYYAl7VAamk4cCRyBIaHe1lr21lTwWsxB3YdXOBxmEd2JQ9nYXOop2Q4lOQcT+vqdlrLohWE9IB5rPi59jPg0bBNf4X7XC1SROdJ+A+osLtwLFJUgLM94+2CuB4kE09HCpmRtvZX6KyHpoehDiIqlrS43MVV0E6jhry3qR1yvjd3MWAXlFpjmCt5ANxLqHnDGpFLiyNGVXxRkiXgt948t1B/LAONS9y98AG3ptk1jBF6bgl+vqzl7jjb59nAT/PSbQU53nKAndFLGmIMPgUCffS2MRsrsyJexD7GYlh0guF8HPBYpfUnYl+x12S0/B72mx9iJLCthYMxdKfBvVX2ohI/eJ4mrM9C0/gEH3ZoPDCCX8MrcrlES6mYmHda1u5T6VzbJ/ZgeqU50/DA==",
+    "app": "public"
+}
