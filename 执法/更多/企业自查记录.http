@@ -1,0 +1,155 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+## 企业自查记录获取
+GET {{endpoint}}/form?id=2011
+
+### 企业自查记录设置
+POST {{endpoint}}/form/2011
+content-type: application/json
+
+{
+    "version": "1", 
+    "name": "company_Search", 
+    "title": "企业自查记录", 
+    "pageStyle": { }, 
+    "request": { }, 
+    "response": {
+        "data": "data"
+    }, 
+    "container": {
+        "padding": "10px", 
+        "margin": "10px", 
+        "fill": "white", 
+        "stroke": {
+            "color": "lightgray", 
+            "lineWidth": "1px"
+        }, 
+        "shadow": {
+            "radius": 5
+        }, 
+        "corner": "8px", 
+        "spacing": "1em"
+    }, 
+    "modules": [
+        {
+          "type": "autolist",
+          "tips": "动态列表组件",
+          "binding":
+          {
+            "list":"list",
+            "total":"total"
+          },
+          "bindingTarget": "data",
+          "key":"7d0e7714-d265-11eb-af94-0800271e55b7",
+          "container":{
+            "height":""
+          }
+        }
+        
+    ], 
+    "moduleData": {
+        "7d0e7714-d265-11eb-af94-0800271e55b7": {
+          "loadApi":"https://api.mock.smallsaas.cn/data?id=2011",
+          "itemNavigation": "/companyHome/home",
+          "response":{
+              "list":"type.list",
+              "total":"type.total"
+          },
+          "tabConfig":{
+            "field":"type",
+            "show":true
+          },
+          "response":{
+            "list":"type.list",
+            "total":"type.total"
+          },
+          "request":{
+            "fixed":"type",
+            "default":{
+              "type":"0"
+            },
+            "pn":"pageNo",
+            "ps":"pageSize"
+          },
+          "itemModule":{
+            "type":"custom_component",
+            "name":"RecordStepsItem"
+          }
+        }
+    }
+}
+
+### 获取列表数据
+GET {{endpoint}}/data?id=2011 HTTP/1.1
+### 提交列表数据
+POST {{endpoint}}/data/2011 HTTP/1.1
+content-type: application/json
+
+{
+    "type": {
+      "list": [
+          {
+              "recordSteps": [
+                  {
+                    "id": "2012",
+                    "text": "2021-06-14 12:03:56",
+                    "descLabel": "自查对象: ",
+                    "desc": "北京海淀区体育文化有限公司",
+                    "opinionLabel": "自查地点: ",
+                    "opinion": "北京海淀区清华园街道1101号",
+                    "inactiveIcon": "circle",
+                    "activeIcon": "checked",
+                    "isLink": true
+                  },
+                  {
+                    "id": "2012",
+                    "text": "2021-06-14 12:03:56",
+                    "descLabel": "自查对象: ",
+                    "desc": "北京海淀区体育文化有限公司",
+                    "opinionLabel": "自查地点: ",
+                    "opinion": "北京海淀区清华园街道1101号",
+                    "inactiveIcon": "circle",
+                    "activeIcon": "checked",
+                    "isLink": true
+                  },
+                 {
+                    "id": "2012",
+                    "text": "2021-06-14 12:03:56",
+                    "descLabel": "自查对象: ",
+                    "desc": "北京海淀区体育文化有限公司",
+                    "opinionLabel": "自查地点: ",
+                    "opinion": "北京海淀区清华园街道1101号",
+                    "inactiveIcon": "circle",
+                    "activeIcon": "checked",
+                    "isLink": true
+                  },
+                  {
+                    "id": "2012",
+                    "text": "2021-06-14 12:03:56",
+                    "descLabel": "自查对象: ",
+                    "desc": "北京海淀区体育文化有限公司",
+                    "opinionLabel": "自查地点: ",
+                    "opinion": "北京海淀区清华园街道1101号",
+                    "inactiveIcon": "circle",
+                    "activeIcon": "checked",
+                    "isLink": true
+                  },
+                 {
+                    "id": "2012",
+                    "text": "2021-06-14 12:03:56",
+                    "descLabel": "自查对象: ",
+                    "desc": "北京海淀区体育文化有限公司",
+                    "opinionLabel": "自查地点: ",
+                    "opinion": "北京海淀区清华园街道1101号",
+                    "inactiveIcon": "circle",
+                    "activeIcon": "checked",
+                    "isLink": true
+                  }
+              ]
+          }
+      ],
+      "total": 3
+    }
+  }
+

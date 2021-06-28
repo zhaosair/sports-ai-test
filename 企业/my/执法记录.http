@@ -50,7 +50,7 @@ content-type: application/json
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
           "loadApi":"https://api.mock.smallsaas.cn/data?id=140",
-          "itemNavigation": "",
+          "itemNavigation": "/pages/companyHome/my/lawEnforcementDetail",
           "response":{
               "list":"type.list",
               "total":"type.total"
@@ -98,8 +98,7 @@ content-type: application/json
                     "opinion": "北京海淀区清华园街道1101号",
                     "inactiveIcon": "circle",
                     "activeIcon": "checked",
-                    "isLink": true,
-                    "path": "/pages/companyHome/my/lawEnforcementDetail"
+                    "isLink": true
                   },
                   {
                     "id": "142",
@@ -110,8 +109,7 @@ content-type: application/json
                     "opinion": "北京海淀区清华园街道1101号",
                     "inactiveIcon": "circle",
                     "activeIcon": "checked",
-                    "isLink": true,
-                    "path": "/pages/companyHome/my/lawEnforcementDetail"
+                    "isLink": true
                   }
               ]
           }

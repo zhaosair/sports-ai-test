@@ -322,7 +322,7 @@ content-type: application/json
                 {
                     "svg":"search",
                     "title":"自查记录",
-                    "nav":"/",
+                    "nav":"/pages/enforcement/more/MySearch",
                     "container":{
                         "background":"#F0E3B8"
                     }
