@@ -3,17 +3,17 @@
 ## 动态页面 
 
 ### 获取市场监督页面数据 
-GET {{endpoint}}/form?id=2010
+GET {{endpoint}}/form?id=2013
 
 
 ### 保存动态页面数据
-POST {{endpoint}}/form/2010
+POST {{endpoint}}/form/2013
 content-type: application/json
 
 {  
     "version": "1",
     "name": "my_Search",
-    "title": "自查记录",
+    "title": "执法记录",
     "pageStyle": {},
     "loadApi": "",
     "response": {
@@ -26,7 +26,7 @@ content-type: application/json
     "modules": [
       {
         "type":"autolist",
-        "name":"自查记录",
+        "name":"执法记录",
         "key":"autolist-5475-1445-5926-14642145452154",
         "binding": {
           "list": "list",
@@ -37,7 +37,7 @@ content-type: application/json
     ],
     "moduleData": {
          "autolist-5475-1445-5926-14642145452154": {
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2010",
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2013",
             "itemNavigation": "/enforcement/more/MySearchTime/MySearchTime?id",
             "response":{
                 "list":"type.list",
@@ -71,12 +71,12 @@ content-type: application/json
 ## 列表数据
 
 ### 获取列表数据
-GET {{endpoint}}/data?id=2010 HTTP/1.1
+GET {{endpoint}}/data?id=2013 HTTP/1.1
 content-type: application/json
 User-Agent: rest-client
 
 ### 保存列表数据
-POST {{endpoint}}/data/2010 HTTP/1.1
+POST {{endpoint}}/data/2013 HTTP/1.1
 content-type: application/json
 
 {
@@ -85,12 +85,12 @@ content-type: application/json
             {
                 "id":"2011",
                 "title":"2021年6月9日",
-                "state":""
+                "state":"待整改"
             },
             {
                 "id":"2011",
                 "title":"2021年6月9日",
-                "state":""
+                "state":"待完成"
             }
         ],
         "total": 2

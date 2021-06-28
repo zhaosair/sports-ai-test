@@ -2,16 +2,16 @@
 
 
 ## 企业自查记录获取
-GET {{endpoint}}/form?id=2011
+GET {{endpoint}}/form?id=2014
 
 ### 企业自查记录设置
-POST {{endpoint}}/form/2011
+POST {{endpoint}}/form/2014
 content-type: application/json
 
 {
     "version": "1", 
     "name": "company_Search", 
-    "title": "企业自查记录", 
+    "title": "企业执法记录", 
     "pageStyle": { }, 
     "request": { }, 
     "response": {
@@ -50,7 +50,7 @@ content-type: application/json
     ], 
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=2011",
+          "loadApi":"https://api.mock.smallsaas.cn/data?id=2014",
           "itemNavigation": "/enforcement/more/MySearchTime/selfSearchDetail?id=",
           "response":{
               "list":"type.list",
@@ -81,9 +81,9 @@ content-type: application/json
 }
 
 ### 获取列表数据
-GET {{endpoint}}/data?id=2011 HTTP/1.1
+GET {{endpoint}}/data?id=2014 HTTP/1.1
 ### 提交列表数据
-POST {{endpoint}}/data/2011 HTTP/1.1
+POST {{endpoint}}/data/2014 HTTP/1.1
 content-type: application/json
 
 {
@@ -100,6 +100,7 @@ content-type: application/json
                     "opinion": "北京海淀区清华园街道1101号",
                     "inactiveIcon": "circle",
                     "activeIcon": "checked",
+                    "state":"整改",
                     "isLink": true
                   },
                   {
@@ -111,6 +112,7 @@ content-type: application/json
                     "opinion": "北京海淀区清华园街道1101号",
                     "inactiveIcon": "circle",
                     "activeIcon": "checked",
+                    "state":"整改",
                     "isLink": true
                   },
                  {

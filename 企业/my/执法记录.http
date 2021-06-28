@@ -50,7 +50,7 @@ content-type: application/json
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
           "loadApi":"https://api.mock.smallsaas.cn/data?id=140",
-          "itemNavigation": "/pages/companyHome/my/lawEnforcementDetail",
+          "itemNavigation": "companyHome/my/lawEnforcementDetail?id=&id",
           "response":{
               "list":"type.list",
               "total":"type.total"
@@ -101,7 +101,7 @@ content-type: application/json
                     "isLink": true
                   },
                   {
-                    "id": "142",
+                    "id": "141",
                     "text": "2020-12-22 16:20:00",
                     "descLabel": "执法对象: ",
                     "desc": "北京天翔文化产业有限公司",
