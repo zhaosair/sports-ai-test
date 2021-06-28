@@ -1,0 +1,11 @@
+### oauth2
+
+### 用户登录
+POST http://api.uaas.smallsaas.cn/api/sys/oauth/login
+Content-Type: application/json
+
+{
+    "account":"admin",
+    "password":"111111"
+}
+
