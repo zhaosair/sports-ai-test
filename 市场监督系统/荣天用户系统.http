@@ -12,12 +12,13 @@ GET {{endpoint}}/user/1
 
 
 ### 用户授权
-POST {{endpoint}}/auth/oauth/token
+POST {{endpoint}}/auth/oauth/token?from=2&auth=043e05100GrNXL1tEM1007mW4c4e051l&iv=pXSm/gJ0HHT4AVThIUOTMw==&app=public&encryptedData=Of8fp/JwwoNQ9NWjHvgC6ebBvpZ8Bq5yN0Mu/Mse91QN1uKyjqJq3f6kcXHWM1Yr1XMAhIFR/zVYODklyXmK6QwMl8TgYvRdKmrph4yW4p7h1wGRIfi6WtqjNub1kwCkNqhvVsQCJIY42FO7KbQPlhCazC6Vebbl1JPrT5qZDTRGZhrXvJ9a5RdnL+EzelXT9VbjZEa8gt+pasPmKmChW774XcmGTY9LlLtqtSOBPXoYNHdIlFYuCQECb3H8S+Wz7kCXwNODZ7ICxTIFXbpLCD7oncPX8AsB6h3vIcVIELMJFyOxQ0Oxv0fr1pTj9HIU9lUEAreqB9+yjbSE1RaRU/tOoMPgwKtX43uDtx7gIrwzDhM+mM5lcB/wNhUPn0osOL6xstAYv2/XRpDZVHSiHuUm8sx5/TUxFFhqv8LrGlL1CyzatRl5j15E6OZOpkWTaRzUY5Qa/9T5RMwbrTNnog==  HTTP/1.1
+Content-Type: application/x-form-urlencoded
 
 {
     "auth": "033qZg000Q9IXL1l2A100Wi82N3qZg0q",
     "from": 2,
-    "iv": "MH5z8H4QicJ28U/yUxlzNg==",
-    "encryptedData": "nu9r7cwmF5/ySzi7zB/r4Vx3ZBb/n2MyoIz3zjR9gqsnlj1V7YYrTlPdYCN3nOyrmyDcCnJYYAl7VAamk4cCRyBIaHe1lr21lTwWsxB3YdXOBxmEd2JQ9nYXOop2Q4lOQcT+vqdlrLohWE9IB5rPi59jPg0bBNf4X7XC1SROdJ+A+osLtwLFJUgLM94+2CuB4kE09HCpmRtvZX6KyHpoehDiIqlrS43MVV0E6jhry3qR1yvjd3MWAXlFpjmCt5ANxLqHnDGpFLiyNGVXxRkiXgt948t1B/LAONS9y98AG3ptk1jBF6bgl+vqzl7jjb59nAT/PSbQU53nKAndFLGmIMPgUCffS2MRsrsyJexD7GYlh0guF8HPBYpfUnYl+x12S0/B72mx9iJLCthYMxdKfBvVX2ohI/eJ4mrM9C0/gEH3ZoPDCCX8MrcrlES6mYmHda1u5T6VzbJ/ZgeqU50/DA==",
+    "iv": "pXSm/gJ0HHT4AVThIUOTMw==",
+    "encryptedData": "Of8fp/JwwoNQ9NWjHvgC6ebBvpZ8Bq5yN0Mu/Mse91QN1uKyjqJq3f6kcXHWM1Yr1XMAhIFR/zVYODklyXmK6QwMl8TgYvRdKmrph4yW4p7h1wGRIfi6WtqjNub1kwCkNqhvVsQCJIY42FO7KbQPlhCazC6Vebbl1JPrT5qZDTRGZhrXvJ9a5RdnL+EzelXT9VbjZEa8gt+pasPmKmChW774XcmGTY9LlLtqtSOBPXoYNHdIlFYuCQECb3H8S+Wz7kCXwNODZ7ICxTIFXbpLCD7oncPX8AsB6h3vIcVIELMJFyOxQ0Oxv0fr1pTj9HIU9lUEAreqB9+yjbSE1RaRU/tOoMPgwKtX43uDtx7gIrwzDhM+mM5lcB/wNhUPn0osOL6xstAYv2/XRpDZVHSiHuUm8sx5/TUxFFhqv8LrGlL1CyzatRl5j15E6OZOpkWTaRzUY5Qa/9T5RMwbrTNnog==",
     "app": "public"
 }
