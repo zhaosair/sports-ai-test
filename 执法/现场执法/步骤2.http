@@ -11,7 +11,7 @@ content-type: application/json
 
 {
     "version":"1",
-    "name":"First",
+    "name":"Two",
     "title":"现场执法",
     "pageStyle":{
     },
@@ -74,7 +74,6 @@ content-type: application/json
                         "layoutTree":true,
                         "formId":112,
                         "renderKey":1621415404383,
-                        "componentName":"",
                         "children":[
                             {
                                 "__config__":{
@@ -231,6 +230,40 @@ content-type: application/json
                                 "readonly":false,
                                 "disabled":false,
                                 "__vModel__":"result"
+                            },
+                            {
+                                "__config__": {
+                                    "label": "", 
+                                    "labelWidth": null, 
+                                    "showLabel": true, 
+                                    "tag": "el-upload", 
+                                    "tagIcon": "input", 
+                                    "required": false, 
+                                    "layout": "colFormItem", 
+                                    "formId": 113, 
+                                    "renderKey": 1621415432107
+                                }, 
+                                "readonly": false, 
+                                "max-count": 1, 
+                                "deletable": false, 
+                                "__vModel__": "picture"
+                            },
+                            { 
+                                "__config__": {
+                                    "label": "", 
+                                    "labelWidth": null, 
+                                    "showLabel": true, 
+                                    "tag": "el-upload", 
+                                    "tagIcon": "input", 
+                                    "required": false, 
+                                    "layout": "colFormItem", 
+                                    "formId": 113, 
+                                    "renderKey": 1621415432107
+                                }, 
+                                "readonly": false, 
+                                "max-count": 1, 
+                                "deletable": false, 
+                                "__vModel__": "video"
                             }
                         ]
                     }
@@ -267,5 +300,13 @@ content-type: application/json
     "thing":1,
     "content":2,
     "method":1,
-    "result":1
+    "result":1,
+    "picture":{
+        "url": "require('../../static/images/empty.png')",
+        "isImage": true
+    },
+    "video":{
+        "url": "require('../../static/images/empty.png')",
+        "isImage": true
+    }
 }
