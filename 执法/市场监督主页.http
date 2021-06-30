@@ -87,7 +87,7 @@ content-type: application/json
               {
                 "svg":"map",
                 "title":"场馆导航",
-                "nav":"/pages/Map/venueNav/index",
+                "nav":"/pages/map/venueNav/index",
                 "container":{
                   "background":"#D6EFEE"
                 }

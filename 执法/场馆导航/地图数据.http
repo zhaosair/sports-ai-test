@@ -1,0 +1,32 @@
+@endpoint = https://rt.zbsoft.top
+@token = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjEwLCJkYXlPZldlZWsiOiJTQVRVUkRBWSIsImRheU9mWWVhciI6MTkxLCJob3VyIjoxNSwibWludXRlIjo1NiwibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6ODY4MDAwMDAwLCJzZWNvbmQiOjQyLCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiI2NTBiYzFjNC0zMWM1LTRlNTgtYjkxOC1mZWFhZjdmNzIzNWMiLCJyZWZyZXNoX3Rva2VuIjoiNjJhZmFlMTAtNDJiOC00N2IxLTgzMTQtMTI3N2E0OTE4YTM2IiwiZXhwaXJlc19pbiI6ODY0MDAwLCJ1c2VyX2lkIjoxLCJkZXB0X2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwibGljZW5jZSI6InByb2dyZXNzIiwiYXV0aG9yaXRpZXMiOlsic3lzX2NsaWVudF9lZGl0IiwiZXhlY3V0aXZlX2NvbXBhbnlpbmZvX2VkaXQiLCJzeXNfZGVwdF9kZWwiLCJhZG1pbl9zeXNwdWJsaWNwYXJhbV9lZGl0IiwiYWRtaW5fc3lzZmlsZWNhdGVnb3J5X3JlYWQiLCJhZG1pbl9zeXNmaWxlY2F0ZWdvcnlfZWRpdCIsInN5c191c2VyX2VkaXQiLCJzeXNfbWVudV9kZWwiLCJzeXNfZGljdF9lZGl0IiwiYWRtaW5fc3lzcHVibGljcGFyYW1fYWRkIiwic3lzX3JvbGVfZWRpdCIsInN5c191c2VyX21zZyIsInN5c190b2tlbl9kZWwiLCJzeXNfZGVwdF9hZGQiLCJnZW5fZm9ybV9lZGl0IiwiZ2VuX2Zvcm1fYWRkIiwic3lzX3JvbGVfZGVsIiwic3lzX2RpY3RfZGVsIiwic3lzX2RpY3RfYWRkIiwiYWRtaW5fc3lzZmlsZWNhdGVnb3J5X2RlbCIsInN5c191c2VyX2RlbCIsInN5c19tZW51X2FkZCIsInN5c19yb2xlX2FkZCIsImFkbWluX3N5c2ZpbGVfYWRkIiwiYWRtaW5fc3lzZmlsZV9yZWFkIiwic3lzX2NsaWVudF9hZGQiLCJzeXNfZGVwdF9lZGl0IiwiZXhlY3V0aXZlX2NvbXBhbnlpbmZvX2RlbCIsInN5c19tZW51X2VkaXQiLCJzeXNfcm9sZV9wZXJtIiwiYWRtaW5fc3lzcHVibGljcGFyYW1fZGVsIiwic3lzX3VzZXJfYWRkIiwiYWRtaW5fc3lzZmlsZV9kZWwiLCJnZW5fZm9ybV9kZWwiLCJhZG1pbl9zeXNmaWxlY2F0ZWdvcnlfYWRkIiwiZXhlY3V0aXZlX2NvbXBhbnlpbmZvX3JlYWQiLCJleGVjdXRpdmVfY29tcGFueWluZm9fYWRkIiwic3lzX2xvZ19kZWwiLCJhZG1pbl9zeXNmaWxlX2VkaXQiLCJzeXNfY2xpZW50X2RlbCJdLCJmcm9tIjowLCJ0aW1lX3N0YW1wIjoiMTYyNTAzOTgwMiJ9.uaE0w557t3l4jj6OY0MczQVfdBCVXPsG-ZimUvI-TTY
+### 企业信息库
+GET {{endpoint}}/executive/companyinfo/1
+
+### 获取token
+GET {{endpoint}}/executive/token/page
+
+### 提交企业信息库
+POST {{endpoint}}/executive/companyinfo
+Authorization:  Bearer {{token}}
+Content-Type: application/json
+
+{
+  "address": "海淀区北洼路26号东联商贸楼四层南侧",
+  "businessScope": "体育",
+  "capital": 0,
+  "certStatus": 0,
+  "contactPhone": "17310667739",
+  "deleted": 0,
+  "expireDate": "2030-05-08",
+  "latitude": 0,
+  "legalRepresentative": "刘洋",
+  "licenceNo": "222",
+  "longitude": 0,
+  "name": "北京亦农健身有限公司",
+  "realAddress": "海淀区北洼路26号东联商贸楼四层南侧",
+  "signedDate": "2019-05-03",
+  "startDate": "2019-05-08",
+  "startupDate": "2019-05-08",
+  "type": "1"
+}
