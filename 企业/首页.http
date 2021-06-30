@@ -77,7 +77,7 @@ content-type: application/json
             "title": "离自查上报还剩0天",
             "content": "开始填报",
             "textColor": "#008EF6",
-            "path": "/pages/company/check"
+            "path": "/pages/companyHome/selfCheck/index"
           }
         },
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {

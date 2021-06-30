@@ -4,13 +4,13 @@
 ## 动态列表
 
 ### 保存动态列表
-POST {{endpoint}}/form/107
+POST {{endpoint}}/form/800
 content-type: application/json
 
 {
     "version": "1", 
     "name": "page_home", 
-    "title": "测试表单", 
+    "title": "企业自查", 
     "pageStyle": { }, 
     "request": { }, 
     "response": {
@@ -46,17 +46,77 @@ content-type: application/json
           }
         }
     ], 
-    "dataSource":{
-       "api": "https://api.uat.smallsaas.cn/api/u/workflow/process/code?id=e84ffab7c2ed22f86fffd99d62b1fd5d"
-    },
+    "dataPayload": "data",
     "moduleData": {
         "96afd71a-c8d5-11eb-aca5-0800271e55b7": {
+            "saveApi": "",
+             "fields": [
+                {
+                  "__config__": {
+                    "label": "企业名称",
+                    "showLabel": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem"
+                  },
+                  "readonly": false,
+                  "inputBlock": true,
+                  "placeholder": "请输入企业名称",
+                  "__vModel__": "companyName"
+                },
+
+                {
+                  "__config__": {
+                    "label": "企业地址",
+                    "showLabel": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem"
+                  },
+                  "readonly": false,
+                  "inputBlock": true,
+                  "placeholder": "请输入企业地址",
+                  "__vModel__": "address"
+                },
+                {
+                  "__config__": {
+                    "label": "法定代表人",
+                    "showLabel": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem"
+                  },
+                  "readonly": false,
+                  "inputBlock": true,
+                  "placeholder": "请输入法定代表人",
+                  "__vModel__": "peple"
+                },
+                {
+                  "__config__": {
+                    "label": "进馆人数",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "tag": "el-input",
+                    "tagIcon": "number",
+                    "required": false,
+                    "layout": "colFormItem"
+                  },
+                  "placeholder": "请输入进馆人数",
+                  "readonly": false,
+                  "inputBlock": true,
+                  "__vModel__": "number"
+                }
+            ]
         }
     }
 }
 
+
 ### 获取页面数据
-POST {{endpoint}}/data/107 HTTP/1.1
+POST {{endpoint}}/data/800 HTTP/1.1
 content-type: application/json
 
 {
