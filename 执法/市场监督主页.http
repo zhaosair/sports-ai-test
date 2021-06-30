@@ -87,7 +87,7 @@ content-type: application/json
               {
                 "svg":"map",
                 "title":"场馆导航",
-                "nav":"../../pages/index/index",
+                "nav":"/pages/Map/venueNav/index",
                 "container":{
                   "background":"#D6EFEE"
                 }
@@ -95,7 +95,7 @@ content-type: application/json
               {
                 "svg":"record",
                 "title":"执法记录",
-                "nav":"../../pages/enforcement/myEnforcement",
+                "nav":"/pages/enforcement/myEnforcement",
                 "container":{
                 "background":"#EAFAFF"
                 }
@@ -103,7 +103,7 @@ content-type: application/json
               {
                 "svg":"transform",
                 "title":"整改复查",
-                "nav":"../../pages/index/index",
+                "nav":"/pages/index/index",
                 "container":{
                   "background":"#EDF0FA"
                 }
@@ -111,7 +111,7 @@ content-type: application/json
               {
                 "svg":"search",
                 "title":"企业查询",
-                "nav":"../../pages/enforcement/enterpriseDatabase",
+                "nav":"/pages/enforcement/enterpriseDatabase",
                 "container":{
                 "background":"#F6F4EE"
                 }
@@ -119,7 +119,7 @@ content-type: application/json
               {
                 "svg":"book",
                 "title":"执法卷宗",
-                "nav":"../../pages/index/index",
+                "nav":"/pages/enforcement/enforcementStateBook",
                 "container":{
                 "background":"#FAF8E7"
                 }
@@ -127,7 +127,7 @@ content-type: application/json
               {
                 "svg":"data",
                 "title":"数据分析",
-                "nav":"../../pages/index/index",
+                "nav":"/pages/index/index",
                 "container":{
                 "background":"#F8FDE9"
                 }
@@ -144,7 +144,7 @@ content-type: application/json
               "list":"type.list",
               "total":"type.total"
           },
-          "itemNavigation": "/articleDetail/index?id=&title",
+          "itemNavigation": "/enforcement/onSiteLawEnforcement/First?id=&title",
           "tabConfig":{
             "field":"type",
             "show":true
@@ -282,7 +282,7 @@ content-type: application/json
   "type":{
       "list":[
           {
-            "url":"../../pages/test/cardtest",
+            "id":"111",
             "state":"enforcement",
             "title":"安全出门检查",
             "company":"北京海淀区体育局",
@@ -290,7 +290,7 @@ content-type: application/json
             "end":"2021-04-05"
           },
           {
-            "url":"../../pages/test/cardtest",
+            "id":"112",
             "state":"rectification",
             "title":"安全出门检查",
             "company":"北京海淀区体育局",
