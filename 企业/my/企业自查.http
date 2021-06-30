@@ -45,7 +45,9 @@ content-type: application/json
             "image_ZDWUU9": "image_ZDWUU9",
             "licence_82qMaP": "licence_82qMaP",
             "licence_-3jmUD": "licence_-3jmUD",
-            "textarea_SKmnDG": "textarea_SKmnDG"
+            "textarea_SKmnDG": "textarea_SKmnDG",
+            "nextSteps[0].currentUserId": "currentUserId",
+            "nextSteps[0].id":"currentStepId"
           }
         }
     ], 
@@ -224,6 +226,51 @@ content-type: application/json
                 ]
               }
             },
+            {
+							"__config__": {
+                "layout": "rowFormItem",
+                "tagIcon": "row",
+                "componentName": "审批信息",
+                "children": [
+                  {
+                    "__config__": {
+                      "label": "经办人",
+                      "showLabel": true,
+                      "labelWidth": null,
+                      "tag": "el-select-fetch",
+                      "tagIcon": "select",
+                      "layout": "colFormItem",
+                      "required": false,
+                      "regList": [],
+                      "formId": 103,
+                      "renderKey": 1621415255861
+                    },
+                    "__slot__": {
+                      "options": [
+                        {
+                          "label": "男",
+                          "value": 1
+                        },
+                        {
+                          "label": "女",
+                          "value": 2
+                        }
+                      ]
+                    },
+                    "placeholder": "请选择性别",
+                    "style": {
+                      "width": "100%"
+                    },
+                    "clearable": true,
+                    "disabled": false,
+                    "filterable": false,
+                    "multiple": false,
+                    "__vModel__": "sex",
+                    "api": "/api/adm/users"
+                  }
+                ]
+							}
+						}
 					]
         }
     }
