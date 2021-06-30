@@ -338,7 +338,7 @@ content-type: application/json
                 {
                     "svg":"data",
                     "title":"人员信息",
-                    "nav":"/",
+                    "nav":"/pages/enforcement/more/PeopleInformation",
                     "container":{
                         "background":"#9DB6D4"
                     }

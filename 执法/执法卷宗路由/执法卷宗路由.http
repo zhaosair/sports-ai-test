@@ -1,0 +1,139 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 动态页面 
+
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=2017
+
+
+### 保存动态页面数据
+POST {{endpoint}}/form/2017
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "my_enforcement",
+    "title": "我的执法记录",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"autolist",
+        "name":"",
+        "key":"46412315-8775-1545-5646-8711645452154"
+      }
+    ],
+    "moduleData": {
+         "46412315-8775-1545-5646-8711645452154": {
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2017",
+            "response":{
+                "list":"type.list",
+                "total":"type.total"
+            },
+            "tabConfig":{
+                "field":"type",
+                "show":true
+            },
+            "response":{
+                "list":"type.list",
+                "total":"type.total"
+            },
+            "request":{
+                "fixed":"type",
+                "default":{
+                "type":"0"
+                },
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
+                "type":"custom_component",
+                "name":"enforcement-state-item"
+            }
+         }
+    }
+}
+
+
+## 列表数据
+
+### 获取列表数据
+GET {{endpoint}}/data?id=2017 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存列表数据
+POST {{endpoint}}/data/2017 HTTP/1.1
+content-type: application/json
+
+{
+  "type":{
+      "list":[
+          {
+            "img":"https://img.xiaopiu.com/userImages/img547178e902eb90.png",
+            "formNumber":"23847563928174",
+            "time":"2021-03-14 12:03:56",
+            "object":"北京海淀区体育文化有限公司",
+            "company":"北京海淀区体育局",
+            "department":"市场管理科",
+            "remarks":"海淀区某企业卫生不够整洁",
+            "enforcementState":"enforcement",
+            "state":{
+                "modify":true,
+                "approval":true
+            }
+          },
+          {
+            "img":"https://img.xiaopiu.com/userImages/img547178e902eb90.png",
+            "formNumber":"23847563928174",
+            "time":"2021-03-14 12:03:56",
+            "object":"北京海淀区体育文化有限公司",
+            "company":"北京海淀区体育局",
+            "department":"市场管理科",
+            "remarks":"海淀区某企业卫生不够整洁",
+            "enforcementState":"rectification",
+            "state":{
+                "modify":true,
+                "approval":true
+            }
+          },
+          {
+            "img":"https://img.xiaopiu.com/userImages/img547178e902eb90.png",
+            "formNumber":"23847563928174",
+            "time":"2021-03-14 12:03:56",
+            "object":"北京海淀区体育文化有限公司",
+            "company":"北京海淀区体育局",
+            "department":"市场管理科",
+            "remarks":"海淀区某企业卫生不够整洁",
+            "enforcementState":"closeCase",
+            "state":{
+                "modify":true,
+                "approval":true
+            }
+          },
+          {
+            "img":"https://img.xiaopiu.com/userImages/img547178e902eb90.png",
+            "formNumber":"23847563928174",
+            "time":"2021-03-14 12:03:56",
+            "object":"北京海淀区体育文化有限公司",
+            "company":"北京海淀区体育局",
+            "department":"市场管理科",
+            "remarks":"海淀区某企业卫生不够整洁",
+            "enforcementState":"closeCase",
+            "state":{
+                "modify":true,
+                "approval":true
+            }
+          }
+        ],
+        "total": 4
+  }
+}
+

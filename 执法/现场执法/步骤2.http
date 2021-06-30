@@ -1,0 +1,271 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+### 步骤二
+GET {{endpoint}}/form?id=2019
+content-type: application/json
+
+
+### 保存步骤数据
+POST {{endpoint}}/form/2019
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"First",
+    "title":"现场执法",
+    "pageStyle":{
+    },
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"steps",
+            "key":"steps151-4651-5545-a414-565615132143",
+            "name":"",
+            "container":{
+                "background":"#1A5EB5"
+            }
+        },
+        {
+            "type":"autoform",
+            "key":"autoform-7812-ad64-398a-451231561122",
+            "name":"",
+            "container":{
+                "background":"white"
+            }
+        }
+    ],
+    "moduleData":{
+        "steps151-4651-5545-a414-565615132143":{
+            "steps":{
+                "step":[
+                    {
+                        "text": "检查对象"
+                    },
+                    {
+                        "text": "检查内容"
+                    },
+                    {
+                        "text": "检查结论"
+                    },
+                    {
+                        "text": "是否审批"
+                    },
+                    {
+                        "text": "是否整改"
+                    }
+                ],
+                "active":2
+            }
+        },
+        "autoform-7812-ad64-398a-451231561122":{
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2019",
+            "fields": [
+                {
+                    "__config__":{
+                        "layout":"rowFormItem",
+                        "tagIcon":"row",
+                        "layoutTree":true,
+                        "formId":112,
+                        "renderKey":1621415404383,
+                        "componentName":"",
+                        "children":[
+                            {
+                                "__config__":{
+                                    "label":"检查事项",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-select",
+                                    "tagIcon":"select",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "options":[
+                                        {
+                                            "label":"检查事项1",
+                                            "value":1
+                                        },
+                                        {
+                                            "label":"检查事项2",
+                                            "value":2
+                                        }
+                                    ]
+                                },
+                                "placeholder":"请选择",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"thing"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"检查内容",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-select",
+                                    "tagIcon":"select",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "options":[
+                                        {
+                                            "label":"检查内容1",
+                                            "value":1
+                                        },
+                                        {
+                                            "label":"检查内容2",
+                                            "value":2
+                                        }
+                                    ]
+                                },
+                                "placeholder":"请选择",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"content"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"检查方法",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-select",
+                                    "tagIcon":"select",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "options":[
+                                        {
+                                            "label":"检查方法1",
+                                            "value":1
+                                        },
+                                        {
+                                            "label":"检查方法2",
+                                            "value":2
+                                        }
+                                    ]
+                                },
+                                "placeholder":"请选择",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"method"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"检查结果",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-select",
+                                    "tagIcon":"select",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "options":[
+                                        {
+                                            "label":"检查结果1",
+                                            "value":1
+                                        },
+                                        {
+                                            "label":"检查结果2",
+                                            "value":2
+                                        }
+                                    ]
+                                },
+                                "placeholder":"请选择",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"result"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "NextNavigation":"/enforcement/onSiteLawEnforcement/Third",
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "left",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 0,
+            "disabled": false,
+            "formBtns": false,
+            "nextBtns":true,
+            "LastBtns":true,
+            "unFocusedComponentBorder": false
+        }
+    }
+}
+        
+
+### 获取步骤数据
+GET {{endpoint}}/data?id=2019 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存步骤数据
+POST {{endpoint}}/data/2019 HTTP/1.1
+content-type: application/json
+
+{
+    "thing":1,
+    "content":2,
+    "method":1,
+    "result":1
+}
