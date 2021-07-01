@@ -1,4 +1,17 @@
-@endpoint=http://106.53.93.81
+#### 后台管理界面
+http://106.53.93.81
+
+https://r.zbsoft.top/sport
+用户名/密码：000000/000000
+
+#### AAPI
+#### 表单设计器：
+https://r.zbsoft.top/form-generator
+
+#### 移动端渲染地址：
+https://r.zbsoft.top/h5-form-render
+
+@endpoint=https://r.zbsoft.top
 @token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
 
 
@@ -7,6 +20,10 @@
 POST {{endpoint}}/api.page.design.page/listPage
 Content-Type: application/json
 accessToken: {{token}}
+
+
+
+## 工作流
 
 ### 流程列表
 POST {{endpoint}}/api.flow.process/definitionListPage
@@ -17,3 +34,6 @@ accessToken: {{token}}
 POST {{endpoint}}/api.flow.process/instanceListPage
 Content-Type: application/json
 accessToken: {{token}}
+
+
+## 设计页面
