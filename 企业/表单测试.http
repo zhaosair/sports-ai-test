@@ -109,7 +109,10 @@ content-type: application/json
                   "inputBlock": true,
                   "__vModel__": "number"
                 }
-            ]
+            ],
+          "formCheckBtns":true,
+          "formBtns":false,
+          "formCheckBtnsText":"我已阅知本申报所列事项，并保证以上申报内容正确属实"
         }
     }
 }
