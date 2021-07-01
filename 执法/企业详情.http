@@ -19,7 +19,7 @@ content-type: application/json
     "title":"企业详情",
     "pageStyle":{
         "padding":"10px",
-        "background":"#E1E1E1"
+        "background":"#EFEFEF"
     },
     "loadApi":"",
     "request":{
@@ -338,7 +338,7 @@ content-type: application/json
                 {
                     "svg":"data",
                     "title":"人员信息",
-                    "nav":"/",
+                    "nav":"/pages/enforcement/more/PeopleInformation",
                     "container":{
                         "background":"#9DB6D4"
                     }

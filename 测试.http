@@ -1,0 +1,10 @@
+@endpoint = http://192.168.3.226:8080
+###
+POST {{endpoint}}/api/crud/poseModelJoint/poseModelJoints/refresh
+content-type: application/json
+
+{
+  "rawFrameImageUrl":"//www.baidu.com/img/flexible/logo/pc/result.png",
+  "modelId": 3
+}
+

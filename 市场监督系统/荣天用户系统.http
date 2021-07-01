@@ -10,3 +10,16 @@ Pw: 111111
 
 ### 用户登录
 GET {{endpoint}}/user/1
+
+
+### 用户授权
+POST {{endpoint}}/auth/oauth/token HTTP/1.1
+Content-Type: application/x-form-urlencoded
+
+{
+    "auth": "0635m6ll27oPi743kDnl2ZJoMI15m6lN",
+    "from": 2,
+    "iv": "pXSm/gJ0HHT4AVThIUOTMw==",
+    "encryptedData": "Of8fp/JwwoNQ9NWjHvgC6ebBvpZ8Bq5yN0Mu/Mse91QN1uKyjqJq3f6kcXHWM1Yr1XMAhIFR/zVYODklyXmK6QwMl8TgYvRdKmrph4yW4p7h1wGRIfi6WtqjNub1kwCkNqhvVsQCJIY42FO7KbQPlhCazC6Vebbl1JPrT5qZDTRGZhrXvJ9a5RdnL+EzelXT9VbjZEa8gt+pasPmKmChW774XcmGTY9LlLtqtSOBPXoYNHdIlFYuCQECb3H8S+Wz7kCXwNODZ7ICxTIFXbpLCD7oncPX8AsB6h3vIcVIELMJFyOxQ0Oxv0fr1pTj9HIU9lUEAreqB9+yjbSE1RaRU/tOoMPgwKtX43uDtx7gIrwzDhM+mM5lcB/wNhUPn0osOL6xstAYv2/XRpDZVHSiHuUm8sx5/TUxFFhqv8LrGlL1CyzatRl5j15E6OZOpkWTaRzUY5Qa/9T5RMwbrTNnog==",
+    "app": "internal"
+}

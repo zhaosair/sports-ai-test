@@ -1,0 +1,65 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+## State列表子项
+
+GET {{endpoint}}/form?id=2016
+content-type: application/json
+
+
+### 保存列表主页数据
+POST {{endpoint}}/form/2016
+content-type: application/json
+
+{
+        "loadApi":"https://api.mock.smallsaas.cn/data?id=2016",
+        "response":{
+              "list":"type.list",
+              "total":"type.total"
+          },
+          "itemNavigation": "",
+          "tabConfig":{
+            "field":"type"
+          },
+          "response":{
+            "list":"type.list",
+            "total":"type.total"
+          },
+          "request":{
+            "fixed":"type",
+            "default":{
+              "type":"0"
+            },
+            "pn":"pageNo",
+            "ps":"pageSize"
+          },
+          "itemModule":{
+            "type":"custom_component",
+            "name":"messageItem"
+          }
+  }
+
+### 获取动态页面数据
+GET {{endpoint}}/data?id=2016 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存动态页面数据
+POST {{endpoint}}/data/2016 HTTP/1.1
+content-type: application/json
+
+{
+  "type":{
+      "list":[
+          {
+            "title":"张三",
+            "subtitle":"13100000000"
+          },
+          {
+            "title":"张三",
+            "subtitle":"13100000000"
+          }
+        ],
+        "total": 2
+  }
+}
+

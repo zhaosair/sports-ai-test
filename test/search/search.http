@@ -1,0 +1,316 @@
+@endpoint=https://api.mock.smallsaas.cn
+### 获取页面数据
+GET {{endpoint}}/form?id=12311 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存页面数据
+POST  {{endpoint}}/form/12311 HTTP/1.1
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "company_DataBase",
+    "title": "企业信息库",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type": "search",
+        "name": "",
+        "key": "search111-5456-4564-2125-4878854564512",
+        "container":{
+        }
+      }
+    ],
+    "moduleData": {
+        "search111-5456-4564-2125-4878854564512": {
+            "loadAPI":"https://api.mock.smallsaas.cn/data",
+            "id":"12312",
+            "field":"address",
+            "itemModule":{
+                "name":"stateSearchItem"
+            }
+        }
+    }
+}
+
+
+
+### 获取企业数据
+GET {{endpoint}}/data?id=12312 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存企业数据
+POST {{endpoint}}/data/12312 HTTP/1.1
+content-type: application/json
+
+{
+    "itemNavigation":"/pages/enforcement/enforcementDetails",
+    "list":[
+        {
+            "id":"1",
+            "name":"星视文化传媒有限公司",
+            "address":"青年公社102号楼4层416",
+            "state":{
+                "example":{
+                    "number":"10",
+                    "status":true
+                },
+                "self":{
+                    "number":"21",
+                    "status":true
+                }
+            }
+        },
+        {
+            "id":"2",
+            "name":"北京雅诚安泰商贸有限公司",
+            "address":"朝阳北路102号楼7层715室",
+            "state":{
+                "example":{
+                    "number":"10",
+                    "status":false
+                },
+                "self":{
+                    "number":"21",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"3",
+            "name":"北京腾恬优选商贸有限公司",
+            "address":"朝阳北路102号楼青年汇内",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"4",
+            "name":"36bd新互联头条网",
+            "address":"青年路青年公社102号楼719",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"5",
+            "name":"叁柒陆柒(3767朝阳办公室)",
+            "address":"青年公社102号511室",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"6",
+            "name":"全食优选(北京)健康科技有限公司",
+            "address":"朝阳北路青年工社102号楼803室",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"7",
+            "name":"优活世纪(北京)信息技术有限公司",
+            "address":"八里庄街道朝阳北路青年汇三期102号楼502室",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"8",
+            "name":"北京传不科技有限公司",
+            "address":"青年路d口附近",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        }
+    ]
+}
+
+
+
+### 获取企业数据
+GET {{endpoint}}/data?id=12313 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存企业数据
+POST {{endpoint}}/data/12313 HTTP/1.1
+content-type: application/json
+
+{
+    "list":[
+        {
+            "id":"1",
+            "name":"星视文化传媒有限公司",
+            "address":"青年公社102号楼4层416",
+            "state":{
+                "example":{
+                    "number":"10",
+                    "status":true
+                },
+                "self":{
+                    "number":"21",
+                    "status":true
+                }
+            }
+        },
+        {
+            "id":"2",
+            "name":"北京雅诚安泰商贸有限公司",
+            "address":"朝阳北路102号楼7层715室",
+            "state":{
+                "example":{
+                    "number":"10",
+                    "status":false
+                },
+                "self":{
+                    "number":"21",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"3",
+            "name":"北京腾恬优选商贸有限公司",
+            "address":"朝阳北路102号楼青年汇内",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"4",
+            "name":"36bd新互联头条网",
+            "address":"青年路青年公社102号楼719",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"5",
+            "name":"叁柒陆柒(3767朝阳办公室)",
+            "address":"青年公社102号511室",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"6",
+            "name":"全食优选(北京)健康科技有限公司",
+            "address":"朝阳北路青年工社102号楼803室",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"7",
+            "name":"优活世纪(北京)信息技术有限公司",
+            "address":"八里庄街道朝阳北路青年汇三期102号楼502室",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        },
+        {
+            "id":"8",
+            "name":"北京传不科技有限公司",
+            "address":"青年路d口附近",
+            "state":{
+                "example":{
+                    "number":"",
+                    "status":false
+                },
+                "self":{
+                    "number":"",
+                    "status":false
+                }
+            }
+        }
+    ]
+}
