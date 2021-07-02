@@ -4,13 +4,13 @@
 ## 动态列表
 
 ### 保存动态列表
-POST {{endpoint}}/form/109
+POST {{endpoint}}/form/107
 content-type: application/json
 
 {
     "version": "1", 
     "name": "page_home", 
-    "title": "首页", 
+    "title": "执法", 
     "pageStyle": { }, 
     "request": { }, 
     "response": {

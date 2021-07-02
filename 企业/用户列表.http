@@ -1,0 +1,77 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+## 动态列表
+
+### 保存动态列表
+POST {{endpoint}}/form/140
+content-type: application/json
+
+{
+}
+
+
+### 获取页面数据
+POST {{endpoint}}/data/1001 HTTP/1.1
+content-type: application/json
+
+{
+    "current": "1",
+    "orders": [],
+    "pages": "2",
+    "records": [
+        {
+            "id": "0",
+            "orgName": "爱奇艺",
+            "userName": "管理员"
+        },
+        {
+            "id": "876708082437197830",
+            "orgName": "爱奇艺",
+            "userName": "测试人员"
+        },
+        {
+            "id": "876708082437197838",
+            "orgName": "爱奇艺",
+            "userName": "市场管理"
+        },
+        {
+            "id": "876708082437197840",
+            "orgName": "爱奇艺",
+            "userName": "部长"
+        },
+        {
+            "id": "876708082437197843",
+            "orgName": "北京总部",
+            "userName": "部门经理"
+        },
+        {
+            "id": "876708082437197844",
+            "orgName": "研发小组",
+            "userName": "平台用户"
+        },
+        {
+            "id": "876708082437197845",
+            "orgName": "测试小组",
+            "userName": "组织用户"
+        },
+        {
+            "id": "876708082437197846",
+            "orgName": "研发小组",
+            "userName": "平台用户主管"
+        },
+        {
+            "id": "876708082437197847",
+            "orgName": "测试小组",
+            "userName": "组织用户创建人"
+        },
+        {
+            "id": "876708082437197848",
+            "orgName": "客服小组",
+            "userName": "客服-01"
+        }
+    ],
+    "total": 3
+    
+  }
+
