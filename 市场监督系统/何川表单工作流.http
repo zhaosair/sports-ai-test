@@ -15,11 +15,100 @@ https://r.zbsoft.top/h5-form-render
 @token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
 
 
-### 获取表单列表
-#POST http://106.53.93.81/api/form/manage/define/loadFormList.do
+### 表单查询
+POST {{endpoint}}/api/form/manage/define
+Content-Type: application/json
+accessToken: {{token}}
+
+
+### 删除表单
+POST {{endpoint}}/api.page.design.form/deleteForm
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "id": 0
+}
+
+
+## 表单设计接口
+
+
+### 表单配置列表
+#POST https://r.zbsoft.top/api.page.design.page/listPage
 POST {{endpoint}}/api.page.design.page/listPage
 Content-Type: application/json
 accessToken: {{token}}
+
+{
+
+}
+
+### 表单配置查询  (可以通过 code 查询)
+POST {{endpoint}}/api.page.design.form/loadFormInfo
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "code": "form_code"
+}
+
+## or
+//{
+//    "formId": 15
+//}
+
+
+
+### 表单定义保存
+POST {{endpoint}}/api.page.design.form/saveFormInfo
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "id": 0,
+    "jsonDefine": ""
+}
+
+
+## 表单数据接口
+//formId：表单id，dataId数据id
+POST {{endpoint}}/api.page.design.form/loadFormInfo
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "formId": 0,
+    "dataId": 0
+}
+
+### 表单数据分页查询
+// 以下两个条件[mapWheres,listWheres]只能使用其中一个
+POST {{endpoint}}//api.page.design.form
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "formId": 0,
+    "mapWheres": 0,
+    "listWheres": 0
+}
+
+
+### 表单数据提交
+POST {{endpoint}}/api.page.design.form/submitFormData
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "dataId": 0,
+    "code": "form_code",
+    "version": "1",
+    "data": 
+    {
+
+    }
+}
 
 
 

@@ -1,3 +1,17 @@
+## 执法小程序
+  app: internal
+  appid: wx225bca85b56af3aa
+  AppSecret: 1ce917489d4d35aa58b155c6aadd1ec1
+
+## 场馆小程序
+  app: public
+  appid: wx7bb496426db3d0ff
+
+## 体医小程序
+  app: medical
+  appid: wxa618f751921754f5
+
+
 ### 综合桌面
 https://rt.zbsoft.top
 User: admin
