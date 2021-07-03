@@ -10,7 +10,7 @@ content-type: application/json
 {
     "version": "1", 
     "name": "page_home", 
-    "title": "首页", 
+    "title": "企业", 
     "pageStyle": { }, 
     "request": { }, 
     "response": {
