@@ -36,8 +36,8 @@ content-type: application/json
           "tips": "动态列表组件",
           "binding":
           {
-            "applyList.list":"list",
-            "applyList.total":"total"
+            "records":"list",
+            "total":"total"
           },
           "bindingTarget": "data",
           "key":"a1417b8a-d351-11eb-bb26-0800271e55b7",
@@ -47,7 +47,7 @@ content-type: application/json
         }
     ], 
     "dataSource":{
-       "api": "https://api.mock.smallsaas.cn/data?id=109"
+       "api": "https://api.uat.smallsaas.cn/api/u/workflow/instance/list?type=CREATOR&formType=41"
     },
     "moduleData": {
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
