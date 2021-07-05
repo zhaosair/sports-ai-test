@@ -49,14 +49,14 @@ POST {{endpoint}}/api.page.design.form/loadFormInfo
 Content-Type: application/json
 accessToken: {{token}}
 
-{
-    "code": "form_code"
-}
+//{
+ //   "code": "form_code"
+//}
 
 ## or
-//{
-//    "formId": 15
-//}
+{
+    "formId": 15
+}
 
 
 
