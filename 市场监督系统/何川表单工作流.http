@@ -53,7 +53,6 @@ accessToken: {{token}}
  //   "code": "form_code"
 //}
 
-## or
 {
     "formId": 15
 }
@@ -114,15 +113,177 @@ accessToken: {{token}}
 
 ## 工作流
 
-### 流程列表
+### 流程定义列表查询
 POST {{endpoint}}/api.flow.process/definitionListPage
 Content-Type: application/json
 accessToken: {{token}}
+
+{
+    "keyWords": ""
+}
 
 ### 查询已发起的流程列表
 POST {{endpoint}}/api.flow.process/instanceListPage
 Content-Type: application/json
 accessToken: {{token}}
 
+{
+    "keyWords": ""
+}
 
-## 设计页面
+
+### 流程任务列表查询
+//private String keyWords; 查询关键字,流程名称 流程id等
+//private String processDefineKey;//流程定义标识
+//private String queryType;//wait:我的待办,dealed:我处理过,finished:已完成
+POST {{endpoint}}/api.flow.task/taskListPage
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "keyWords":"",
+    "processDefineKey":"",
+    "queryType": "wait"
+}
+
+
+### 流程办理明细查询
+//private String processDefineKey;//流程定义标识
+//private String version;//版本
+//private String taskId;//任务id
+//private String businessKey;//业务key(表单数据 id)
+POST {{endpoint}}/api.flow.examine/toComplete
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processDefineKey":"",
+    "version":"1",
+    "taskId": 0,
+    "businessKey": 0
+}
+
+
+### 获取下一节点审批人
+//private String processDefineKey;//流程定义标识,必填
+//private String version;//流程版本
+//private String taskId;//任务id，如果是开始发起流程，可不上送，如果流程审批环节，需要上送当前任务id
+POST {{endpoint}}/api.flow.examine/queryNextExamineUser
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processDefineKey":"",
+    "version":"1",
+    "taskId": 0
+}
+
+
+#### 获取下一节点审批人
+//private String processDefineKey;//流程定义标识,必填
+//private String version;//流程版本
+//private String taskId;//任务id，如果是开始发起流程，可不上送，如果流程审批环节，需要上送当前任务id
+POST {{endpoint}}/api.flow.examine/queryNextExamineUser
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processDefineKey":"",
+    "version":"1",
+    "taskId": 0
+}
+
+
+
+### 流程数据暂存
+//private String processDefineKey;//流程定义标识
+//private String version;//流程定义版本
+//private String businessKey;//业务id
+//private Map<String, Object> fromData;//表单数据
+POST {{endpoint}}/api.flow.examine/saveTemp
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processDefineKey":"",
+    "version":"1",
+    "businessKey": 0,
+    "fromData": 0
+}
+
+### 流程办理提交
+//private String processDefineKey;//流程定义标识
+//private String version;//版本
+//private String taskId;//任务id，如 果是开始发起流程，可不上送
+//private String userId;//下一节点处理人
+//private String userName;//下一节点处理人名字
+//private String businessKey;//业务id(表单数据id)
+//private Map<String, Object> fromData;//表单数据
+//private String comment;//审批意见
+POST {{endpoint}}/api.flow.examine/complete
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processDefineKey":"",
+    "version":"1",
+    "taskId": 0,
+    "userId": 0,
+    "userName": "",
+    "businessKey":"",
+    "fromData":{},
+    "comment": "",
+    "businessKey": 0,
+    "fromData": 0
+}
+
+
+### 流程实例明细
+//private String processInstanceId;//流程实例id
+POST {{endpoint}}/api.flow.examine/processDetail
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processInstanceId": 0
+}
+
+
+### 审批意见列表
+POST {{endpoint}}/api.flow.examine/queryCurrExamineUser
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processInstanceId": 0
+}
+
+
+### 变更当前节点审批人
+//String processInstanceId;//流程实例id
+//private String userId;//审批人id
+//private String userName;//审批人名字
+POST {{endpoint}}/api.flow.examine/changeExamineUser
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processInstanceId": 0,
+    "userId": "",
+    "userName": ""
+}
+
+
+### 删除流程实例
+//private String processInstanceId;//流程实例id
+//private String delReason;//删除理由
+//private Boolean history;//是否历史流程，如果是，则 delReason必填
+POST {{endpoint}}/api.flow.examine/deleteProcessInstance
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processInstanceId": 0,
+    "delReason": "",
+    "history": ""
+}

@@ -34,11 +34,6 @@ content-type: application/json
         {
           "type": "autolist",
           "tips": "动态列表组件",
-          "binding":
-          {
-            "list":"list",
-            "total":"total"
-          },
           "bindingTarget": "data",
           "key":"7d0e7714-d265-11eb-af94-0800271e55b7",
           "container":{
@@ -49,25 +44,17 @@ content-type: application/json
     ], 
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=110",
+          "loadApi":"https://api.uat.smallsaas.cn/api/u/workflow/instance/list?type=CREATOR&formType=29",
          "itemNavigation": "/companyHome/my/selfInspectionDetail?id",
           "response":{
-              "list":"type.list",
-              "total":"type.total"
+              "list":"records",
+              "total":"total"
           },
           "tabConfig":{
             "field":"type",
             "show":true
           },
-          "response":{
-            "list":"type.list",
-            "total":"type.total"
-          },
           "request":{
-            "fixed":"type",
-            "default":{
-              "type":"0"
-            },
             "pn":"pageNo",
             "ps":"pageSize"
           },
@@ -84,49 +71,42 @@ content-type: application/json
 POST {{endpoint}}/data/110 HTTP/1.1
 content-type: application/json
 
-# {
-#     "record": [
-#       {
-#         "type": "100",
-#         "title": "2020年第一季度",
-#         "startTime": "2020-01-01",
-#         "endTime": "2020-03-31",
-#         "submitTime": "2020-3-25 12:12:12",
-#         "status": "pass"
-#       },
-#       {
-#         "type": "100",
-#         "title": "2020年第一季度",
-#         "startTime": "2020-01-01",
-#         "endTime": "2020-03-31",
-#         "submitTime": "2020-3-25 12:12:12",
-#         "status": "failed"
-#       }
-#     ],
-#     "total": 2
-# }
-
-
 {
     "type": {
       "list": [
         {
           "id": "311",
           "type": "100",
-          "title": "2020年第一季度",
-          "startTime": "2020-01-01",
-          "endTime": "2020-03-31",
-          "submitTime": "2020-3-25 12:12:12",
-          "status": "pass"
+          "name": "2020年第一季度",
+          "code": "2020-01-01 - 2020-03-31",
+          "createTime": "2020-3-25 12:12:12",
+          "status": "START"
         },
         {
           "id": "321",
           "type": "200",
-          "title": "2020年第二季度",
-          "startTime": "2020-01-01",
-          "endTime": "2020-05-31",
-          "submitTime": "2020-3-25 12:12:12",
-          "status": "failed"
+          "name": "2020年第二季度",
+          "code": "2020-01-01 - 2020-05-31",
+          "createTime": "2020-3-25 12:12:12",
+          "status": "VERIFYING"
+        },
+        
+        {
+          "id": "322",
+          "type": "200",
+          "name": "2020年第二季度",
+          "code": "2020-01-01 - 2020-05-31",
+          "createTime": "2020-3-25 12:12:12",
+          "status": "CLOSE_REJECTED"
+        },
+        
+        {
+          "id": "323",
+          "type": "200",
+          "name": "2020年第二季度",
+          "code": "2020-01-01 - 2020-05-31",
+          "createTime": "2020-3-25 12:12:12",
+          "status": "CLOSE_APPROVED"
         }
       ],
       "total": 3
