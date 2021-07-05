@@ -12,13 +12,16 @@ https://r.zbsoft.top/form-generator
 https://r.zbsoft.top/h5-form-render
 
 @endpoint=https://r.zbsoft.top
-@token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
+//@token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
+
+// 执法人员
+@token=eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjEyLCJkYXlPZldlZWsiOiJNT05EQVkiLCJkYXlPZlllYXIiOjE5MywiaG91ciI6MTgsIm1pbnV0ZSI6NDcsIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjQ4MjAwMDAwMCwic2Vjb25kIjo0OCwieWVhciI6MjAyMSwiY2hyb25vbG9neSI6eyJjYWxlbmRhclR5cGUiOiJpc284NjAxIiwiaWQiOiJJU08ifX0sInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImFsZyI6IkhTMjU2In0.eyJhY2Nlc3NfdG9rZW4iOiI2MGFhM2E2ZmY3NDk0MDdkOTBiNmRhYjIwMWIxNWFmMCIsInJlZnJlc2hfdG9rZW4iOiJlZmRmNmJjNzU2ZDc0ZDRmYmY4N2Q1MDViN2E5MThjMyIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MSwiZGVwdF9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI1MjIyODY4In0.fIWxyWFuczbUcKu_91NXv3p5EssJLVZOdm0M2YDg9Pw
+
+// 领导
 
 
-### 表单查询
-POST {{endpoint}}/api/form/manage/define
-Content-Type: application/json
-accessToken: {{token}}
+//企业
+//@token=eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjEyLCJkYXlPZldlZWsiOiJNT05EQVkiLCJkYXlPZlllYXIiOjE5MywiaG91ciI6MTgsIm1pbnV0ZSI6NDcsIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjQ4MjAwMDAwMCwic2Vjb25kIjo0OCwieWVhciI6MjAyMSwiY2hyb25vbG9neSI6eyJjYWxlbmRhclR5cGUiOiJpc284NjAxIiwiaWQiOiJJU08ifX0sInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImFsZyI6IkhTMjU2In0.eyJhY2Nlc3NfdG9rZW4iOiI2MGFhM2E2ZmY3NDk0MDdkOTBiNmRhYjIwMWIxNWFmMCIsInJlZnJlc2hfdG9rZW4iOiJlZmRmNmJjNzU2ZDc0ZDRmYmY4N2Q1MDViN2E5MThjMyIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MSwiZGVwdF9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI1MjIyODY4In0.fIWxyWFuczbUcKu_91NXv3p5EssJLVZOdm0M2YDg9Pw
 
 
 ### 删除表单
@@ -41,7 +44,7 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-
+    
 }
 
 ### 表单配置查询  (可以通过 code 查询)
@@ -49,14 +52,13 @@ POST {{endpoint}}/api.page.design.form/loadFormInfo
 Content-Type: application/json
 accessToken: {{token}}
 
-# {
-#     "code": "form_code"
-# }
-
 {
-    "formId": 15
+    "code": "zf001"
 }
 
+# {
+#     "formId": 15
+# }
 
 
 ### 表单定义保存
@@ -70,45 +72,64 @@ accessToken: {{token}}
 }
 
 
-## 表单数据接口
-//formId：表单id，dataId数据id
+### 表单数据接口
+// formId：表单id，dataId数据id
 POST {{endpoint}}/api.page.design.form/loadFormInfo
 Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "formId": 0,
-    "dataId": 0
+    "code": "zf001"
 }
+
 
 ### 表单数据分页查询
 // 以下两个条件[mapWheres,listWheres]只能使用其中一个
-POST {{endpoint}}//api.page.design.form
+// 查询所有表单数据
+POST {{endpoint}}//api.page.design.form/listDataPage
 Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "formId": 0,
-    "mapWheres": 0,
-    "listWheres": 0
+    "code": "zf001",
+    "dataId": 2,
+    "formDefine": false
 }
 
 
+# {
+#     "code": "zf001",
+#     "mapWheres": 0,
+#     "listWheres": 0
+# }
+
+
 ### 表单数据提交
+// 没有 dataId如果为空，表示新增数据，如果不空，表示修改数据
 POST {{endpoint}}/api.page.design.form/submitFormData
 Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "dataId": 0,
-    "code": "form_code",
+    "code": "zf001",
     "version": "1",
-    "data": 
+    "dataId": 2,
+    "data":
     {
-
+       "companyName": "myCompanyName2",
+       "companyType": "muyCompanyType2"
     }
 }
 
+# {
+#     "dataId": 0,
+#     "code": "zf001",
+#     "version": "1",
+#     "data": 
+#     {
+
+#     }
+# }
 
 
 ## 工作流
@@ -122,13 +143,14 @@ accessToken: {{token}}
     "keyWords": ""
 }
 
+
 ### 查询已发起的流程列表
 POST {{endpoint}}/api.flow.process/instanceListPage
 Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "keyWords": ""
+    "keyWords":""
 }
 
 
@@ -141,13 +163,18 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "keyWords":"",
-    "processDefineKey":"",
-    "queryType": "wait"
+
 }
+
+# {
+#     "keyWords":"",
+#     "processDefineKey":"",
+#     "queryType": "wait"
+# }
 
 
 ### 流程办理明细查询
+// 待办事项需要传 taskId
 //private String processDefineKey;//流程定义标识
 //private String version;//版本
 //private String taskId;//任务id
@@ -157,11 +184,16 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processDefineKey":"",
-    "version":"1",
-    "taskId": 0,
-    "businessKey": 0
+    "processDefineKey":"xzxk",
+    "version":"1"
 }
+
+# {
+#     "processDefineKey":"xzxk",
+#     "version":"1",
+#     "taskId": 0,
+#     "businessKey": 0
+# }
 
 
 ### 获取下一节点审批人
@@ -173,26 +205,15 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processDefineKey":"",
-    "version":"1",
-    "taskId": 0
+    "processDefineKey":"xzxk",
+    "version":"1"
 }
 
-
-#### 获取下一节点审批人
-//private String processDefineKey;//流程定义标识,必填
-//private String version;//流程版本
-//private String taskId;//任务id，如果是开始发起流程，可不上送，如果流程审批环节，需要上送当前任务id
-POST {{endpoint}}/api.flow.examine/queryNextExamineUser
-Content-Type: application/json
-accessToken: {{token}}
-
-{
-    "processDefineKey":"",
-    "version":"1",
-    "taskId": 0
-}
-
+# {
+#     "processDefineKey":"xzxk",
+#     "version":"1",
+#     "taskId": 0
+# }
 
 
 ### 流程数据暂存
@@ -205,11 +226,19 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processDefineKey":"",
+    "processDefineKey":"xzxk",
     "version":"1",
     "businessKey": 0,
     "fromData": 0
 }
+
+# {
+#     "processDefineKey":"",
+#     "version":"1",
+#     "businessKey": 0,
+#     "fromData": 0
+# }
+
 
 ### 流程办理提交
 //private String processDefineKey;//流程定义标识
@@ -225,17 +254,28 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processDefineKey":"",
+    "processDefineKey":"xzxk",
     "version":"1",
-    "taskId": 0,
-    "userId": 0,
-    "userName": "",
-    "businessKey":"",
-    "fromData":{},
-    "comment": "",
-    "businessKey": 0,
-    "fromData": 0
+    "userId": "43072172e459483d95e0d4c364b917c2",
+    "userName": "张体委",
+    "fromData":
+    {
+    },
+    "comment": "同意"
 }
+
+# {
+#     "processDefineKey":"xzxk",
+#     "version":"1",
+#     "taskId": 0,
+#     "userId": 0,
+#     "userName": "",
+#     "businessKey":"",
+#     "fromData":{},
+#     "comment": "",
+#     "businessKey": 0,
+#     "fromData": 0
+# }
 
 
 ### 流程实例明细
@@ -245,17 +285,28 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processInstanceId": 0
+    "processInstanceId": "42549"
+}
+
+### 1.2.3.6	审批意见列表
+//审批意见列表，用于查看当前流程经过的节点及每个节点的处理意见
+//private String processInstanceId;//流程实例id
+POST {{endpoint}}/api.flow.examine/getComments
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processInstanceId": "40093"
 }
 
 
-### 审批意见列表
+### 1.2.3.7	获取当前节点审批人
 POST {{endpoint}}/api.flow.examine/queryCurrExamineUser
 Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processInstanceId": 0
+    "processInstanceId": "40093"
 }
 
 
