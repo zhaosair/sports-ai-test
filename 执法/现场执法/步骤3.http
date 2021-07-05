@@ -100,53 +100,75 @@ content-type: application/json
                     "__vModel__": "conclusion"
                 },
                 {
-                    "__config__": {
-                    "label": "检查人意见",
-                    "labelWidth": null,
-                    "showLabel": true,
-                    "tag": "el-input",
-                    "tagIcon": "textarea",
-                    "required": true,
-                    "layout": "colFormItem",
-                    "regList": [],
-                    "formId": 114,
-                    "renderKey": 1621415438457
-                    },
-                    "type": "textarea",
-                    "placeholder": "请输入检查人意见",
-                    "style": {
-                        "width": "100%"
-                    },
-                    "maxlength": null,
-                    "show-word-limit": false,
-                    "readonly": false,
-                    "disabled": false,
-                    "__vModel__": "opinion"
+                    "__config__":{
+                    "layout":"rowFormItem",
+                    "tagIcon":"row",
+                    "layoutTree":true,
+                    "formId":112,
+                    "componentName": "检查人意见",
+                    "renderKey":1621415404383,
+                    "children":[
+                        {
+                            "__config__": {
+                                "labelWidth": null,
+                                "showLabel": false,
+                                "tag": "el-input",
+                                "tagIcon": "textarea",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "regList": [],
+                                "formId": 114,
+                                "renderKey": 1621415438457
+                                },
+                                "type": "textarea",
+                                "placeholder": "请输入检查人意见",
+                                "style": {
+                                    "width": "100%"
+                                },
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": false,
+                                "disabled": false,
+                                "__vModel__": "opinion"
+                            }
+                        ]
+                    }
                 },
                 {
-                    "__config__": {
-                    "label": "备注",
-                    "labelWidth": null,
-                    "showLabel": true,
-                    "tag": "el-input",
-                    "tagIcon": "textarea",
-                    "required": true,
-                    "layout": "colFormItem",
-                    "regList": [],
-                    "formId": 114,
-                    "renderKey": 1621415438457
-                    },
-                    "type": "textarea",
-                    "placeholder": "请输入备注",
-                    "style": {
-                        "width": "100%",
-                        "height":"300px"
-                    },
-                    "maxlength": null,
-                    "show-word-limit": false,
-                    "readonly": false,
-                    "disabled": false,
-                    "__vModel__": "remarks"
+                        "__config__":{
+                        "layout":"rowFormItem",
+                        "tagIcon":"row",
+                        "layoutTree":true,
+                        "formId":112,
+                        "componentName": "备注",
+                        "renderKey":1621415404383,
+                        "children":[
+                            {
+                                "__config__": {
+                                "labelWidth": null,
+                                "showLabel": false,
+                                "tag": "el-input",
+                                "tagIcon": "textarea",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "regList": [],
+                                "formId": 114,
+                                "renderKey": 1621415438457
+                                },
+                                "type": "textarea",
+                                "placeholder": "请输入备注",
+                                "style": {
+                                    "width": "100%",
+                                    "height":"300px"
+                                },
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": false,
+                                "disabled": false,
+                                "__vModel__": "remarks"
+                            }   
+                        ]
+                    }
                 }
             ],
             "NextNavigation":"/enforcement/onSiteLawEnforcement/Fourth",
