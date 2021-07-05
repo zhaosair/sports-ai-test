@@ -170,7 +170,7 @@ content-type: application/json
             "navList": [
                 {
                     "title": "安全出口",
-                    "nav": "test/cardtest",
+                    "nav": "enforcement/safeExport",
                     "svg":{
                       "icon":"export",
                       "color":"#43CF7C"

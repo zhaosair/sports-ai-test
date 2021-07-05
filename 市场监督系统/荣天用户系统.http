@@ -27,6 +27,7 @@ GET {{endpoint}}/user/1
 
 
 ### 用户授权
+#### app: internal - 执法   medical - 体医  
 POST {{endpoint}}/auth/oauth/token HTTP/1.1
 Content-Type: application/x-form-urlencoded
 

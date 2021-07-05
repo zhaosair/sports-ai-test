@@ -1,0 +1,53 @@
+@endpoint=https://r.zbsoft.top
+
+@Pageendpoint = https://api.mock.smallsaas.cn
+
+
+@token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
+
+POST {{endpoint}}/api.page.design.form/loadFormInfo
+Content-Type: application/json
+accessToken: {{token}}
+
+//{
+//    "code": "CCCCC111"
+//}
+
+## or
+{
+    "formId": 26
+}
+###
+GET https://api.uat.smallsaas.cn/api/u/user 
+
+### 获取列表数据
+GET {{Pageendpoint}}/form?id=50000
+### 提交列表数据
+POST {{Pageendpoint}}/form/50000
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"测试页面",
+    "title":"CCCCC111页面测试",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+            },
+            "id":"26",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
