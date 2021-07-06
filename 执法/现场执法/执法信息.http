@@ -1,0 +1,838 @@
+@endpoint=https://api.mock.smallsaas.cn
+@Formendpoint=https://r.zbsoft.top
+@token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
+
+## 动态页面 
+
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=2024
+
+
+### 保存动态页面数据
+POST {{endpoint}}/form/2024
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "enforcementMessage",
+    "title": "执法信息",
+    "pageStyle": {
+        "background":"#E5E5E5"
+    },
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+        {
+            "type":"autoform",
+            "key":"autoform-4515-51a1-ada1-13sa4d123ad1s5",
+            "container":{
+                "background":"white",
+                "margin":"10px"
+            }
+        },
+        {
+            "type":"autoform",
+            "name":"执法名称",
+            "key":"autoform-65a4-7daa-sd13-216sd7ad1as0da",
+            "container":{
+                "background":"white",
+                "margin":"10px"
+            }
+        },
+        {
+            "type":"autoform",
+            "name":"执法人信息",
+            "key":"autoform-65a4-7daa-sd13-216sd7ad1as012",
+            "container":{
+                "background":"white",
+                "margin":"10px"
+            }
+        },
+        {
+            "type":"autoform",
+            "name":"执法信息",
+            "key":"autoform-65a4-7daa-sd13-216sd7ad1as084",
+            "container":{
+                "background":"white",
+                "margin":"10px"
+            }
+        }
+    ],
+    "moduleData": {
+        "autoform-4515-51a1-ada1-13sa4d123ad1s5":{
+            "fields": [{
+                "__config__": {
+                "label": "执法单号",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "el-input",
+                "tagIcon": "input",
+                "required": false,
+                "layout": "colFormItem",
+                "span": 24,
+                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                "regList": [],
+                "formId": 101,
+                "renderKey": "1011625548923945"
+                },
+                "__slot__": {
+                "prepend": "",
+                "append": ""
+                },
+                "placeholder": "请输入执法单号",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "prefix-icon": "",
+                "suffix-icon": "",
+                "maxlength": null,
+                "show-word-limit": false,
+                "readonly": true,
+                "hidden": false,
+                "disabled": false,
+                "__vModel__": "enfNumber"
+            }, {
+                "__config__": {
+                "label": "执法时间",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "el-input",
+                "tagIcon": "input",
+                "required": false,
+                "layout": "colFormItem",
+                "span": 24,
+                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                "regList": [],
+                "formId": 102,
+                "renderKey": "1021625548924229"
+                },
+                "__slot__": {
+                "prepend": "",
+                "append": ""
+                },
+                "placeholder": "请输入执法时间",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "prefix-icon": "",
+                "suffix-icon": "",
+                "maxlength": null,
+                "show-word-limit": false,
+                "readonly": true,
+                "hidden": false,
+                "disabled": false,
+                "__vModel__": "enfTime"
+            }],
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "right",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 15,
+            "disabled": false,
+            "span": 24,
+            "formBtns": false,
+            "saveApi": "",
+            "loadApi": "https://api.mock.smallsaas.cn/data?id=2024",
+            "isLawForm": false
+        },
+         "autoform-65a4-7daa-sd13-216sd7ad1as0da": {
+            "fields": [{
+                "__config__":{
+                "layout":"rowFormItem",
+                "tagIcon":"row",
+                "layoutTree":true,
+                "formId":112,
+                "componentName": "执法名称",
+                "renderKey":1621415404383,
+                "children":[{
+                    "__config__": {
+                    "label": "名称",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "changeTag": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem",
+                    "span": 24,
+                    "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                    "regList": [],
+                    "formId": 102,
+                    "renderKey": "1021625545511126"
+                    },
+                    "__slot__": {
+                    "prepend": "",
+                    "append": ""
+                    },
+                    "placeholder": "请输入名称",
+                    "style": {
+                    "width": "100%"
+                    },
+                    "clearable": true,
+                    "prefix-icon": "",
+                    "suffix-icon": "",
+                    "maxlength": null,
+                    "show-word-limit": false,
+                    "readonly": true,
+                    "hidden": false,
+                    "disabled": false,
+                    "__vModel__": "name"
+                }, {
+                    "__config__": {
+                    "label": "法定代表人",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "changeTag": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem",
+                    "span": 24,
+                    "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                    "regList": [],
+                    "formId": 103,
+                    "renderKey": "1031625545511671"
+                    },
+                    "__slot__": {
+                    "prepend": "",
+                    "append": ""
+                    },
+                    "placeholder": "请输入法定代表人",
+                    "style": {
+                    "width": "100%"
+                    },
+                    "clearable": true,
+                    "prefix-icon": "",
+                    "suffix-icon": "",
+                    "maxlength": null,
+                    "show-word-limit": false,
+                    "readonly": true,
+                    "hidden": false,
+                    "disabled": false,
+                    "__vModel__": "people"
+                }, {
+                    "__config__": {
+                    "label": "场所地址",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "changeTag": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem",
+                    "span": 24,
+                    "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                    "regList": [],
+                    "formId": 104,
+                    "renderKey": "1041625545512346"
+                    },
+                    "__slot__": {
+                    "prepend": "",
+                    "append": ""
+                    },
+                    "placeholder": "请输入场所地址",
+                    "style": {
+                    "width": "100%"
+                    },
+                    "clearable": true,
+                    "prefix-icon": "",
+                    "suffix-icon": "",
+                    "maxlength": null,
+                    "show-word-limit": false,
+                    "readonly": true,
+                    "hidden": false,
+                    "disabled": false,
+                    "__vModel__": "address"
+                }, {
+                    "__config__": {
+                    "label": "成立日期",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "changeTag": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem",
+                    "span": 24,
+                    "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                    "regList": [],
+                    "formId": 105,
+                    "renderKey": "1051625545512962"
+                    },
+                    "__slot__": {
+                    "prepend": "",
+                    "append": ""
+                    },
+                    "placeholder": "请输入成立日期",
+                    "style": {
+                    "width": "100%"
+                    },
+                    "clearable": true,
+                    "prefix-icon": "",
+                    "suffix-icon": "",
+                    "maxlength": null,
+                    "show-word-limit": false,
+                    "readonly": true,
+                    "hidden": false,
+                    "disabled": false,
+                    "__vModel__": "date"
+                }, {
+                    "__config__": {
+                    "label": "联系电话",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "changeTag": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem",
+                    "span": 24,
+                    "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                    "regList": [],
+                    "formId": 106,
+                    "renderKey": "1061625545724570"
+                    },
+                    "__slot__": {
+                    "prepend": "",
+                    "append": ""
+                    },
+                    "placeholder": "请输入联系电话",
+                    "style": {
+                    "width": "100%"
+                    },
+                    "clearable": true,
+                    "prefix-icon": "",
+                    "suffix-icon": "",
+                    "maxlength": null,
+                    "show-word-limit": false,
+                    "readonly": true,
+                    "hidden": false,
+                    "disabled": false,
+                    "__vModel__": "phone"
+                }]
+                }
+            }],
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "right",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 15,
+            "disabled": false,
+            "span": 24,
+            "formBtns": false,
+            "saveApi": "",
+            "loadApi": "https://api.mock.smallsaas.cn/data?id=2024",
+            "isLawForm": false
+         },
+         "autoform-65a4-7daa-sd13-216sd7ad1as012":{
+            "fields": [{
+                "__config__":{
+                "layout":"rowFormItem",
+                "tagIcon":"row",
+                "layoutTree":true,
+                "formId":112,
+                "componentName": "执法人信息",
+                "renderKey":1621415404383,
+                "children":[{
+                    "__config__": {
+                    "label": "执法人员姓名",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "changeTag": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem",
+                    "span": 24,
+                    "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                    "regList": [],
+                    "formId": 101,
+                    "renderKey": "1011625549476740"
+                    },
+                    "__slot__": {
+                    "prepend": "",
+                    "append": ""
+                    },
+                    "placeholder": "请输入执法人员姓名",
+                    "style": {
+                    "width": "100%"
+                    },
+                    "clearable": true,
+                    "prefix-icon": "",
+                    "suffix-icon": "",
+                    "maxlength": null,
+                    "show-word-limit": false,
+                    "readonly": true,
+                    "hidden": false,
+                    "disabled": false,
+                    "__vModel__": "EnfPeopleName"
+            }, {
+                "__config__": {
+                "label": "证号",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "el-input",
+                "tagIcon": "input",
+                "required": false,
+                "layout": "colFormItem",
+                "span": 24,
+                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                "regList": [],
+                "formId": 102,
+                "renderKey": "1021625549539667"
+                },
+                "__slot__": {
+                "prepend": "",
+                "append": ""
+                },
+                "placeholder": "请输入证号",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "prefix-icon": "",
+                "suffix-icon": "",
+                "maxlength": null,
+                "show-word-limit": false,
+                "readonly": true,
+                "hidden": false,
+                "disabled": false,
+                "__vModel__": "CateNumber"
+            }, {
+                "__config__": {
+                "label": "记录人",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "el-input",
+                "tagIcon": "input",
+                "required": false,
+                "layout": "colFormItem",
+                "span": 24,
+                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                "regList": [],
+                "formId": 103,
+                "renderKey": "1031625549607718"
+                },
+                "__slot__": {
+                "prepend": "",
+                "append": ""
+                },
+                "placeholder": "请输入记录人",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "prefix-icon": "",
+                "suffix-icon": "",
+                "maxlength": null,
+                "show-word-limit": false,
+                "readonly": true,
+                "hidden": false,
+                "disabled": false,
+                "__vModel__": "noteTaker"
+            }, {
+                "__config__": {
+                "label": "被检查人",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "el-input",
+                "tagIcon": "input",
+                "required": false,
+                "layout": "colFormItem",
+                "span": 24,
+                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                "regList": [],
+                "formId": 104,
+                "renderKey": "1041625549651527"
+                },
+                "__slot__": {
+                "prepend": "",
+                "append": ""
+                },
+                "placeholder": "请输入被检查人",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "prefix-icon": "",
+                "suffix-icon": "",
+                "maxlength": null,
+                "show-word-limit": false,
+                "readonly": true,
+                "hidden": false,
+                "disabled": false,
+                "__vModel__": "examinee"
+            }]}}],
+
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "right",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 15,
+            "disabled": false,
+            "span": 24,
+            "formBtns": false,
+            "saveApi": "",
+            "loadApi": "https://api.mock.smallsaas.cn/data?id=2024",
+            "isLawForm": false
+        },
+         "autoform-65a4-7daa-sd13-216sd7ad1as084":{
+                "fields": [
+                {
+                    "__config__":{
+                        "layout":"rowFormItem",
+                        "tagIcon":"row",
+                        "layoutTree":true,
+                        "formId":112,
+                        "componentName": "发送整改通知",
+                        "renderKey":1621415404383,
+                        "children":[
+                            {
+                                "__config__": {
+                                "label": "检查事项",
+                                "labelWidth": null,
+                                "showLabel": true,
+                                "changeTag": true,
+                                "tag": "el-input",
+                                "tagIcon": "input",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "span": 24,
+                                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                                "regList": [],
+                                "formId": 101,
+                                "renderKey": "1011625551324538"
+                                },
+                                "__slot__": {
+                                "prepend": "",
+                                "append": ""
+                                },
+                                "placeholder": "请输入检查事项",
+                                "style": {
+                                "width": "100%"
+                                },
+                                "clearable": true,
+                                "prefix-icon": "",
+                                "suffix-icon": "",
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": true,
+                                "hidden": false,
+                                "disabled": false,
+                                "__vModel__": "InspectionItems"
+                            }, {
+                                "__config__": {
+                                "label": "检查子事项",
+                                "labelWidth": null,
+                                "showLabel": true,
+                                "changeTag": true,
+                                "tag": "el-input",
+                                "tagIcon": "input",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "span": 24,
+                                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                                "regList": [],
+                                "formId": 102,
+                                "renderKey": "1021625551378398"
+                                },
+                                "__slot__": {
+                                "prepend": "",
+                                "append": ""
+                                },
+                                "placeholder": "请输入检查子事项",
+                                "style": {
+                                "width": "100%"
+                                },
+                                "clearable": true,
+                                "prefix-icon": "",
+                                "suffix-icon": "",
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": true,
+                                "hidden": false,
+                                "disabled": false,
+                                "__vModel__": "InspectionSubItems"
+                            }, {
+                                "__config__": {
+                                "label": "检查内容",
+                                "labelWidth": null,
+                                "showLabel": true,
+                                "changeTag": true,
+                                "tag": "el-input",
+                                "tagIcon": "textarea",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "span": 24,
+                                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                                "regList": [],
+                                "formId": 104,
+                                "renderKey": "1041625551419719"
+                                },
+                                "type": "textarea",
+                                "placeholder": "请输入检查内容",
+                                "autosize": {
+                                "minRows": 4,
+                                "maxRows": 4
+                                },
+                                "style": {
+                                "width": "100%"
+                                },
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": true,
+                                "hidden": false,
+                                "disabled": false,
+                                "__vModel__": "InspectionContent"
+                            }, {
+                                "__config__": {
+                                "label": "检查方法",
+                                "labelWidth": null,
+                                "showLabel": true,
+                                "changeTag": true,
+                                "tag": "el-input",
+                                "tagIcon": "input",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "span": 24,
+                                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                                "regList": [],
+                                "formId": 105,
+                                "renderKey": "1051625551463467"
+                                },
+                                "__slot__": {
+                                "prepend": "",
+                                "append": ""
+                                },
+                                "placeholder": "请输入检查方法",
+                                "style": {
+                                "width": "100%"
+                                },
+                                "clearable": true,
+                                "prefix-icon": "",
+                                "suffix-icon": "",
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": true,
+                                "hidden": false,
+                                "disabled": false,
+                                "__vModel__": "InspectionMethod"
+                            }, {
+                                "__config__": {
+                                "label": "检查结果",
+                                "labelWidth": null,
+                                "showLabel": true,
+                                "changeTag": true,
+                                "tag": "el-input",
+                                "tagIcon": "input",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "span": 24,
+                                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                                "regList": [],
+                                "formId": 108,
+                                "renderKey": "1081625551532710"
+                                },
+                                "__slot__": {
+                                "prepend": "",
+                                "append": ""
+                                },
+                                "placeholder": "请输入检查结果",
+                                "style": {
+                                "width": "100%"
+                                },
+                                "clearable": true,
+                                "prefix-icon": "",
+                                "suffix-icon": "",
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": true,
+                                "hidden": false,
+                                "disabled": false,
+                                "__vModel__": "InspectionResults"
+                            }, {
+                                "__config__": {
+                                "label": "检查结论",
+                                "labelWidth": null,
+                                "showLabel": true,
+                                "changeTag": true,
+                                "tag": "el-input",
+                                "tagIcon": "input",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "span": 24,
+                                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                                "regList": [],
+                                "formId": 109,
+                                "renderKey": "1091625551558753"
+                                },
+                                "__slot__": {
+                                "prepend": "",
+                                "append": ""
+                                },
+                                "placeholder": "请输入检查结论",
+                                "style": {
+                                "width": "100%"
+                                },
+                                "clearable": true,
+                                "prefix-icon": "",
+                                "suffix-icon": "",
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": true,
+                                "hidden": false,
+                                "disabled": false,
+                                "__vModel__": "InspectionConclusion"
+                            }, {
+                                "__config__": {
+                                "label": "图片",
+                                "labelWidth": null,
+                                "showLabel": true,
+                                "changeTag": true,
+                                "tag": "c-image",
+                                "tagIcon": "c-image",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "span": 24,
+                                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                                "regList": [],
+                                "formId": 110,
+                                "renderKey": "1101625551603637"
+                                },
+                                "__slot__": {
+                                "prepend": "",
+                                "append": ""
+                                },
+                                "placeholder": "请输入图片",
+                                "style": {
+                                "width": "100%"
+                                },
+                                "clearable": true,
+                                "prefix-icon": "",
+                                "suffix-icon": "",
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": true,
+                                "hidden": false,
+                                "disabled": false,
+                                "__vModel__": "images"
+                            }, {
+                                "__config__": {
+                                "label": "视频",
+                                "labelWidth": null,
+                                "showLabel": true,
+                                "changeTag": true,
+                                "tag": "c-video",
+                                "tagIcon": "c-video",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "span": 24,
+                                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                                "regList": [],
+                                "formId": 111,
+                                "renderKey": "1111625551637116"
+                                },
+                                "__slot__": {
+                                "prepend": "",
+                                "append": ""
+                                },
+                                "placeholder": "请输入视频",
+                                "style": {
+                                "width": "100%"
+                                },
+                                "clearable": true,
+                                "prefix-icon": "",
+                                "suffix-icon": "",
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": true,
+                                "hidden": false,
+                                "disabled": false,
+                                "__vModel__": "videos"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "right",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 15,
+            "disabled": false,
+            "span": 24,
+            "formBtns": false,
+            "saveApi": "",
+            "loadApi": "https://api.mock.smallsaas.cn/data?id=2024",
+            "isLawForm": false
+        }
+    }
+}
+
+###
+GET {{endpoint}}/data?id=2024
+
+
+###
+POST {{endpoint}}/data/2024 HTTP/1.1
+content-type: application/json
+
+{
+    "enfNumber":"23847563928174",
+    "enfTime":"2021-03-14 12:03:56",
+    "name":"北京天翔文化产业有限公司",
+    "people":"王伟伟",
+    "address":"北京市海淀区文化产业园A8901",
+    "date":"2020年3月1日",
+    "phone":"13666000111",
+    "EnfPeopleName":"张三",
+    "CateNumber":"1111111111111111",
+    "noteTaker":"李四",
+    "examinee":"王五",
+    "InspectionItems":"对经营高危险性体育项目的行政许可",
+    "InspectionSubItems":"对经营高危险性体育项目的行政许可",
+    "InspectionContent":"对申报高危险性体育项目许可经营单位体育设施符合相关国家标准的说明性材料内容进行现场核查",
+    "InspectionMethod":"实地勘察",
+    "InspectionResults":"不符合",
+    "InspectionConclusion":"不合格",
+    "images":[
+        {"url":"","title":""},
+        {"url":"","title":""}
+    ],
+    "videos":[
+        {"url":"https://vd4.bdstatic.com/mda-kikup5ivsj9rt0iu/hd/mda-kikup5ivsj9rt0iu.mp4?v_from_s=hkapp-haokan-hna&auth_key=1624879595-0-0-4d63965e5cef91dbeae0237fa2ad9c4c&bcevod_channel=searchbox_feed&pd=1&pt=3&abtest=","title":""},
+        {"url":"https://vd4.bdstatic.com/mda-kikup5ivsj9rt0iu/hd/mda-kikup5ivsj9rt0iu.mp4?v_from_s=hkapp-haokan-hna&auth_key=1624879595-0-0-4d63965e5cef91dbeae0237fa2ad9c4c&bcevod_channel=searchbox_feed&pd=1&pt=3&abtest=","title":""}
+    ]
+}
+
+
+
+# ###对接的外部表单页面生成
+# POST {{Formendpoint}}/api.page.design.form/loadFormInfo
+# Content-Type: application/json
+# accessToken: {{token}}
+
+# {
+#     "code": "zc03"
+# }
