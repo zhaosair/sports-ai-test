@@ -17,8 +17,9 @@ https://r.zbsoft.top/h5-form-render
 //"userId": "43072172e459483d95e0d4c364b917c2",
 //"userName": "张体委",
 
-// 执法人员 
-@token=eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjE2LCJkYXlPZldlZWsiOiJGUklEQVkiLCJkYXlPZlllYXIiOjE5NywiaG91ciI6OSwibWludXRlIjo0MCwibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6Njg2MDAwMDAwLCJzZWNvbmQiOjQ4LCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJjY2E3NzNlOWZiZTA0MTE2YjczMDA3MGUwYzkwNjU2YSIsInJlZnJlc2hfdG9rZW4iOiJiNzI5MTViZDljYzU0MmM4ODg0MjExYjkwMDY0MDczMyIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MjIsImRlcHRfaWQiOjMsInVzZXJuYW1lIjoiemYwMSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI1NTM1NjQ4Iiwicm9sZV9jb2RlcyI6WyJBU1MiXX0.w3n8XaCO6TWY6KuiP5B4iq8FJXeyIum6DDir9_LHU0U
+
+// 执法人员 zf09
+@token=eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjE2LCJkYXlPZldlZWsiOiJGUklEQVkiLCJkYXlPZlllYXIiOjE5NywiaG91ciI6MTYsIm1pbnV0ZSI6MjgsIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjcwMjAwMDAwMCwic2Vjb25kIjo0MCwieWVhciI6MjAyMSwiY2hyb25vbG9neSI6eyJjYWxlbmRhclR5cGUiOiJpc284NjAxIiwiaWQiOiJJU08ifX0sInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImFsZyI6IkhTMjU2In0.eyJhY2Nlc3NfdG9rZW4iOiIzNzJkZDg5MjY0ZjM0YWI0YTRjYWUzMmUxMTk4NDczMSIsInJlZnJlc2hfdG9rZW4iOiJjMGE0OTlmYmY2YmM0ZDg4YjJlNGI2ZjIyNzQ1MzFiNSIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MjgsImRlcHRfaWQiOjMsInVzZXJuYW1lIjoiemYwOSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI1NTYwMTIwIiwicm9sZV9jb2RlcyI6WyJBU1MiXX0.7-BpxZiUvnBmDtCK3ODnnVqN-pVd_WKWcc_bXlSTCsU
 
 
 // 企业用户  qy01
@@ -121,6 +122,7 @@ accessToken: {{token}}
 
 ### 表单数据提交
 // 没有 dataId 如果为空，表示新增数据，如果不空，表示修改数据
+// dataSn
 POST {{endpoint}}/api.page.design.form/submitFormData
 Content-Type: application/json
 accessToken: {{token}}
@@ -198,7 +200,7 @@ accessToken: {{token}}
 # }
 
 
-### 流程办理明细查询 (发起流程)
+### 流程办理明细查询 (发起流程前获取表单编号)
 // 待办事项列表需要传 taskId
 //private String processDefineKey;//流程定义标识
 //private String version;//版本
@@ -209,7 +211,7 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processDefineKey":"xzxk",
+    "processDefineKey":"zc",
     "version":"1"
 }
 
@@ -270,7 +272,7 @@ accessToken: {{token}}
 # }
 
 
-### 流程办理提交
+### 流程办理提交 (发起流程）
 //private String processDefineKey;//流程定义标识
 //private String version;//版本
 //private String taskId;//任务id，如 果是开始发起流程，可不上送
@@ -290,6 +292,7 @@ accessToken: {{token}}
     "userName": "张体委",
     "fromData":
     {
+
     },
     "comment": "同意"
 }
