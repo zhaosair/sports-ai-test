@@ -1,0 +1,11 @@
+@endpoint=https://r.zbsoft.top
+@token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
+
+
+POST {{endpoint}}/api.flow.examine/processDetail
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processInstanceId": "42549"
+}

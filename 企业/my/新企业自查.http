@@ -45,6 +45,7 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
+                "background":"white"
             },
             "code":"zc03",
             "API":"/api.page.design.form/loadFormInfo"
