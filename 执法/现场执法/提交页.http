@@ -27,11 +27,65 @@ content-type: application/json
       {
         "type":"sumbitState",
         "name":"",
-        "key":"sumbitState-4564-5242-4752-485174131454",
+        "key":"sumbitState-4564-5242-4752-485174131454"
+      },
+      {
+        "type":"autolist",
+        "name":"执法负责人",
+        "key":"autolist-4561-4113-4513-5746a4d132sa1",
+        "container":{
+          "height":"175px"
+        }
+      },
+      {
+        "type":"button",
+        "key":"button-2134-5134-ad14-5a4d1sa13d4a45"
       }
     ],
     "moduleData": {
          "sumbitState-4564-5242-4752-485174131454": {
+           
+         },
+         "autolist-4561-4113-4513-5746a4d132sa1":{
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2023",
+            "response":{
+                "list":"list",
+                "total":"total"
+            },
+            "itemModule":{
+                "type":"custom_component",
+                "name":"avatarItem"
+            }
+         },
+         "button-2134-5134-ad14-5a4d1sa13d4a45":{
+            "type":"",
+            "url":"/pages/enforcement/onSiteLawEnforcement/enforcementMessage",
+            "value":"",
+            "content":"查看执法信息"
          }
     }
+}
+
+###
+GET {{endpoint}}/data?id=2023
+
+
+###
+POST {{endpoint}}/data/2023 HTTP/1.1
+content-type: application/json
+
+{
+  "list":[
+    {
+      "img":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic3.zhimg.com%2F50%2Fv2-7d4869aa8ff5a92d448f9caed163c613_hd.jpg&refer=http%3A%2F%2Fpic3.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628130786&t=22efda216921895826c8b5416eb9baaa",
+      "name":"张三",
+      "sub":"执法人员"
+    },
+    {
+      "img":"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic3.zhimg.com%2F50%2Fv2-7d4869aa8ff5a92d448f9caed163c613_hd.jpg&refer=http%3A%2F%2Fpic3.zhimg.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1628130786&t=22efda216921895826c8b5416eb9baaa",
+      "name":"王五",
+      "sub":"督查人员"
+    }
+  ],
+  "total":2
 }
