@@ -14,13 +14,15 @@ https://r.zbsoft.top/h5-form-render
 @endpoint=https://r.zbsoft.top
 // 执法人员
 @token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
+//"userId": "43072172e459483d95e0d4c364b917c2",
+//"userName": "张体委",
 
 // 执法人员 
-//@token=eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjE2LCJkYXlPZldlZWsiOiJGUklEQVkiLCJkYXlPZlllYXIiOjE5NywiaG91ciI6OSwibWludXRlIjo0MCwibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6Njg2MDAwMDAwLCJzZWNvbmQiOjQ4LCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJjY2E3NzNlOWZiZTA0MTE2YjczMDA3MGUwYzkwNjU2YSIsInJlZnJlc2hfdG9rZW4iOiJiNzI5MTViZDljYzU0MmM4ODg0MjExYjkwMDY0MDczMyIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MjIsImRlcHRfaWQiOjMsInVzZXJuYW1lIjoiemYwMSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI1NTM1NjQ4Iiwicm9sZV9jb2RlcyI6WyJBU1MiXX0.w3n8XaCO6TWY6KuiP5B4iq8FJXeyIum6DDir9_LHU0U
+@token=eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjE2LCJkYXlPZldlZWsiOiJGUklEQVkiLCJkYXlPZlllYXIiOjE5NywiaG91ciI6OSwibWludXRlIjo0MCwibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6Njg2MDAwMDAwLCJzZWNvbmQiOjQ4LCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJjY2E3NzNlOWZiZTA0MTE2YjczMDA3MGUwYzkwNjU2YSIsInJlZnJlc2hfdG9rZW4iOiJiNzI5MTViZDljYzU0MmM4ODg0MjExYjkwMDY0MDczMyIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MjIsImRlcHRfaWQiOjMsInVzZXJuYW1lIjoiemYwMSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI1NTM1NjQ4Iiwicm9sZV9jb2RlcyI6WyJBU1MiXX0.w3n8XaCO6TWY6KuiP5B4iq8FJXeyIum6DDir9_LHU0U
+
 
 // 企业用户  qy01
 //@token=eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjE2LCJkYXlPZldlZWsiOiJGUklEQVkiLCJkYXlPZlllYXIiOjE5NywiaG91ciI6OSwibWludXRlIjozNywibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6ODAyMDAwMDAwLCJzZWNvbmQiOjIyLCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiI3NGY1MTYzNWJhYjE0NjIxOWEzNzQxMjNiYWIxYjhkMSIsInJlZnJlc2hfdG9rZW4iOiJlNTdiZTcwZGFlYjI0NDE1OTE1ZDQyZWRjMWFjMjJmMyIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MjQsImRlcHRfaWQiOjE1LCJ1c2VybmFtZSI6InF5MDEiLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJzZXJ2ZXIiLCJsaWNlbmNlIjoicHJvZ3Jlc3MiLCJmcm9tIjowLCJ0aW1lX3N0YW1wIjoiMTYyNTUzNTQ0MiIsInJvbGVfY29kZXMiOlsiUVlZSCJdfQ.vn6MSrhlHDF3B4EBqCXVL0531MWqJAZQM__wrXpO2N0
-
 
 
 ### 删除表单
@@ -150,6 +152,8 @@ accessToken: {{token}}
 ## 工作流
 
 ### 流程定义列表查询
+// [zc, xzxk]
+
 POST {{endpoint}}/api.flow.process/definitionListPage
 Content-Type: application/json
 accessToken: {{token}}
@@ -160,12 +164,18 @@ accessToken: {{token}}
 
 
 ### 查询已发起的流程列表
+// applyUserId
+// applyUserName
+// finishState 0-未完成  1-已完成
+// dataScope 1 表示当前用户
+// processDefinitionKey 流程编号
 POST {{endpoint}}/api.flow.process/instanceListPage
 Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "keyWords":""
+    "dataScope": 1,
+    "processDefinitionKey": "xzxk"
 }
 
 
@@ -199,7 +209,7 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processDefineKey":"zc",
+    "processDefineKey":"xzxk",
     "version":"1"
 }
 
