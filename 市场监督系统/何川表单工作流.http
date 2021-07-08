@@ -183,7 +183,7 @@ accessToken: {{token}}
  //private String finishState;//完成状态。0末完成，1已完成
  
 // 任务处理状态
-// private String actCurrTaskName;//
+// private String actCurrTaskName;
  //private String actCurrDualUserName;
  //private String actCurrDualUserId;
  
