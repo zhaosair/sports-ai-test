@@ -39,6 +39,8 @@ content-type: application/json
                 "current":2,
                 "type":"EDU"
             },
+            "addIcon":true,
+            "addUrl":"/pages/addCompany/BusinessLicense",
             "field":"address",
             "itemModule":{
                 "name":"stateSearchItem"

@@ -1,0 +1,38 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 动态页面 
+
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=3004
+
+
+### 提交页
+POST {{endpoint}}/form/3004
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "sumbitCompany",
+    "title": "企业入库",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"sumbitState",
+        "name":"",
+        "key":"sumbitState-4564-5242-4752-485174131454"
+      }
+    ],
+    "moduleData": {
+         "sumbitState-4564-5242-4752-485174131454": {
+           
+         }
+    }
+}
