@@ -51,7 +51,7 @@ Content-Type: application/x-www-form-urlencoded
 
 username=app01
 &password=123456
-&app=public
+&app=internal
 
 
 ### 手机登录
@@ -61,7 +61,7 @@ Content-Type: application/x-www-form-urlencoded
 
 username=app01
 &password=123456
-&app=public
+&app=internal
 &from=5
 
 
