@@ -166,22 +166,73 @@ accessToken: {{token}}
 
 
 ### 查询已发起的流程列表
+
+// 出参
 // applyUserId
 // applyUserName
 // finishState 0-未完成  1-已完成
 // dataScope 1 表示当前用户
 // processDefinitionKey 流程编号
+
+// 流程发起人
+ //private String actApplyUserId;
+ //private String actApplyUserName;
+ 
+// 流程状态
+ //private String finishState;//完成状态。0末完成，1已完成
+ 
+// 任务处理状态
+// private String actCurrTaskName;//
+ //private String actCurrDualUserName;
+ //private String actCurrDualUserId;
+ 
+// 表单相关
+ //private String formCode;
+ //private String formName;
+ //private String formVersion;
 POST {{endpoint}}/api.flow.process/instanceListPage
+Content-Type: application/json
+accessToken: {{token}}
+
+// 当前用户
+# {
+#     "dataScope": 1,
+#     "processDefinitionKey": "zc",
+# }
+
+// 指定用户
+{
+    "processDefinitionKey": "zc",
+    "actApplyUserId": "49"
+}
+
+
+### 表单相关v2
+@endpoint1=https://api.uat.smallsaas.cn
+@endpoint1=http://192.168.3.226:8000
+GET {{endpoint1}}/v2/api.flow.process/instanceListPage?dataScope=1&processDefinitionKey=zc
 Content-Type: application/json
 accessToken: {{token}}
 
 {
     "dataScope": 1,
-    "processDefinitionKey": "xzxk"
+    "processDefinitionKey": "zc"
 }
 
 
-### 流程任务列表查询
+### 表单相关v2
+@endpoint1=http://192.168.3.226:8000
+GET {{endpoint1}}/api.flow.process/instanceListPage?dataScope=1&processDefinitionKey=zc
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "dataScope": 1,
+    "processDefinitionKey": "zc"
+}
+
+
+### 流程任务列表查询 (待办)
 //private String keyWords; 查询关键字,流程名称 流程id等
 //private String processDefineKey;//流程定义标识
 //private String queryType;//wait:我的待办,dealed:我处理过,finished:已完成
@@ -286,13 +337,14 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processDefineKey":"xzxk",
+    "processDefineKey":"zc",
     "version":"1",
     "userId": "43072172e459483d95e0d4c364b917c2",
     "userName": "张体委",
-    "fromData":
+    "formData":
     {
-
+        "field01":"9134353252",
+        "field02":"企业"
     },
     "comment": "同意"
 }
@@ -318,7 +370,7 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processInstanceId": "42549"
+    "processInstanceId": "80225"
 }
 
 ### 1.2.3.6	审批意见列表
