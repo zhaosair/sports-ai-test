@@ -42,14 +42,13 @@ content-type: application/json
         "tips": "动态列表组件",
         "binding":
         {
-          "list":"list",
-          "total":"total"
+          "list":"list"
         },
         "bindingTarget": "data",
         "name":"待办",
         "key":"e59992z8-bb88-a788-9922-1623488775885",
         "container":{
-          "height":"265px"
+          "height":"405rpx"
         }
       },
       {
@@ -139,33 +138,32 @@ content-type: application/json
            }
         },
          "e59992z8-bb88-a788-9922-1623488775885": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=201",
+          "loadApi":"https://api.uat.smallsaas.cn/api.flow.process/instanceListPage",
+          "method":"POST",
+          "jump":true,
+          "jumpText":"更多....",
+          "jumpUrl":"/companyHome/More",
+          "itemNavigation": "/companyHome/selfExplain?piId",
           "response":{
-              "list":"type.list",
-              "total":"type.total"
-          },
-          "itemNavigation": "/enforcement/onSiteLawEnforcement/First?id=&title",
-          "tabConfig":{
-            "field":"type",
-            "show":true
+              "list":"list"
           },
           "response":{
-            "list":"type.list",
-            "total":"type.total"
+            "list":"list"
           },
+        "unloading":true,
           "request":{
-            "fixed":"type",
             "default":{
-              "type":"0"
+              "dataScope": 1,
+              "processDefinitionKey": "",
+              "pageSize":2
             },
-            "pn":"pageNo",
-            "ps":"pageSize"
+              "pn":"pageNo"
           },
           "itemModule":{
             "type":"custom_component",
-            "name":"StateItem"
+            "name":"stateToItem"
           }
-         },
+        },
         "cd814de4-34de-fa95-1049-1623416664592": {
             "navList": [
                 {
@@ -178,7 +176,7 @@ content-type: application/json
                 },
                 {
                     "title": "安全警示标志",
-                    "nav": "/?id=1",
+                    "nav": "enforcement/onSiteLawEnforcement/First",
                     "svg":{
                       "icon":"warning",
                       "color":"#FFC300"
