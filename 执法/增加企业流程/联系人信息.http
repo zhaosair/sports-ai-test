@@ -1,0 +1,260 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+###
+GET {{endpoint}}/form?id=3001
+###
+POST {{endpoint}}/form/3001
+content-type: application/json
+
+{
+     "version":"1",
+    "name":"SelfSecond",
+    "title":"企业入库",
+    "pageStyle":{
+    },
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"steps",
+            "key":"steps-6161-5a11-641c-4a63dsa540a12",
+            "name":"",
+            "container":{
+                "background":"#1A5EB5"
+            }
+        },
+        {
+            "type":"autoform",
+            "key":"autoform-13ad-a454-318a-4ad84254sd12",
+            "name":"营业执照",
+            "container":{
+                "background":"white"
+            }
+        }
+    ],
+    "moduleData":{
+        "steps-6161-5a11-641c-4a63dsa540a12":{
+            "steps":{
+                "step":[
+                    {
+                        "text": "营业执照"
+                    },
+                    {
+                        "text": "联系人信息"
+                    },
+                    {
+                        "text": "档案信息"
+                    }
+                ],
+                "active":2
+            }
+        },
+        "autoform-13ad-a454-318a-4ad84254sd12":{
+  "fields": [{
+    "__config__": {
+      "layout": "rowFormItem",
+      "tagIcon": "row",
+      "layoutTree": true,
+      "document": "https://element.eleme.cn/#/zh-CN/component/layout#row-attributes",
+      "span": 24,
+      "formId": 102,
+      "renderKey": "1021625637329178",
+      "componentName": "联系人信息",
+      "children": [{
+        "__config__": {
+          "label": "联系人",
+          "labelWidth": null,
+          "showLabel": true,
+          "changeTag": true,
+          "tag": "el-input",
+          "tagIcon": "input",
+          "required": false,
+          "layout": "colFormItem",
+          "span": 24,
+          "document": "https://element.eleme.cn/#/zh-CN/component/input",
+          "regList": [],
+          "formId": 106,
+          "renderKey": "1061625637332133"
+        },
+        "__slot__": {
+          "prepend": "",
+          "append": ""
+        },
+        "placeholder": "请输入联系人",
+        "style": {
+          "width": "100%"
+        },
+        "clearable": true,
+        "prefix-icon": "",
+        "suffix-icon": "",
+        "maxlength": null,
+        "show-word-limit": false,
+        "readonly": false,
+        "hidden": false,
+        "disabled": false,
+        "__vModel__": "contacts"
+      }, {
+        "__config__": {
+          "label": "联系手机",
+          "labelWidth": null,
+          "showLabel": true,
+          "changeTag": true,
+          "tag": "el-input",
+          "tagIcon": "input",
+          "required": false,
+          "layout": "colFormItem",
+          "span": 24,
+          "document": "https://element.eleme.cn/#/zh-CN/component/input",
+          "regList": [],
+          "formId": 105,
+          "renderKey": "1051625637331961"
+        },
+        "__slot__": {
+          "prepend": "",
+          "append": ""
+        },
+        "placeholder": "请输入联系手机",
+        "style": {
+          "width": "100%"
+        },
+        "clearable": true,
+        "prefix-icon": "",
+        "suffix-icon": "",
+        "maxlength": null,
+        "show-word-limit": false,
+        "readonly": false,
+        "hidden": false,
+        "disabled": false,
+        "__vModel__": "mobilePhone"
+      }, {
+        "__config__": {
+          "label": "验证码",
+          "labelWidth": null,
+          "showLabel": true,
+          "changeTag": true,
+          "tag": "el-input",
+          "tagIcon": "input",
+          "required": false,
+          "layout": "colFormItem",
+          "span": 24,
+          "document": "https://element.eleme.cn/#/zh-CN/component/input",
+          "regList": [],
+          "formId": 104,
+          "renderKey": "1041625637331785"
+        },
+        "__slot__": {
+          "prepend": "",
+          "append": ""
+        },
+        "placeholder": "请输入验证码",
+        "style": {
+          "width": "100%"
+        },
+        "clearable": true,
+        "prefix-icon": "",
+        "suffix-icon": "",
+        "maxlength": null,
+        "show-word-limit": false,
+        "readonly": false,
+        "hidden": false,
+        "disabled": false,
+        "__vModel__": "VerificationCode"
+      }, {
+        "__config__": {
+          "label": "电子邮箱",
+          "labelWidth": null,
+          "showLabel": true,
+          "changeTag": true,
+          "tag": "el-input",
+          "tagIcon": "input",
+          "required": false,
+          "layout": "colFormItem",
+          "span": 24,
+          "document": "https://element.eleme.cn/#/zh-CN/component/input",
+          "regList": [],
+          "formId": 103,
+          "renderKey": "1031625637331609"
+        },
+        "__slot__": {
+          "prepend": "",
+          "append": ""
+        },
+        "placeholder": "请输入电子邮箱",
+        "style": {
+          "width": "100%"
+        },
+        "clearable": true,
+        "prefix-icon": "",
+        "suffix-icon": "",
+        "maxlength": null,
+        "show-word-limit": false,
+        "readonly": false,
+        "hidden": false,
+        "disabled": false,
+        "__vModel__": "email"
+      }, {
+        "__config__": {
+          "label": "上传手持身份证照片",
+          "tag": "el-upload",
+          "tagIcon": "upload",
+          "layout": "colFormItem",
+          "defaultValue": null,
+          "showLabel": false,
+          "labelWidth": null,
+          "required": false,
+          "span": 24,
+          "showTip": false,
+          "buttonText": "上传手持身份证照片",
+          "regList": [],
+          "changeTag": true,
+          "fileSize": 2,
+          "sizeUnit": "MB",
+          "document": "https://element.eleme.cn/#/zh-CN/component/upload",
+          "formId": 107,
+          "renderKey": "1071625637350712"
+        },
+        "__slot__": {
+          "list-type": true
+        },
+        "action": "https://jsonplaceholder.typicode.com/posts/",
+        "disabled": false,
+        "accept": "",
+        "name": "file",
+        "auto-upload": true,
+        "list-type": "text",
+        "multiple": false,
+        "__vModel__": "UploadCardId"
+      }]
+    },
+    "type": "default",
+    "justify": "start",
+    "align": "top"
+  }],
+  "formRef": "elForm",
+  "formModel": "formData",
+  "size": "medium",
+  "labelPosition": "right",
+  "labelWidth": 100,
+  "formRules": "rules",
+  "gutter": 15,
+  "disabled": false,
+  "span": 24,
+  "formBtns": false,
+  "nextBtns":true,
+  "LastBtns":true,
+  "NextNavigation":"/addCompany/ArchivalInformation",
+  "saveApi": "",
+  "loadApi": "",
+  "isLawForm": false
+}
+
+
+
+    }
+}

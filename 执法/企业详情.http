@@ -49,7 +49,7 @@ content-type: application/json
     ],
     "moduleData":{
         "autoform-7812-ad64-398a-451231561122":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2004",
+            "loadApi":"https://api.uat.smallsaas.cn/admin/companyinfo/$$id",
             "fields": [
                 {
                     "__config__":{
@@ -120,7 +120,7 @@ content-type: application/json
                                 "show-word-limit":false,
                                 "readonly":true,
                                 "disabled":false,
-                                "__vModel__":"people"
+                                "__vModel__":"legalRepresentative"
                             },
                             {
                                 "__config__":{
@@ -182,7 +182,7 @@ content-type: application/json
                                 "show-word-limit":false,
                                 "readonly":true,
                                 "disabled":false,
-                                "__vModel__":"date"
+                                "__vModel__":"startDate"
                             },
                             {
                                 "__config__":{
@@ -213,7 +213,7 @@ content-type: application/json
                                 "show-word-limit":false,
                                 "readonly":true,
                                 "disabled":false,
-                                "__vModel__":"phone"
+                                "__vModel__":"personPhone"
                             }
                         ]
                     }
@@ -255,7 +255,7 @@ content-type: application/json
                                 "show-word-limit":false,
                                 "readonly":true,
                                 "disabled":false,
-                                "__vModel__":"certificates"
+                                "__vModel__":"licenceImages"
                             }
                         ]
                     }
@@ -297,7 +297,7 @@ content-type: application/json
                                 "show-word-limit":false,
                                 "readonly":true,
                                 "disabled":false,
-                                "__vModel__":"scenePhoto"
+                                "__vModel__":"sceneImages"
                             }
                         ]
                     }

@@ -32,8 +32,15 @@ content-type: application/json
     ],
     "moduleData": {
         "search111-5456-4564-2125-4878854564512": {
-            "loadAPI":"https://api.mock.smallsaas.cn/data",
-            "id":"12311",
+            "loadAPI":"https://api.uat.smallsaas.cn/admin/companyinfo/page",
+            "itemNavigation":"/pages/enforcement/enforcementDetails?id",
+            "params":{
+                "size":10,
+                "current":2,
+                "type":"EDU"
+            },
+            "addIcon":true,
+            "addUrl":"/pages/addCompany/BusinessLicense",
             "field":"address",
             "itemModule":{
                 "name":"stateSearchItem"
@@ -53,7 +60,6 @@ POST {{endpoint}}/data/12311 HTTP/1.1
 content-type: application/json
 
 {
-    "itemNavigation":"/pages/enforcement/enforcementDetails",
     "list":[
         {
             "id":"1",
