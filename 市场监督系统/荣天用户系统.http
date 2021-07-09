@@ -65,12 +65,14 @@ username=app01
 
 
 ### 平台用户注册
+// 用户类型。0管理员，1公众用户，2执法用户，3街道用户，4企业用户。
 POST https://rt.zbsoft.top/auth/appuser/register
 Content-Type: application/x-www-form-urlencoded
 
-username=zf010
+username=zf011
 &password=123456
 &app=internal
+&type=2
 
 ### 平台用户登录
 POST https://rt.zbsoft.top/auth/oauth/form HTTP/1.1
