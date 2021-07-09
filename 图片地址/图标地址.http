@@ -1,0 +1,20 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+
+###
+GET {{endpoint}}/form?id=1
+### 获取图标数据
+GET {{endpoint}}/data?id=9999999 HTTP/1.1
+content-type: application/json
+User-Agent: rest-client
+
+### 保存图标地址数据
+POST {{endpoint}}/data/9999999 HTTP/1.1
+content-type: application/json
+
+{
+    "reSetting":"https://api.uat.smallsaas.cn/attachments/Company/reSetting.png",
+    "ReturnWork":"https://api.uat.smallsaas.cn/attachments/Company/ReturnWork.png",
+    "selfSearch":"https://api.uat.smallsaas.cn/attachments/Company/selfSearch.png"
+}

@@ -32,13 +32,13 @@ content-type: application/json
     ],
     "moduleData": {
         "search111-5456-4564-2125-4878854564512": {
-            "loadAPI":"https://api.uat.smallsaas.cn/admin/companyinfo/page",
+            "loadAPI":"https://api.uat.smallsaas.cn/api/u/companyInfo",
             "itemNavigation":"/pages/enforcement/enforcementDetails?id",
             "params":{
-                "size":10,
-                "current":2,
                 "type":"EDU"
             },
+            "pn":true,
+            "pz":true,
             "addIcon":true,
             "addUrl":"/pages/addCompany/BusinessLicense",
             "field":"address",

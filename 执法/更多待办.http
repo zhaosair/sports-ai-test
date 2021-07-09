@@ -1,0 +1,62 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 动态页面 
+
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=3030
+
+
+### 保存动态页面
+POST {{endpoint}}/form/3030
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "More",
+    "title": "待办",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type": "autolist",
+        "name":"",
+        "key":"e59992z8-bb88-a788-9922-1623488775885",
+        "container":{
+            "height":""
+        }
+      }
+    ],
+    "moduleData": {
+         "e59992z8-bb88-a788-9922-1623488775885": {
+            "loadApi":"https://api.uat.smallsaas.cn/api.flow.process/instanceListPage",
+            "method":"POST",
+            "itemNavigation": "/companyHome/selfExplain?piId",
+            "response":{
+                "list":"list"
+            },
+            "response":{
+            "list":"list"
+            },
+            "request":{
+            "default":{
+                "dataScope": 1,
+                "processDefinitionKey": ""
+            },
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
+            "type":"custom_component",
+            "name":"stateToItem"
+            }
+        }
+    }
+}
+
