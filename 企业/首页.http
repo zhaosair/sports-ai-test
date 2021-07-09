@@ -112,10 +112,7 @@ content-type: application/json
         },
         "e8940746-d595-11eb-bdca-0800271e55b7":{
           "param":{
-            "title": "离自查上报还剩0天",
-            "content": "开始填报",
-            "textColor": "#008EF6",
-            "path": "/pages/companyHome/selfCheck/index"
+            "title": "离自查上报还剩0天"
           }
         },
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
