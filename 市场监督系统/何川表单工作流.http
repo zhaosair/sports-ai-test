@@ -93,6 +93,12 @@ POST {{endpoint}}//api.page.design.form/listDataPage
 Content-Type: application/json
 accessToken: {{token}}
 
+// 过滤表单编号的表单数据
+{
+    "code": "zc03",
+    "formDefine": false
+}
+
 {
     "code": "zf001",
     "formDefine": false,
@@ -191,9 +197,31 @@ accessToken: {{token}}
  //private String formCode;
  //private String formName;
  //private String formVersion;
+
+ // result
+# {
+#     "id": "75045",
+#     "piId": "75045",
+#     "pdId": "zc:1:40120",
+#     "pdName": "自查",
+#     "suspended": false,
+#     "bussinessName": "自查表单",
+#     "actApplyUserId": "24",
+#     "actApplyUserName": "qy01",
+#     "finishState": "0",
+#     "formCode": "zc03",
+#     "formName": "自查表单",
+#     "formVersion": "1",
+#     "formDataId": "4"
+# }
 POST {{endpoint}}/api.flow.process/instanceListPage
 Content-Type: application/json
 accessToken: {{token}}
+
+// 所有用户
+{
+    "processDefinitionKey": "zc"
+}
 
 // 当前用户
 # {
@@ -205,6 +233,35 @@ accessToken: {{token}}
 {
     "processDefinitionKey": "zc",
     "actApplyUserId": "49"
+}
+
+### 表单数据分页查询
+// 以下两个条件[mapWheres,listWheres]只能使用其中一个
+// 查询所有表单数据
+# {
+#     "selfcompany": "自查企业",
+#     "create_time": "2021-07-09 15:07:51",
+#     "act_last_deal_time": "2021-07-09 15:07:51",
+#     "act_busname": "自查表单",
+#     "act_apply_user": "zf01",
+#     "selfexplain": "自查说明",
+#     "update_time": "2021-07-09 15:07:51",
+#     "update_user": "22",
+#     "selfID": "413245102145120",
+#     "act_curr_task_name": "自查审批",
+#     "id": 4,
+#     "create_user": "22",
+#     "act_curr_dual_user_name": "张体委",
+#     "status": "1"
+# }
+POST {{endpoint}}//api.page.design.form/listDataPage
+Content-Type: application/json
+accessToken: {{token}}
+
+// 过滤表单编号的表单数据
+{
+    "code": "zc03",
+    "formDefine": false
 }
 
 
@@ -341,6 +398,22 @@ accessToken: {{token}}
 //private String businessKey;//业务id(表单数据id)
 //private Map<String, Object> fromData;//表单数据
 //private String comment;//审批意见
+// private String operType;
+#   * 操作类型
+#   * 
+#   * apply:流程发起（发起一个新的流程,taskId为空且 operType为空时的默认值），operType 为apply，则乎略 taskId
+#   * 发起一个新的流程<br>
+#   * next:下一步，转向下一个任务节 点(taskId不为空，operType 为空时的默认值)<br>
+#   * backToApply:回退到发起人（当前办理人可以把流程退回给发起人）<br>
+#   * backToPrev:回退给上一个处理人（当前办理人可以把流程退回给上一个处理人）<br>
+#   * forceEnd:强制归档,直接结束流程（只有发起人才能强制归档）<br>
+#   * delegate:任务委托，委托给其它人办理（任务人将当前的任务交给接收人进行审批，完成任务后又重新回到任务人身上。）<br>
+#   * resolveDelegate: 任务委托完成，重新回到原办理人<br>
+#   * turnTask：转办，转给其它人办理<br>
+#   * rollBack:撤回（撤回，上一个处理人，可以将自己处理完的流程撤回）<br>
+#   * claim：签收，谁签收，谁办理<br>
+#   * unclaim：反签收，取消签收<br>
+
 POST {{endpoint}}/api.flow.examine/complete
 Content-Type: application/json
 accessToken: {{token}}
