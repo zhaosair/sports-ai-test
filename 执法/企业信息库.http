@@ -35,7 +35,6 @@ content-type: application/json
             "loadAPI":"https://api.uat.smallsaas.cn/api/u/companyInfo",
             "itemNavigation":"/pages/enforcement/enforcementDetails?id",
             "params":{
-                "type":"EDU"
             },
             "pn":true,
             "pz":true,
