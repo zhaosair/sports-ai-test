@@ -30,19 +30,36 @@ Pw: 111111
 
 
 ## 用户注册登录
+// appid: 在微信开发者工具里配置
 // app: internal - 执法  medical - 体医  public - 公众用户
-//from: 登录方式：0后台管理用户密码登录，1微信公号，2微信小程序，3app-集成微信授权登录，4手机号+验证码登录，5用户名(或手机号)+密码登录
-
+// from: 登录方式：0后台管理用户密码登录，1微信公号，2微信小程序，3app-集成微信授权登录，4手机号+验证码登录，5用户名(或手机号)+密码登录
+// type: 0管理员，1公众用户，2执法用户，3街道用户，4企业用户。
+// [iv,encyptedData] : wx.getUserInfo()  
+# {
+#   errMsg: "getUserInfo:ok"
+#   iv: "H6tJpacB1cH6ALsOyEg5Kg=="
+#   rawData: "{"nickName":"微信用户","gender":0,"language":"","city":"","province":"","country":"","avatarUrl":"https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132"}"
+#   signature: "7752ff12262429e1106b4de24c4c00f1aebbc2be"
+#   userInfo: {nickName: "微信用户", gender: 0, language: "", city: "", province: "", …}
+# }
+// auth: wx.login() 
+# {
+#   enforcement_login.js? [sm]:204 
+#   {errMsg: "login:ok", code: "073P1s0w3TrgHW24bA3w3AV8kI0P1s0S"}
+#   code: "073P1s0w3TrgHW24bA3w3AV8kI0P1s0S"
+#   errMsg: "login:ok"
+# }
 ### 第三方用户授权 (小程序微信登录）
 POST {{endpoint}}/auth/oauth/token HTTP/1.1
 //Content-Type: application/x-form-urlencoded
 Content-Type: application/x-www-form-urlencoded
 
-auth=0635m6ll27oPi743kDnl2ZJoMI15m6lN
-&from=2
+from=2
 &iv=pXSm/gJ0HHT4AVThIUOTMw==
 &encryptedData=Of8fp/JwwoNQ9NWjHvgC6ebBvpZ8Bq5yN0Mu/Mse91QN1uKyjqJq3f6kcXHWM1Yr1XMAhIFR/zVYODklyXmK6QwMl8TgYvRdKmrph4yW4p7h1wGRIfi6WtqjNub1kwCkNqhvVsQCJIY42FO7KbQPlhCazC6Vebbl1JPrT5qZDTRGZhrXvJ9a5RdnL+EzelXT9VbjZEa8gt+pasPmKmChW774XcmGTY9LlLtqtSOBPXoYNHdIlFYuCQECb3H8S+Wz7kCXwNODZ7ICxTIFXbpLCD7oncPX8AsB6h3vIcVIELMJFyOxQ0Oxv0fr1pTj9HIU9lUEAreqB9+yjbSE1RaRU/tOoMPgwKtX43uDtx7gIrwzDhM+mM5lcB/wNhUPn0osOL6xstAYv2/XRpDZVHSiHuUm8sx5/TUxFFhqv8LrGlL1CyzatRl5j15E6OZOpkWTaRzUY5Qa/9T5RMwbrTNnog==
+&auth=0635m6ll27oPi743kDnl2ZJoMI15m6lN
 &app=internal
+&type=2
 
 
 ### APP用户注册

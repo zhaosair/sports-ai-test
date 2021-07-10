@@ -238,22 +238,6 @@ accessToken: {{token}}
 ### 表单数据分页查询
 // 以下两个条件[mapWheres,listWheres]只能使用其中一个
 // 查询所有表单数据
-# {
-#     "selfcompany": "自查企业",
-#     "create_time": "2021-07-09 15:07:51",
-#     "act_last_deal_time": "2021-07-09 15:07:51",
-#     "act_busname": "自查表单",
-#     "act_apply_user": "zf01",
-#     "selfexplain": "自查说明",
-#     "update_time": "2021-07-09 15:07:51",
-#     "update_user": "22",
-#     "selfID": "413245102145120",
-#     "act_curr_task_name": "自查审批",
-#     "id": 4,
-#     "create_user": "22",
-#     "act_curr_dual_user_name": "张体委",
-#     "status": "1"
-# }
 POST {{endpoint}}//api.page.design.form/listDataPage
 Content-Type: application/json
 accessToken: {{token}}
