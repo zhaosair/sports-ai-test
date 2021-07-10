@@ -34,7 +34,7 @@ Pw: 111111
 //from: 登录方式：0后台管理用户密码登录，1微信公号，2微信小程序，3app-集成微信授权登录，4手机号+验证码登录，5用户名(或手机号)+密码登录
 
 ### 第三方用户授权 (小程序微信登录）
-POST {{endpoint}}/auth/oauth/token HTTP/1.1
+POST https://rt.zbsoft.top/auth/oauth/token HTTP/1.1
 //Content-Type: application/x-form-urlencoded
 Content-Type: application/x-www-form-urlencoded
 

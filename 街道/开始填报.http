@@ -1,0 +1,34 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+GET {{endpoint}}/form?id=5600
+### 提交列表数据
+POST {{endpoint}}/form/5600
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"companySelf",
+    "title":"企业自查",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"jdsb",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}

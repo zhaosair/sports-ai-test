@@ -323,12 +323,13 @@ accessToken: {{token}}
 //private String version;//版本
 //private String taskId;//任务id
 //private String businessKey;//业务key(表单数据 id)
+### zc , xzxk , jdsb
 POST {{endpoint}}/api.flow.examine/toComplete
 Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processDefineKey":"zc",
+    "processDefineKey":"xzxk",
     "version":"1"
 }
 
@@ -421,8 +422,8 @@ accessToken: {{token}}
 {
     "processDefineKey":"zc",
     "version":"1",
-    "userId": 26,
-    "userName": "张体委",
+  //  "userId": 26,
+   // "userName": "张体委",
     "formData":
     {
         "field01":"9134353252",

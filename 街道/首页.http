@@ -33,7 +33,7 @@ content-type: application/json
     "modules": [
         {
           "type": "banner",
-          "name": "轮播图",
+          "name": "",
           "key": "851344s-ad44-55ea-ca11-4225534d52b7",
           "container":{
           },
@@ -73,36 +73,31 @@ content-type: application/json
         },
         "e8940746-d595-11eb-bdca-0800271e55b7":{
           "param":{
-            "title": "场馆列表",
-            "content": "更多>>",
+            "title": "最新场馆上报信息",
             "path": ""
           }
         },
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
           "itemNavigation": "/companyHome/my/returnToWorkDetail?id",
+          "loadApi":"https://api.uat.smallsaas.cn/api.flow.process/instanceListPage",
+          "method":"POST",
           "response":{
-              "list":"type.list",
-              "total":"type.total"
-          },
-          "tabConfig":{
-            "field":"type",
-            "show":true
+              "list":"list"
           },
           "response":{
-            "list":"type.list",
-            "total":"type.total"
+            "list":"list"
           },
           "request":{
-            "fixed":"type",
             "default":{
-              "type":"0"
+              "dataScope": 1,
+              "processDefinitionKey": "jdsb"
             },
-            "pn":"pageNo",
-            "ps":"pageSize"
+              "pn":"pageNo",
+              "ps":"pageSize"
           },
           "itemModule":{
             "type":"custom_component",
-            "name":"VenueListItem"
+            "name":"stateToItem"
           }
         }
     }

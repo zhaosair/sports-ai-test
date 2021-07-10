@@ -176,7 +176,7 @@ content-type: application/json
                 },
                 {
                     "title": "安全警示标志",
-                    "nav": "enforcement/onSiteLawEnforcement/First",
+                    "nav": "/",
                     "svg":{
                       "icon":"warning",
                       "color":"#FFC300"

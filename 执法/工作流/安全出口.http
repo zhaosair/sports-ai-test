@@ -1,0 +1,34 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+GET {{endpoint}}/form?id=10089
+### 
+POST {{endpoint}}/form/10089
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"test",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}

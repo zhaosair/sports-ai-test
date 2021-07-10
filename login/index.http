@@ -56,7 +56,7 @@ content-type: application/json
                 "svg":"enforcement",
                 "title":"执法人员",
                 "subTitle":"执法工作人员注册",
-                "nav":"../../pages/Market-index/Market-index",
+                "nav":"/pages/login/login_register/enforcement_login?id=2",
                 "container":{
                 }
               },
@@ -64,7 +64,7 @@ content-type: application/json
                 "svg":"enterprise",
                 "title":"企业用户",
                 "subTitle":"企业用户注册",
-                "nav":"../../pages/companyHome/index",
+                "nav":"/pages/login/login_register/enforcement_login?id=4",
                 "container":{
                 }
               },
@@ -72,7 +72,7 @@ content-type: application/json
                 "svg":"street",
                 "title":"街镇用户",
                 "subTitle":"街镇用户上报注册",
-                "nav":"../../pages/street/index",
+                "nav":"/pages/street/home?id=3",
                 "container":{
                 }
               },
@@ -80,7 +80,7 @@ content-type: application/json
                 "svg":"management",
                 "title":"执法管理人员",
                 "subTitle":"执法管理人员注册",
-                "nav":"../../pages/index/index",
+                "nav":"",
                 "container":{
                 }
               }

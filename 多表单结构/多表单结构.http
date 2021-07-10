@@ -1,0 +1,662 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+### 获取多表单设计数据
+GET {{endpoint}}/data?id=90000 HTTP/1.1
+Content-Type: application/json
+
+### 更改多表单设计数据(可直接返回base64数据格式)
+POST {{endpoint}}/data/90000 HTTP/1.1
+Content-Type: application/json
+
+{
+    "designData":[
+        {
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2018",
+            "fields": [
+                {
+                    "__config__":{
+                        "layout":"rowFormItem",
+                        "tagIcon":"row",
+                        "layoutTree":true,
+                        "formId":112,
+                        "renderKey":1621415404383,
+                        "componentName":"检查对象",
+                        "children":[
+                            {
+                                "__config__":{
+                                    "label":"统一社会信用代码",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-input",
+                                    "tagIcon":"input",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "prepend":"",
+                                    "append":""
+                                },
+                                "placeholder":"统一社会信用代码",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"code"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"企业名称",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-input",
+                                    "tagIcon":"input",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "prepend":"",
+                                    "append":""
+                                },
+                                "placeholder":"企业名称",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"companyName"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"法定代表人",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-input",
+                                    "tagIcon":"textarea",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "prepend":"",
+                                    "append":""
+                                },
+                                "placeholder":"法定代表人",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"peopleName"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"联系方式",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-input",
+                                    "tagIcon":"input",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "prepend":"",
+                                    "append":""
+                                },
+                                "placeholder":"联系方式",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"phone"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "NextNavigation":"/enforcement/onSiteLawEnforcement/Second",
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "left",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 0,
+            "disabled": false,
+            "formBtns": false,
+            "nextBtns":true,
+            "LastBtns":false,
+            "unFocusedComponentBorder": false
+        },
+        {
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2019",
+            "fields": [
+                {
+                    "__config__":{
+                        "layout":"rowFormItem",
+                        "tagIcon":"row",
+                        "layoutTree":true,
+                        "formId":112,
+                        "renderKey":1621415404383,
+                        "children":[
+                            {
+                                "__config__":{
+                                    "label":"检查事项",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-select",
+                                    "tagIcon":"select",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "options":[
+                                        {
+                                            "label":"检查事项1",
+                                            "value":1
+                                        },
+                                        {
+                                            "label":"检查事项2",
+                                            "value":2
+                                        }
+                                    ]
+                                },
+                                "placeholder":"请选择",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"thing"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"检查内容",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-select",
+                                    "tagIcon":"select",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "options":[
+                                        {
+                                            "label":"检查内容1",
+                                            "value":1
+                                        },
+                                        {
+                                            "label":"检查内容2",
+                                            "value":2
+                                        }
+                                    ]
+                                },
+                                "placeholder":"请选择",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"content"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"检查方法",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-select",
+                                    "tagIcon":"select",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "options":[
+                                        {
+                                            "label":"检查方法1",
+                                            "value":1
+                                        },
+                                        {
+                                            "label":"检查方法2",
+                                            "value":2
+                                        }
+                                    ]
+                                },
+                                "placeholder":"请选择",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"method"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"检查结果",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-select",
+                                    "tagIcon":"select",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "options":[
+                                        {
+                                            "label":"检查结果1",
+                                            "value":1
+                                        },
+                                        {
+                                            "label":"检查结果2",
+                                            "value":2
+                                        }
+                                    ]
+                                },
+                                "placeholder":"请选择",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"result"
+                            },
+                            {
+                                "__config__": {
+                                    "label": "", 
+                                    "labelWidth": null, 
+                                    "showLabel": true, 
+                                    "tag": "el-upload", 
+                                    "tagIcon": "input", 
+                                    "required": false, 
+                                    "layout": "colFormItem", 
+                                    "formId": 113, 
+                                    "renderKey": 1621415432107
+                                }, 
+                                "readonly": false, 
+                                "max-count": 1, 
+                                "deletable": false, 
+                                "__vModel__": "picture"
+                            },
+                            { 
+                                "__config__": {
+                                    "label": "", 
+                                    "labelWidth": null, 
+                                    "showLabel": true, 
+                                    "tag": "el-upload", 
+                                    "tagIcon": "input", 
+                                    "required": false, 
+                                    "layout": "colFormItem", 
+                                    "formId": 113, 
+                                    "renderKey": 1621415432107
+                                }, 
+                                "readonly": false, 
+                                "max-count": 1, 
+                                "deletable": false, 
+                                "__vModel__": "video"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "NextNavigation":"/enforcement/onSiteLawEnforcement/Third",
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "left",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 0,
+            "disabled": false,
+            "formBtns": false,
+            "nextBtns":true,
+            "LastBtns":true,
+            "unFocusedComponentBorder": false
+        },
+        {
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2020",
+            "fields": [
+                 {
+                    "__config__": {
+                    "label": "检查结论",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "tag": "el-radio-group",
+                    "tagIcon": "radio",
+                    "layout": "colFormItem",
+                    "optionType": "default",
+                    "regList": [],
+                    "required": false,
+                    "border": false,
+                    "formId": 104,
+                    "renderKey": 1621415304568
+                    },
+                    "__slot__": {
+                    "options": [
+                        {
+                        "label": "合格",
+                        "value": 1
+                        },
+                        {
+                        "label": "不合格",
+                        "value": 2
+                        }
+                    ]
+                    },
+                    "style": {},
+                    "size": "large",
+                    "disabled": false,
+                    "__vModel__": "conclusion"
+                },
+                {
+                    "__config__":{
+                    "layout":"rowFormItem",
+                    "tagIcon":"row",
+                    "layoutTree":true,
+                    "formId":112,
+                    "componentName": "检查人意见",
+                    "renderKey":1621415404383,
+                    "children":[
+                        {
+                            "__config__": {
+                                "labelWidth": null,
+                                "showLabel": false,
+                                "tag": "el-input",
+                                "tagIcon": "textarea",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "regList": [],
+                                "formId": 114,
+                                "renderKey": 1621415438457
+                                },
+                                "type": "textarea",
+                                "placeholder": "请输入检查人意见",
+                                "style": {
+                                    "width": "100%"
+                                },
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": false,
+                                "disabled": false,
+                                "__vModel__": "opinion"
+                            }
+                        ]
+                    }
+                },
+                {
+                        "__config__":{
+                        "layout":"rowFormItem",
+                        "tagIcon":"row",
+                        "layoutTree":true,
+                        "formId":112,
+                        "componentName": "备注",
+                        "renderKey":1621415404383,
+                        "children":[
+                            {
+                                "__config__": {
+                                "labelWidth": null,
+                                "showLabel": false,
+                                "tag": "el-input",
+                                "tagIcon": "textarea",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "regList": [],
+                                "formId": 114,
+                                "renderKey": 1621415438457
+                                },
+                                "type": "textarea",
+                                "placeholder": "请输入备注",
+                                "style": {
+                                    "width": "100%",
+                                    "height":"300px"
+                                },
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": false,
+                                "disabled": false,
+                                "__vModel__": "remarks"
+                            }   
+                        ]
+                    }
+                }
+            ],
+            "NextNavigation":"/enforcement/onSiteLawEnforcement/Fourth",
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "left",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 0,
+            "disabled": false,
+            "formBtns": false,
+            "nextBtns":true,
+            "LastBtns":true,
+            "unFocusedComponentBorder": false
+        },
+        {
+            "saveApi":"https://api.mock.smallsaas.cn/data/2021",
+            "fields": [
+                {
+                    "__config__":{
+                        "layout":"rowFormItem",
+                        "tagIcon":"row",
+                        "layoutTree":true,
+                        "formId":112,
+                        "jump":true,
+                        "componentName": "提交审批",
+                        "renderKey":1621415404383,
+                        "children":[
+                            {
+                                "__config__": {
+                                "labelWidth": null,
+                                "showLabel": false,
+                                "tag": "el-input",
+                                "tagIcon": "textarea",
+                                "required": false,
+                                "layout": "colFormItem",
+                                "regList": [],
+                                "formId": 114,
+                                "renderKey": 1621415438457
+                                },
+                                "type": "textarea",
+                                "placeholder": "请输入审批要点与备注",
+                                "style": {
+                                    "width": "100%"
+                                },
+                                "maxlength": null,
+                                "show-word-limit": false,
+                                "readonly": false,
+                                "disabled": false,
+                                "__vModel__": "message"
+                            }
+                        ]
+                    }
+                }
+
+            ],
+            "submittedNavigation":"/enforcement/onSiteLawEnforcement/Fifth",
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "left",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 0,
+
+            "disabled": false,
+            "formBtns": true,
+            "formBtnsText":"提交审批",
+            "nextBtns":false,
+            "LastBtns":true,
+            "unFocusedComponentBorder": false
+        },
+        {
+            "saveApi":"https://api.mock.smallsaas.cn/data/2022",
+            "fields": [
+                {
+                    "__config__":{
+                        "layout":"rowFormItem",
+                        "tagIcon":"row",
+                        "layoutTree":true,
+                        "formId":112,
+                        "jump":true,
+                        "componentName": "发送整改通知",
+                        "renderKey":1621415404383,
+                        "children":[
+                            {
+                                 "__config__":{
+                                "layout":"rowFormItem",
+                                "tagIcon":"row",
+                                "layoutTree":true,
+                                "formId":112,
+                                "jump":true,
+                                "componentName": "整改内容",
+                                "renderKey":1621415404383,
+                                "children":[
+                                    {
+                                        "__config__": {
+                                            "labelWidth": null,
+                                            "showLabel": false,
+                                            "label":"",
+                                            "tag": "el-input",
+                                            "tagIcon": "textarea",
+                                            "required": false,
+                                            "layout": "colFormItem",
+                                            "regList": [],
+                                            "formId": 114,
+                                            "renderKey": 1621415438457
+                                            },
+                                            "type": "textarea",
+                                            "placeholder": "请输入整改内容",
+                                            "style": {
+                                                "width": "100%"
+                                            },
+                                            "maxlength": null,
+                                            "show-word-limit": false,
+                                            "readonly": false,
+                                            "disabled": false,
+                                            "__vModel__": "ReContent"
+                                        },
+                                        {
+                                        "__config__": {
+                                            "labelWidth": null,
+                                            "showLabel": true,
+                                            "label":"复查时间",
+                                            "tag": "el-date-picker",
+                                            "tagIcon": "date",
+                                            "required": false,
+                                            "layout": "colFormItem",
+                                            "regList": [],
+                                            "formId": 114,
+                                            "renderKey": 1621415438457
+                                            },
+                                            "type": "date",
+                                            "placeholder": "请选择日期",
+                                            "style": {
+                                                "width": "100%"
+                                            },
+                                            "format": "yyyy-MM-dd",
+                                            "value-format": "yyyy-MM-dd",
+                                            "maxlength": null,
+                                            "show-word-limit": false,
+                                            "readonly": false,
+                                            "disabled": false,
+                                            "__vModel__": "selfSearchTime"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+
+            ],
+            "submittedNavigation":"/enforcement/onSiteLawEnforcement/toSumbit",
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "left",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 0,
+
+            "disabled": false,
+            "formBtns": true,
+            "formBtnsText":"提交执法单",
+            "nextBtns":false,
+            "LastBtns":true,
+            "unFocusedComponentBorder": false
+        }
+    ]
+}

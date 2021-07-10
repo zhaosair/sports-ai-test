@@ -1,0 +1,185 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+### 获取单表单设计数据
+GET {{endpoint}}/data?id=90001 HTTP/1.1
+Content-Type: application/json
+
+### 更改单表单设计数据(可直接返回base64数据格式)
+#### 单表单即是designData中仅存在一项
+POST {{endpoint}}/data/90001 HTTP/1.1
+Content-Type: application/json
+
+{
+    "designData":[
+        {
+            "loadApi":"https://api.mock.smallsaas.cn/data?id=2018",
+            "fields": [
+                {
+                    "__config__":{
+                        "layout":"rowFormItem",
+                        "tagIcon":"row",
+                        "layoutTree":true,
+                        "formId":112,
+                        "renderKey":1621415404383,
+                        "componentName":"检查对象",
+                        "children":[
+                            {
+                                "__config__":{
+                                    "label":"统一社会信用代码",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-input",
+                                    "tagIcon":"input",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "prepend":"",
+                                    "append":""
+                                },
+                                "placeholder":"统一社会信用代码",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"code"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"企业名称",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-input",
+                                    "tagIcon":"input",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "prepend":"",
+                                    "append":""
+                                },
+                                "placeholder":"企业名称",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"companyName"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"法定代表人",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-input",
+                                    "tagIcon":"textarea",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "prepend":"",
+                                    "append":""
+                                },
+                                "placeholder":"法定代表人",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"peopleName"
+                            },
+                            {
+                                "__config__":{
+                                    "label":"联系方式",
+                                    "labelWidth":null,
+                                    "showLabel":true,
+                                    "tag":"el-input",
+                                    "tagIcon":"input",
+                                    "required":false,
+                                    "defaultValue":"",
+                                    "layout":"colFormItem",
+                                    "regList":[],
+                                    "formId":110,
+                                    "renderKey":1621415432107
+                                },
+                                "__slot__":{
+                                    "prepend":"",
+                                    "append":""
+                                },
+                                "placeholder":"联系方式",
+                                "style":{
+                                    "width":"100%"
+                                },
+                                "clearable":true,
+                                "prefix-icon":"",
+                                "suffix-icon":"",
+                                "maxlength":null,
+                                "show-word-limit":false,
+                                "readonly":false,
+                                "disabled":false,
+                                "__vModel__":"phone"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "NextNavigation":"/enforcement/onSiteLawEnforcement/Second",
+            "formRef": "elForm",
+            "formModel": "formData",
+            "size": "medium",
+            "labelPosition": "left",
+            "labelWidth": 100,
+            "formRules": "rules",
+            "gutter": 0,
+            "disabled": false,
+            "formBtns": false,
+            "nextBtns":true,
+            "LastBtns":false,
+            "unFocusedComponentBorder": false
+        }
+    ]
+}
+
+
+
+{
+    "desiginData":{
+        "pageinationName":"表单名",
+        "pageData":[
+            {
+                
+            },
+            {
+                
+            }
+        ]
+    }
+}
