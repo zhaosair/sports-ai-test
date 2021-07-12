@@ -1,0 +1,23 @@
+@endpoint=https://r.zbsoft.top 
+@token = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjIyLCJkYXlPZldlZWsiOiJUSFVSU0RBWSIsImRheU9mWWVhciI6MjAzLCJob3VyIjoxMiwibWludXRlIjoxMiwibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6NjM5MDAwMDAwLCJzZWNvbmQiOjEwLCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJlODhmMGNhZDk1OWM0MTg0YWM1Mzk3MTM0NDkyNWJjMiIsInJlZnJlc2hfdG9rZW4iOiI1OWFlZmY3MjBmYjM0ZTk1YTE4MmNmMGJiOGU1NDc1MCIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6NzMsInVzZXJuYW1lIjoiMmM1MzA0MTgxOWQ0NDE4OTgwNDQ3MTcwM2VmN2FhMzMiLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJzZXJ2ZXIiLCJsaWNlbmNlIjoicHJvZ3Jlc3MiLCJmcm9tIjoyLCJ0aW1lX3N0YW1wIjoiMTYyNjA2MzEzMCIsInJvbGVfY29kZXMiOlsiQVNTIl0sIm5pY2tuYW1lIjoi5b6u5L-h55So5oi3In0.mYavW6sM_UzndCWutDyyo_7pK2fOkbTnzhFY3pnwVZo
+
+POST {{endpoint}}/api.flow.process/instanceListPage
+Content-Type: application/json
+accessToken: {{token}}
+
+// 所有用户
+{
+    "processDefinitionKey": "ZGLC"
+}
+
+// 当前用户
+# {
+#     "dataScope": 1,
+#     "processDefinitionKey": "zc",
+# }
+
+// 指定用户
+# {
+#     "processDefinitionKey": "zc",
+#     "actApplyUserId": "49"
+# }

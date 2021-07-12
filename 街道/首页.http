@@ -17,18 +17,6 @@ content-type: application/json
         "data": "data"
     }, 
     "container": {
-        "padding": "10px", 
-        "margin": "10px", 
-        "fill": "white", 
-        "stroke": {
-            "color": "lightgray", 
-            "lineWidth": "1px"
-        }, 
-        "shadow": {
-            "radius": 5
-        }, 
-        "corner": "8px", 
-        "spacing": "1em"
     }, 
     "modules": [
         {
@@ -36,6 +24,8 @@ content-type: application/json
           "name": "",
           "key": "851344s-ad44-55ea-ca11-4225534d52b7",
           "container":{
+            "padding":0,
+            "margin":0
           },
           "binding":{
             "imgList.banners" : "banners"

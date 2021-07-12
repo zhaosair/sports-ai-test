@@ -102,11 +102,11 @@ content-type: application/json
             "nav":"/workFlow/ReturnWork"
           },
           {
-            "title":"我要整改",
+            "title":"执法待办",
             "svg":{
               "icon":"selfSearch"
             },
-            "nav":"/workFlow/Rectification"
+            "nav":"/companyHome/More"
           }
           ]
         },

@@ -16,5 +16,6 @@ content-type: application/json
 {
     "reSetting":"https://api.uat.smallsaas.cn/attachments/Company/reSetting.png",
     "ReturnWork":"https://api.uat.smallsaas.cn/attachments/Company/ReturnWork.png",
-    "selfSearch":"https://api.uat.smallsaas.cn/attachments/Company/selfSearch.png"
+    "selfSearch":"https://api.uat.smallsaas.cn/attachments/Company/selfSearch.png",
+    "typeZc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zc.png"
 }

@@ -219,21 +219,21 @@ Content-Type: application/json
 accessToken: {{token}}
 
 // 所有用户
-{
-    "processDefinitionKey": "zc"
-}
-
-// 当前用户
 # {
-#     "dataScope": 1,
-#     "processDefinitionKey": "zc",
+#     "processDefinitionKey": "zc"
 # }
 
-// 指定用户
+// 当前用户
 {
+    "dataScope": 1,
     "processDefinitionKey": "zc",
-    "actApplyUserId": "49"
 }
+
+// 指定用户
+# {
+#     "processDefinitionKey": "zc",
+#     "actApplyUserId": "49"
+# }
 
 ### 表单数据分页查询
 // 以下两个条件[mapWheres,listWheres]只能使用其中一个
@@ -286,9 +286,10 @@ accessToken: {{token}}
 //private String keyWords; 查询关键字,流程名称 流程id等
 //private String processDefineKey;//流程定义标识
 //private String queryType;//wait:我的待办,dealed:我处理过,finished:已完成
+@token3=eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjIyLCJkYXlPZldlZWsiOiJUSFVSU0RBWSIsImRheU9mWWVhciI6MjAzLCJob3VyIjoxOCwibWludXRlIjo0NSwibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6ODExMDAwMDAwLCJzZWNvbmQiOjIwLCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJjMmQxMmM3YTNhMWY0ZGU1YTlhYmJlOTk3ZjIzM2UzZiIsInJlZnJlc2hfdG9rZW4iOiI2NTRjNmYwZjNmNjk0MWI4OWNkMjM5M2YzODkxM2ZiZiIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6NTEsImRlcHRfaWQiOjExLCJ1c2VybmFtZSI6InpmMDkwIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwibGljZW5jZSI6InByb2dyZXNzIiwiZnJvbSI6NSwidGltZV9zdGFtcCI6IjE2MjYwODY3MjAiLCJyb2xlX2NvZGVzIjpbIkFTUyJdfQ.4_7J5K1-AN1DJ1Cw5cPpHEmNNAK7drLxx7uwB7PEilo
 POST {{endpoint}}/api.flow.task/taskListPage
 Content-Type: application/json
-accessToken: {{token}}
+accessToken: {{token3}}
 
 {
      "queryType": "wait"
@@ -296,7 +297,7 @@ accessToken: {{token}}
 
 # {
 #     "keyWords":"",
-#     "processDefineKey":"",
+#     "processDefineKey":"zc",
 #     "queryType": "wait"
 # }
 
@@ -313,7 +314,7 @@ Content-Type: application/json
 accessToken: {{token}}
 
 {
-    "processDefineKey":"xzxk",
+    "processDefineKey":"test",
     "version":"1"
 }
 
@@ -336,7 +337,8 @@ accessToken: {{token}}
 //private String taskId;//任务id，如果是开始发起流程，可不上送，如果流程审批环节，需要上送当前任务id
 POST {{endpoint}}/api.flow.examine/queryNextExamineUser
 Content-Type: application/json
-accessToken: {{token}}
+# accessToken: {{token}}
+Authorization: Bearer {{token}}
 
 {
     "processDefineKey":"zc",
@@ -401,20 +403,54 @@ accessToken: {{token}}
 
 POST {{endpoint}}/api.flow.examine/complete
 Content-Type: application/json
-accessToken: {{token}}
+accessToken: {{token3}}
 
-{
-    "processDefineKey":"zc",
-    "version":"1",
-  //  "userId": 26,
-   // "userName": "张体委",
-    "formData":
-    {
-        "field01":"9134353252",
-        "field02":"企业"
-    },
-    "comment": "同意"
-}
+{"processDefineKey":"test","version":"1","userId":"51","userName":"zf090","formData":{"field101":"2011-04-01","field102":"zf","field103":"2011-08-01","field104":"zf","field105":"zf","selectUsers":{"id":"51","firstName":"zf090"}},"customValues":{"field101":"2011-04-01","field102":"zf","field103":"2011-08-01","field104":"zf","field105":"zf","selectUsers":{"id":"51","firstName":"zf090"},"fileno":"428529a3-1d50-dc52-c3d4-fd84a21f3dfa"},"comment":"同意"}
+
+# {
+#     "comment": "同意",
+#     "customValues": {
+#         "field101": "2011-08-01", 
+#         "field102": "aa2", 
+#         "field103": "2011-11-01", 
+#         "field104": "aaa", 
+#         "field105": "aaa",
+#         "fileno": "d5d7cbbe-c25c-bc8f-edf7-343ae163feb2",
+#         "selectUsers": {
+#             "id": "51", 
+#             "firstName": "zf090"
+#         }
+#     },
+#     "formData": {
+#         "field101": "2011-08-01",
+#         "field102": "aa2", 
+#         "field103": "2011-11-01", 
+#         "field104": "aaa", 
+#         "field105": "aaa",
+#         "selectUsers": {
+#             "id": "51",
+#             "firstName": "zf090"
+#         }
+#     },
+#     "userId": "51",
+#     "userName": "zf090",
+#     "version": "1"
+# }
+
+# {
+#     "processDefineKey":"zc",
+#     "version":"1",
+#   //  "userId": 26,
+#    // "userName": "张体委",
+#     "formData":
+#     {
+#         "field01":"9134353252",
+#         "field02":"企业"
+#     },
+#     "comment": "同意"
+# }
+
+
 
 # {
 #     "processDefineKey":"xzxk",

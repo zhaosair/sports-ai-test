@@ -35,7 +35,7 @@ content-type: application/json
     ],
     "moduleData": {
          "e59992z8-bb88-a788-9922-1623488775885": {
-            "loadApi":"https://api.uat.smallsaas.cn/api.flow.process/instanceListPage",
+            "loadApi":"https://api.uat.smallsaas.cn/api.flow.task/taskListPage",
             "method":"POST",
             "itemNavigation": "/companyHome/selfExplain?piId",
             "response":{
@@ -46,15 +46,14 @@ content-type: application/json
             },
             "request":{
             "default":{
-                "dataScope": 1,
-                "processDefinitionKey": ""
+              "queryType": "wait"
             },
                 "pn":"pageNo",
                 "ps":"pageSize"
             },
             "itemModule":{
             "type":"custom_component",
-            "name":"stateToItem"
+            "name":"toDoListItem"
             }
         }
     }
