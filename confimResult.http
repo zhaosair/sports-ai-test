@@ -1,0 +1,43 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+
+GET {{endpoint}}/form?id=10090
+### 
+POST {{endpoint}}/form/10090
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            }
+        }
+    ]
+}
+
+
+###
+POST https://api.uat.smallsaas.cn/api.flow.examine/toComplete
+Authorization: Bearer eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjIzLCJkYXlPZldlZWsiOiJGUklEQVkiLCJkYXlPZlllYXIiOjIwNCwiaG91ciI6MTYsIm1pbnV0ZSI6MywibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6MjI3MDAwMDAwLCJzZWNvbmQiOjIzLCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJkNDg5YTUzYTJmNWQ0ODU1YTdmZTUxNjM1MWNiZjAzYyIsInJlZnJlc2hfdG9rZW4iOiJhNTQxYWQ3ZGY3NDk0MmY1OTExN2QyYmM1NDhmMTU2ZiIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6NTEsImRlcHRfaWQiOjExLCJ1c2VybmFtZSI6InpmMDkwIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwibGljZW5jZSI6InByb2dyZXNzIiwiZnJvbSI6NSwidGltZV9zdGFtcCI6IjE2MjYxNjM0MDMiLCJyb2xlX2NvZGVzIjpbIkFTUyJdfQ.RAcSd1lQ3FhtldfV7FNMD5kKSJQtCj3wx7ajhs4RTY0
+Content-Type: application/json
+
+{
+    "processDefineKey": "test", 
+    "version": 1
+}

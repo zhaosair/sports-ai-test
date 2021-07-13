@@ -389,7 +389,7 @@ accessToken: {{token}}
 #   * 操作类型
 #   * 
 #   * apply:流程发起（发起一个新的流程,taskId为空且 operType为空时的默认值），operType 为apply，则乎略 taskId
-#   * 发起一个新的流程<br>
+#   * 发起一个新的流程<br>  
 #   * next:下一步，转向下一个任务节 点(taskId不为空，operType 为空时的默认值)<br>
 #   * backToApply:回退到发起人（当前办理人可以把流程退回给发起人）<br>
 #   * backToPrev:回退给上一个处理人（当前办理人可以把流程退回给上一个处理人）<br>

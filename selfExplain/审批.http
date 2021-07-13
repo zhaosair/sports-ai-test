@@ -1,0 +1,42 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+### 获取除表单外的页面数据
+GET {{endpoint}}/form?id=66000
+
+
+### 设置除表单外的页面数据
+POST {{endpoint}}/form/66000 HTTP/1.1
+Content-Type: application/json
+
+{  
+    "version": "1",
+    "name": "Approval comments",
+    "title": "审批意见",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"confirm",
+        "name":"",
+        "key":"89084045-v4d5-7122-3300-1623511112885"
+      }
+    ],
+    "moduleData": {
+        "89084045-v4d5-7122-3300-1623511112885": {
+            "agreeText":"合格",
+            "refuseText":"不合格",
+            "placeholder":"审批意见",
+            "failUrl":"/cofirmRefuse/cofirmRefuse",
+            "query":{
+                "key":"zglc"
+            }
+        }
+    }
+}

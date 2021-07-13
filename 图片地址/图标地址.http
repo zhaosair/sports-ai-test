@@ -17,5 +17,10 @@ content-type: application/json
     "reSetting":"https://api.uat.smallsaas.cn/attachments/Company/reSetting.png",
     "ReturnWork":"https://api.uat.smallsaas.cn/attachments/Company/ReturnWork.png",
     "selfSearch":"https://api.uat.smallsaas.cn/attachments/Company/selfSearch.png",
-    "typeZc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zc.png"
+    "typeZc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zc.png",
+    "typeTest":"https://api.uat.smallsaas.cn/attachments/enforcement/type/test.png",
+    "typeZglc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zglc.png",
+    "inputEnforcement":"https://api.uat.smallsaas.cn/attachments/input/enforcement.png",
+    "inputCompany":"https://api.uat.smallsaas.cn/attachments/input/company.png",
+    "inputStreet":"https://api.uat.smallsaas.cn/attachments/input/street.png"
 }
