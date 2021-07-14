@@ -1,0 +1,34 @@
+@endpoint = https://api.uat.smallsaas.cn
+@token = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjIzLCJkYXlPZldlZWsiOiJGUklEQVkiLCJkYXlPZlllYXIiOjIwNCwiaG91ciI6MTAsIm1pbnV0ZSI6MjAsIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjgxMDAwMDAwLCJzZWNvbmQiOjQ2LCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiIzYmJkYTA3NmRlMDQ0NGMzYWY2NWZiZWU3YjhkY2U0ZiIsInJlZnJlc2hfdG9rZW4iOiJiNTY3MzcyNGJlNTA0MWQwYjRiYzlmN2IzMjNmMjVhNCIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MjgsImRlcHRfaWQiOjMsInVzZXJuYW1lIjoiemYwOSIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI2MTQyODQ2Iiwicm9sZV9jb2RlcyI6WyJBU1MiXX0.GhzsavncIgoP-cW4MPbcBO0-ABwT_gTxW6V49lkxXYw
+
+POST {{endpoint}}/api.flow.examine/toComplete
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "processDefineKey":"yyzz"
+}
+###
+POST {{endpoint}}/api.flow.examine/complete
+Content-Type: application/json
+accessToken: {{token}}
+
+{
+    "customValues": {
+        "fileno": "e70b6243-0b38-92ec-8f1a-e295188593b6"
+    },
+    "formData":{
+        "address": "广州市天河区石牌西路8号展望数码广场一期第一层第122号铺",
+        "business": "研究和试验发展(具体经营项目请登录广州市商事主体信息公示平台查询。依法须经批准的项目，经相关部门批准后方可开展经营活动。)",
+        "captial": "壹佰万元整",
+        "establish_date": "20140522",
+        "name": "广州应达电子科技有限公司",
+        "person": "梁雪",
+        "reg_num": "440106000958074",
+        "valid_period": "29991231"
+    },
+    "processDefineKey": "yyzz"
+}
+
+
+

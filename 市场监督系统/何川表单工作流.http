@@ -214,20 +214,22 @@ accessToken: {{token}}
 #     "formVersion": "1",
 #     "formDataId": "4"
 # }
+@token4 = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjI0LCJkYXlPZldlZWsiOiJTQVRVUkRBWSIsImRheU9mWWVhciI6MjA1LCJob3VyIjoxNiwibWludXRlIjozMywibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6MjY5MDAwMDAwLCJzZWNvbmQiOjI0LCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiIyNWM4MjcyZjQ1OWY0YTdhOWQ1NGYyYjc5OWU1ZTU2OCIsInJlZnJlc2hfdG9rZW4iOiI1MDcxOTM1NGI4OTI0NzcxOWZmNjJjYTJmODZmMmI4MCIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6NzMsInVzZXJuYW1lIjoiMmM1MzA0MTgxOWQ0NDE4OTgwNDQ3MTcwM2VmN2FhMzMiLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJzZXJ2ZXIiLCJsaWNlbmNlIjoicHJvZ3Jlc3MiLCJmcm9tIjoyLCJ0aW1lX3N0YW1wIjoiMTYyNjI1MTYwNCIsInJvbGVfY29kZXMiOlsiQVNTIl0sIm5pY2tuYW1lIjoi5b6u5L-h55So5oi3In0.7EOD5kp9vLoOSNMHkzKxGjubJ8aE0Yj5X-708MerrvQ
 POST {{endpoint}}/api.flow.process/instanceListPage
 Content-Type: application/json
-accessToken: {{token}}
+accessToken: {{token4}}
 
 // 所有用户
-# {
-#     "processDefinitionKey": "zc"
-# }
+{
+    "processDefinitionKey": "yyzz",
+    "finishState":0
+}
 
 // 当前用户
-{
-    "dataScope": 1,
-    "processDefinitionKey": "zc",
-}
+# {
+#     "dataScope": 1,
+#     "processDefinitionKey": "yyzz",
+# }
 
 // 指定用户
 # {
