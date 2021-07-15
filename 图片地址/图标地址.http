@@ -20,13 +20,16 @@ content-type: application/json
     "typeZc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zc.png",
     "typeTest":"https://api.uat.smallsaas.cn/attachments/enforcement/type/test.png",
     "typeZglc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zglc.png",
+    "typeJdsb":"https://api.uat.smallsaas.cn/attachments/enforcement/type/jdsb.png",
     "inputEnforcement":"https://api.uat.smallsaas.cn/attachments/input/enforcement.png",
     "inputCompany":"https://api.uat.smallsaas.cn/attachments/input/company.png",
     "inputStreet":"https://api.uat.smallsaas.cn/attachments/input/street.png",
+    "inputPassword":"https://api.uat.smallsaas.cn/attachments/input/password.png",
     "tabbarMy":"https://api.uat.smallsaas.cn/attachments/tabbar/my.png",
     "tabbarMyActive":"https://api.uat.smallsaas.cn/attachments/tabbar/my-active.png",
     "tabbarEnforcement":"https://api.uat.smallsaas.cn/attachments/tabbar/enforcement.png",
     "tabbarEnforcementActive":"https://api.uat.smallsaas.cn/attachments/tabbar/enforcement-active.png",
     "avatarMy":"https://api.uat.smallsaas.cn/attachments/Avatar/myAvatar.png",
-    "arrowRight":"https://api.uat.smallsaas.cn/attachments/arrow/right.png"
+    "arrowRight":"https://api.uat.smallsaas.cn/attachments/arrow/right.png",
+    "select":"https://api.uat.smallsaas.cn/attachments/public/list-select.png"
 }

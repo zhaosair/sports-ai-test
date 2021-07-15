@@ -32,15 +32,11 @@ content-type: application/json
     ],
     "moduleData": {
          "46412315-8775-1545-5646-8711645452154": {
-            "loadApi":"https://api.uat.smallsaas.cn/api/u/workflow/instance/list?type=CREATOR&formType=41",
+            "loadApi":"https://api.uat.smallsaas.cn/api.flow.task/taskListPage",
+          "method":"POST",
             "itemNavigation": "/enforcement/enforcementBook?id=&id",
-            "tabConfig":{
-                "field":"type",
-                "show":true
-            },
             "response":{
-                "list":"records",
-                "total":"total"
+                "list":"list"
             },
             "request":{
                 "pn":"pageNo",
@@ -48,7 +44,7 @@ content-type: application/json
             },
             "itemModule":{
                 "type":"custom_component",
-                "name":"avatarStateItem"
+                "name":"toDoListItem"
             }
          }
     }

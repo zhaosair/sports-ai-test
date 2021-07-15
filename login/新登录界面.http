@@ -1,0 +1,82 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 新首页(第三方接口)
+
+### 获取数据新首页 
+GET {{endpoint}}/form?id=888
+
+
+### 新首页
+POST {{endpoint}}/form/888
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "loginPage",
+    "title": "首页",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"banner",
+        "name":"",
+        "key":"89084045-v4d5-7122-3300-1623511112885"
+      },
+      {
+        "type":"navlist",
+        "name":"请选择用户角色注册登录",
+        "key":"d4a555sd-hf22-qqds-8412-16234da445885",
+        "container":{
+                "grid-template-columns":"repeat(2, 50%)"
+            }
+      }
+    ],
+    "moduleData": {
+        "89084045-v4d5-7122-3300-1623511112885": {
+            "banners": [
+                {
+                    "img": "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1055881384,3553243108&fm=26&gp=0.jpg",
+                    "itemNavigation": "/?id=1"
+                }
+            ]
+        },
+        "d4a555sd-hf22-qqds-8412-16234da445885": {
+            "itemModule":{
+              "name":"subTitleCardItem"
+           },
+            "navList": [
+                {
+                "svg":"enforcement",
+                "title":"执法用户",
+                "subTitle":"执法工作人员注册",
+                "nav":"/pages/login/third-Login/IsLogin?id=2",
+                "container":{
+                }
+                },
+                {
+                "svg":"enterprise",
+                "title":"企业用户",
+                "subTitle":"企业用户注册",
+                "nav":"/pages/login/third-Login/IsLogin?id=4",
+                "container":{
+                }
+                },
+                {
+                    "svg":"street",
+                    "title":"街镇用户",
+                    "subTitle":"街镇用户上报注册",
+                    "nav":"/pages/login/third-Login/IsLogin?id=3",
+                    "container":{
+                    }
+                }
+            ]
+        }
+    }
+}
