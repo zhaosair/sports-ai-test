@@ -1,0 +1,13 @@
+@endpoint = https://api.mock.smallsaas.cn
+
+### 获取默认用户数据
+GET {{endpoint}}/form?id=2
+
+### 更改默认用户数据
+# 用户名密码需转base64格式
+POST {{endpoint}}/form/2
+Content-Type: application/json
+
+{
+    "defaultUser":"eyJ1c2VybmFtZSI6ImRlZmF1bHQiLCAicGFzc3dvcmQiOiJoZHR5QDIwMjEifQ=="
+}
