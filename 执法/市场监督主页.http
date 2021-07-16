@@ -14,7 +14,9 @@ content-type: application/json
     "version": "1",
     "name": "page_home",
     "title": "市场监督",
-    "pageStyle": {},
+    "pageStyle": {
+      "margin-bottom":"50px"
+    },
     "loadApi": "",
     "response": {
       "data":"data"

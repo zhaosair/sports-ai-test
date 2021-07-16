@@ -1,0 +1,66 @@
+@token = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjI1LCJkYXlPZldlZWsiOiJTVU5EQVkiLCJkYXlPZlllYXIiOjIwNiwiaG91ciI6MTYsIm1pbnV0ZSI6MzksIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjM4OTAwMDAwMCwic2Vjb25kIjozLCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJlNGJjMmEyMzAwZWM0YWU1ODhmZWEzYTNkMzE0NDhhOSIsInJlZnJlc2hfdG9rZW4iOiI3OWJjZTkyNmJlYWU0ZGIyOGM5NjdjNWNiZWRiYmY5OSIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MSwiZGVwdF9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI2MzM4MzQzIiwicm9sZV9jb2RlcyI6WyJST0xFX0FETUlOIl0sIm5pY2tuYW1lIjoi6LaF57qn566h55CG5ZGYIn0.wdyEojQl7K_QxlLz5GzjiywatXXm4Qxj8d6JQPBITnA
+@endpoint = https://rt.zbsoft.top/admin
+
+GET {{endpoint}}/companyinfo/page?size=111
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+
+###增加企业信息
+POST {{endpoint}}/companyinfo
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "id": "10087",
+    "userId": null,
+    "name": "测试公司2",
+    "type": "SPOT",
+    "licenceNo": "1234567890123456789",
+    "address": "测试地址",
+    "legalRepresentative": "测试人",
+    "startupDate": null,
+    "capital": 0.0,
+    "startDate": null,
+    "expireDate": null,
+    "businessScope": null,
+    "signedDate": null,
+    "certStatus": 0,
+    "createdTime": null,
+    "updatedTime": null,
+    "deleted": 0,
+    "streetId": null,
+    "longitude": 39.8688360,
+    "latitude": 116.2880780,
+    "applicant": null,
+    "applicantPhone": "13000000000",
+    "placeName": null,
+    "placeAddress": null,
+    "length": null,
+    "width": null,
+    "area": null,
+    "representativeName": "测试人",
+    "representativeIdNo": null,
+    "personName": null,
+    "personIdNo": null,
+    "personPhone": "13000000000",
+    "personAddress": null,
+    "opUnitName": null,
+    "opUnitAddress": null,
+    "opUnitPhone": null,
+    "operationItem": [],
+    "operationPlace": null,
+    "licenceImages": [],
+    "houseOwershipImages": [],
+    "staffQualificationImages": [],
+    "sceneImages": [],
+    "safetyRegulationFiles": [],
+    "streetName": null,
+    "nickname": null
+}
+
+
+### GET 
+GET {{endpoint}}/companyinfo/10087
+Authorization: Bearer {{token}}
+Content-Type: application/json

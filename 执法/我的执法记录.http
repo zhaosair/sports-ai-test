@@ -39,6 +39,9 @@ content-type: application/json
                 "list":"list"
             },
             "request":{
+                "default":{
+                  "queryType": "finished"
+                },
                 "pn":"pageNo",
                 "ps":"pageSize"
             },

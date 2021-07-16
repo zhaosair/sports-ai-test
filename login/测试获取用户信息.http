@@ -19,20 +19,27 @@ Content-Type: application/x-www-form-urlencoded
 &type=2
 &username=testuser10086
 
+@id = 1415599514978365441
+
 @tokenadmin=eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjI1LCJkYXlPZldlZWsiOiJTVU5EQVkiLCJkYXlPZlllYXIiOjIwNiwiaG91ciI6MTQsIm1pbnV0ZSI6NDIsIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjgzNDAwMDAwMCwic2Vjb25kIjoyMiwieWVhciI6MjAyMSwiY2hyb25vbG9neSI6eyJjYWxlbmRhclR5cGUiOiJpc284NjAxIiwiaWQiOiJJU08ifX0sInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImFsZyI6IkhTMjU2In0.eyJhY2Nlc3NfdG9rZW4iOiJkNjJhYzMwMGVkY2M0MTRmOTNmZGI0YzBhYjVkYjgyZSIsInJlZnJlc2hfdG9rZW4iOiJjNjkyNGI5MjE3MzY0M2Q0OTE2OGYwMjA2N2NiOWFlYiIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MSwiZGVwdF9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI2MzMxMzQyIiwicm9sZV9jb2RlcyI6WyJST0xFX0FETUlOIl0sIm5pY2tuYW1lIjoi6LaF57qn566h55CG5ZGYIn0.lp4Ei03WtW8OI-A2L5pT6i9I9JqAjBrZVc0WI5cNLVY
 @token2 = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjI1LCJkYXlPZldlZWsiOiJTVU5EQVkiLCJkYXlPZlllYXIiOjIwNiwiaG91ciI6MTYsIm1pbnV0ZSI6MzksIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjM4OTAwMDAwMCwic2Vjb25kIjozLCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJlNGJjMmEyMzAwZWM0YWU1ODhmZWEzYTNkMzE0NDhhOSIsInJlZnJlc2hfdG9rZW4iOiI3OWJjZTkyNmJlYWU0ZGIyOGM5NjdjNWNiZWRiYmY5OSIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MSwiZGVwdF9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI2MzM4MzQzIiwicm9sZV9jb2RlcyI6WyJST0xFX0FETUlOIl0sIm5pY2tuYW1lIjoi6LaF57qn566h55CG5ZGYIn0.wdyEojQl7K_QxlLz5GzjiywatXXm4Qxj8d6JQPBITnA
 @01token = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjI1LCJkYXlPZldlZWsiOiJTVU5EQVkiLCJkYXlPZlllYXIiOjIwNiwiaG91ciI6MTYsIm1pbnV0ZSI6NTksIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjQwOTAwMDAwMCwic2Vjb25kIjozMiwieWVhciI6MjAyMSwiY2hyb25vbG9neSI6eyJjYWxlbmRhclR5cGUiOiJpc284NjAxIiwiaWQiOiJJU08ifX0sInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImFsZyI6IkhTMjU2In0.eyJhY2Nlc3NfdG9rZW4iOiI4ZTQ1ZWE4NmZiZTU0NjdlOTIzYzBhN2QxNGEwMWM5MiIsInJlZnJlc2hfdG9rZW4iOiI5NmM2YTEyYWRkNTY0NzcwYWRiMmJmMDU0NDg1YWJlZCIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6NywiZGVwdF9pZCI6OSwidXNlcm5hbWUiOiIwMDAwMDEiLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJzZXJ2ZXIiLCJsaWNlbmNlIjoicHJvZ3Jlc3MiLCJmcm9tIjowLCJ0aW1lX3N0YW1wIjoiMTYyNjMzOTU3MiIsInJvbGVfY29kZXMiOlsiUk9MRV9BRE1JTiJdfQ.H8yyk3fNyQcB0-ZQArT9GPLrxwvgjFnoHFBEgUJple4
 @ntoken = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjI1LCJkYXlPZldlZWsiOiJTVU5EQVkiLCJkYXlPZlllYXIiOjIwNiwiaG91ciI6MTYsIm1pbnV0ZSI6MzksIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjM4OTAwMDAwMCwic2Vjb25kIjozLCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJlNGJjMmEyMzAwZWM0YWU1ODhmZWEzYTNkMzE0NDhhOSIsInJlZnJlc2hfdG9rZW4iOiI3OWJjZTkyNmJlYWU0ZGIyOGM5NjdjNWNiZWRiYmY5OSIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MSwiZGVwdF9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI2MzM4MzQzIiwicm9sZV9jb2RlcyI6WyJST0xFX0FETUlOIl0sIm5pY2tuYW1lIjoi6LaF57qn566h55CG5ZGYIn0.wdyEojQl7K_QxlLz5GzjiywatXXm4Qxj8d6JQPBITnA
 ###
-DELETE https://rt.zbsoft.top/admin/systhirdpartyuser/73
+DELETE https://rt.zbsoft.top/admin/systhirdpartyuser/{{id}}
 Authorization: Bearer {{token2}}
 
 ###
 GET https://rt.zbsoft.top/admin/systhirdpartyuser/1409700014225154050
 Authorization: Bearer {{token2}}
 
+
 ###
-GET https://rt.zbsoft.top/admin/systhirdpartyuser/page?size=21
+GET https://rt.zbsoft.top/admin/user/page
+Authorization: Bearer {{token2}}
+
+###获取所有用户信息
+GET https://rt.zbsoft.top/admin/systhirdpartyuser/page?size=22
 Authorization: Bearer {{token2}}
 Content-Type: application/json
 
@@ -46,18 +53,18 @@ Authorization: Bearer {{token2}}
 Content-Type: application/json
 
 {
-"id": "1413764739296677890",
-"userId": "73",
+"id": "1415599514978365441",
+"userId": "",
 "from": 2,
 "openId": "",
 "unionId": null,
-"imageUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/POgEwh4mIHO4nibH0KlMECNjjGxQUq24ZEaGT4poC6icRiccVGKSyXwibcPq4BWmiaIGuG1icwxaQX6grC9VemZoJ8rg/132",
-"nickname": "微信用户",
-"gender": 0,
-"country": "",
-"province": "",
-"city": "",
-"createTime": "2021-07-10 15:39:15",
-"updateTime": "2021-07-15 16:53:34",
+"imageUrl": "https://thirdwx.qlogo.cn/mmopen/vi_32/uB6Rprr8UiawFHIiblIPk4ZyNMdgJ2kjCC7FLjQibyl6ibHAh7qnJgIYBzLE5uqsoricVxAMV72G6iakyftp4cy6ibvWA/132",
+"nickname": "AEdge",
+"gender": 1,
+"country": "China",
+"province": "Guangdong",
+"city": "Shantou",
+"createTime": "2021-07-15 17:10:00",
+"updateTime": "2021-07-16 11:16:02",
 "app": "internal"
 }

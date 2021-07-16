@@ -75,6 +75,14 @@ content-type: application/json
                     "nav":"/pages/login/third-Login/IsLogin?id=3",
                     "container":{
                     }
+                },
+                {
+                    "img":"https://api.uat.smallsaas.cn/attachments/input/company.png",
+                    "title":"企业信息库",
+                    "subTitle":"企业信息添加申请",
+                    "nav":"/pages/login/addCompany",
+                    "container":{
+                    }
                 }
             ]
         }
