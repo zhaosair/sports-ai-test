@@ -34,7 +34,7 @@ content-type: application/json
          "46412315-8775-1545-5646-8711645452154": {
             "loadApi":"https://api.uat.smallsaas.cn/api.flow.task/taskListPage",
           "method":"POST",
-            "itemNavigation": "/enforcement/enforcementBook?id=&id",
+            "itemNavigation": "/enforcement/enforcementBook?piId",
             "response":{
                 "list":"list"
             },

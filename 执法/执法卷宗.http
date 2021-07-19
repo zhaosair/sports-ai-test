@@ -30,13 +30,6 @@ content-type: application/json
     },
     "modules":[
         {
-            "type":"autoform",
-            "key":"autoform-1524-5564-518a-j646d1222222",
-            "name":"",
-            "container":{
-            }
-        },
-        {
             "type":"navlist",
             "key":"65494216-4562-4561-4656-5464ads51655",
             "name":"相关内容索引",
@@ -46,106 +39,6 @@ content-type: application/json
         }
     ],
     "moduleData":{
-        "autoform-1524-5564-518a-j646d1222222":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2002",
-            "fields": [
-                    {
-                        "__config__":{
-                        "label": "执法单号",
-                        "labelWidth": null,
-                        "showLabel": true,
-                        "tag": "el-input",
-                        "tagIcon": "input",
-                        "defaultValue": "23847563928174",
-                        "required": false,
-                        "layout": "colFormItem",
-                        "regList": [],
-                        "formId": 101,
-                        "renderKey": 1621415022993
-                        },
-                        "readonly": true,
-                        "__vModel__": "enf_number"
-                    },
-                    {
-                        "__config__":{
-                        "label": "执法时间",
-                        "labelWidth": null,
-                        "showLabel": true,
-                        "tag": "el-input",
-                        "tagIcon": "input",
-                        "defaultValue": "2021-03-14 12:03:56",
-                        "required": false,
-                        "layout": "colFormItem",
-                        "regList": [],
-                        "formId": 101,
-                        "renderKey": 1621415022993
-                        },
-                        "readonly": true,
-                        "__vModel__": "enf_time"
-                    },
-                    {
-                        "__config__":{
-                        "label": "执法单位",
-                        "labelWidth": null,
-                        "showLabel": true,
-                        "tag": "el-input",
-                        "tagIcon": "input",
-                        "defaultValue": "北京市海淀区体育局",
-                        "required": false,
-                        "layout": "colFormItem",
-                        "regList": [],
-                        "formId": 101,
-                        "renderKey": 1621415022993
-                        },
-                        "readonly": true,
-                        "__vModel__": "enf_company"
-                    },
-                    {
-                        "__config__":{
-                        "label": "执法科室",
-                        "labelWidth": null,
-                        "showLabel": true,
-                        "tag": "el-input",
-                        "tagIcon": "input",
-                        "defaultValue": "市场管理科",
-                        "required": false,
-                        "layout": "colFormItem",
-                        "regList": [],
-                        "formId": 101,
-                        "renderKey": 1621415022993
-                        },
-                        "readonly": true,
-                        "__vModel__": "enf_department"
-                    },
-                    {
-                        "__config__":{
-                        "label": "执法标题",
-                        "labelWidth": null,
-                        "showLabel": true,
-                        "tag": "el-input",
-                        "tagIcon": "textarea",
-                        "defaultValue": "对温泉阳光（北京）国际健身俱乐部有限公司在营业期间未建立安全生产例会记录的行政处罚案",
-                        "required": false,
-                        "layout": "colFormItem",
-                        "regList": [],
-                        "formId": 101,
-                        "renderKey": 1621415022993
-                        },
-                        "readonly": true,
-                        "__vModel__": "enf_title"
-                    }
-            ],
-            "formRef": "elForm",
-            "formModel": "formData",
-            "size": "medium",
-            "labelPosition": "left",
-            "labelWidth": 100,
-            "formRules": "rules",
-            "gutter": 0,
-            "disabled": false,
-            "formBtns": false,
-            "unFocusedComponentBorder": false
-        },
         "65494216-4562-4561-4656-5464ads51655":{
             "itemModule":{
                 "name":"cardListItem"

@@ -1,0 +1,56 @@
+@endpoint=https://api.mock.smallsaas.cn
+
+## 动态页面 
+
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=2090
+
+
+### 保存动态页面数据
+POST {{endpoint}}/form/2090
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "my_enforcement",
+    "title": "更多卷宗",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"autolist",
+        "name":"",
+        "key":"46412315-8775-1545-5646-8711645452154"
+      }
+    ],
+    "moduleData": {
+         "46412315-8775-1545-5646-8711645452154": {
+            "loadApi":"https://api.uat.smallsaas.cn/api.flow.process/instanceListPage",
+            "method":"POST",
+            "itemNavigation": "/enforcement/book/moreBook?piId",
+            "response":{
+                "list":"list"
+            },
+            "request":{
+                "default":{
+                  "processDefinitionKey": "",
+                  "finishState":0
+                },
+                "fileno":"fileno",
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
+                "type":"custom_component",
+                "name":"enforcement-state-item"
+            }
+         }
+    }
+}

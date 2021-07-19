@@ -32,23 +32,21 @@ content-type: application/json
     ],
     "moduleData": {
          "46412315-8775-1545-5646-8711645452154": {
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2017",
+            "loadApi":"https://api.uat.smallsaas.cn/api.flow.process/instanceListPage",
+            "method":"POST",
+            //"itemNavigation": "/enforcement/book/moreBook?piId",
+            "itemNavigation": "/enforcement/otherBook/otherBook?customValues",
             "response":{
-                "list":"type.list",
-                "total":"type.total"
-            },
-            "tabConfig":{
-                "field":"type",
-                "show":true
-            },
-            "response":{
-                "list":"type.list",
-                "total":"type.total"
+                "list":"list"
             },
             "request":{
-                "fixed":"type",
                 "default":{
-                "type":"0"
+                  "processDefinitionKey": "",
+                  "finishState":0,
+                  "formType":"zf",
+                  "customValues":{
+                    "fileseq":"0"
+                  }
                 },
                 "pn":"pageNo",
                 "ps":"pageSize"

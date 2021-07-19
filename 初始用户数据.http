@@ -1,13 +1,27 @@
 @endpoint = https://api.mock.smallsaas.cn
+@otherEndpoint = https://rt.zbsoft.top
+
+### 创建初始用户 (密码+用户方式)
+POST {{otherEndpoint}}/auth/appuser/register
+Content-Type: application/x-www-form-urlencoded
+
+username=default
+&password=hdty@2021
+&app=public
+&type=5
+
+
 
 ### 获取默认用户数据
 GET {{endpoint}}/form?id=2
 
 ### 更改默认用户数据
 # 用户名密码需转base64格式
+### default 123456
 POST {{endpoint}}/form/2
 Content-Type: application/json
 
 {
+    //"defaultUser":"eyJ1c2VybmFtZSI6ImRlZmF1bHRVc2VyIiwgInBhc3N3b3JkIjoiaGR0eUAxMjM0NTYifQ=="
     "defaultUser":"eyJ1c2VybmFtZSI6ImRlZmF1bHQiLCAicGFzc3dvcmQiOiJoZHR5QDIwMjEifQ=="
 }

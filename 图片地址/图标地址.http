@@ -20,7 +20,11 @@ content-type: application/json
     "typeZc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zc.png",
     "typeTest":"https://api.uat.smallsaas.cn/attachments/enforcement/type/test.png",
     "typeZglc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zglc.png",
+    "typeZg":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zg.png",
     "typeJdsb":"https://api.uat.smallsaas.cn/attachments/enforcement/type/jdsb.png",
+    "typeXzxk":"https://api.uat.smallsaas.cn/attachments/enforcement/type/xzxk.png",
+    "typeZflc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zflc.png",
+    "typeYyzz":"https://api.uat.smallsaas.cn/attachments/enforcement/type/yyzz.png",
     "inputEnforcement":"https://api.uat.smallsaas.cn/attachments/input/enforcement.png",
     "inputCompany":"https://api.uat.smallsaas.cn/attachments/input/company.png",
     "inputStreet":"https://api.uat.smallsaas.cn/attachments/input/street.png",
@@ -34,5 +38,23 @@ content-type: application/json
     "select":"https://api.uat.smallsaas.cn/attachments/public/list-select.png",
     "record":"https://api.uat.smallsaas.cn/attachments/public/record.png",
     "street":"https://api.uat.smallsaas.cn/attachments/public/street.png",
-    "picture":"https://api.uat.smallsaas.cn/attachments/public/picture.png"
+    "picture":"https://api.uat.smallsaas.cn/attachments/public/picture.png",
+    "navExport":"https://api.uat.smallsaas.cn/attachments/nav/export.png",
+    "navWarning":"https://api.uat.smallsaas.cn/attachments/nav/warning.png",
+    "navInstructions":"https://api.uat.smallsaas.cn/attachments/nav/instructions.png",
+    "navRadio":"https://api.uat.smallsaas.cn/attachments/nav/radio.png",
+    "navRules":"https://api.uat.smallsaas.cn/attachments/nav/rules.png",
+    "navAdminLicence":"https://api.uat.smallsaas.cn/attachments/nav/adminLicence.png",
+    "navDrill":"https://api.uat.smallsaas.cn/attachments/nav/drill.png",
+    "navLicence":"https://api.uat.smallsaas.cn/attachments/nav/licence.png",
+    "navPublicity":"https://api.uat.smallsaas.cn/attachments/nav/publicity.png",
+    "navLifeguard":"https://api.uat.smallsaas.cn/attachments/nav/lifeguard.png",
+    "navEmployees":"https://api.uat.smallsaas.cn/attachments/nav/employees.png"
 }
+
+
+
+
+
+
+
