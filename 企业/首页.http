@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ## 动态列表
@@ -78,7 +78,7 @@ content-type: application/json
         }
     ], 
     "dataSource":{
-       "api": "https://api.mock.smallsaas.cn/data?id=109"
+       "api": "https://ai.hdqmjs.com/data?id=109"
     },
     "moduleData": {
         "851344s-ad44-55ea-ca11-4225534d52b7":{
@@ -116,7 +116,7 @@ content-type: application/json
           }
         },
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
-          "loadApi":"https://api.uat.smallsaas.cn/api.flow.process/instanceListPage",
+          "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
           "method":"POST",
           "itemNavigation": "/companyHome/selfExplain?piId",
           "response":{

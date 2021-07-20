@@ -11,7 +11,7 @@ content-type: application/json
 
 ###
 @token1 = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjI5LCJkYXlPZldlZWsiOiJUSFVSU0RBWSIsImRheU9mWWVhciI6MjEwLCJob3VyIjoxMiwibWludXRlIjozMCwibW9udGgiOiJKVUxZIiwibW9udGhWYWx1ZSI6NywibmFubyI6MjEzMDAwMDAwLCJzZWNvbmQiOjU4LCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiI5YWYwODQ2YTYxZGY0YTFkYjZjNzJkMGE3Y2U4ZmI3MCIsInJlZnJlc2hfdG9rZW4iOiI5MGUzOTY4YzI3Zjk0Y2RjODdkNjFjZTcxYjJmZGYwNyIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MTMyLCJkZXB0X2lkIjo3LCJ1c2VybmFtZSI6InpmcnkwMTAiLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJzZXJ2ZXIiLCJsaWNlbmNlIjoicHJvZ3Jlc3MiLCJmcm9tIjoyLCJ0aW1lX3N0YW1wIjoiMTYyNjY2OTA1OCIsInJvbGVfY29kZXMiOlsiQVNTIl19.1lMnUSbe7rUZ5W-ibtcfGnt232DlDSnL1kYvkT2lqxE
-POST https://api.uat.smallsaas.cn/api.flow.process/instanceListPage
+POST https://ai.hdqmjs.com/api.flow.process/instanceListPage
 Content-Type: application/json
 accessToken: {{token1}}
 
@@ -19,3 +19,5 @@ accessToken: {{token1}}
     //"dataScope": 1,
     "processDefinitionKey": "zg"
 }
+
+

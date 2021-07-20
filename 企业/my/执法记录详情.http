@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ## 动态页面
@@ -88,7 +88,7 @@ content-type: application/json
         }
     ],
     "dataSource":{
-       "api": "https://api.mock.smallsaas.cn/data?"
+       "api": "https://ai.hdqmjs.com/data?"
     },
     "moduleData": {
         "96afd71a-c8d5-11eb-aca5-0800271e55b7": {

@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ## 动态列表
@@ -49,7 +49,7 @@ content-type: application/json
     ], 
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=140",
+          "loadApi":"https://ai.hdqmjs.com/data?id=140",
           "itemNavigation": "companyHome/my/lawEnforcementDetail?id=&id",
           "response":{
               "list":"type.list",

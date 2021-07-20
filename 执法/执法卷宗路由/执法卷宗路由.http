@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 ## 动态页面 
 
@@ -32,7 +32,7 @@ content-type: application/json
     ],
     "moduleData": {
          "46412315-8775-1545-5646-8711645452154": {
-            "loadApi":"https://api.uat.smallsaas.cn/api.flow.process/instanceListPage",
+            "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
             "method":"POST",
             //"itemNavigation": "/enforcement/book/moreBook?piId",
             "itemNavigation": "/enforcement/otherBook/otherBook?customValues",

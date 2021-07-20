@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 
 ## 动态列表主页
 # 跳转路由
@@ -43,7 +43,7 @@ content-type: application/json
     ],
     "moduleData":{
         "autoform-1561-4510-da51-46511231554":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2012",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2012",
             "fields": [
                 {
                     "__config__":{

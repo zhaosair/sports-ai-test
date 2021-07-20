@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 ### 原测试数据
 GET https://www.fastmock.site/mock/96df9e8fb08bfe844b3e565f5a3206fe/test/api/pub/getList?type=0

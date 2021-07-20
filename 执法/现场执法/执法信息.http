@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 @Formendpoint=https://r.zbsoft.top
 @token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
 
@@ -144,7 +144,7 @@ content-type: application/json
             "span": 24,
             "formBtns": false,
             "saveApi": "",
-            "loadApi": "https://api.mock.smallsaas.cn/data?id=2024",
+            "loadApi": "https://ai.hdqmjs.com/data?id=2024",
             "isLawForm": false
         },
          "autoform-65a4-7daa-sd13-216sd7ad1as0da": {
@@ -335,7 +335,7 @@ content-type: application/json
             "span": 24,
             "formBtns": false,
             "saveApi": "",
-            "loadApi": "https://api.mock.smallsaas.cn/data?id=2024",
+            "loadApi": "https://ai.hdqmjs.com/data?id=2024",
             "isLawForm": false
          },
          "autoform-65a4-7daa-sd13-216sd7ad1as012":{
@@ -492,7 +492,7 @@ content-type: application/json
             "span": 24,
             "formBtns": false,
             "saveApi": "",
-            "loadApi": "https://api.mock.smallsaas.cn/data?id=2024",
+            "loadApi": "https://ai.hdqmjs.com/data?id=2024",
             "isLawForm": false
         },
          "autoform-65a4-7daa-sd13-216sd7ad1as084":{
@@ -784,7 +784,7 @@ content-type: application/json
             "span": 24,
             "formBtns": false,
             "saveApi": "",
-            "loadApi": "https://api.mock.smallsaas.cn/data?id=2024",
+            "loadApi": "https://ai.hdqmjs.com/data?id=2024",
             "isLawForm": false
         }
     }

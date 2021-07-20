@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 ## 动态页面 
 
@@ -47,7 +47,7 @@ content-type: application/json
            
          },
          "autolist-4561-4113-4513-5746a4d132sa1":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2023",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2023",
             "response":{
                 "list":"list",
                 "total":"total"

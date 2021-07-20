@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ## 动态列表
@@ -12,7 +12,7 @@ content-type: application/json
     "name": "page_home", 
     "title": "复工记录", 
     "pageStyle": { }, 
-    "loadApi": "https://api.mock.smallsaas.cn/data?id=200", 
+    "loadApi": "https://ai.hdqmjs.com/data?id=200", 
     "request": { }, 
     "response": {
         "data": "data"
@@ -49,31 +49,26 @@ content-type: application/json
     ], 
     "moduleData": {
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=120",
-          "itemNavigation": "/companyHome/my/returnToWorkDetail?id",
+          "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
+          "method":"POST",
+          "itemNavigation": "/companyHome/selfExplain?piId",
           "response":{
-              "list":"type.list",
-              "total":"type.total"
-          },
-          "tabConfig":{
-            "field":"type",
-            "show":true
+              "list":"list"
           },
           "response":{
-            "list":"type.list",
-            "total":"type.total"
+            "list":"list"
           },
           "request":{
-            "fixed":"type",
             "default":{
-              "type":"0"
+              "dataScope": 1,
+              "processDefinitionKey": "zc"
             },
-            "pn":"pageNo",
-            "ps":"pageSize"
+              "pn":"pageNo",
+              "ps":"pageSize"
           },
           "itemModule":{
             "type":"custom_component",
-            "name":"ReturnToWorkRecordItem"
+            "name":"stateToItem"
           }
         }
     }

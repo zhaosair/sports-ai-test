@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 
 ## State列表子项
 
@@ -11,7 +11,7 @@ POST {{endpoint}}/form/1002
 content-type: application/json
 
 {
-        "loadApi":"https://api.mock.smallsaas.cn/data?id=1002",
+        "loadApi":"https://ai.hdqmjs.com/data?id=1002",
         "response":{
               "list":"type.list",
               "total":"type.total"

@@ -1,6 +1,6 @@
 @endpoint=https://r.zbsoft.top
 
-@Pageendpoint = https://api.mock.smallsaas.cn
+@Pageendpoint = https://ai.hdqmjs.com
 
 
 @token=eyJleHBpcmVzX2luIjoxNjI1MDUzNTIxMjE4LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJhY2Nlc3MiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyVHlwZSI6InVzZXIiLCJ1c2VyTmFtZSI6IjAwMDAwMCIsImxvZ2luSWQiOiI0MzA3MjE3MmU0NTk0ODNkOTVlMGQ0YzM2NGI5MTdjMiIsInVzZXJJZCI6IjQzMDcyMTcyZTQ1OTQ4M2Q5NWUwZDRjMzY0YjkxN2MyIn0.Aiir-aUXBEqJWl6wT5VhpLhfh4i9BBIDBOZPc4-XRqQ
@@ -18,7 +18,7 @@ accessToken: {{token}}
 #     "formId": 26
 # }
 ###
-GET https://api.uat.smallsaas.cn/api/u/user 
+GET https://ai.hdqmjs.com/api/u/user 
 
 ### 获取列表数据
 GET {{Pageendpoint}}/form?id=10086

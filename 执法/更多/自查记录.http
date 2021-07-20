@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 ## 动态页面 
 
@@ -37,7 +37,7 @@ content-type: application/json
     ],
     "moduleData": {
          "autolist-5475-1445-5926-14642145452154": {
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2010",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2010",
             "itemNavigation": "/enforcement/more/MySearchTime/MySearchTime?id",
             "response":{
                 "list":"type.list",

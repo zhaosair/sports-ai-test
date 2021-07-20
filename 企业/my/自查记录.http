@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ## 动态列表
@@ -44,23 +44,26 @@ content-type: application/json
     ], 
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
-          "loadApi":"https://api.uat.smallsaas.cn/api/u/workflow/instance/list?type=CREATOR&formType=29",
-         "itemNavigation": "/companyHome/my/selfInspectionDetail?id",
+          "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
+          "method":"POST",
+          "itemNavigation": "/companyHome/selfExplain?piId",
           "response":{
-              "list":"records",
-              "total":"total"
+              "list":"list"
           },
-          "tabConfig":{
-            "field":"type",
-            "show":true
+          "response":{
+            "list":"list"
           },
           "request":{
-            "pn":"pageNo",
-            "ps":"pageSize"
+            "default":{
+              "dataScope": 1,
+              "processDefinitionKey": "zc"
+            },
+              "pn":"pageNo",
+              "ps":"pageSize"
           },
           "itemModule":{
             "type":"custom_component",
-            "name":"SelfInspectionRecordItem"
+            "name":"stateToItem"
           }
         }
     }

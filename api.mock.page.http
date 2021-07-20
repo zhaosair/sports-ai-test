@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ## 动态页面
@@ -58,7 +58,7 @@ content-type: application/json
       "type": "autoform",
       "key": "96afd71a-c8d5-11eb-aca5-0800271e55b7",
       "tips": "动态表单组件",
-      "moduleDataSource": "https://api.mock.smallsaas.cn/data?id=10"
+      "moduleDataSource": "https://ai.hdqmjs.com/data?id=10"
     }
   ], 
   "moduleData":

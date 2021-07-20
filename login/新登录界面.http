@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 ## 新首页(第三方接口)
 
@@ -77,7 +77,7 @@ content-type: application/json
                     }
                 },
                 {
-                    "img":"https://api.uat.smallsaas.cn/attachments/input/company.png",
+                    "img":"https://ai.hdqmjs.com/attachments/input/company.png",
                     "title":"企业信息库",
                     "subTitle":"企业信息添加申请",
                     "nav":"/pages/login/addCompany",

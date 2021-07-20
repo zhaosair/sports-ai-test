@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 ### 获取页面数据
 GET {{endpoint}}/form?id=12311 HTTP/1.1
 content-type: application/json
@@ -32,7 +32,7 @@ content-type: application/json
     ],
     "moduleData": {
         "search111-5456-4564-2125-4878854564512": {
-            "loadAPI":"https://api.mock.smallsaas.cn/data",
+            "loadAPI":"https://ai.hdqmjs.com/data",
             "id":"12312",
             "field":"address",
             "itemModule":{

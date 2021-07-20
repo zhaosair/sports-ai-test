@@ -1,9 +1,28 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 
 ###
 GET {{endpoint}}/form?id=1
+
+###
+POST {{endpoint}}/form/1
+Content-Type: application/json
+
+{
+    "globalConfig": {
+      "useCache": false,
+      "endpoint": "https://ai.hdqmjs.com",
+      "authEP": "https://ai.hdqmjs.com",
+      "designEP": "https://ai.hdqmjs.com",
+      "formEP": "https://ai.hdqmjs.com/form",
+      "workflowEP": "https://ai.hdqmjs.com",
+      "dataEP": "https://ai.hdqmjs.com/data",
+      "extraEP": "https://ai.hdqmjs.com",
+      "loginEP":"https://ai.hdqmjs.com"
+    }
+}
+
 ### 获取图标数据
 GET {{endpoint}}/data?id=9999999 HTTP/1.1
 content-type: application/json
@@ -14,42 +33,53 @@ POST {{endpoint}}/data/9999999 HTTP/1.1
 content-type: application/json
 
 {
-    "reSetting":"https://api.uat.smallsaas.cn/attachments/Company/reSetting.png",
-    "ReturnWork":"https://api.uat.smallsaas.cn/attachments/Company/ReturnWork.png",
-    "selfSearch":"https://api.uat.smallsaas.cn/attachments/Company/selfSearch.png",
-    "typeZc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zc.png",
-    "typeTest":"https://api.uat.smallsaas.cn/attachments/enforcement/type/test.png",
-    "typeZglc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zglc.png",
-    "typeZg":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zg.png",
-    "typeJdsb":"https://api.uat.smallsaas.cn/attachments/enforcement/type/jdsb.png",
-    "typeXzxk":"https://api.uat.smallsaas.cn/attachments/enforcement/type/xzxk.png",
-    "typeZflc":"https://api.uat.smallsaas.cn/attachments/enforcement/type/zflc.png",
-    "typeYyzz":"https://api.uat.smallsaas.cn/attachments/enforcement/type/yyzz.png",
-    "inputEnforcement":"https://api.uat.smallsaas.cn/attachments/input/enforcement.png",
-    "inputCompany":"https://api.uat.smallsaas.cn/attachments/input/company.png",
-    "inputStreet":"https://api.uat.smallsaas.cn/attachments/input/street.png",
-    "inputPassword":"https://api.uat.smallsaas.cn/attachments/input/password.png",
-    "tabbarMy":"https://api.uat.smallsaas.cn/attachments/tabbar/my.png",
-    "tabbarMyActive":"https://api.uat.smallsaas.cn/attachments/tabbar/my-active.png",
-    "tabbarEnforcement":"https://api.uat.smallsaas.cn/attachments/tabbar/enforcement.png",
-    "tabbarEnforcementActive":"https://api.uat.smallsaas.cn/attachments/tabbar/enforcement-active.png",
-    "avatarMy":"https://api.uat.smallsaas.cn/attachments/Avatar/myAvatar.png",
-    "arrowRight":"https://api.uat.smallsaas.cn/attachments/arrow/right.png",
-    "select":"https://api.uat.smallsaas.cn/attachments/public/list-select.png",
-    "record":"https://api.uat.smallsaas.cn/attachments/public/record.png",
-    "street":"https://api.uat.smallsaas.cn/attachments/public/street.png",
-    "picture":"https://api.uat.smallsaas.cn/attachments/public/picture.png",
-    "navExport":"https://api.uat.smallsaas.cn/attachments/nav/export.png",
-    "navWarning":"https://api.uat.smallsaas.cn/attachments/nav/warning.png",
-    "navInstructions":"https://api.uat.smallsaas.cn/attachments/nav/instructions.png",
-    "navRadio":"https://api.uat.smallsaas.cn/attachments/nav/radio.png",
-    "navRules":"https://api.uat.smallsaas.cn/attachments/nav/rules.png",
-    "navAdminLicence":"https://api.uat.smallsaas.cn/attachments/nav/adminLicence.png",
-    "navDrill":"https://api.uat.smallsaas.cn/attachments/nav/drill.png",
-    "navLicence":"https://api.uat.smallsaas.cn/attachments/nav/licence.png",
-    "navPublicity":"https://api.uat.smallsaas.cn/attachments/nav/publicity.png",
-    "navLifeguard":"https://api.uat.smallsaas.cn/attachments/nav/lifeguard.png",
-    "navEmployees":"https://api.uat.smallsaas.cn/attachments/nav/employees.png"
+    "reSetting":"https://ai.hdqmjs.com/attachments/Company/reSetting.png",
+    "ReturnWork":"https://ai.hdqmjs.com/attachments/Company/ReturnWork.png",
+    "selfSearch":"https://ai.hdqmjs.com/attachments/Company/selfSearch.png",
+    "typeZc":"https://ai.hdqmjs.com/attachments/enforcement/type/zc.png",
+    "typeTest":"https://ai.hdqmjs.com/attachments/enforcement/type/test.png",
+    "typeZglc":"https://ai.hdqmjs.com/attachments/enforcement/type/zglc.png",
+    "typeZg":"https://ai.hdqmjs.com/attachments/enforcement/type/zg.png",
+    "typeJdsb":"https://ai.hdqmjs.com/attachments/enforcement/type/jdsb.png",
+    "typeXzxk":"https://ai.hdqmjs.com/attachments/enforcement/type/xzxk.png",
+    "typeZflc":"https://ai.hdqmjs.com/attachments/enforcement/type/zflc.png",
+    "typeYyzz":"https://ai.hdqmjs.com/attachments/enforcement/type/yyzz.png",
+    "inputEnforcement":"https://ai.hdqmjs.com/attachments/input/enforcement.png",
+    "inputCompany":"https://ai.hdqmjs.com/attachments/input/company.png",
+    "inputStreet":"https://ai.hdqmjs.com/attachments/input/street.png",
+    "inputPassword":"https://ai.hdqmjs.com/attachments/input/password.png",
+    "tabbarMy":"https://ai.hdqmjs.com/attachments/tabbar/my.png",
+    "tabbarMyActive":"https://ai.hdqmjs.com/attachments/tabbar/my-active.png",
+    "tabbarEnforcement":"https://ai.hdqmjs.com/attachments/tabbar/enforcement.png",
+    "tabbarEnforcementActive":"https://ai.hdqmjs.com/attachments/tabbar/enforcement-active.png",
+    "tabbarCompanyData":"https://ai.hdqmjs.com/attachments/tabbar/CompanyData.png",
+    "tabbarCompanyDataActive":"https://ai.hdqmjs.com/attachments/tabbar/CompanyData-active.png",
+    "avatarMy":"https://ai.hdqmjs.com/attachments/Avatar/myAvatar.png",
+    "arrowRight":"https://ai.hdqmjs.com/attachments/arrow/right.png",
+    "select":"https://ai.hdqmjs.com/attachments/public/list-select.png",
+    "record":"https://ai.hdqmjs.com/attachments/public/record.png",
+    "street":"https://ai.hdqmjs.com/attachments/public/street.png",
+    "picture":"https://ai.hdqmjs.com/attachments/public/picture.png",
+    "navExport":"https://ai.hdqmjs.com/attachments/nav/export.png",
+    "navWarning":"https://ai.hdqmjs.com/attachments/nav/warning.png",
+    "navInstructions":"https://ai.hdqmjs.com/attachments/nav/instructions.png",
+    "navRadio":"https://ai.hdqmjs.com/attachments/nav/radio.png",
+    "navRules":"https://ai.hdqmjs.com/attachments/nav/rules.png",
+    "navAdminLicence":"https://ai.hdqmjs.com/attachments/nav/adminLicence.png",
+    "navDrill":"https://ai.hdqmjs.com/attachments/nav/drill.png",
+    "navLicence":"https://ai.hdqmjs.com/attachments/nav/licence.png",
+    "navPublicity":"https://ai.hdqmjs.com/attachments/nav/publicity.png",
+    "navLifeguard":"https://ai.hdqmjs.com/attachments/nav/lifeguard.png",
+    "navEmployees":"https://ai.hdqmjs.com/attachments/nav/employees.png",
+    "navBook":"https://ai.hdqmjs.com/attachments/nav/book.png",
+    "navData":"https://ai.hdqmjs.com/attachments/nav/data.png",
+    "navMap":"https://ai.hdqmjs.com/attachments/nav/map.png",
+    "navRecord":"https://ai.hdqmjs.com/attachments/nav/record.png",
+    "navTransform":"https://ai.hdqmjs.com/attachments/nav/transform.png",
+    "navSearch":"https://ai.hdqmjs.com/attachments/nav/search.png",
+    "navStreet":"https://ai.hdqmjs.com/attachments/nav/street.png",
+    "navEnforcemenet":"https://ai.hdqmjs.com/attachments/nav/enforcemenet.png",
+    "navEnterprise":"https://ai.hdqmjs.com/attachments/nav/enterprise.png"
 }
 
 

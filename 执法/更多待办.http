@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 ## 动态页面 
 
@@ -35,7 +35,7 @@ content-type: application/json
     ],
     "moduleData": {
          "e59992z8-bb88-a788-9922-1623488775885": {
-            "loadApi":"https://api.uat.smallsaas.cn/api.flow.task/taskListPage",
+            "loadApi":"https://ai.hdqmjs.com/api.flow.task/taskListPage",
             "method":"POST",
             "itemNavigation": "/enforcement/enforcement?piId&taskId",
             "response":{

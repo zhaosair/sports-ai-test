@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ## 动态列表
@@ -48,7 +48,7 @@ content-type: application/json
     ], 
     "moduleData": {
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=500",
+          "loadApi":"https://ai.hdqmjs.com/data?id=500",
           "itemNavigation": "",
           "response":{
               "list":"reportList.list",

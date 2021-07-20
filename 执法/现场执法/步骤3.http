@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 
 ### 步骤三
 GET {{endpoint}}/form?id=2020
@@ -65,7 +65,7 @@ content-type: application/json
             }
         },
         "autoform-7812-ad64-398a-451231561122":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2020",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2020",
             "fields": [
                  {
                     "__config__": {

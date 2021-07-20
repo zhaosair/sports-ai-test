@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ## 企业自查记录获取
@@ -50,7 +50,7 @@ content-type: application/json
     ], 
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=2014",
+          "loadApi":"https://ai.hdqmjs.com/data?id=2014",
           "itemNavigation": "/enforcement/more/companySearchDetail/companySearchRecordDetail?id=",
           "response":{
               "list":"type.list",

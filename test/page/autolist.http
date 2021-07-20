@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 
 ## 动态列表主页
 # 跳转路由
@@ -38,7 +38,7 @@ content-type: application/json
     ],
     "moduleData":{
         "1172222-ad44-55ea-ca11-4225534d52b7":{
-            "loadApi": "https://api.mock.smallsaas.cn/data?id=1003",
+            "loadApi": "https://ai.hdqmjs.com/data?id=1003",
             "itemNavigation": "/articleDetail/index?id=&title",
             "tabConfig":
             {

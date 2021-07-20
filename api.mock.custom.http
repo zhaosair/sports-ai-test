@@ -1,11 +1,11 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ### 列表测试数据
 
 
 ### 测试获取数据
-## GET https://api.mock.smallsaas.cn/custom/ids?id=10
+## GET https://ai.hdqmjs.com/custom/ids?id=10
 GET {{endpoint}}/custom?id=17 HTTP/1.1
 content-type: application/json
 User-Agent: rest-client

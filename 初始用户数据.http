@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 @otherEndpoint = https://rt.zbsoft.top
 
 ### 创建初始用户 (密码+用户方式)

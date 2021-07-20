@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 
 ## 动态列表主页
 # 跳转路由
@@ -49,7 +49,7 @@ content-type: application/json
     ],
     "moduleData":{
         "autoform-7812-ad64-398a-451231561122":{
-            "loadApi":"https://api.uat.smallsaas.cn/admin/companyinfo/$$id",
+            "loadApi":"https://ai.hdqmjs.com/api/u/companyInfo",
             "fields": [
                 {
                     "__config__":{
@@ -155,7 +155,7 @@ content-type: application/json
                             },
                             {
                                 "__config__":{
-                                    "label":"成立日期",
+                                    "label":"营业执照",
                                     "labelWidth":null,
                                     "showLabel":true,
                                     "tag":"el-input",
@@ -171,7 +171,7 @@ content-type: application/json
                                     "prepend":"",
                                     "append":""
                                 },
-                                "placeholder":"成立日期",
+                                "placeholder":"营业执照",
                                 "style":{
                                     "width":"100%"
                                 },
@@ -182,7 +182,7 @@ content-type: application/json
                                 "show-word-limit":false,
                                 "readonly":true,
                                 "disabled":false,
-                                "__vModel__":"startDate"
+                                "__vModel__":"licenceNo"
                             },
                             {
                                 "__config__":{
@@ -214,90 +214,6 @@ content-type: application/json
                                 "readonly":true,
                                 "disabled":false,
                                 "__vModel__":"personPhone"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "__config__":{
-                        "layout":"rowFormItem",
-                        "tagIcon":"row",
-                        "layoutTree":true,
-                        "formId":112,
-                        "renderKey":1621415404383,
-                        "componentName":"证件",
-                        "children":[
-                            {
-                                "__config__":{
-                                    "label":"营业执照",
-                                    "labelWidth":null,
-                                    "showLabel":true,
-                                    "tag":"c-image",
-                                    "tagIcon":"c-image",
-                                    "required":false,
-                                    "defaultValue":"",
-                                    "layout":"colFormItem",
-                                    "regList":[],
-                                    "formId":110,
-                                    "renderKey":1621415432107
-                                },
-                                "__slot__":{
-                                    "prepend":"",
-                                    "append":""
-                                },
-                                "placeholder":"",
-                                "style":{
-                                },
-                                "clearable":true,
-                                "prefix-icon":"",
-                                "suffix-icon":"",
-                                "maxlength":null,
-                                "show-word-limit":false,
-                                "readonly":true,
-                                "disabled":false,
-                                "__vModel__":"licenceImages"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "__config__":{
-                        "layout":"rowFormItem",
-                        "tagIcon":"row",
-                        "layoutTree":true,
-                        "formId":112,
-                        "renderKey":1621415404383,
-                        "componentName":"现场照片",
-                        "children":[
-                            {
-                                "__config__":{
-                                    "label":"",
-                                    "labelWidth":null,
-                                    "showLabel":true,
-                                    "tag":"c-image",
-                                    "tagIcon":"c-image",
-                                    "required":false,
-                                    "defaultValue":"",
-                                    "layout":"colFormItem",
-                                    "regList":[],
-                                    "formId":110,
-                                    "renderKey":1621415432107
-                                },
-                                "__slot__":{
-                                    "prepend":"",
-                                    "append":""
-                                },
-                                "placeholder":"",
-                                "style":{
-                                },
-                                "clearable":true,
-                                "prefix-icon":"",
-                                "suffix-icon":"",
-                                "maxlength":null,
-                                "show-word-limit":false,
-                                "readonly":true,
-                                "disabled":false,
-                                "__vModel__":"sceneImages"
                             }
                         ]
                     }

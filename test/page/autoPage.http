@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 ## 动态页面 
 
@@ -138,7 +138,7 @@ content-type: application/json
             ]
         },
          "e59992z8-bb88-a788-9922-1623488775885": {
-          "loadApi":"https://api.mock.smallsaas.cn/data?id=201",
+          "loadApi":"https://ai.hdqmjs.com/data?id=201",
           "response":{
               "list":"type.list",
               "total":"type.total"

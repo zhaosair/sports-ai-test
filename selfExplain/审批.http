@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 
 ### 获取除表单外的页面数据
 GET {{endpoint}}/form?id=66000

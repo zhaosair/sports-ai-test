@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 
 ### 获取多表单设计数据
 GET {{endpoint}}/data?id=90000 HTTP/1.1
@@ -11,7 +11,7 @@ Content-Type: application/json
 {
     "designData":[
         {
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2018",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2018",
             "fields": [
                 {
                     "__config__":{
@@ -165,7 +165,7 @@ Content-Type: application/json
             "unFocusedComponentBorder": false
         },
         {
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2019",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2019",
             "fields": [
                 {
                     "__config__":{
@@ -384,7 +384,7 @@ Content-Type: application/json
             "unFocusedComponentBorder": false
         },
         {
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2020",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2020",
             "fields": [
                  {
                     "__config__": {
@@ -505,7 +505,7 @@ Content-Type: application/json
             "unFocusedComponentBorder": false
         },
         {
-            "saveApi":"https://api.mock.smallsaas.cn/data/2021",
+            "saveApi":"https://ai.hdqmjs.com/data/2021",
             "fields": [
                 {
                     "__config__":{
@@ -562,7 +562,7 @@ Content-Type: application/json
             "unFocusedComponentBorder": false
         },
         {
-            "saveApi":"https://api.mock.smallsaas.cn/data/2022",
+            "saveApi":"https://ai.hdqmjs.com/data/2022",
             "fields": [
                 {
                     "__config__":{

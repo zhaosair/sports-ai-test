@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 
 ## 动态列表主页
 # 跳转路由
@@ -109,7 +109,7 @@ content-type: application/json
     ],
     "moduleData":{
         "autoform-1654-dads-54as-456a4sd1a23s":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2015",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2015",
             "fields":[
                 {
                     "__config__":{
@@ -186,7 +186,7 @@ content-type: application/json
             "unFocusedComponentBorder": false
          },
         "autoform-1561-4510-da51-46511231554":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2015",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2015",
             "fields": [
                 {
                     "__config__":{
@@ -368,7 +368,7 @@ content-type: application/json
             "unFocusedComponentBorder": false
         },
         "autoform-4564-1210-2151-445121231554":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2015",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2015",
             "fields": [
                 {
                     "__config__":{
@@ -519,7 +519,7 @@ content-type: application/json
             "unFocusedComponentBorder": false
         },
         "autoform-1243-4321-ad52-ad121x5d0242":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2015",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2015",
             "fields": [
                 {
                     "__config__":{
@@ -806,7 +806,7 @@ content-type: application/json
             "unFocusedComponentBorder": false
         },
         "autolist-7865-11ca-ds94-1420271e55b7":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2015",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2015",
             "response":{
                 "list":"records.list",
                 "total":"records.total"
@@ -833,7 +833,7 @@ content-type: application/json
             }
         },
         "autoform-7654-5564-adsa-adasasaf1512":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2015",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2015",
             "fields": [
                 {
                     "__config__":{
@@ -1046,7 +1046,7 @@ content-type: application/json
             "unFocusedComponentBorder": false
         },
         "autoform-7512-5564-adsa-adasasaf1512":{
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2015",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2015",
             "fields": [
                 {
                     "__config__":{

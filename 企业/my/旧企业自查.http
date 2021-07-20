@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 
 
 ## 动态列表
@@ -54,7 +54,7 @@ content-type: application/json
     "dataPayload": "data",
     "moduleData": {
         "96afd71a-c8d5-11eb-aca5-0800271e55b7": {
-            "saveApi": "https://api.uat.smallsaas.cn/api/u/workflow/process/start",
+            "saveApi": "https://ai.hdqmjs.com/api/u/workflow/process/start",
 					  "fields": [
 						{
 							"__config__": {

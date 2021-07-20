@@ -1,4 +1,4 @@
-@endpoint=https://api.mock.smallsaas.cn
+@endpoint=https://ai.hdqmjs.com
 ### 获取页面数据
 GET {{endpoint}}/form?id=2003 HTTP/1.1
 content-type: application/json
@@ -32,15 +32,15 @@ content-type: application/json
     ],
     "moduleData": {
         "search111-5456-4564-2125-4878854564512": {
-            "loadAPI":"https://api.uat.smallsaas.cn/api/u/companyInfo",
-            "itemNavigation":"/pages/enforcement/enforcementDetails?id",
+            "loadAPI":"https://ai.hdqmjs.com/api/u/companyInfo",
+            "itemNavigation":"/pages/enforcement/enforcementDetails",
             "params":{
             },
             "pn":true,
             "pz":true,
             "addIcon":true,
-            "addUrl":"/pages/addCompany/BusinessLicense",
-            "field":"address",
+            "addUrl":"/pages/login/addCompany",
+            "field":"name",
             "itemModule":{
                 "name":"stateSearchItem"
             }
@@ -182,3 +182,8 @@ content-type: application/json
         }
     ]
 }
+
+
+
+### 测试企业信息库
+GET https://ai.hdqmjs.com/api/u/companyInfo?id=5

@@ -1,4 +1,4 @@
-@endpoint = https://api.mock.smallsaas.cn
+@endpoint = https://ai.hdqmjs.com
 
 ### 获取单表单设计数据
 GET {{endpoint}}/data?id=90001 HTTP/1.1
@@ -12,7 +12,7 @@ Content-Type: application/json
 {
     "designData":[
         {
-            "loadApi":"https://api.mock.smallsaas.cn/data?id=2018",
+            "loadApi":"https://ai.hdqmjs.com/data?id=2018",
             "fields": [
                 {
                     "__config__":{
