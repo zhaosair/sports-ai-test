@@ -32,9 +32,10 @@ content-type: application/json
     ],
     "moduleData": {
         "search111-5456-4564-2125-4878854564512": {
-            "loadAPI":"https://ai.hdqmjs.com/api/u/companyInfo",
+            "loadAPI":"https://ai.hdqmjs.com/admin/companyinfo/page",
             "itemNavigation":"/pages/enforcement/enforcementDetails",
             "params":{
+
             },
             "pn":true,
             "pz":true,
