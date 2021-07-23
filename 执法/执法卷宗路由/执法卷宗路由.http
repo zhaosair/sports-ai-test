@@ -43,7 +43,7 @@ content-type: application/json
                 "default":{
                   "processDefinitionKey": "",
                   "finishState":0,
-                  "formType":"zf",
+                  "formType":"zfjz",
                   "customValues":{
                     "fileseq":"0"
                   }
