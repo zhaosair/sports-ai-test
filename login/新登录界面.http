@@ -31,7 +31,7 @@ content-type: application/json
       },
       {
         "type":"navlist",
-        "name":"请选择用户角色注册登录",
+        "name":"请选择用户角色绑定登录",
         "key":"d4a555sd-hf22-qqds-8412-16234da445885",
         "container":{
                 "grid-template-columns":"repeat(2, 50%)"
@@ -55,7 +55,7 @@ content-type: application/json
                 {
                 "svg":"enforcement",
                 "title":"执法用户",
-                "subTitle":"执法工作人员注册",
+                "subTitle":"执法工作人员绑定",
                 "nav":"/pages/login/third-Login/IsLogin?id=2",
                 "container":{
                 }
@@ -63,7 +63,7 @@ content-type: application/json
                 {
                 "svg":"enterprise",
                 "title":"企业用户",
-                "subTitle":"企业用户注册",
+                "subTitle":"企业用户绑定",
                 "nav":"/pages/login/third-Login/IsLogin?id=4",
                 "container":{
                 }
@@ -71,7 +71,7 @@ content-type: application/json
                 {
                     "svg":"street",
                     "title":"街镇用户",
-                    "subTitle":"街镇用户上报注册",
+                    "subTitle":"街镇用户上报绑定",
                     "nav":"/pages/login/third-Login/IsLogin?id=3",
                     "container":{
                     }
