@@ -28,6 +28,7 @@ content-type: application/json
                 "background":"white"
             },
             "FormKey":"yyzz",
+            "isYyzz":true,
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
