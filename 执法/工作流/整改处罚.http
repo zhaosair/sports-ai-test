@@ -1,0 +1,68 @@
+@endpoint=https://ai.hdqmjs.com
+
+### 获取整改页面数据
+GET {{endpoint}}/form?id=8000
+
+### 更改整改页面数据
+POST {{endpoint}}/form/8000
+Content-Type: application/json
+
+{
+    "version":"1",
+    "name":"zg",
+    "title":"整改",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zg"
+        }
+    ]
+}
+
+
+### 获取处罚页面数据
+GET {{endpoint}}/form?id=8001
+
+### 更改处罚页面数据
+POST {{endpoint}}/form/8001
+Content-Type: application/json
+
+{
+    "version":"1",
+    "name":"cf",
+    "title":"处罚",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"cf"
+        }
+    ]
+}

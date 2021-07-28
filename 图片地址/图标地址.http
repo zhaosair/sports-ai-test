@@ -33,12 +33,16 @@ POST {{endpoint}}/data/9999999 HTTP/1.1
 content-type: application/json
 
 {
-    "reSetting":"https://ai.hdqmjs.com/attachments/Company/reSetting.png",
-    "ReturnWork":"https://ai.hdqmjs.com/attachments/Company/ReturnWork.png",
-    "selfSearch":"https://ai.hdqmjs.com/attachments/Company/selfSearch.png",
+    "buttonCf":"https://ai.hdqmjs.com/attachments/button/ButtonCf.png",
+    "buttonZg":"https://ai.hdqmjs.com/attachments/button/ButtonZg.png",
+    "empty":"https://ai.hdqmjs.com/attachments/public/empty.png",
+    "navReSetting":"https://ai.hdqmjs.com/attachments/Company/reSetting.png",
+    "navReturnWork":"https://ai.hdqmjs.com/attachments/Company/ReturnWork.png",
+    "navSelfSearch":"https://ai.hdqmjs.com/attachments/Company/selfSearch.png",
     "typeZc":"https://ai.hdqmjs.com/attachments/enforcement/type/zc.png",
     "typeTest":"https://ai.hdqmjs.com/attachments/enforcement/type/test.png",
     "typeZglc":"https://ai.hdqmjs.com/attachments/enforcement/type/zglc.png",
+    "typeCf":"https://ai.hdqmjs.com/attachments/enforcement/type/cf.png",
     "typeZg":"https://ai.hdqmjs.com/attachments/enforcement/type/zg.png",
     "typeJdsb":"https://ai.hdqmjs.com/attachments/enforcement/type/jdsb.png",
     "typeXzxk":"https://ai.hdqmjs.com/attachments/enforcement/type/xzxk.png",

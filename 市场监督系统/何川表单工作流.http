@@ -337,16 +337,17 @@ accessToken: {{token}}
 
 
 ### 获取下一节点审批人
+@tk = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjcsImRheU9mV2VlayI6IlNBVFVSREFZIiwiZGF5T2ZZZWFyIjoyMTksImhvdXIiOjEyLCJtaW51dGUiOjcsIm1vbnRoIjoiQVVHVVNUIiwibW9udGhWYWx1ZSI6OCwibmFubyI6MzYzMDAwMDAwLCJzZWNvbmQiOjMsInllYXIiOjIwMjEsImNocm9ub2xvZ3kiOnsiY2FsZW5kYXJUeXBlIjoiaXNvODYwMSIsImlkIjoiSVNPIn19LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJzZXJ2ZXIiLCJhbGciOiJIUzI1NiJ9.eyJhY2Nlc3NfdG9rZW4iOiJmZjVlOTY1NDQxMTE0NTQ2YTVkMjI1NDZjYzJlNDUwZiIsInJlZnJlc2hfdG9rZW4iOiI1MzI5NDJlOGMxMGQ0NjdhOTU2MTY3ZWRiMmQ2NDk2YyIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MTk2LCJkZXB0X2lkIjo4NiwidXNlcm5hbWUiOiJ6ZnRlc3QxIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwibGljZW5jZSI6InByb2dyZXNzIiwiZnJvbSI6MiwidGltZV9zdGFtcCI6IjE2Mjc0NDUyMjMiLCJyb2xlX2NvZGVzIjpbIkFTUyJdLCJuaWNrbmFtZSI6IuaJp-azlea1i-ivlTEiLCJvcGVuX2lkIjoib0sway00ejFiWWF5LU9Jd1MtYk03eGZBYW9TRSIsImFwcCI6ImludGVybmFsIn0.arNeBDKtlOsjQIJpEVuMkdoNmhbDNPY3RNW-VceqpGE
 //private String processDefineKey;//流程定义标识,必填
 //private String version;//流程版本
 //private String taskId;//任务id，如果是开始发起流程，可不上送，如果流程审批环节，需要上送当前任务id
 POST {{endpoint}}/api.flow.examine/queryNextExamineUser
 Content-Type: application/json
 # accessToken: {{token}}
-Authorization: Bearer {{token}}
+Authorization: Bearer {{tk}}
 
 {
-    "processDefineKey":"zc",
+    "processDefineKey":"jdsb",
     "version":"1"
 }
 

@@ -1,18 +1,70 @@
 @token = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjI1LCJkYXlPZldlZWsiOiJTVU5EQVkiLCJkYXlPZlllYXIiOjIwNiwiaG91ciI6MTYsIm1pbnV0ZSI6MzksIm1vbnRoIjoiSlVMWSIsIm1vbnRoVmFsdWUiOjcsIm5hbm8iOjM4OTAwMDAwMCwic2Vjb25kIjozLCJ5ZWFyIjoyMDIxLCJjaHJvbm9sb2d5Ijp7ImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEiLCJpZCI6IklTTyJ9fSwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwiYWxnIjoiSFMyNTYifQ.eyJhY2Nlc3NfdG9rZW4iOiJlNGJjMmEyMzAwZWM0YWU1ODhmZWEzYTNkMzE0NDhhOSIsInJlZnJlc2hfdG9rZW4iOiI3OWJjZTkyNmJlYWU0ZGIyOGM5NjdjNWNiZWRiYmY5OSIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MSwiZGVwdF9pZCI6MSwidXNlcm5hbWUiOiJhZG1pbiIsInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImxpY2VuY2UiOiJwcm9ncmVzcyIsImZyb20iOjAsInRpbWVfc3RhbXAiOiIxNjI2MzM4MzQzIiwicm9sZV9jb2RlcyI6WyJST0xFX0FETUlOIl0sIm5pY2tuYW1lIjoi6LaF57qn566h55CG5ZGYIn0.wdyEojQl7K_QxlLz5GzjiywatXXm4Qxj8d6JQPBITnA
+@token1 = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjYsImRheU9mV2VlayI6IkZSSURBWSIsImRheU9mWWVhciI6MjE4LCJob3VyIjoxMiwibWludXRlIjowLCJtb250aCI6IkFVR1VTVCIsIm1vbnRoVmFsdWUiOjgsIm5hbm8iOjEzMTAwMDAwMCwic2Vjb25kIjo1NywieWVhciI6MjAyMSwiY2hyb25vbG9neSI6eyJjYWxlbmRhclR5cGUiOiJpc284NjAxIiwiaWQiOiJJU08ifX0sInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImFsZyI6IkhTMjU2In0.eyJhY2Nlc3NfdG9rZW4iOiIwZTU1N2ZhZjQzYjY0M2MwOTNiNjkxMThlOGI0NmRiOCIsInJlZnJlc2hfdG9rZW4iOiJlNDEyMjM3NTViZjM0YjM2OWM0MTE0Yjk2ZTM0NWY2ZCIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MSwiZGVwdF9pZCI6ODYsInVzZXJuYW1lIjoiYWRtaW4iLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJzZXJ2ZXIiLCJsaWNlbmNlIjoicHJvZ3Jlc3MiLCJmcm9tIjowLCJ0aW1lX3N0YW1wIjoiMTYyNzM1ODQ1NyIsInJvbGVfY29kZXMiOlsiUk9MRV9BRE1JTiJdLCJuaWNrbmFtZSI6Iui2hee6p-euoeeQhuWRmCJ9.dV0Oe_gLb03yLoDIqC3Sow9MCJn0LTd42G8hVsGTfZw
 @endpoint = https://rt.zbsoft.top/admin
 
 GET {{endpoint}}/companyinfo/page?size=111
-Authorization: Bearer {{token}}
+Authorization: Bearer {{token1}}
 Content-Type: application/json
+
+
+
+###更改企业信息
 
 
 ###增加企业信息
 POST {{endpoint}}/companyinfo
-Authorization: Bearer {{token}}
+Authorization: Bearer {{token1}}
 Content-Type: application/json
 
+# {
+#     "id": "1419492844267110401",
+#     "userId": null,
+#     "name": "广州应达电子科技有限公司",
+#     "type": null,
+#     "licenceNo": "440106000958074",
+#     "address": "广州市天河区石牌西路8号展望数码广场一期第一层第122号铺",
+#     "legalRepresentative": null,
+#     "startupDate": "2014-05-22",
+#     "capital": 0.0,
+#     "startDate": null,
+#     "expireDate": "2999-12-31",
+#     "businessScope": "研究和试验发展(具体经营项目请登录广州市商事主体信息公示平台查询。依法须经批准的项目，经相关部门批准后方可开展经营活动。)",
+#     "signedDate": null,
+#     "certStatus": 0,
+#     "createdTime": "2021-07-26 11:00:42",
+#     "updatedTime": "2021-07-27 09:41:56",
+#     "deleted": 0,
+#     "streetId": null,
+#     "longitude": null,
+#     "latitude": null,
+#     "applicant": null,
+#     "applicantPhone": null,
+#     "placeName": null,
+#     "placeAddress": null,
+#     "length": null,
+#     "width": null,
+#     "area": null,
+#     "representativeName": null,
+#     "representativeIdNo": null,
+#     "personName": "梁雪",
+#     "personIdNo": null,
+#     "personPhone": null,
+#     "personAddress": null,
+#     "opUnitName": null,
+#     "opUnitAddress": null,
+#     "opUnitPhone": null,
+#     "operationItem": [],
+#     "operationPlace": null,
+#     "licenceImages": [],
+#     "houseOwershipImages": [],
+#     "staffQualificationImages": [],
+#     "sceneImages": [],
+#     "safetyRegulationFiles": [],
+#     "streetName": null,
+#     "nickname": null
+# }
 {
-    "id": "10087",
+    "id": "10088",
     "userId": null,
     "name": "测试公司2",
     "type": "SPOT",
@@ -59,8 +111,64 @@ Content-Type: application/json
     "nickname": null
 }
 
+### 更改企业库信息
+PUT {{endpoint}}/companyinfo
+Authorization: Bearer {{token1}}
+Content-Type: application/json
+
+{
+    "id": "10088",
+    "userId": null,
+    "name": "测试公司2",
+    "type": "SPOT",
+    "licenceNo": "1234567890123456789",
+    "address": "测试地址",
+    "legalRepresentative": "测试人",
+    "startupDate": null,
+    "capital": 0.0,
+    "startDate": null,
+    "expireDate": null,
+    "businessScope": null,
+    "signedDate": null,
+    "certStatus": 0,
+    "createdTime": null,
+    "updatedTime": null,
+    "deleted": 0,
+    "streetId": null,
+    "longitude": 39.8688360,
+    "latitude": 89.2880780,
+    "applicant": null,
+    "applicantPhone": "13000000000",
+    "placeName": null,
+    "placeAddress": null,
+    "length": null,
+    "width": null,
+    "area": null,
+    "representativeName": "测试人",
+    "representativeIdNo": null,
+    "personName": null,
+    "personIdNo": null,
+    "personPhone": "13000000000",
+    "personAddress": null,
+    "opUnitName": null,
+    "opUnitAddress": null,
+    "opUnitPhone": null,
+    "operationItem": [],
+    "operationPlace": null,
+    "licenceImages": [],
+    "houseOwershipImages": [],
+    "staffQualificationImages": [],
+    "sceneImages": [],
+    "safetyRegulationFiles": [],
+    "streetName": null,
+    "nickname": null
+}
 
 ### GET 
 GET {{endpoint}}/companyinfo/10087
 Authorization: Bearer {{token}}
 Content-Type: application/json
+
+###
+DELETE {{endpoint}}/companyinfo/unbind/1419492844267110401
+Authorization: Bearer {{token1}}

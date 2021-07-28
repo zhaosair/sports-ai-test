@@ -47,7 +47,8 @@ content-type: application/json
             "container":{
                 "background":"white"
             },
-            "code":"ReturnWork",
+            "FormKey":"fg",
+            "workflow":true,
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]

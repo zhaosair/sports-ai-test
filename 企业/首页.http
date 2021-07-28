@@ -53,16 +53,7 @@ content-type: application/json
             "grid-template-columns":"repeat(3, 33.3333333%)"
           }
         },
-        {
-          "type": "cell",
-          "name": "标题栏",
-          "key": "e8940746-d595-11eb-bdca-0800271e55b7",
-          "container":{
-          },
-          "binding":{
-            "days":"days"
-          }
-        },
+
         {
           "type": "autolist",
           "tips": "动态列表组件",
@@ -88,21 +79,21 @@ content-type: application/json
               "name":"MagicItem"
           },
           "navList":[{
-            "title":"我要自查",
+            "title":"自查上报",
             "svg":{
               "icon":"reSetting"
             },
             "nav":"/companyHome/selfCheck/index"
           },
           {
-            "title":"我要复工",
+            "title":"复工填报",
             "svg":{
-              "icon":"ReturnWork"
+              "icon":"returnWork"
             },
             "nav":"/workFlow/ReturnWork"
           },
           {
-            "title":"执法待办",
+            "title":"执法配合",
             "svg":{
               "icon":"selfSearch"
             },
@@ -110,33 +101,28 @@ content-type: application/json
           }
           ]
         },
-        "e8940746-d595-11eb-bdca-0800271e55b7":{
-          "param":{
-            "title": "离自查上报还剩0天"
-          }
-        },
+
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
-          "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
+          "loadApi":"https://ai.hdqmjs.com/api.flow.task/taskListPage",
           "method":"POST",
-          "itemNavigation": "/companyHome/selfExplain?piId",
+          "itemNavigation": "/enforcement/enforcement?piId&taskId",
           "response":{
               "list":"list"
-          },
-          "response":{
-            "list":"list"
-          },
-          "request":{
-            "default":{
-              "dataScope": 1,
-              "processDefinitionKey": "zc"
             },
-              "pn":"pageNo",
-              "ps":"pageSize"
-          },
-          "itemModule":{
+            "response":{
+            "list":"list"
+            },
+            "request":{
+            "default":{
+              "queryType": "wait"
+            },
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
             "type":"custom_component",
-            "name":"stateToItem"
-          }
+            "name":"toDoListItem"
+            }
         }
     }
 }

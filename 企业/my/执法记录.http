@@ -49,33 +49,30 @@ content-type: application/json
     ], 
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
-          "loadApi":"https://ai.hdqmjs.com/data?id=140",
-          "itemNavigation": "companyHome/my/lawEnforcementDetail?id=&id",
-          "response":{
-              "list":"type.list",
-              "total":"type.total"
-          },
-          "tabConfig":{
-            "field":"type",
-            "show":true
-          },
-          "response":{
-            "list":"type.list",
-            "total":"type.total"
-          },
-          "request":{
-            "fixed":"type",
-            "default":{
-              "type":"0"
+            "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
+            "method":"POST",
+            //"itemNavigation": "/enforcement/book/moreBook?piId",
+            "itemNavigation": "/enforcement/book/moreBook?piId",
+            "response":{
+                "list":"list"
             },
-            "pn":"pageNo",
-            "ps":"pageSize"
-          },
-          "itemModule":{
-            "type":"custom_component",
-            "name":"RecordStepsItem"
-          }
-        }
+            "request":{
+                "default":{
+                  "processDefinitionKey": "",
+                  "finishState":0,
+                  "formType":"zf",
+                  "customValues":{
+                    "fileseq":"0"
+                  }
+                },
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
+                "type":"custom_component",
+                "name":"enforcement-state-item"
+            }
+         }
     }
 }
 

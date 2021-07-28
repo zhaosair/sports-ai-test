@@ -49,27 +49,29 @@ content-type: application/json
     ], 
     "moduleData": {
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
-          "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
-          "method":"POST",
-          "itemNavigation": "/companyHome/selfExplain?piId",
-          "response":{
-              "list":"list"
-          },
-          "response":{
-            "list":"list"
-          },
-          "request":{
-            "default":{
-              "dataScope": 1,
-              "processDefinitionKey": "zc"
+            "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
+            "method":"POST",
+            //"itemNavigation": "/enforcement/book/moreBook?piId",
+            "itemNavigation": "/enforcement/book/moreBook?piId",
+            "response":{
+                "list":"list"
             },
-              "pn":"pageNo",
-              "ps":"pageSize"
-          },
-          "itemModule":{
-            "type":"custom_component",
-            "name":"stateToItem"
-          }
+            "request":{
+                "default":{
+                  "processDefinitionKey": "fg"
+                  //"finishState":0,
+                  //"formType":"zf",
+                  //"customValues":{
+                  //  "fileseq":"0"
+                  //}
+                },
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
+                "type":"custom_component",
+                "name":"enforcement-state-item"
+            }
         }
     }
 }

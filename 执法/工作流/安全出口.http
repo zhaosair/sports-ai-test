@@ -27,7 +27,373 @@ content-type: application/json
             "container":{
                 "background":"white"
             },
-            "FormKey":"test",
+            "FormKey":"zf006",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+# @endpoint=https://ai.hdqmjs.com
+
+###
+GET {{endpoint}}/form?id=19000
+### 
+POST {{endpoint}}/form/19000
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf001",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+###
+GET {{endpoint}}/form?id=19001
+### 
+POST {{endpoint}}/form/19001
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf002",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+###
+GET {{endpoint}}/form?id=19002
+### 
+POST {{endpoint}}/form/19002
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf003",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+
+###
+GET {{endpoint}}/form?id=19003
+### 
+POST {{endpoint}}/form/19003
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf004",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+###
+GET {{endpoint}}/form?id=19004
+### 
+POST {{endpoint}}/form/19004
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf005",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+###
+GET {{endpoint}}/form?id=19005
+### 
+POST {{endpoint}}/form/19005
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf006",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+###
+GET {{endpoint}}/form?id=19006
+### 
+POST {{endpoint}}/form/19006
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf007",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+###
+GET {{endpoint}}/form?id=19007
+### 
+POST {{endpoint}}/form/19007
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf008",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+###
+GET {{endpoint}}/form?id=19008
+### 
+POST {{endpoint}}/form/19008
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf009",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+###
+GET {{endpoint}}/form?id=19009
+### 
+POST {{endpoint}}/form/19009
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf010",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
+###
+GET {{endpoint}}/form?id=19010
+### 
+POST {{endpoint}}/form/19010
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"zf011",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
