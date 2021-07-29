@@ -79,7 +79,7 @@ content-type: application/json
               {
                 "svg":"transform",
                 "title":"整改复查",
-                "nav":"/pages/index/index",
+                "nav":"/pages/enforcement/ReSetting",
                 "container":{
                   "background":"#EDF0FA"
                 }

@@ -105,7 +105,7 @@ content-type: application/json
         "a1417b8a-d351-11eb-bb26-0800271e55b7": {
           "loadApi":"https://ai.hdqmjs.com/api.flow.task/taskListPage",
           "method":"POST",
-          "itemNavigation": "/enforcement/enforcement?piId&taskId",
+          "itemNavigation": "/workFlow/companyConfirm/companyConfirm?piId&taskId&processDefineKey&preUserName&preUserId",
           "response":{
               "list":"list"
             },

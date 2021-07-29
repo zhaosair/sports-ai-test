@@ -22,7 +22,8 @@ Content-Type: application/json
       "loginEP":"https://ai.hdqmjs.com"
     }
 }
-
+### 图标存放地址 http://ai.hdqmjs.com
+### /root/ai.hdqmjs.com/sports-api/api/attachments
 ### 获取图标数据
 GET {{endpoint}}/data?id=9999999 HTTP/1.1
 content-type: application/json
@@ -33,6 +34,13 @@ POST {{endpoint}}/data/9999999 HTTP/1.1
 content-type: application/json
 
 {
+    "listZc":"https://ai.hdqmjs.com/attachments/list/listZc.png",
+    "listZf":"https://ai.hdqmjs.com/attachments/list/listZf.png",
+    "listGgqyxx":"https://ai.hdqmjs.com/attachments/list/listGgqyxx.png",
+    "listFg":"https://ai.hdqmjs.com/attachments/list/listFg.png",
+    "MapCompany":"https://ai.hdqmjs.com/attachments/map/MapCompany.png",
+    "MapMy":"https://ai.hdqmjs.com/attachments/map/MapMy.png",
+    "MapSuccess":"https://ai.hdqmjs.com/attachments/map/MapSuccess.png",
     "buttonCf":"https://ai.hdqmjs.com/attachments/button/ButtonCf.png",
     "buttonZg":"https://ai.hdqmjs.com/attachments/button/ButtonZg.png",
     "empty":"https://ai.hdqmjs.com/attachments/public/empty.png",
@@ -47,6 +55,7 @@ content-type: application/json
     "typeJdsb":"https://ai.hdqmjs.com/attachments/enforcement/type/jdsb.png",
     "typeXzxk":"https://ai.hdqmjs.com/attachments/enforcement/type/xzxk.png",
     "typeZflc":"https://ai.hdqmjs.com/attachments/enforcement/type/zflc.png",
+    "typeZf":"https://ai.hdqmjs.com/attachments/enforcement/type/zflc.png",
     "typeYyzz":"https://ai.hdqmjs.com/attachments/enforcement/type/yyzz.png",
     "inputEnforcement":"https://ai.hdqmjs.com/attachments/input/enforcement.png",
     "inputCompany":"https://ai.hdqmjs.com/attachments/input/company.png",
@@ -64,6 +73,17 @@ content-type: application/json
     "record":"https://ai.hdqmjs.com/attachments/public/record.png",
     "street":"https://ai.hdqmjs.com/attachments/public/street.png",
     "picture":"https://ai.hdqmjs.com/attachments/public/picture.png",
+    "typeZf001":"https://ai.hdqmjs.com/attachments/nav/publicity.png",
+    "typeZf002":"https://ai.hdqmjs.com/attachments/nav/adminLicence.png",
+    "typeZf003":"https://ai.hdqmjs.com/attachments/nav/lifeguard.png",
+    "typeZf004":"https://ai.hdqmjs.com/attachments/nav/licence.png",
+    "typeZf005":"https://ai.hdqmjs.com/attachments/nav/employees.png",
+    "typeZf006":"https://ai.hdqmjs.com/attachments/nav/export.png",
+    "typeZf007":"https://ai.hdqmjs.com/attachments/nav/warning.png",
+    "typeZf008":"https://ai.hdqmjs.com/attachments/nav/instructions.png",
+    "typeZf009":"https://ai.hdqmjs.com/attachments/nav/radio.png",
+    "typeZf010":"https://ai.hdqmjs.com/attachments/nav/rules.png",
+    "typeZf011":"https://ai.hdqmjs.com/attachments/nav/drill.png",
     "navExport":"https://ai.hdqmjs.com/attachments/nav/export.png",
     "navWarning":"https://ai.hdqmjs.com/attachments/nav/warning.png",
     "navInstructions":"https://ai.hdqmjs.com/attachments/nav/instructions.png",
@@ -83,6 +103,9 @@ content-type: application/json
     "navSearch":"https://ai.hdqmjs.com/attachments/nav/search.png",
     "navStreet":"https://ai.hdqmjs.com/attachments/nav/street.png",
     "navEnforcemenet":"https://ai.hdqmjs.com/attachments/nav/enforcemenet.png",
+    "navEnf":"https://ai.hdqmjs.com/attachments/nav/navEnforcement.png",
+    "navCompany":"https://ai.hdqmjs.com/attachments/nav/navCompany.png",
+    "navStre":"https://ai.hdqmjs.com/attachments/nav/navStreet.png",
     "navEnterprise":"https://ai.hdqmjs.com/attachments/nav/enterprise.png"
 }
 

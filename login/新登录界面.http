@@ -53,23 +53,26 @@ content-type: application/json
            },
             "navList": [
                 {
-                "svg":"enforcement",
-                "title":"执法用户",
-                "subTitle":"执法工作人员绑定",
-                "nav":"/pages/login/third-Login/IsLogin?id=2",
-                "container":{
-                }
+                    "svg":"navEnf",
+                    //"svg":"enforcement",
+                    "title":"执法用户",
+                    "subTitle":"执法工作人员绑定",
+                    "nav":"/pages/login/third-Login/IsLogin?id=2",
+                    "container":{
+                    }
                 },
                 {
-                "svg":"enterprise",
-                "title":"企业用户",
-                "subTitle":"企业用户绑定",
-                "nav":"/pages/login/third-Login/IsLogin?id=4",
-                "container":{
-                }
+                    "svg":"navCompany",
+                    //"svg":"enterprise",
+                    "title":"企业用户",
+                    "subTitle":"企业用户绑定",
+                    "nav":"/pages/login/third-Login/IsLogin?id=4",
+                    "container":{
+                    }
                 },
                 {
-                    "svg":"street",
+                    "svg":"navStre",
+                    //"svg":"street",
                     "title":"街镇用户",
                     "subTitle":"街镇用户上报绑定",
                     "nav":"/pages/login/third-Login/IsLogin?id=3",
@@ -77,7 +80,8 @@ content-type: application/json
                     }
                 },
                 {
-                    "img":"https://ai.hdqmjs.com/attachments/input/company.png",
+                    "svg":"inputCompany",
+                    //"img":"https://ai.hdqmjs.com/attachments/input/company.png",
                     "title":"企业信息库",
                     "subTitle":"企业信息添加申请",
                     "nav":"/pages/login/addCompany",

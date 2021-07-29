@@ -42,7 +42,6 @@ content-type: application/json
             "request":{
                 "default":{
                   "processDefinitionKey": "",
-                  "finishState":0,
                   "formType":"zfjz",
                   "customValues":{
                     "fileseq":"0"

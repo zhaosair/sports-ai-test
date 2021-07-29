@@ -1,19 +1,19 @@
 @endpoint=https://ai.hdqmjs.com
 
-## 动态页面 
+## 整改复查 
 
-### 获取市场监督页面数据 
-GET {{endpoint}}/form?id=2090
+### 获取整改复查页面数据 
+GET {{endpoint}}/form?id=3000
 
 
-### 保存动态页面数据
-POST {{endpoint}}/form/2090
+### 保存整改复查页面数据
+POST {{endpoint}}/form/3000
 content-type: application/json
 
 {  
     "version": "1",
     "name": "my_enforcement",
-    "title": "更多卷宗",
+    "title": "整改复查",
     "pageStyle": {},
     "loadApi": "",
     "response": {
@@ -40,7 +40,8 @@ content-type: application/json
             },
             "request":{
                 "default":{
-                  "processDefinitionKey": ""
+                  "processDefinitionKey": "zg",
+                  "finishState":0
                 },
                 "fileno":"fileno",
                 "pn":"pageNo",
@@ -48,7 +49,7 @@ content-type: application/json
             },
             "itemModule":{
                 "type":"custom_component",
-                "name":"enforcement-state-item"
+                "name":"company-state-to-enforcement"
             }
          }
     }
