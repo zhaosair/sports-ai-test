@@ -24,7 +24,8 @@ Content-Type: application/json
 
 {
     "list":[
-        {"icon":"record","title":"我的上报","nav":"/street/my/myReport"}
+        {"icon":"record","title":"我的上报","nav":"/street/my/myReport"},
+        {"icon":"typeJdsb","title":"辖区内企业","nav":"/street/getCompany"}
     ]
 }
 

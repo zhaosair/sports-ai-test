@@ -1,0 +1,25 @@
+@endpoint=https://ai.hdqmjs.com
+
+
+## 获取辖区内企业页面数据
+GET {{endpoint}}/data?id=45153
+### 更改辖区内企业页面数据
+POST {{endpoint}}/data/45153
+content-type: application/json
+
+{
+    "title":"辖区内企业",
+    "moduleData":{
+        "loadAPI":"https://ai.hdqmjs.com/admin/companyinfo/page",
+        "itemNavigation":"/pages/enforcement/enforcementDetails",
+        "params":null,
+        "pn":true,
+        "pz":true,
+        "addIcon":false,
+        "addUrl":"/pages/login/addCompany",
+        "field":"name",
+        "itemModule":{
+                "name":"stateSearchItem"
+        }
+    }
+}
