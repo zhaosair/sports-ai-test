@@ -230,6 +230,22 @@ content-type: application/json
                       "icon":"employees",
                       "color":"#2A82E4"
                     }
+                },
+                {
+                    "title":"企业整改",
+                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zg",
+                    "svg":{
+                      "icon":"zg",
+                      "color":"#2A82E4"
+                    }
+                },
+                {
+                    "title":"企业处罚",
+                    "nav":"enforcement/selectCompany/selectCompany?id=19012&key=cf",
+                    "svg":{
+                      "icon":"cf",
+                      "color":"#2A82E4"
+                    }
                 }
             ],
           "itemModule":

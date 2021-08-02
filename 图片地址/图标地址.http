@@ -56,6 +56,7 @@ content-type: application/json
     "typeXzxk":"https://ai.hdqmjs.com/attachments/enforcement/type/xzxk.png",
     "typeZflc":"https://ai.hdqmjs.com/attachments/enforcement/type/zflc.png",
     "typeZf":"https://ai.hdqmjs.com/attachments/enforcement/type/zflc.png",
+    "typeFg":"https://ai.hdqmjs.com/attachments/enforcement/type/fg.png",
     "typeYyzz":"https://ai.hdqmjs.com/attachments/enforcement/type/yyzz.png",
     "inputEnforcement":"https://ai.hdqmjs.com/attachments/input/enforcement.png",
     "inputCompany":"https://ai.hdqmjs.com/attachments/input/company.png",
@@ -106,7 +107,9 @@ content-type: application/json
     "navEnf":"https://ai.hdqmjs.com/attachments/nav/navEnforcement.png",
     "navCompany":"https://ai.hdqmjs.com/attachments/nav/navCompany.png",
     "navStre":"https://ai.hdqmjs.com/attachments/nav/navStreet.png",
-    "navEnterprise":"https://ai.hdqmjs.com/attachments/nav/enterprise.png"
+    "navEnterprise":"https://ai.hdqmjs.com/attachments/nav/enterprise.png",
+    "navCf":"https://ai.hdqmjs.com/attachments/enforcement/type/cf.png",
+    "navZg":"https://ai.hdqmjs.com/attachments/enforcement/type/zg.png"
 }
 
 

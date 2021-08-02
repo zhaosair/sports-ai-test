@@ -2,7 +2,7 @@
 @token1 = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjYsImRheU9mV2VlayI6IkZSSURBWSIsImRheU9mWWVhciI6MjE4LCJob3VyIjoxMiwibWludXRlIjowLCJtb250aCI6IkFVR1VTVCIsIm1vbnRoVmFsdWUiOjgsIm5hbm8iOjEzMTAwMDAwMCwic2Vjb25kIjo1NywieWVhciI6MjAyMSwiY2hyb25vbG9neSI6eyJjYWxlbmRhclR5cGUiOiJpc284NjAxIiwiaWQiOiJJU08ifX0sInRva2VuX3R5cGUiOiJCZWFyZXIiLCJzY29wZSI6InNlcnZlciIsImFsZyI6IkhTMjU2In0.eyJhY2Nlc3NfdG9rZW4iOiIwZTU1N2ZhZjQzYjY0M2MwOTNiNjkxMThlOGI0NmRiOCIsInJlZnJlc2hfdG9rZW4iOiJlNDEyMjM3NTViZjM0YjM2OWM0MTE0Yjk2ZTM0NWY2ZCIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MSwiZGVwdF9pZCI6ODYsInVzZXJuYW1lIjoiYWRtaW4iLCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJzZXJ2ZXIiLCJsaWNlbmNlIjoicHJvZ3Jlc3MiLCJmcm9tIjowLCJ0aW1lX3N0YW1wIjoiMTYyNzM1ODQ1NyIsInJvbGVfY29kZXMiOlsiUk9MRV9BRE1JTiJdLCJuaWNrbmFtZSI6Iui2hee6p-euoeeQhuWRmCJ9.dV0Oe_gLb03yLoDIqC3Sow9MCJn0LTd42G8hVsGTfZw
 @endpoint = https://rt.zbsoft.top/admin
 
-GET {{endpoint}}/companyinfo/page?streetName=上地街道
+GET {{endpoint}}/companyinfo/page
 Authorization: Bearer {{token1}}
 Content-Type: application/json
 
@@ -64,11 +64,11 @@ Content-Type: application/json
 #     "nickname": null
 # }
 {
-    "id": "10088",
+    "id": "",
     "userId": null,
-    "name": "测试公司2",
+    "name": "测试公司1",
     "type": "SPOT",
-    "licenceNo": "1234567890123456789",
+    "licenceNo": "123",
     "address": "测试地址",
     "legalRepresentative": "测试人",
     "startupDate": null,
@@ -81,9 +81,9 @@ Content-Type: application/json
     "createdTime": null,
     "updatedTime": null,
     "deleted": 0,
-    "streetId": null,
+    "streetId": 7,
     "longitude": 39.8688360,
-    "latitude": 116.2880780,
+    "latitude": 34.2880780,
     "applicant": null,
     "applicantPhone": "13000000000",
     "placeName": null,
@@ -117,11 +117,11 @@ Authorization: Bearer {{token1}}
 Content-Type: application/json
 
 {
-    "id": "10088",
+    "id": "",
     "userId": null,
-    "name": "测试公司2",
+    "name": "测试公司1",
     "type": "SPOT",
-    "licenceNo": "1234567890123456789",
+    "licenceNo": "123",
     "address": "测试地址",
     "legalRepresentative": "测试人",
     "startupDate": null,
@@ -136,7 +136,7 @@ Content-Type: application/json
     "deleted": 0,
     "streetId": null,
     "longitude": 39.8688360,
-    "latitude": 89.2880780,
+    "latitude": 34.2880780,
     "applicant": null,
     "applicantPhone": "13000000000",
     "placeName": null,
