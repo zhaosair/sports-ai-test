@@ -11,7 +11,7 @@ Content-Type: application/json
 {  
     "version": "1",
     "name": "Approval comments",
-    "title": "审批意见",
+    "title": "办理意见",
     "pageStyle": {},
     "loadApi": "",
     "response": {
@@ -35,9 +35,10 @@ Content-Type: application/json
     ],
     "moduleData": {
         "89084045-v4d5-7122-3300-1623511112885": {
-            "agreeText":"合格",
+            "agreeText":"提交",
+            "lastText":"回退",
             "refuseText":"不合格",
-            "placeholder":"审批意见",
+            "placeholder":"办理意见",
             "failUrl":"/cofirmRefuse/cofirmRefuse",
             "query":{
                 "key":"zglc"

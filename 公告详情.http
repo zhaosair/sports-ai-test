@@ -1,0 +1,39 @@
+@endpoint=https://ai.hdqmjs.com
+
+## 动态页面 
+
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=66661
+
+
+### 保存动态页面
+POST {{endpoint}}/form/66661
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"NoticeDetail",
+    "title":"公告详情",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "code":"tz",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+

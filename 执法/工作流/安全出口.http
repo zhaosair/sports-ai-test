@@ -25,9 +25,8 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
             },
-            "FormKey":"zf006",
+            //"FormKey":"zf006",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -60,9 +59,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf001",
+            //"FormKey":"zf001",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -93,9 +92,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf002",
+            //"FormKey":"zf002",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -126,9 +125,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf003",
+            //"FormKey":"zf003",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -160,9 +159,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf004",
+            //"FormKey":"zf004",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -193,9 +192,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf005",
+            //"FormKey":"zf005",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -226,9 +225,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf006",
+            //"FormKey":"zf006",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -259,9 +258,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf007",
+            //"FormKey":"zf007",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -292,9 +291,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf008",
+            //"FormKey":"zf008",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -325,9 +324,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf009",
+            //"FormKey":"zf009",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -358,9 +357,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf010",
+            //"FormKey":"zf010",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -391,9 +390,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zf011",
+            //"FormKey":"zf011",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -424,9 +423,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"zg",
+            ////"FormKey":"zg",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -457,9 +456,9 @@ content-type: application/json
             "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
             "name":"autoform",
             "container":{
-                "background":"white"
+   
             },
-            "FormKey":"cf",
+            //"FormKey":"cf",
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]

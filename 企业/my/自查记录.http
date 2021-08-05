@@ -46,7 +46,7 @@ content-type: application/json
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
           "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
           "method":"POST",
-          "itemNavigation": "/companyHome/selfExplain?piId",
+          "itemNavigation": "/companyHome/selfExplain?piId&taskId",
           "response":{
               "list":"list"
           },

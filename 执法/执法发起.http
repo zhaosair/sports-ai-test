@@ -1,0 +1,66 @@
+@endpoint=https://ai.hdqmjs.com
+
+### 获取执法发起页面数据 
+GET {{endpoint}}/form?id=333334
+
+
+### 保存执法发起页面数据 
+POST {{endpoint}}/form/333334
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "enforcement-start",
+    "title": "执法发起方式",
+    "pageStyle": {
+        "background":"#fff",
+      "margin-bottom":"50px",
+      "padding":"10rpx"
+    },
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type": "navlist",
+        "name": "",
+        "key": "cd814de4-34de-fa95-1049-1623416664592",
+        "container":{
+            "grid-template-columns":"repeat(2, 50%)"
+        }
+      }
+    ],
+    "moduleData": {
+        "cd814de4-34de-fa95-1049-1623416664592": {
+            "navList": [
+                {
+                    "title":"线上执法",
+                    "nav":"defaultPage/defaultPage?id&key",
+                    "svg":{
+                        "icon":"todo"
+                    },
+                    "background":"#4ABFDE",
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"线下执法",
+                    "nav":"defaultPage/defaultPage?id&key",
+                    "svg":{
+                        "icon":"map_white"
+                    },
+                    "background":"#53B8B6",
+                    "textColor":"#ffffff"
+                }
+            ],
+          "itemModule":
+            {
+              "name":"boxItem"
+          }
+        }
+    }
+}

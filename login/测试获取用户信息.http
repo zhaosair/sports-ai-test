@@ -11,7 +11,7 @@ Authorization: Bearer {{token2}}
 GET {{endpoint}}/admin/user/page
 Authorization: Bearer {{admin}}
 ###
-GET {{endpoint}}/admin/dept/7
+GET {{endpoint}}/admin/dept/street-tree
 Authorization: Bearer {{admin}}
 
 ### 绑定用户

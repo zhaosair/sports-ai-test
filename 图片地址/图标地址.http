@@ -34,6 +34,7 @@ POST {{endpoint}}/data/9999999 HTTP/1.1
 content-type: application/json
 
 {
+    "report":"https://ai.hdqmjs.com/attachments/public/report.png",
     "listZc":"https://ai.hdqmjs.com/attachments/list/listZc.png",
     "listZf":"https://ai.hdqmjs.com/attachments/list/listZf.png",
     "listGgqyxx":"https://ai.hdqmjs.com/attachments/list/listGgqyxx.png",
@@ -74,6 +75,7 @@ content-type: application/json
     "record":"https://ai.hdqmjs.com/attachments/public/record.png",
     "street":"https://ai.hdqmjs.com/attachments/public/street.png",
     "picture":"https://ai.hdqmjs.com/attachments/public/picture.png",
+    "notice":"https://ai.hdqmjs.com/attachments/public/notice.png",
     "typeZf001":"https://ai.hdqmjs.com/attachments/nav/publicity.png",
     "typeZf002":"https://ai.hdqmjs.com/attachments/nav/adminLicence.png",
     "typeZf003":"https://ai.hdqmjs.com/attachments/nav/lifeguard.png",
@@ -85,6 +87,18 @@ content-type: application/json
     "typeZf009":"https://ai.hdqmjs.com/attachments/nav/radio.png",
     "typeZf010":"https://ai.hdqmjs.com/attachments/nav/rules.png",
     "typeZf011":"https://ai.hdqmjs.com/attachments/nav/drill.png",
+    "typeZf012":"https://ai.hdqmjs.com/attachments/nav/cpdx.png",
+    "typeZf013":"https://ai.hdqmjs.com/attachments/nav/wcnrcp.png",
+    "typeZf014":"https://ai.hdqmjs.com/attachments/nav/dxcf.png",
+    "typeZf015":"https://ai.hdqmjs.com/attachments/nav/xy.png",
+    "typeZf016":"https://ai.hdqmjs.com/attachments/nav/wg.png",
+    "typeZf017":"https://ai.hdqmjs.com/attachments/nav/byz.png",
+    "typeZf018":"https://ai.hdqmjs.com/attachments/nav/cp.png",
+    "typeZf019":"https://ai.hdqmjs.com/attachments/nav/qfqy.png",
+    "typeZf020":"https://ai.hdqmjs.com/attachments/nav/ch.png",
+    "typeZf021":"https://ai.hdqmjs.com/attachments/enforcement/type/cf.png",
+    "typeZf022":"https://ai.hdqmjs.com/attachments/nav/sb.png",
+
     "navExport":"https://ai.hdqmjs.com/attachments/nav/export.png",
     "navWarning":"https://ai.hdqmjs.com/attachments/nav/warning.png",
     "navInstructions":"https://ai.hdqmjs.com/attachments/nav/instructions.png",
@@ -97,9 +111,23 @@ content-type: application/json
     "navLifeguard":"https://ai.hdqmjs.com/attachments/nav/lifeguard.png",
     "navEmployees":"https://ai.hdqmjs.com/attachments/nav/employees.png",
     "navBook":"https://ai.hdqmjs.com/attachments/nav/book.png",
+
+    "navCpdx":"https://ai.hdqmjs.com/attachments/nav/cpdx.png",
+    "navWcnrcp":"https://ai.hdqmjs.com/attachments/nav/wcnrcp.png",
+    "navDxcf":"https://ai.hdqmjs.com/attachments/nav/dxcf.png",
+    "navXy":"https://ai.hdqmjs.com/attachments/nav/xy.png",
+    "navWg":"https://ai.hdqmjs.com/attachments/nav/wg.png",
+    "navByz":"https://ai.hdqmjs.com/attachments/nav/byz.png",
+    "navCp":"https://ai.hdqmjs.com/attachments/nav/cp.png",
+    "navQfqy":"https://ai.hdqmjs.com/attachments/nav/qfqy.png",
+    "navCh":"https://ai.hdqmjs.com/attachments/nav/ch.png",
+    "navCf":"https://ai.hdqmjs.com/attachments/enforcement/type/cf.png",
+    "navSb":"https://ai.hdqmjs.com/attachments/nav/sb.png",
+    "navNoticeDark":"https://ai.hdqmjs.com/attachments/nav/notice-dark.png",
     "navData":"https://ai.hdqmjs.com/attachments/nav/data.png",
     "navMap":"https://ai.hdqmjs.com/attachments/nav/map.png",
     "navRecord":"https://ai.hdqmjs.com/attachments/nav/record.png",
+    "navRecord_white":"https://ai.hdqmjs.com/attachments/nav/record-white.png",
     "navTransform":"https://ai.hdqmjs.com/attachments/nav/transform.png",
     "navSearch":"https://ai.hdqmjs.com/attachments/nav/search.png",
     "navStreet":"https://ai.hdqmjs.com/attachments/nav/street.png",
@@ -108,8 +136,13 @@ content-type: application/json
     "navCompany":"https://ai.hdqmjs.com/attachments/nav/navCompany.png",
     "navStre":"https://ai.hdqmjs.com/attachments/nav/navStreet.png",
     "navEnterprise":"https://ai.hdqmjs.com/attachments/nav/enterprise.png",
-    "navCf":"https://ai.hdqmjs.com/attachments/enforcement/type/cf.png",
-    "navZg":"https://ai.hdqmjs.com/attachments/enforcement/type/zg.png"
+    "navZg":"https://ai.hdqmjs.com/attachments/enforcement/type/zg.png",
+    "navTodo":"https://ai.hdqmjs.com/attachments/nav/toDo.png",
+    "navSearch_white":"https://ai.hdqmjs.com/attachments/nav/search-white.png",
+    "navMap_white":"https://ai.hdqmjs.com/attachments/nav/map-white.png",
+    "navEnforcement_white":"https://ai.hdqmjs.com/attachments/nav/enforcement-white.png",
+    "navBook_white":"https://ai.hdqmjs.com/attachments/nav/book-white.png",
+    "navReSetting_white":"https://ai.hdqmjs.com/attachments/nav/reSetting-white.png"
 }
 
 

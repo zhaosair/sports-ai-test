@@ -348,6 +348,31 @@ content-type: application/json
                 "clearable": true,
                 "readonly": false,
                 "__vModel__": "map"
+            },{
+                "__config__": {
+                "label": "地图位置",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "c-map-mes",
+                "tagIcon": "map",
+                "required": false,
+                "layout": "colFormItem",
+                "span": 8,
+                "document": "https://element.eleme.cn/#/zh-CN/component/date-picker",
+                "regList": [],
+                "formId": 108,
+                "renderKey": "1081625466287648"
+                },
+                "placeholder": "请输入地图位置",
+                "type": "map",
+                "style": {
+                "width": "100%"
+                },
+                "disabled": false,
+                "clearable": true,
+                "readonly": false,
+                "__vModel__": "map"
             }],
             "formRef": "elForm",
             "formModel": "formData",

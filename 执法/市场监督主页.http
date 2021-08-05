@@ -13,7 +13,7 @@ content-type: application/json
 {  
     "version": "1",
     "name": "page_home",
-    "title": "市场监督",
+    "title": "智慧执法",
     "pageStyle": {
       "margin-bottom":"50px"
     },
@@ -101,9 +101,9 @@ content-type: application/json
                 }
               },
               {
-                "svg":"data",
-                "title":"数据分析",
-                "nav":"/pages/index/index",
+                "img":"https://ai.hdqmjs.com/attachments/nav/notice-dark.png",
+                "title":"通知公告",
+                "nav":"/pages/notice",
                 "container":{
                 "background":"#F8FDE9"
                 }
@@ -120,7 +120,7 @@ content-type: application/json
           "jump":true,
           "jumpText":"更多....",
           "jumpUrl":"/companyHome/More",
-          "itemNavigation": "/enforcement/enforcement?piId&taskId",
+          "itemNavigation": "/enforcement/enforcement?piId&taskId&instanceEntityVo&processDefineKey",
           "response":{
               "list":"list"
           },

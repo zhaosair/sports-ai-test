@@ -58,12 +58,9 @@ content-type: application/json
             },
             "request":{
                 "default":{
+                  "dataScope": 1,
                   "processDefinitionKey": "",
-                  "finishState":0,
-                  "formType":"zf",
-                  "customValues":{
-                    "fileseq":"0"
-                  }
+                  "formType":"zf"
                 },
                 "pn":"pageNo",
                 "ps":"pageSize"

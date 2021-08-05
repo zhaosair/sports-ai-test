@@ -1,0 +1,17 @@
+@token = 
+### 通知列表
+###
+POST https://r.zbsoft.top/api.page.design.form/listDataPage
+Authorization: Bearer 
+{"pageNo":1,"pageSize":20,"formId":"46"}
+###通知详情
+POST https://r.zbsoft.top/api.page.design.form/loadFormInfo
+{"formId":"46","dataId":dataId}
+### 响应字段
+# {
+#         title: '标题',
+#         author: '发布人',
+#         content: '内容', // HTML字符串
+#         create_time: '',
+#         update_time: '',
+# }

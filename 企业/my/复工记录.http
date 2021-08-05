@@ -70,7 +70,7 @@ content-type: application/json
             },
             "itemModule":{
                 "type":"custom_component",
-                "name":"enforcement-state-item"
+                "name":"company-state-to-enforcement"
             }
         }
     }

@@ -1,0 +1,113 @@
+@endpoint=https://ai.hdqmjs.com
+
+## 动态页面 
+
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=333333
+
+
+### 保存市场监督页面数据 
+POST {{endpoint}}/form/333333
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "Market-home",
+    "title": "智慧执法",
+    "pageStyle": {
+        "background":"#fff",
+      "margin-bottom":"50px",
+      "padding":"10rpx"
+    },
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type": "navlist",
+        "name": "",
+        "key": "cd814de4-34de-fa95-1049-1623416664592",
+        "container":{
+            "grid-template-columns":"repeat(2, 50%)"
+        }
+      }
+    ],
+    "moduleData": {
+        "cd814de4-34de-fa95-1049-1623416664592": {
+            "navList": [
+                {
+                    "title":"待办事项",
+                    "nav":"defaultPage/defaultPage?id=3030",
+                    "svg":{
+                        "icon":"todo"
+                    },
+                    "background":"#4ABFDE",
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"场馆导航",
+                    "nav":"map/venueNav/index",
+                    "svg":{
+                        "icon":"map_white"
+                    },
+                    "background":"#53B8B6",
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"企业查询",
+                    "nav":"enforcement/enterpriseDatabase",
+                    "svg":{
+                        "icon":"search_white"
+                    },
+                    "background":"#6071B5",
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"执法发起",
+                    "nav":"defaultPage/defaultPage?id=3333335",
+                    "svg":{
+                        "icon":"enforcement_white"
+                    },
+                    "background":"#69B7DF",
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"执法卷宗",
+                    "nav":"enforcement/enforcementStateBook",
+                    "svg":{
+                        "icon":"book_white"
+                    },
+                    "background":"#67C5CF",
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"整改复查",
+                    "nav":"enforcement/ReSetting",
+                    "svg":{
+                        "icon":"reSetting_white"
+                    },
+                    "background":"#649AD2",
+                    "textColor":"#ffffff"
+                },
+             {
+                    "title":"执法记录",
+                    "nav":"enforcement/myEnforcement",
+                    "svg":{
+                        "icon":"record_white"
+                    },
+                    "background":"#527384",
+                    "textColor":"#ffffff"
+              }
+            ],
+          "itemModule":
+            {
+              "name":"boxItem"
+          }
+        }
+    }
+}

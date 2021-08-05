@@ -1,23 +1,20 @@
 @endpoint=https://ai.hdqmjs.com
 
-## 动态页面 
+### 获取公告设计数据
+GET {{endpoint}}/form?id=66666666
+### 提交公告设计数据
+POST {{endpoint}}/form/66666666
+Content-Type: application/json
 
-### 获取市场监督页面数据 
-GET {{endpoint}}/form?id=3030
-
-
-### 保存动态页面
-POST {{endpoint}}/form/3030
-content-type: application/json
 
 {  
     "version": "1",
-    "name": "More",
-    "title": "待办",
+    "name": "notice",
+    "title": "公告",
     "pageStyle": {},
     "loadApi": "",
     "response": {
-      "data":"data"
+      "data":"data.data"
     },
     "request": {
     },
@@ -35,27 +32,23 @@ content-type: application/json
     ],
     "moduleData": {
          "e59992z8-bb88-a788-9922-1623488775885": {
-            "loadApi":"https://ai.hdqmjs.com/api.flow.task/taskListPage",
+            "loadApi":"https://ai.hdqmjs.com/api.page.design.form/listDataPage",
             "method":"POST",
-            "itemNavigation": "/enforcement/enforcement?piId&taskId&instanceEntityVo&processDefineKey",
+            "itemNavigation": "/NoticeDetail?id",
             "response":{
-                "list":"list"
-            },
-            "response":{
-            "list":"list"
+                "list":"formDataPage.list"
             },
             "request":{
             "default":{
-              "queryType": "wait"
+                "pageSize":20,
+                "formId":"46"
             },
-                "pn":"pageNo",
-                "ps":"pageSize"
+                "pn":"pageNo"
             },
             "itemModule":{
             "type":"custom_component",
-            "name":"toDoListItem"
+            "name":"noticeItem"
             }
         }
     }
 }
-
