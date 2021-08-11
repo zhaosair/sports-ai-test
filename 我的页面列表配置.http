@@ -8,6 +8,7 @@ Content-Type: application/json
 
 {
     "list":[
+        {"icon":"notice","title":"通知","nav":"/notice"},
         {"icon":"listZc","title":"自查记录","nav":"/companyHome/my/selfInspectionRecord"},
         {"icon":"listZf","title":"执法记录","nav":"/companyHome/my/lawEnforcementRecord"},
         {"icon":"listFg","title":"复工记录","nav":"/companyHome/my/returnToWorkRecord"},
@@ -24,6 +25,7 @@ Content-Type: application/json
 
 {
     "list":[
+        {"icon":"notice","title":"通知","nav":"/notice"},
         {"icon":"record","title":"我的上报","nav":"/street/my/myReport"},
         {"icon":"typeJdsb","title":"辖区内企业","nav":"/street/getCompany"}
     ]

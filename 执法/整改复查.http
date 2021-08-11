@@ -40,8 +40,7 @@ content-type: application/json
             },
             "request":{
                 "default":{
-                  "processDefinitionKey": "zg",
-                  "finishState":0
+                  "formType": "zg"
                 },
                 "fileno":"fileno",
                 "pn":"pageNo",

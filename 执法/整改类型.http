@@ -1,0 +1,83 @@
+@endpoint=https://ai.hdqmjs.com
+
+
+### 获取整改类型页面数据 
+GET {{endpoint}}/form?id=3333336
+
+
+### 保存整改类型
+POST {{endpoint}}/form/3333336
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "zg_type",
+    "title": "整改类型",
+    "pageStyle": {
+    },
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type": "navlist",
+        "name": "请选择整改类型",
+        "key": "cd814de4-34de-fa95-1049-1623416664592",
+        "container":{
+            "grid-template-columns":"repeat(2, 50%)"
+        }
+      }
+    ],
+    "moduleData": {
+    
+        "cd814de4-34de-fa95-1049-1623416664592": {
+            "navList": [
+                {
+                    "title": "营业期间未建立安全生产例会制度或者未制定安全生产措施",
+                    "nav": "defaultPage/hasNextSelect?id=19005&key=zg001&lastKey=zg002",
+                    "svg":{
+                      "icon":"nosafe"
+                    }
+                },
+                {
+                    "title": "营业期间未建立生产安全事故隐患排查制度及记录",
+                    "nav": "defaultPage/hasNextSelect?id=19007&key=zg003&lastKey=zg004",
+                    "svg":{
+                      "icon":"norule"
+                    }
+                },
+                {
+                    "title": "营业期间专职水上救生员",
+                    "nav": "defaultPage/hasNextSelect?id=19009&key=zg005&lastKey=zg006",
+                    "svg":{
+                      "icon":"nolife"
+                    }
+                },
+                {
+                    "title": "营业期间未配备持有相应运动项目执业证书的从业人员",
+                    "nav": "defaultPage/hasNextSelect?id=19010&key=zg007&lastKey=zg008",
+                    "svg":{
+                      "icon":"nolicense"
+                    }
+                },
+                {
+                    "title": "在营业期间未设置能够覆盖全部营业区域的应急广播，不能使用中英文两种语言播放的",
+                    "nav": "defaultPage/hasNextSelect?id=19000&key=zg009&lastKey=zg010",
+                    "svg":{
+                      "icon":"nolanguage"
+                    }
+                }
+            ],
+          "itemModule":
+            {
+              "name":"MagicItem"
+          }
+        }
+    }
+}
+

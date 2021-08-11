@@ -58,7 +58,8 @@ content-type: application/json
             },
             "request":{
                 "default":{
-                  "processDefinitionKey": "fg"
+                  "processDefinitionKey": "fg",
+                  "dataScope": 1
                   //"finishState":0,
                   //"formType":"zf",
                   //"customValues":{

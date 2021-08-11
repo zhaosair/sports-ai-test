@@ -59,7 +59,7 @@ content-type: application/json
                 "show-word-limit": false,
                 "readonly": false,
                 "hidden": false,
-                "disabled": false,
+                "disabled": true,
                 "__vModel__": "licenceNo"
             }, {
                 "__config__": {
@@ -126,8 +126,43 @@ content-type: application/json
                 "readonly": false,
                 "hidden": false,
                 "disabled": false,
-                "__vModel__": "legalRepresentative"
-            }, {
+                "__vModel__": "personName"
+            },
+            {
+                "__config__": {
+                "label": "联系电话",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "el-input",
+                "tagIcon": "input",
+                "required": true,
+                "layout": "colFormItem",
+                "span": 8,
+                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                "regList": [],
+                "formId": 109,
+                "renderKey": "1091628245404862"
+                },
+                "__slot__": {
+                "prepend": "",
+                "append": ""
+                },
+                "placeholder": "请输入联系电话",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "prefix-icon": "",
+                "suffix-icon": "",
+                "maxlength": null,
+                "show-word-limit": false,
+                "readonly": false,
+                "hidden": false,
+                "disabled": false,
+                "__vModel__": "personPhone"
+            },
+             {
                 "__config__": {
                 "label": "公司地址",
                 "labelWidth": null,
@@ -271,21 +306,21 @@ content-type: application/json
                 },
                 "__slot__": {
                 "options": [{
-                    "label": "培训机构",
-                    "value": "EDU"
-                }, {
-                    "label": "健身俱乐部",
-                    "value": "CLUB"
-                }, {
-                    "label": "体育文化",
-                    "value": "CUL"
-                }, {
-                    "label": "娱乐场所",
-                    "value": "ENT"
-                }, {
-                    "label": "体育场馆",
-                    "value": "STA"
-                }]
+                        "label": "健身",
+                        "value": "BBD"
+                    }, {
+                        "label": "游泳",
+                        "value": "SW"
+                    }, {
+                        "label": "攀岩",
+                        "value": "RC"
+                    }, {
+                        "label": "滑雪",
+                        "value": "SKI"
+                    }, {
+                        "label": "滑冰",
+                        "value": "SKA"
+                    }]
                 },
                 "placeholder": "请选择企业类型",
                 "style": {
@@ -323,32 +358,45 @@ content-type: application/json
                 "value-format": "yyyy-MM-dd",
                 "readonly": false,
                 "__vModel__": "expireDate"
-            }, {
+            }, 
+            {
                 "__config__": {
-                "label": "地图位置",
-                "labelWidth": null,
+                "label": "所在街镇",
                 "showLabel": true,
-                "changeTag": true,
-                "tag": "c-map-mes",
-                "tagIcon": "map",
-                "required": false,
+                "labelWidth": null,
+                "tag": "c-select-street",
+                "tagIcon": "select",
                 "layout": "colFormItem",
                 "span": 8,
-                "document": "https://element.eleme.cn/#/zh-CN/component/date-picker",
+                "required": true,
                 "regList": [],
-                "formId": 108,
-                "renderKey": "1081625466287648"
+                "changeTag": true,
+                "document": "https://element.eleme.cn/#/zh-CN/component/select",
+                "formId": 104,
+                "renderKey": "1041628235895717"
                 },
-                "placeholder": "请输入地图位置",
-                "type": "map",
+                "__slot__": {
+                "options": [{
+                    "label": "选项一",
+                    "value": 1
+                }, {
+                    "label": "选项二",
+                    "value": 2
+                }]
+                },
+                "placeholder": "请选择所在街镇",
                 "style": {
                 "width": "100%"
                 },
-                "disabled": false,
                 "clearable": true,
-                "readonly": false,
-                "__vModel__": "map"
-            },{
+                "disabled": false,
+                "filterable": false,
+                "multiple": false,
+                "loadApi": "https://ai.hdqmjs.com/admin/dept/street-tree",
+                "response": "data",
+                "__vModel__": "streetId"
+            },
+            {
                 "__config__": {
                 "label": "地图位置",
                 "labelWidth": null,

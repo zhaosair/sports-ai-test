@@ -13,7 +13,9 @@ Authorization: Bearer {{admin}}
 ###
 GET {{endpoint}}/admin/dept/street-tree
 Authorization: Bearer {{admin}}
-
+###
+GET {{endpoint}}/admin/dept/15
+Authorization: Bearer {{admin}}
 ### 绑定用户
 POST {{endpoint}}/admin/appuser/bindUser
 Content-Type: application/x-www-form-urlencoded

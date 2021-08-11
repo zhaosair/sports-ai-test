@@ -48,23 +48,68 @@ Content-Type: application/json
           "workflow":[
             {
               "title":"整改",
-              "url":"/workFlow/GetWork/GetWork",
+              "url":"/defaultPage/defaultPage",
               "icon":"zg",
               "query":{
-                "key":"zg",
-                "id":"8000"
+                "id":"3333336"
               }
             },
             {
               "title":"处罚",
-              "url":"/workFlow/GetWork/GetWork",
+              "url":"/defaultPage/defaultPage",
               "icon":"cf",
               "query":{
-                "key":"cf",
-                "id":"8001"
+                "id":"3333337"
               }
             }
           ]
+        }
+    }
+}
+
+
+
+### 企业审批
+
+@endpoint = https://ai.hdqmjs.com
+
+### 获取除表单外的页面数据
+GET {{endpoint}}/form?id=66001
+
+
+### 设置除表单外的页面数据
+POST {{endpoint}}/form/66001 HTTP/1.1
+Content-Type: application/json
+
+{  
+    "version": "1",
+    "name": "Approval comments",
+    "title": "办理意见",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"confirm",
+        "name":"",
+        "key":"89084045-v4d5-7122-3300-1623511112885"
+      }
+    ],
+    "moduleData": {
+        "89084045-v4d5-7122-3300-1623511112885": {
+            "agreeText":"提交",
+            "lastText":"回退",
+            "refuseText":"不合格",
+            "placeholder":"办理意见",
+            "query":{
+                "key":"zglc"
+            }
         }
     }
 }

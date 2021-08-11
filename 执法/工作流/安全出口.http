@@ -26,7 +26,7 @@ content-type: application/json
             "name":"autoform",
             "container":{
             },
-            //"FormKey":"zf006",
+            //"FormKey":"zf006",//优先级大于连接上的key
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]
@@ -441,6 +441,38 @@ content-type: application/json
     "version":"1",
     "name":"enforcement",
     "title":"执法",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+   
+            },
+            //"FormKey":"cf",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+###
+GET {{endpoint}}/form?id=19013
+### 
+POST {{endpoint}}/form/19013
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"enforcement",
+    "title":"",
     "pageStyle":{},
     "loadApi":"",
     "request":{

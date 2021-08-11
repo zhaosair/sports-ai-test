@@ -41,6 +41,7 @@ content-type: application/json
             },
             "request":{
                 "default":{
+                  "dataScope": 1,
                   "processDefinitionKey": "",
                   "formType":"zf",
                   "customValues":{

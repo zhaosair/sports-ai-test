@@ -1,6 +1,180 @@
 @endpoint=https://ai.hdqmjs.com
 
-## 动态页面 
+### 新数据，原页面稍作更改
+
+### 获取执法主页数据 
+GET {{endpoint}}/form?id=3456789
+
+
+### 保存执法主页
+POST {{endpoint}}/form/3456789
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "new_enforcement_page",
+    "title": "智慧执法",
+    "pageStyle": {
+      "margin-bottom":"50px"
+    },
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"navlist",
+        "name":"",
+        "key":"y59992z8-bb88-a788-9922-1623488775885",
+        "container":{
+                "grid-template-columns":"repeat(3, 33.3333333%)"
+            }
+      },
+      {
+        "type": "autolist",
+        "tips": "动态列表组件",
+        "binding":
+        {
+          "list":"list"
+        },
+        "bindingTarget": "data",
+        "name":"待办",
+        "key":"e59992z8-bb88-a788-9922-1623488775885",
+        "container":{
+          "height":"405rpx"
+        }
+      },
+      {
+        "type": "navlist",
+        "name": "请选择操作类型",
+        "key": "cd814de4-34de-fa95-1049-1623416664592",
+        "container":{
+            "grid-template-columns":"repeat(3, 33.3333333%)"
+        }
+      }
+    ],
+    "moduleData": {
+        "y59992z8-bb88-a788-9922-1623488775885": {
+            "navList": [
+              {
+                "svg":"map",
+                "title":"场馆导航",
+                "nav":"/pages/map/venueNav/index",
+                "container":{
+                  "background":"#D6EFEE"
+                }
+              },
+              {
+                "svg":"record",
+                "title":"执法记录",
+                "nav":"/pages/enforcement/myEnforcement",
+                "container":{
+                "background":"#EAFAFF"
+                }
+              },
+              {
+                "svg":"transform",
+                "title":"整改复查",
+                "nav":"/pages/enforcement/ReSetting",
+                "container":{
+                  "background":"#EDF0FA"
+                }
+              },
+              {
+                "svg":"search",
+                "title":"企业查询",
+                "nav":"/pages/enforcement/enterpriseDatabase",
+                "container":{
+                "background":"#F6F4EE"
+                }
+              },
+              {
+                "svg":"book",
+                "title":"执法卷宗",
+                "nav":"/pages/login/addCompany",
+                "container":{
+                "background":"#FAF8E7"
+                }
+              },
+              {
+                "img":"https://ai.hdqmjs.com/attachments/nav/notice-dark.png",
+                "title":"通知公告",
+                "nav":"/pages/notice",
+                "container":{
+                "background":"#F8FDE9"
+                }
+              }
+            ],
+            "itemModule":
+            {
+              "name":"cardListItem"
+           }
+        },
+         "e59992z8-bb88-a788-9922-1623488775885": {
+          "loadApi":"https://ai.hdqmjs.com/api.flow.task/taskListPage",
+          "method":"POST",
+          "jump":true,
+          "jumpText":"更多....",
+          "jumpUrl":"/companyHome/More",
+          "itemNavigation": "/enforcement/enforcement?piId&taskId&instanceEntityVo&processDefineKey",
+          "response":{
+              "list":"list"
+          },
+          "response":{
+            "list":"list"
+          },
+        "unloading":true,
+          "request":{
+            "default":{
+              "queryType": "wait",
+              "pageSize":2
+            },
+              "pn":"pageNo"
+          },
+          "itemModule":{
+            "type":"custom_component",
+            "name":"toDoListItem"
+          }
+        },
+        "cd814de4-34de-fa95-1049-1623416664592": {
+            "navList": [
+                {
+                    "title": "执法",
+                    "nav": "defaultPage/defaultPage?id=3333335",
+                    "svg":{
+                      "icon":"enforcement_blue"
+                    }
+                },
+                {
+                    "title": "整改",
+                    "nav": "defaultPage/defaultPage?id=3333336",
+                    "svg":{
+                      "icon":"zg_blue"
+                    }
+                },
+                {
+                    "title": "处罚",
+                    "nav": "defaultPage/defaultPage?id=3333337",
+                    "svg":{
+                      "icon":"cf_blue"
+                    }
+                }
+            ],
+          "itemModule":
+            {
+              "name":"boxItem"
+          }
+        }
+    }
+}
+
+
+
+## 旧数据（页面好看，但是已经和客户确定过不需要了，弃用） 
 
 ### 获取市场监督页面数据 
 GET {{endpoint}}/form?id=333333

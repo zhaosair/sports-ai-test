@@ -49,7 +49,7 @@ content-type: application/json
     ], 
     "moduleData": {
         "7d0e7714-d265-11eb-af94-0800271e55b7": {
-            "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
+            "loadApi":"https://ai.hdqmjs.com/api.flow.task/taskListPage",
             "method":"POST",
             //"itemNavigation": "/enforcement/book/moreBook?piId",
             "itemNavigation": "/enforcement/book/moreBook?piId",
@@ -58,7 +58,7 @@ content-type: application/json
             },
             "request":{
                 "default":{
-                  "dataScope": 1,
+                  "queryType":"dealed",
                   "processDefinitionKey": "",
                   "formType":"zf"
                 },
@@ -67,7 +67,7 @@ content-type: application/json
             },
             "itemModule":{
                 "type":"custom_component",
-                "name":"company-state-to-enforcement"
+                "name":"toDoListItem"
             }
          }
     }
