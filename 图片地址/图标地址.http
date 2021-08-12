@@ -67,6 +67,8 @@ content-type: application/json
     "inputPassword":"https://ai.hdqmjs.com/attachments/input/password.png",
     "tabbarMy":"https://ai.hdqmjs.com/attachments/tabbar/my.png",
     "tabbarMyActive":"https://ai.hdqmjs.com/attachments/tabbar/my-active.png",
+    "tabbarPolicy":"https://ai.hdqmjs.com/attachments/tabbar/policy.png",
+    "tabbarPolicyActive":"https://ai.hdqmjs.com/attachments/tabbar/policy-active.png",
     "tabbarEnforcement":"https://ai.hdqmjs.com/attachments/tabbar/enforcement.png",
     "tabbarEnforcementActive":"https://ai.hdqmjs.com/attachments/tabbar/enforcement-active.png",
     "tabbarCompanyData":"https://ai.hdqmjs.com/attachments/tabbar/CompanyData.png",
@@ -133,6 +135,9 @@ content-type: application/json
     "navLifeguard":"https://ai.hdqmjs.com/attachments/nav/lifeguard.png",
     "navEmployees":"https://ai.hdqmjs.com/attachments/nav/employees.png",
     "navBook":"https://ai.hdqmjs.com/attachments/nav/book.png",
+    "navTodo_white":"https://ai.hdqmjs.com/attachments/nav/todo.png",
+    "navReport":"https://ai.hdqmjs.com/attachments/nav/report.png",
+    "navNotice":"https://ai.hdqmjs.com/attachments/nav/notice.png",
 
     "navCpdx":"https://ai.hdqmjs.com/attachments/nav/cpdx.png",
     "navWcnrcp":"https://ai.hdqmjs.com/attachments/nav/wcnrcp.png",

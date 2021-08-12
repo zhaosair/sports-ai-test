@@ -32,6 +32,14 @@ content-type: application/json
           }
         },
         {
+            "type":"navlist",
+            "key":"1172222-ad44-55ea-ca11-4225534d52b7",
+            "name":"",
+            "container":{
+              "grid-template-columns":"repeat(3, 33.33333333%)"
+            }
+        },
+        {
           "type": "cell",
           "name": "标题栏",
           "key": "e8940746-d595-11eb-bdca-0800271e55b7",
@@ -60,6 +68,40 @@ content-type: application/json
     },
     "moduleData": {
         "851344s-ad44-55ea-ca11-4225534d52b7":{
+        },
+        "1172222-ad44-55ea-ca11-4225534d52b7":{
+          "itemModule":{
+              "name":"MagicItem"
+           },
+           "navList":[
+                {
+                    "title":"待办事项",
+                    "nav":"defaultPage/defaultPage?id=503333",
+                    "svg":{
+                        "icon":"todo_white"
+                    },
+                    "background":"#4ABFDE",
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"我的上报",
+                    "nav":"street/my/myReport",
+                    "svg":{
+                        "icon":"report"
+                    },
+                    "background":"#53B8B6",
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"通知公告",
+                    "nav":"notice",
+                    "svg":{
+                        "icon":"notice"
+                    },
+                    "background":"#6071B5",
+                    "textColor":"#ffffff"
+                }
+           ]
         },
         "e8940746-d595-11eb-bdca-0800271e55b7":{
           "param":{

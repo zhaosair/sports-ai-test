@@ -1,0 +1,56 @@
+@endpoint=https://ai.hdqmjs.com
+
+
+## 待办事项
+GET {{endpoint}}/form?id=503333
+### 保存待办事项
+POST {{endpoint}}/form/503333
+content-type: application/json
+
+{
+    "version": "1", 
+    "name": "TodoList", 
+    "title": "待办事项", 
+    "pageStyle": { }, 
+    "request": { }, 
+    "response": {
+        "data": "data"
+    }, 
+    "container": {
+    }, 
+    "modules": [
+        {
+          "type": "autolist",
+          "tips": "动态列表组件",
+          "key":"a1417b8a-d351-11eb-bb26-0800271e55b7",
+          "container":{
+            "height":""
+          }
+        }
+    ], 
+    "moduleData": {
+        "a1417b8a-d351-11eb-bb26-0800271e55b7": {
+          "itemNavigation": "/companyHome/my/returnToWorkDetail?piId&taskId",
+          "loadApi":"https://ai.hdqmjs.com/api.flow.task/taskListPage",
+          "method":"POST",
+          "response":{
+              "list":"list"
+          },
+          "response":{
+            "list":"list"
+          },
+          "request":{
+            "default":{
+              "dataScope": 1,
+              "processDefinitionKey": "jdsb"
+            },
+              "pn":"pageNo",
+              "ps":"pageSize"
+          },
+          "itemModule":{
+            "type":"custom_component",
+            "name":"toDoListItem"
+          }
+        }
+    }
+}
