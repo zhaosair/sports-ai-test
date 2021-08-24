@@ -97,7 +97,7 @@ content-type: application/json
             "svg":{
               "icon":"selfSearch"
             },
-            "nav":"/companyHome/More"
+            "nav":"/defaultPage/defaultPage?id=77777"
           }
           ]
         },

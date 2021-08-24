@@ -2,7 +2,7 @@
 
 
 ## 动态列表
-
+GET {{endpoint}}/form?id=108
 ### 保存动态列表
 POST {{endpoint}}/form/108
 content-type: application/json

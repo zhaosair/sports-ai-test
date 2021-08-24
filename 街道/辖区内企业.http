@@ -15,7 +15,7 @@ content-type: application/json
         "params":null,
         "pn":true,
         "pz":true,
-        "addIcon":false,
+        "addIcon":true,
         "addUrl":"/pages/login/addCompany",
         "field":"name",
         "itemModule":{
