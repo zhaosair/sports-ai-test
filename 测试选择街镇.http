@@ -205,7 +205,7 @@ Content-Type: application/json
       "showLabel": true,
       "changeTag": true,
       "tag": "el-input",
-      "tagIcon": "input",
+      "tagIcon": "textarea",
       "required": true,
       "layout": "colFormItem",
       "span": 8,

@@ -87,6 +87,15 @@ content-type: application/json
                     "nav":"/pages/login/addCompany",
                     "container":{
                     }
+                },
+                {
+                    "svg":"record",
+                    //"img":"https://ai.hdqmjs.com/attachments/input/company.png",
+                    "title":"操作手册",
+                    "subTitle":"企业用户操作手册",
+                    "nav":"/pages/NoticeDetail?id=28",
+                    "container":{
+                    }
                 }
             ]
         }

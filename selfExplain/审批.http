@@ -39,10 +39,12 @@ Content-Type: application/json
             "lastText":"回退",
             "refuseText":"不合格",
             "placeholder":"办理意见",
+            "groupText":"办理记录",
             "failUrl":"/cofirmRefuse/cofirmRefuse",
             "query":{
                 "key":"zglc"
-            }
+            },
+            "noCommit":true
         },
         "84653120-4521-5120-1302-5132231846513":{
           "workflow":[

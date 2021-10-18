@@ -41,6 +41,8 @@ content-type: application/json
             "pz":true,
             "addIcon":true,
             "addUrl":"/pages/login/addCompany",
+            "hasEdit":true,
+            "settingUrl":"/pages/enforcement/enforcementEdit",
             "field":"name",
             "itemModule":{
                 "name":"stateSearchItem"

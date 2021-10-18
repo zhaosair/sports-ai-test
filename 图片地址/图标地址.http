@@ -19,7 +19,8 @@ Content-Type: application/json
       "workflowEP": "https://ai.hdqmjs.com",
       "dataEP": "https://ai.hdqmjs.com/data",
       "extraEP": "https://ai.hdqmjs.com",
-      "loginEP":"https://ai.hdqmjs.com"
+      "loginEP":"https://ai.hdqmjs.com",
+      "YyzzEP":"https://ai.hdqmjs.com"
     }
 }
 ### 图标存放地址 http://ai.hdqmjs.com
@@ -35,6 +36,7 @@ content-type: application/json
 
 {
     "search":"https://ai.hdqmjs.com/attachments/public/search-blue.png",
+    "setting":"https://ai.hdqmjs.com/attachments/public/setting.png",
     "file":"https://ai.hdqmjs.com/attachments/public/file.png",
     "report":"https://ai.hdqmjs.com/attachments/public/report.png",
     "listZc":"https://ai.hdqmjs.com/attachments/list/listZc.png",
@@ -65,6 +67,7 @@ content-type: application/json
     "inputCompany":"https://ai.hdqmjs.com/attachments/input/company.png",
     "inputStreet":"https://ai.hdqmjs.com/attachments/input/street.png",
     "inputPassword":"https://ai.hdqmjs.com/attachments/input/password.png",
+    "inputPhone":"https://ai.hdqmjs.com/attachments/input/phone.png",
     "tabbarMy":"https://ai.hdqmjs.com/attachments/tabbar/my.png",
     "tabbarMyActive":"https://ai.hdqmjs.com/attachments/tabbar/my-active.png",
     "tabbarPolicy":"https://ai.hdqmjs.com/attachments/tabbar/policy.png",

@@ -47,7 +47,8 @@ content-type: application/json
             "container":{
                 "background":"white"
             },
-            "FormKey":"zc"
+            "FormKey":"zc",
+            "noCommit":true
             //"code":"zc03",
             //"API":"/api.page.design.form/loadFormInfo"
         }

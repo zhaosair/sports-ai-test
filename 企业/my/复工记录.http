@@ -69,6 +69,11 @@ content-type: application/json
                 "pn":"pageNo",
                 "ps":"pageSize"
             },
+            "options":{
+              "noSuccess":"关闭",
+              "success":"开放",
+              "wait":"临时停业"
+            },
             "itemModule":{
                 "type":"custom_component",
                 "name":"company-state-to-enforcement"

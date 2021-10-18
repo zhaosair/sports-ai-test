@@ -1,35 +1,91 @@
-@endpoint=https://ai.hdqmjs.com
+@endpoint = https://ai.hdqmjs.com
 
+GET {{endpoint}}/form?id=68652
 
-GET {{endpoint}}/form?id=88888
-### 修改自己的企业信息
-POST {{endpoint}}/form/88888 HTTP/1.1
-content-type: application/json
+####
+POST {{endpoint}}/form/68652
+Content-Type: application/json
 
 {
-    "version": "1", 
-    "name": "reCompanyMes", 
-    "title": "修改企业信息", 
-    "pageStyle": { }, 
-    "request": { }, 
-    "response": {
-        "data": "data"
-    }, 
-    "container": {
-
-    }, 
-    "modules": [
+    "version":"1",
+    "name":"enforcementEdit",
+    "title":"编辑企业",
+    "pageStyle":{
+        "padding":"10px",
+        "background":"#EFEFEF"
+    },
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
         {
-          "type": "autoform", 
-          "key": "96afd71a-c8d5-11eb-aca5-0800271e55b7", 
-          "name": "", 
-          "container": {}
+            "type":"autoform",
+            "key":"autoform-7812-ad64-398a-451231561122",
+            "name":"",
+            "container":{
+                "background":"white"
+            }
         }
+        //,
+        //{
+        //    "type":"navlist",
+        //    "key":"navlists-7112-5154-2131-555256465455",
+        //    "name":"更多",
+        //    "container":{
+        //        "grid-template-columns":"repeat(3, 33.33333333%)"
+        //    }
+        //}
     ],
-    "moduleData": {
-        "96afd71a-c8d5-11eb-aca5-0800271e55b7":{
+    "moduleData":{
+        "autoform-7812-ad64-398a-451231561122":{
             "loadApi":"https://ai.hdqmjs.com/api/u/companyInfo",
             "fields": [{
+                "__config__": {
+                "label": "企业状态",
+                "showLabel": true,
+                "labelWidth": null,
+                "tag": "el-select",
+                "tagIcon": "select",
+                "layout": "colFormItem",
+                "span": 24,
+                "required": true,
+                "regList": [],
+                "changeTag": true,
+                "document": "https://element.eleme.cn/#/zh-CN/component/select",
+                "formId": 110,
+                "renderKey": "1101629007894611"
+                },
+                "__slot__": {
+                "options": [{
+                    "label": "未认证",
+                    "value": "0"
+                }, {
+                    "label": "审核中",
+                    "value": 1
+                }, {
+                    "label": "通过",
+                    "value": 2
+                }, {
+                    "label": "未通过",
+                    "value": 3
+                }]
+                },
+                "placeholder": "请选择企业状态",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "disabled": false,
+                "filterable": false,
+                "defaultValue":1,
+                "multiple": false,
+                "__vModel__": "certStatus"
+            },{
                 "__config__": {
                 "label": "统一信用代码",
                 "labelWidth": null,

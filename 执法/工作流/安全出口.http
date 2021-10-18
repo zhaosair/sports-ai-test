@@ -26,6 +26,7 @@ content-type: application/json
             "name":"autoform",
             "container":{
             },
+            "noCommit":true,
             //"FormKey":"zf006",//优先级大于连接上的key
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -61,6 +62,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf001",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -94,6 +96,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf002",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -127,6 +130,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf003",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -161,6 +165,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf004",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -194,6 +199,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf005",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -227,6 +233,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf006",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -260,6 +267,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf007",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -293,6 +301,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf008",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -326,6 +335,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf009",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -359,6 +369,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf010",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -392,6 +403,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"zf011",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -425,6 +437,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             ////"FormKey":"zg",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -458,6 +471,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"cf",
             "API":"/api.page.design.form/loadFormInfo"
         }
@@ -490,6 +504,7 @@ content-type: application/json
             "container":{
    
             },
+            "noCommit":true,
             //"FormKey":"cf",
             "API":"/api.page.design.form/loadFormInfo"
         }

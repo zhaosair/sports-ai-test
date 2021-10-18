@@ -100,49 +100,49 @@ content-type: application/json
             "navList": [
                 {
                     "title": "安全出口",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19005&key=zf006_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19005&key=zf006_xx",
                     "svg":{
                       "icon":"export"
                     }
                 },
                 {
                     "title": "安全警示标志",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19006&key=zf007_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19006&key=zf007_xx",
                     "svg":{
                       "icon":"warning"
                     }
                 },
                 {
                     "title": "安全指示标志",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19007&key=zf008_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19007&key=zf008_xx",
                     "svg":{
                       "icon":"instructions"
                     }
                 },
                 {
                     "title": "应急广播",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19008&key=zf009_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19008&key=zf009_xx",
                     "svg":{
                       "icon":"radio"
                     }
                 },
                 {
                     "title": "安全生产与规章制度",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19009&key=zf010_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19009&key=zf010_xx",
                     "svg":{
                       "icon":"rules"
                     }
                 },
                 {
                     "title": "行政许可",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19001&key=zf002_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19001&key=zf002_xx",
                     "svg":{
                       "icon":"adminLicence"
                     }
                 },
                 {
                     "title": "应急预案与演练",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19010&key=zf011_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19010&key=zf011_xx",
                     "svg":{
                       "icon":"drill"
                     }
@@ -150,7 +150,7 @@ content-type: application/json
                 {
                     "title": "经营许可证",
                     "required":true,
-                    "nav": "enforcement/selectCompany/selectCompany?id=19003&key=zf004_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19003&key=zf004_xx",
                     "svg":{
                       "icon":"licence"
 
@@ -158,21 +158,21 @@ content-type: application/json
                 },
                 {
                     "title": "悬挂公示",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19000&key=zf001_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19000&key=zf001_xx",
                     "svg":{
                       "icon":"publicity"
                     }
                 },
                 {
                     "title": "专职水上救生员",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19002&key=zf003_xx",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19002&key=zf003_xx",
                     "svg":{
                       "icon":"lifeguard"
                     }
                 },
                 {
                     "title":"执业证书从业人员",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19004&key=zf005_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19004&key=zf005_xx",
                     "svg":{
                       "icon":"employees"
 
@@ -180,77 +180,77 @@ content-type: application/json
                 },
                 {
                     "title":"对彩票代销者进行虚假性、误导性 宣传的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf012_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf012_xx",
                     "svg":{
                       "icon":"cpdx"
                     }
                 },
                 {
                     "title":"对彩票代销者向未成年人销售彩票的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf013_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf013_xx",
                     "svg":{
                       "icon":"wcnrcp"
                     }
                 },
                 {
                     "title":"对彩票代销者以诋毁同业者等 手段进行不正当竞争的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf014_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf014_xx",
                     "svg":{
                       "icon":"dxcf"
                     }
                 },
                 {
                     "title":"对彩票代销者以赊销或者 信用方式销售彩票的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf015_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf015_xx",
                     "svg":{
                       "icon":"xy"
                     }
                 },
                 {
                     "title":"对公共文化体育设施管理单位 违反规定出租文化体育设施的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf016_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf016_xx",
                     "svg":{
                       "icon":"wg"
                     }
                 },
                 {
                     "title":"对公共文化体育设施管理单位开展与公共文化 体育设施功能、用途不相适应的服务活动的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf017_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf017_xx",
                     "svg":{
                       "icon":"byz"
                     }
                 },
                 {
                     "title":"对体育竞赛主办者未经体育行政部门 依法注册的人员担任裁判工作的行为进行检查",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf018_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf018_xx",
                     "svg":{
                       "icon":"cp"
                     }
                 },
                 {
                     "title":"对体育赛事活动主办方或承办方 其他侵犯他人或其他组织合法权益的行为进行检查",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf019_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf019_xx",
                     "svg":{
                       "icon":"qfqy"
                     }
                 },
                 {
                     "title":"对体育赛事活动主办方或承办方举办其他体育赛事活动使用“世界”“国际”“亚洲”“中国”“全国”“国家”等字样或具有类似含义的词汇的行为进行检查",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf020_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf020_xx",
                     "svg":{
                       "icon":"ch"
                     }
                 },
                 {
                     "title":"对体育赛事主办方或承办方未按照行政审批规定程序办理 健身气功、航空体育、登山等运动项目的体育赛事活动的行为进行检查",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf021_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf021_xx",
                     "svg":{
                       "icon":"cf"
                     }
                 },
                 {
                     "title":"对委托他人代销彩票或者转借、出租、出售 彩票投注专用设备的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf022_xx",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf022_xx",
                     "svg":{
                       "icon":"sb"
                     }
@@ -302,49 +302,49 @@ content-type: application/json
             "navList": [
                 {
                     "title": "安全出口",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19005&key=zf006",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19005&key=zf006",
                     "svg":{
                       "icon":"export"
                     }
                 },
                 {
                     "title": "安全警示标志",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19006&key=zf007",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19006&key=zf007",
                     "svg":{
                       "icon":"warning"
                     }
                 },
                 {
                     "title": "安全指示标志",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19007&key=zf008",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19007&key=zf008",
                     "svg":{
                       "icon":"instructions"
                     }
                 },
                 {
                     "title": "应急广播",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19008&key=zf009",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19008&key=zf009",
                     "svg":{
                       "icon":"radio"
                     }
                 },
                 {
                     "title": "安全生产与规章制度",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19009&key=zf010",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19009&key=zf010",
                     "svg":{
                       "icon":"rules"
                     }
                 },
                 {
                     "title": "行政许可",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19001&key=zf002",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19001&key=zf002",
                     "svg":{
                       "icon":"adminLicence"
                     }
                 },
                 {
                     "title": "应急预案与演练",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19010&key=zf011",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19010&key=zf011",
                     "svg":{
                       "icon":"drill"
                     }
@@ -352,7 +352,7 @@ content-type: application/json
                 {
                     "title": "经营许可证",
                     "required":true,
-                    "nav": "enforcement/selectCompany/selectCompany?id=19003&key=zf004",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19003&key=zf004",
                     "svg":{
                       "icon":"licence"
 
@@ -360,21 +360,21 @@ content-type: application/json
                 },
                 {
                     "title": "悬挂公示",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19000&key=zf001",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19000&key=zf001",
                     "svg":{
                       "icon":"publicity"
                     }
                 },
                 {
                     "title": "专职水上救生员",
-                    "nav": "enforcement/selectCompany/selectCompany?id=19002&key=zf003",
+                    "nav": "enforcement/selectCompany/selectEnforcement?id=19002&key=zf003",
                     "svg":{
                       "icon":"lifeguard"
                     }
                 },
                 {
                     "title":"执业证书从业人员",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19004&key=zf005",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19004&key=zf005",
                     "svg":{
                       "icon":"employees"
 
@@ -382,77 +382,77 @@ content-type: application/json
                 },
                 {
                     "title":"对彩票代销者进行虚假性、误导性 宣传的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf012",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf012",
                     "svg":{
                       "icon":"cpdx"
                     }
                 },
                 {
                     "title":"对彩票代销者向未成年人销售彩票的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf013",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf013",
                     "svg":{
                       "icon":"wcnrcp"
                     }
                 },
                 {
                     "title":"对彩票代销者以诋毁同业者等 手段进行不正当竞争的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf014",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf014",
                     "svg":{
                       "icon":"dxcf"
                     }
                 },
                 {
                     "title":"对彩票代销者以赊销或者 信用方式销售彩票的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf015",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf015",
                     "svg":{
                       "icon":"xy"
                     }
                 },
                 {
                     "title":"对公共文化体育设施管理单位 违反规定出租文化体育设施的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf016",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf016",
                     "svg":{
                       "icon":"wg"
                     }
                 },
                 {
                     "title":"对公共文化体育设施管理单位开展与公共文化 体育设施功能、用途不相适应的服务活动的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf017",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf017",
                     "svg":{
                       "icon":"byz"
                     }
                 },
                 {
                     "title":"对体育竞赛主办者未经体育行政部门 依法注册的人员担任裁判工作的行为进行检查",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf018",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf018",
                     "svg":{
                       "icon":"cp"
                     }
                 },
                 {
                     "title":"对体育赛事活动主办方或承办方 其他侵犯他人或其他组织合法权益的行为进行检查",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf019",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf019",
                     "svg":{
                       "icon":"qfqy"
                     }
                 },
                 {
                     "title":"对体育赛事活动主办方或承办方举办其他体育赛事活动使用“世界”“国际”“亚洲”“中国”“全国”“国家”等字样或具有类似含义的词汇的行为进行检查",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf020",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf020",
                     "svg":{
                       "icon":"ch"
                     }
                 },
                 {
                     "title":"对体育赛事主办方或承办方未按照行政审批规定程序办理 健身气功、航空体育、登山等运动项目的体育赛事活动的行为进行检查",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf021",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf021",
                     "svg":{
                       "icon":"cf"
                     }
                 },
                 {
                     "title":"对委托他人代销彩票或者转借、出租、出售 彩票投注专用设备的行为进行处罚",
-                    "nav":"enforcement/selectCompany/selectCompany?id=19011&key=zf022",
+                    "nav":"enforcement/selectCompany/selectEnforcement?id=19011&key=zf022",
                     "svg":{
                       "icon":"sb"
                     }

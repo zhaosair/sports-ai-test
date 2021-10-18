@@ -29,7 +29,7 @@ content-type: application/json
 {
     "version":"1",
     "name":"companySelf",
-    "title":"企业复工",
+    "title":"经营状况上报",
     "pageStyle":{},
     "loadApi":"",
     "request":{
@@ -49,6 +49,7 @@ content-type: application/json
             },
             "FormKey":"fg",
             "workflow":true,
+            "noCommit":true,
             "API":"/api.page.design.form/loadFormInfo"
         }
     ]

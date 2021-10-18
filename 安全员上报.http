@@ -1,0 +1,35 @@
+@endpoint=https://ai.hdqmjs.com
+
+### 获取安全员上报信息
+GET {{endpoint}}/form?id=53125
+### 保存安全员上报信息
+POST {{endpoint}}/form/53125
+content-type: application/json
+
+{
+    "version":"1",
+    "name":"SafeReport",
+    "title":"执业人员信息登记",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "code":"aqy",
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
+
