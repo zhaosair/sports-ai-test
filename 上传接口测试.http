@@ -1,0 +1,171 @@
+@endpoint = http://localhost:6666
+
+POST {{endpoint}}/tools/convert
+Content-Type: application/json
+
+{
+  "fields": [{
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkTimeStart"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkTimeEnd"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkOno"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "businessLicense"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "companyName"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "companyType"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "companyAddress"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "companyLegalPerson"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "companyPhone"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkAddress"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkResult"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkSuggest"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "lawPerson1"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "lawPerson1Id"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "lawPerson2"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "lawPerson2Id"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "recorder"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "examinee"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "remark"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkItemWay1"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkItemResult1"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkItemWay2"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkItemResult2"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkItemWay3"
+  }, {
+    "__config__": {
+      "layout": "colFormItem"
+    },
+    "__vModel__": "checkItemResult3"
+  }],
+  "formRef": "elForm",
+  "formModel": "formData",
+  "formBtns": true,
+  "saveApi": "",
+  "loadApi": "",
+  "isLawForm": true,
+  "lawFormConfig": {
+    "title": "体育运动项目经营场所应急广播",
+    "checkItemsTitle": "体育运动项目经营场所应急广播",
+    "checkSubItemsTitle": "体育运动项目经营场所应急广播",
+    "checkItemsList": [{
+      "title": "设置能够覆盖全部营业区域的应急广播或者不能使用中英文两种语言播放",
+      "way": {
+        "__vModel__": "checkItemWay1",
+        "options": [{
+          "label": "实地勘验",
+          "value": "实地勘验"
+        }, {
+          "label": "现场询问",
+          "value": "现场询问"
+        }]
+      },
+      "result": {
+        "__vModel__": "checkItemResult1",
+        "options": [{
+          "label": "合格",
+          "value": "合格"
+        }, {
+          "label": "不合格",
+          "value": "不合格"
+        }]
+      }
+    }]
+  }
+}
+
+###
+GET http://192.168.3.239:8000/api/crud/lowMainPage/lowMainPages/4
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJvcmdJZCI6IjEwMDAwMDAwMDAwMDAwMDAwMSIsInVzZXJJZCI6Ijg3NjcwODA4MjQzNzE5Nzg1MiIsInVzZXJUeXBlIjoxMDEsImJVc2VyVHlwZSI6IlNZU1RFTSIsInRlbmFudE9yZ0lkIjoxMDAwMDAwMDAwMDAwMDAwMDEsImFjY291bnQiOiJhZG1pbiIsImV4dHJhVXNlclR5cGUiOjAsImlhdCI6MTYzNDU1MzQwNiwianRpIjoiODc2NzA4MDgyNDM3MTk3ODUyIiwic3ViIjoiYWRtaW4iLCJleHAiOjE2MzQ4MTI2MDZ9.Rz1oDESEMps8DqKBGNg-M_XRoKp7uAs6IH9EcG04k3sZ2pAw4LzxotAb2mOxKUPR6EgcPyMbixvU1xzyGPipdw

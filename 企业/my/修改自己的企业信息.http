@@ -544,6 +544,12 @@ content-type: application/json
                 }, {
                     "label": "电子竞技",
                     "value": "ELSP"
+                }, {
+                    "label":"蹦床",
+                    "value":"TRA"
+                }, {
+                    "label": "瑜伽",
+                    "value": "YOG"
                 }]
                 },
                 "placeholder": "请选择类型",
@@ -654,6 +660,72 @@ content-type: application/json
                 "hidden": false,
                 "disabled": false,
                 "__vModel__": "realOpAddress"
+            },{
+                "__config__": {
+                "label": "紧急联系人",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "el-input",
+                "tagIcon": "input",
+                "required": true,
+                "layout": "colFormItem",
+                "span": 8,
+                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                "regList": [],
+                "formId": 120,
+                "renderKey": "1201634973743671"
+                },
+                "__slot__": {
+                "prepend": "",
+                "append": ""
+                },
+                "placeholder": "请输入紧急联系人",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "prefix-icon": "",
+                "suffix-icon": "",
+                "maxlength": null,
+                "show-word-limit": false,
+                "readonly": false,
+                "hidden": false,
+                "disabled": false,
+                "__vModel__": "emeContactPerson"
+            },{
+                "__config__": {
+                "label": "紧急联系电话",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "el-input",
+                "tagIcon": "input",
+                "required": true,
+                "layout": "colFormItem",
+                "span": 8,
+                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                "regList": [],
+                "formId": 103,
+                "renderKey": "1031635219868403"
+                },
+                "__slot__": {
+                "prepend": "",
+                "append": ""
+                },
+                "placeholder": "请输入紧急联系电话",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "prefix-icon": "",
+                "suffix-icon": "",
+                "maxlength": null,
+                "show-word-limit": false,
+                "readonly": false,
+                "hidden": false,
+                "disabled": false,
+                "__vModel__": "emeContactPhone"
             }, {
                 "__config__": {
                 "label": "地面/地下经营",

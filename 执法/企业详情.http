@@ -293,34 +293,7 @@ content-type: application/json
                     "hidden": false,
                     "disabled": false,
                     "__vModel__": "businessScope"
-                }, {
-                    "__config__": {
-                    "label": "公司注册时间",
-                    "labelWidth": null,
-                    "showLabel": true,
-                    "changeTag": true,
-                    "tag": "el-date-picker",
-                    "tagIcon": "date",
-                    "required": false,
-                    "layout": "colFormItem",
-                    "span": 8,
-                    "document": "https://element.eleme.cn/#/zh-CN/component/date-picker",
-                    "regList": [],
-                    "formId": 108,
-                    "renderKey": "1081625466287648"
-                    },
-                    "placeholder": "公司注册时间",
-                    "type": "date",
-                    "style": {
-                    "width": "100%"
-                    },
-                    "disabled": false,
-                    "clearable": true,
-                    "format": "yyyy-MM-dd",
-                    "value-format": "yyyy-MM-dd",
-                    "readonly": true,
-                    "__vModel__": "startupDate"
-                }, {
+                },{
                     "__config__": {
                     "label": "企业类型",
                     "labelWidth": null,
@@ -362,7 +335,7 @@ content-type: application/json
                     "tagIcon": "checkbox",
                     "layout": "colFormItem",
                     "span": 8,
-                    "required": true,
+                    "required": false,
                     "regList": [],
                     "changeTag": true,
                     "document": "https://element.eleme.cn/#/zh-CN/component/checkbox",
@@ -610,6 +583,12 @@ content-type: application/json
                         }, {
                             "label": "电子竞技",
                             "value": "ELSP"
+                        }, {
+                            "label":"蹦床",
+                            "value":"TRA"
+                        }, {
+                            "label": "瑜伽",
+                            "value": "YOG"
                         }]
                     },
                     "placeholder": "请选择类型",
@@ -658,7 +637,7 @@ content-type: application/json
                     "changeTag": true,
                     "tag": "el-input",
                     "tagIcon": "input",
-                    "required": true,
+                    "required": false,
                     "layout": "colFormItem",
                     "span": 8,
                     "document": "https://element.eleme.cn/#/zh-CN/component/input",
@@ -692,7 +671,7 @@ content-type: application/json
                     "changeTag": true,
                     "tag": "el-input",
                     "tagIcon": "input",
-                    "required": true,
+                    "required": false,
                     "layout": "colFormItem",
                     "span": 8,
                     "document": "https://element.eleme.cn/#/zh-CN/component/input",
@@ -720,25 +699,25 @@ content-type: application/json
                 },
                 {
                     "__config__": {
-                    "label": "地面/地下经营",
+                    "label": "紧急联系人",
                     "labelWidth": null,
                     "showLabel": true,
                     "changeTag": true,
                     "tag": "el-input",
                     "tagIcon": "input",
-                    "required": true,
+                    "required": false,
                     "layout": "colFormItem",
                     "span": 8,
                     "document": "https://element.eleme.cn/#/zh-CN/component/input",
                     "regList": [],
-                    "formId": 115,
-                    "renderKey": "1151634378122719"
+                    "formId": 120,
+                    "renderKey": "1201634973743671"
                     },
                     "__slot__": {
                     "prepend": "",
                     "append": ""
                     },
-                    "placeholder": "是为地面/地下经营",
+                    "placeholder": "请输入紧急联系人",
                     "style": {
                     "width": "100%"
                     },
@@ -750,6 +729,77 @@ content-type: application/json
                     "readonly": true,
                     "hidden": false,
                     "disabled": false,
+                    "__vModel__": "emeContactPerson"
+                },
+                {
+                    "__config__": {
+                    "label": "紧急联系电话",
+                    "labelWidth": null,
+                    "showLabel": true,
+                    "changeTag": true,
+                    "tag": "el-input",
+                    "tagIcon": "input",
+                    "required": false,
+                    "layout": "colFormItem",
+                    "span": 8,
+                    "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                    "regList": [],
+                    "formId": 103,
+                    "renderKey": "1031635219868403"
+                    },
+                    "__slot__": {
+                    "prepend": "",
+                    "append": ""
+                    },
+                    "placeholder": "请输入紧急联系电话",
+                    "style": {
+                    "width": "100%"
+                    },
+                    "clearable": true,
+                    "prefix-icon": "",
+                    "suffix-icon": "",
+                    "maxlength": null,
+                    "show-word-limit": false,
+                    "readonly": true,
+                    "hidden": false,
+                    "disabled": false,
+                    "__vModel__": "emeContactPhone"
+                },
+                {
+                    "__config__": {
+                    "label": "地面/地下经营",
+                    "showLabel": true,
+                    "labelWidth": null,
+                    "tag": "el-select",
+                    "tagIcon": "select",
+                    "layout": "colFormItem",
+                    "span": 8,
+                    "required": false,
+                    "regList": [],
+                    "changeTag": true,
+                    "document": "https://element.eleme.cn/#/zh-CN/component/select",
+                    "formId": 118,
+                    "renderKey": "1181634378327331",
+                    "defaultValue": ""
+                    },
+                    "__slot__": {
+                    "options": [{
+                        "label": "地面经营",
+                        "value": "ground"
+                    }, {
+                        "label": "地下经营",
+                        "value": "underground"
+                    }]
+                    },
+                    "placeholder": "请选择地面/地下经营",
+                    "style": {
+                    "width": "100%"
+                    },
+                    "clearable": true,
+                    "disabled": false,
+                    "readonly":true,
+                    "filterable": false,
+                    "multiple": false,
                     "__vModel__": "operationPlace"
                 },
                 {

@@ -13,7 +13,7 @@ content-type: application/json
 {  
     "version": "1",
     "name": "my_enforcement",
-    "title": "我的执法记录",
+    "title": "执法记录",
     "pageStyle": {},
     "loadApi": "",
     "response": {

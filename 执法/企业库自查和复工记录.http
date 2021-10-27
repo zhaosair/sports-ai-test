@@ -1,0 +1,121 @@
+@endpoint = https://ai.hdqmjs.com
+@api = /form
+@id = 7777615
+@aqyId = 9999444
+
+### 获取自查和复工记录页面数据
+GET {{endpoint}}{{api}}?id={{id}}
+### 提交自查和复工记录页面数据
+POST {{endpoint}}{{api}}/{{id}}
+Content-Type: application/json
+
+{  
+    "version": "1",
+    "name": "record",
+    "title": "",
+    "pageStyle": {
+        "background": "#EFEFEF",
+        "padding": "10px"
+    },
+    "loadApi": "",
+    "response": {
+      "data":"data.data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type": "autolist",
+        "name":"",
+        "key":"e59992z8-bb88-a788-9922-1623488775885",
+        "container":{
+            "height":""
+        }
+      }
+    ],
+    "moduleData": {
+         "e59992z8-bb88-a788-9922-1623488775885": {
+            "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
+            "method":"POST",
+            "itemNavigation": "/companyHome/selfExplain?piId&taskId&instanceEntityVo&processDefineKey",
+            "response":{
+                "list":"list"
+            },
+            "request":{
+                "default":{
+                    "pageSize":3
+                },
+                "pn":"pageNo"
+            },
+            "options":{
+                "hideNext":true,
+                "hideState":true
+            },
+            "itemModule":{
+            "type":"custom_component",
+            "name":"company-state-to-enforcement"
+            }
+        }
+    }
+}
+
+
+### 获取安全员信息
+GET {{endpoint}}{{api}}?id={{aqyId}}
+
+### 提交安全员信息
+POST {{endpoint}}{{api}}/{{aqyId}}
+Content-Type: application/json
+
+{
+    "version": "1",
+    "name": "aqy",
+    "title": "",
+    "pageStyle": {
+        "background": "#EFEFEF",
+        "padding": "10px"
+    },
+    "loadApi": "",
+    "response": {
+      "data":"data.data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type": "autolist",
+        "name":"",
+        "key":"e59992z8-bb88-a788-9922-1623488775885",
+        "container":{
+            "height":""
+        }
+      }
+    ],
+    "moduleData": {
+         "e59992z8-bb88-a788-9922-1623488775885": {
+            "loadApi":"https://ai.hdqmjs.com/api.page.design.form/listDataPage",
+            "method":"POST",
+            "itemNavigation": "/enforcement/aqyReport?备注&姓名&证书类型&证件号码&证件证明材料",
+            "response":{
+                "list":"formDataPage.list"
+            },
+            "request":{
+                "default":{
+                    "pageSize":10
+                },
+                "pn":"pageNo"
+            },
+            "options":{
+                "hideNext":true
+            },
+            "itemModule":{
+            "type":"custom_component",
+            "name":"aqyItem"
+            }
+        }
+    }
+}

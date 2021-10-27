@@ -10,7 +10,7 @@ content-type: application/json
 {
     "version": "1", 
     "name": "page_home", 
-    "title": "复工记录", 
+    "title": "经营状况上报记录", 
     "pageStyle": { }, 
     "loadApi": "https://ai.hdqmjs.com/data?id=200", 
     "request": { }, 
@@ -70,9 +70,14 @@ content-type: application/json
                 "ps":"pageSize"
             },
             "options":{
-              "noSuccess":"关闭",
-              "success":"开放",
-              "wait":"临时停业"
+              "hideNext":true,
+              "hideForm":true,
+              "timeText":"创建时间",
+              "userText":"创建公司",
+              "hideState":true,
+              "noSuccess":"未完成",
+              "success":"已完成",
+              "wait":"待完成"
             },
             "itemModule":{
                 "type":"custom_component",

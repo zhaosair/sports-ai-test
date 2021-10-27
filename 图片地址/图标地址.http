@@ -35,6 +35,10 @@ POST {{endpoint}}/data/9999999 HTTP/1.1
 content-type: application/json
 
 {
+    "add":"https://ai.hdqmjs.com/attachments/public/add.png",
+    "delete":"https://ai.hdqmjs.com/attachments/public/delete.png",
+    "rotatePhone":"https://ai.hdqmjs.com/attachments/public/rotatePhone.png",
+    "loading":"https://ai.hdqmjs.com/attachments/public/loading.png",
     "search":"https://ai.hdqmjs.com/attachments/public/search-blue.png",
     "setting":"https://ai.hdqmjs.com/attachments/public/setting.png",
     "file":"https://ai.hdqmjs.com/attachments/public/file.png",
@@ -53,6 +57,7 @@ content-type: application/json
     "navReturnWork":"https://ai.hdqmjs.com/attachments/Company/ReturnWork.png",
     "navSelfSearch":"https://ai.hdqmjs.com/attachments/Company/selfSearch.png",
     "typeZc":"https://ai.hdqmjs.com/attachments/enforcement/type/zc.png",
+    "typeAqy":"https://ai.hdqmjs.com/attachments/enforcement/type/aqy.png",
     "typeTest":"https://ai.hdqmjs.com/attachments/enforcement/type/test.png",
     "typeZglc":"https://ai.hdqmjs.com/attachments/enforcement/type/zglc.png",
     "typeCf":"https://ai.hdqmjs.com/attachments/enforcement/type/cf.png",

@@ -64,7 +64,8 @@ content-type: application/json
           "bindingTarget": "data",
           "key":"a1417b8a-d351-11eb-bb26-0800271e55b7",
           "container":{
-            "height":""
+            "height":"",
+            "background":"white"
           }
         }
     ], 

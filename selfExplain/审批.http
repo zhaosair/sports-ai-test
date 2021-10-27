@@ -44,7 +44,8 @@ Content-Type: application/json
             "query":{
                 "key":"zglc"
             },
-            "noCommit":true
+            "noCommit":true,
+            "hideConfirm":true
         },
         "84653120-4521-5120-1302-5132231846513":{
           "workflow":[
@@ -109,6 +110,8 @@ Content-Type: application/json
             "lastText":"回退",
             "refuseText":"不合格",
             "placeholder":"办理意见",
+            "hideConfirm":true,
+            "noCommit":true,
             "query":{
                 "key":"zglc"
             }

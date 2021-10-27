@@ -1,0 +1,18 @@
+@endpoint = https://ai.hdqmjs.com
+@api = /api.flow.process/instanceListPage
+@token = eyJleHBpcmVzX2luIjp7ImRheU9mTW9udGgiOjEsImRheU9mV2VlayI6Ik1PTkRBWSIsImRheU9mWWVhciI6MzA1LCJob3VyIjoyMywibWludXRlIjozMiwibW9udGgiOiJOT1ZFTUJFUiIsIm1vbnRoVmFsdWUiOjExLCJuYW5vIjo1NjkwMDAwMDAsInNlY29uZCI6MjksInllYXIiOjIwMjEsImNocm9ub2xvZ3kiOnsiY2FsZW5kYXJUeXBlIjoiaXNvODYwMSIsImlkIjoiSVNPIn19LCJ0b2tlbl90eXBlIjoiQmVhcmVyIiwic2NvcGUiOiJzZXJ2ZXIiLCJhbGciOiJIUzI1NiJ9.eyJhY2Nlc3NfdG9rZW4iOiJhOGJlZDVkNGVhYWY0ZDczYjUyNDdiYzQ5MjQwNmI0NiIsInJlZnJlc2hfdG9rZW4iOiIzODI0NTQ0Njg2MDQ0ODljYWU4YmIwMDE2NWIwY2Q5MiIsImV4cGlyZXNfaW4iOjg2NDAwMCwidXNlcl9pZCI6MTk2LCJkZXB0X2lkIjo4NiwidXNlcm5hbWUiOiJ6ZnRlc3QxIiwidG9rZW5fdHlwZSI6IkJlYXJlciIsInNjb3BlIjoic2VydmVyIiwibGljZW5jZSI6InByb2dyZXNzIiwiZnJvbSI6MiwidGltZV9zdGFtcCI6IjE2MzQ5MTY3NDkiLCJyb2xlX2NvZGVzIjpbIkFTUyJdLCJuaWNrbmFtZSI6IuaJp-azlea1i-ivlTEiLCJvcGVuX2lkIjoib0sway00ejFiWWF5LU9Jd1MtYk03eGZBYW9TRSIsImFwcCI6ImludGVybmFsIn0.jIAnuBS6nHnDKVnmteHaVgJq68KwTNu02dJD-pwwYEc
+
+POST {{endpoint}}{{api}}
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "formCode":"zc",
+    "customValues":{
+        "companyId":"1449298804628013057"
+    }
+}
+
+###
+GET {{endpoint}}/admin/companyinfo/user/8322
+Authorization: Bearer {{token}}
