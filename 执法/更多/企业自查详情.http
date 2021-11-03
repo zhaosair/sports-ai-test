@@ -180,7 +180,7 @@ content-type: application/json
                             },
                             {
                                 "__config__":{
-                                    "label":"联系电话",
+                                    "label":"企业负责人联系电话",
                                     "labelWidth":null,
                                     "showLabel":true,
                                     "tag":"el-input",
@@ -196,7 +196,7 @@ content-type: application/json
                                     "prepend":"",
                                     "append":""
                                 },
-                                "placeholder":"联系电话",
+                                "placeholder":"企业负责人联系电话",
                                 "style":{
                                     "width":"100%"
                                 },

@@ -12,7 +12,7 @@ content-type: application/json
 
 {
     "version":"1",
-    "name":"companySelf",
+    "name":"ZG",
     "title":"整改",
     "pageStyle":{},
     "loadApi":"",

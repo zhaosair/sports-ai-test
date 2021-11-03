@@ -28,7 +28,7 @@ content-type: application/json
 
 {
     "version":"1",
-    "name":"companySelf",
+    "name":"BusinessStatusReport",
     "title":"经营状况上报",
     "pageStyle":{},
     "loadApi":"",

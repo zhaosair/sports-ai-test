@@ -1,0 +1,54 @@
+@endpoint = https://ai.hdqmjs.com
+
+###
+GET {{endpoint}}/form?id=794161
+###
+POST {{endpoint}}/form/794161
+Content-Type: application/json
+
+{  
+    "version": "1",
+    "name": "my_enforcement",
+    "title": "执法记录",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"autolist",
+        "name":"",
+        "key":"46412315-8775-1545-5646-8711645452154"
+      }
+    ],
+    "moduleData": {
+         "46412315-8775-1545-5646-8711645452154": {
+            "loadApi":"https://ai.hdqmjs.com/api.flow.task/taskListPage",
+          "method":"POST",
+            "itemNavigation": "/enforcement/enforcementBook?piId",
+            "response":{
+                "list":"list"
+            },
+            "request":{
+                "default":{
+                  "queryType": "wait",
+                  "formType":"zf"
+                },
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
+                "type":"custom_component",
+                "name":"company-state-to-enforcement"
+            },
+            "options":{
+              "showDelete":true
+            }
+         }
+    }
+}

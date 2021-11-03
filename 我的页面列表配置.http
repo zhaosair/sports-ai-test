@@ -12,7 +12,7 @@ Content-Type: application/json
         {"icon":"listZc","title":"自查记录","nav":"/companyHome/my/selfInspectionRecord"},
         {"icon":"listZf","title":"执法记录","nav":"/companyHome/my/lawEnforcementRecord"},
         {"icon":"listFg","title":"经营上报记录","nav":"/companyHome/my/returnToWorkRecord"},
-        {"icon":"listGgqyxx","title":"执业人员信息登记","nav":"/defaultPage/defaultPage?id=53125"},
+        {"icon":"navAqyReport","title":"执业人员信息登记","nav":"/defaultPage/defaultPage?id=53125"},
         {"icon":"listGgqyxx","title":"更改企业信息","nav":"/companyHome/my/reCompanyMes"}
     ]
 }

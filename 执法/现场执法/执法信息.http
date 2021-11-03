@@ -290,7 +290,7 @@ content-type: application/json
                     "__vModel__": "date"
                 }, {
                     "__config__": {
-                    "label": "联系电话",
+                    "label": "企业负责人联系电话",
                     "labelWidth": null,
                     "showLabel": true,
                     "changeTag": true,
@@ -308,7 +308,7 @@ content-type: application/json
                     "prepend": "",
                     "append": ""
                     },
-                    "placeholder": "请输入联系电话",
+                    "placeholder": "请输入企业负责人联系电话",
                     "style": {
                     "width": "100%"
                     },

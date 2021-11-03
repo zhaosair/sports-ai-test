@@ -36,6 +36,8 @@ content-type: application/json
 
 {
     "add":"https://ai.hdqmjs.com/attachments/public/add.png",
+    "qrcode":"https://ai.hdqmjs.com/attachments/public/qrcode.png",
+    "scan":"https://ai.hdqmjs.com/attachments/public/scanQrCode.png",
     "delete":"https://ai.hdqmjs.com/attachments/public/delete.png",
     "rotatePhone":"https://ai.hdqmjs.com/attachments/public/rotatePhone.png",
     "loading":"https://ai.hdqmjs.com/attachments/public/loading.png",
@@ -55,6 +57,7 @@ content-type: application/json
     "empty":"https://ai.hdqmjs.com/attachments/public/empty.png",
     "navReSetting":"https://ai.hdqmjs.com/attachments/Company/reSetting.png",
     "navReturnWork":"https://ai.hdqmjs.com/attachments/Company/ReturnWork.png",
+    "navAqyReport":"https://ai.hdqmjs.com/attachments/Company/aqyReport.png",
     "navSelfSearch":"https://ai.hdqmjs.com/attachments/Company/selfSearch.png",
     "typeZc":"https://ai.hdqmjs.com/attachments/enforcement/type/zc.png",
     "typeAqy":"https://ai.hdqmjs.com/attachments/enforcement/type/aqy.png",
@@ -88,6 +91,8 @@ content-type: application/json
     "street":"https://ai.hdqmjs.com/attachments/public/street.png",
     "picture":"https://ai.hdqmjs.com/attachments/public/picture.png",
     "notice":"https://ai.hdqmjs.com/attachments/public/notice.png",
+    "phone":"https://ai.hdqmjs.com/attachments/public/thePhone.png",
+    "go":"https://ai.hdqmjs.com/attachments/public/go.png",
     "typeZf001":"https://ai.hdqmjs.com/attachments/nav/publicity.png",
     "typeZf002":"https://ai.hdqmjs.com/attachments/nav/adminLicence.png",
     "typeZf003":"https://ai.hdqmjs.com/attachments/nav/lifeguard.png",
@@ -193,6 +198,7 @@ content-type: application/json
     "navData":"https://ai.hdqmjs.com/attachments/nav/data.png",
     "navZg_blue":"https://ai.hdqmjs.com/attachments/nav/zg-blue.png",
     "navCf_blue":"https://ai.hdqmjs.com/attachments/nav/cf-blue.png",
+    "navNotice":"https://ai.hdqmjs.com/attachments/public/notice.png",
     "navEnforcement_blue":"https://ai.hdqmjs.com/attachments/nav/enforcement-blue.png",
     "navMap":"https://ai.hdqmjs.com/attachments/nav/map.png",
     "navRecord":"https://ai.hdqmjs.com/attachments/nav/record.png",

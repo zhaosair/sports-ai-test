@@ -50,7 +50,7 @@ content-type: application/json
             "padding":"10rpx 0",
             "box-shadow":"0px 0px 0px #999",
             "margin":"10rpx 0",
-            "grid-template-columns":"repeat(3, 33.3333333%)"
+            "grid-template-columns":"repeat(4, 25%)"
           }
         },
 
@@ -94,7 +94,14 @@ content-type: application/json
             "nav":"/workFlow/ReturnWork"
           },
           {
-            "title":"执法配合",
+             "title":"执业人员登记",
+            "svg":{
+              "icon":"aqyReport"
+            },
+            "nav":"/defaultPage/defaultPage?id=53125"
+          },
+          {
+            "title":"检查记录",
             "svg":{
               "icon":"selfSearch"
             },

@@ -557,7 +557,7 @@
     "__vModel__": "type"
   }, {
     "__config__": {
-      "label": "联系电话",
+      "label": "企业负责人联系电话",
       "labelWidth": null,
       "showLabel": true,
       "changeTag": true,
@@ -575,7 +575,7 @@
       "prepend": "",
       "append": ""
     },
-    "placeholder": "请输入联系电话",
+    "placeholder": "请输入企业负责人联系电话",
     "style": {
       "width": "100%"
     },
@@ -689,7 +689,7 @@
     "__vModel__": "emeContactPerson"
   },{
     "__config__": {
-      "label": "紧急联系电话",
+      "label": "紧急企业负责人联系电话",
       "labelWidth": null,
       "showLabel": true,
       "changeTag": true,
@@ -707,7 +707,7 @@
       "prepend": "",
       "append": ""
     },
-    "placeholder": "请输入紧急联系电话",
+    "placeholder": "请输入紧急企业负责人联系电话",
     "style": {
       "width": "100%"
     },

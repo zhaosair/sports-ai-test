@@ -32,7 +32,7 @@ content-type: application/json
     ],
     "moduleData": {
          "46412315-8775-1545-5646-8711645452154": {
-            "loadApi":"https://ai.hdqmjs.com/api.flow.task/taskListPage",
+            "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
           "method":"POST",
             "itemNavigation": "/enforcement/enforcementBook?piId",
             "response":{
@@ -40,14 +40,24 @@ content-type: application/json
             },
             "request":{
                 "default":{
-                  "queryType": "dealed"
+                  "finishState":0,
+                  "formType":"zf"
                 },
                 "pn":"pageNo",
                 "ps":"pageSize"
             },
             "itemModule":{
                 "type":"custom_component",
-                "name":"toDoListItem"
+                "name":"company-state-to-enforcement"
+            },
+            "options":{
+              "showDelete":true,
+              "hideState":true,
+              "hideNext":true,
+              "timeText":"企业名称",
+              "timeField":"customValues.companyName",
+              "userText":"街道名称",
+              "userField":"customValues.streetName"
             }
          }
     }

@@ -27,12 +27,12 @@ content-type: application/json
     },
     "modules": [
       {
-        "type":"navlist",
-        "name":"",
-        "key":"y59992z8-bb88-a788-9922-1623488775885",
+        "type": "navlist",
+        "name": "请选择操作类型",
+        "key": "cd814de4-34de-fa95-1049-1623416664592",
         "container":{
-                "grid-template-columns":"repeat(3, 33.3333333%)"
-            }
+            "grid-template-columns":"repeat(4, 25%)"
+        }
       },
       {
         "type": "autolist",
@@ -50,12 +50,12 @@ content-type: application/json
         }
       },
       {
-        "type": "navlist",
-        "name": "请选择操作类型",
-        "key": "cd814de4-34de-fa95-1049-1623416664592",
+        "type":"navlist",
+        "name":"功能列表",
+        "key":"y59992z8-bb88-a788-9922-1623488775885",
         "container":{
-            "grid-template-columns":"repeat(3, 33.3333333%)"
-        }
+                "grid-template-columns":"repeat(3, 33.3333333%)"
+            }
       }
     ],
     "moduleData": {
@@ -163,6 +163,13 @@ content-type: application/json
                     "svg":{
                       "icon":"cf_blue"
                     }
+                },
+                {
+                  "title":"通知公告",
+                  "nav":"notice",
+                      "svg":{
+                        "icon":"notice"
+                      }
                 }
             ],
           "itemModule":

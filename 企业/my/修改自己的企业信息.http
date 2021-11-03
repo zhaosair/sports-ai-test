@@ -563,7 +563,40 @@ content-type: application/json
                 "__vModel__": "type"
             }, {
                 "__config__": {
-                "label": "联系电话",
+                "label": "企业经营负责人",
+                "labelWidth": null,
+                "showLabel": true,
+                "changeTag": true,
+                "tag": "el-input",
+                "tagIcon": "input",
+                "required": true,
+                "layout": "colFormItem",
+                "span": 8,
+                "document": "https://element.eleme.cn/#/zh-CN/component/input",
+                "regList": [],
+                "formId": 108,
+                "renderKey": "1081635482606072"
+                },
+                "__slot__": {
+                "prepend": "",
+                "append": ""
+                },
+                "placeholder": "请输入企业经营负责人",
+                "style": {
+                "width": "100%"
+                },
+                "clearable": true,
+                "prefix-icon": "",
+                "suffix-icon": "",
+                "maxlength": null,
+                "show-word-limit": false,
+                "readonly": false,
+                "hidden": false,
+                "disabled": false,
+                "__vModel__": "representativeName"
+            }, {
+                "__config__": {
+                "label": "企业负责人联系电话",
                 "labelWidth": null,
                 "showLabel": true,
                 "changeTag": true,
@@ -581,7 +614,7 @@ content-type: application/json
                 "prepend": "",
                 "append": ""
                 },
-                "placeholder": "请输入联系电话",
+                "placeholder": "请输入企业负责人联系电话",
                 "style": {
                 "width": "100%"
                 },
@@ -594,7 +627,7 @@ content-type: application/json
                 "hidden": false,
                 "disabled": false,
                 "__vModel__": "personPhone"
-            }, {
+            },{
                 "__config__": {
                 "label": "对外经营名称",
                 "labelWidth": null,
@@ -695,7 +728,7 @@ content-type: application/json
                 "__vModel__": "emeContactPerson"
             },{
                 "__config__": {
-                "label": "紧急联系电话",
+                "label": "紧急企业负责人联系电话",
                 "labelWidth": null,
                 "showLabel": true,
                 "changeTag": true,
@@ -713,7 +746,7 @@ content-type: application/json
                 "prepend": "",
                 "append": ""
                 },
-                "placeholder": "请输入紧急联系电话",
+                "placeholder": "请输入紧急企业负责人联系电话",
                 "style": {
                 "width": "100%"
                 },
@@ -750,6 +783,9 @@ content-type: application/json
                 }, {
                     "label": "地下经营",
                     "value": "underground"
+                }, {
+                    "label": "地面及地下经营",
+                    "value": "groundAndUnder"
                 }]
                 },
                 "placeholder": "请选择地面/地下经营",

@@ -8,7 +8,7 @@ content-type: application/json
 
 {
     "version":"1",
-    "name":"companySelf",
+    "name":"StreetReport",
     "title":"街道上报",
     "pageStyle":{},
     "loadApi":"",
