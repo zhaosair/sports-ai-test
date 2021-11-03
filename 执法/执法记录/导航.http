@@ -1,0 +1,90 @@
+@endpoint=https://ai.hdqmjs.com
+
+###
+GET {{endpoint}}/form?id=789115
+
+
+### 
+POST {{endpoint}}/form/789115
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "enforcementRecords",
+    "title": "执法记录",
+    "pageStyle": {
+    },
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type": "navlist",
+        "name": "",
+        "key": "cd814de4-34de-fa95-1049-1623416664592",
+        "container":{
+            "grid-template-columns":"repeat(1, 100%)"
+        }
+      }
+    ],
+    "moduleData": {
+        "cd814de4-34de-fa95-1049-1623416664592": {
+            "navList": [
+                {
+                    "title":"执法记录",
+                    "nav":"enforcement/myEnforcement",
+                    "background":"#4ABFDE",
+                    "svg":{
+                        "icon":"enforcement_white"
+                    },
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"整改记录",
+                    "nav":"defaultPage/defaultPage?id=79422",
+                    "background":"#53B8B6",
+                    "svg":{
+                        "icon":"zg_white"
+                    },
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"处罚记录",
+                    "nav":"defaultPage/defaultPage?id=78888",
+                    "background":"#6071B5",
+                    "svg":{
+                        "icon":"cf_white"
+                    },
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"自查记录",
+                    "nav":"defaultPage/defaultPage?id=92574",
+                    "background":"#69B7DF",
+                    "svg":{
+                        "icon":"record_white"
+                    },
+                    "textColor":"#ffffff"
+                },
+                {
+                    "title":"经营情况上报记录",
+                    "nav":"defaultPage/defaultPage?id=84135",
+                    "background":"#67C5CF",
+                    "svg":{
+                        "icon":"jyqk_white"
+                    },
+                    "textColor":"#ffffff"
+                }
+            ],
+          "itemModule":
+            {
+              "name":"boxItem"
+          }
+        }
+    }
+}

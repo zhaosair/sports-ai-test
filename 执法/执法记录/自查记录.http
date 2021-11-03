@@ -1,0 +1,62 @@
+@endpoint=https://ai.hdqmjs.com
+
+## 动态页面 
+
+### 获取市场监督页面数据 
+GET {{endpoint}}/form?id=92574
+
+
+### 保存动态页面数据
+POST {{endpoint}}/form/92574
+content-type: application/json
+
+{  
+    "version": "1",
+    "name": "ZCJL",
+    "title": "自查记录",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"autolist",
+        "name":"",
+        "key":"46412315-8775-1545-5646-8711645452154"
+      }
+    ],
+    "moduleData": {
+         "46412315-8775-1545-5646-8711645452154": {
+            "loadApi":"https://ai.hdqmjs.com/api.flow.process/instanceListPage",
+          "method":"POST",
+            "itemNavigation": "/companyHome/selfExplain?piId",
+            "response":{
+                "list":"list"
+            },
+            "request":{
+                "default":{
+                  "formType":"zc"
+                },
+                "pn":"pageNo",
+                "ps":"pageSize"
+            },
+            "itemModule":{
+                "type":"custom_component",
+                "name":"company-state-to-enforcement"
+            },
+            "options":{
+              "hideState":true,
+              "hideNext":true,
+              "timeText":"企业名称",
+              "timeField":"customValues.companyName",
+              "userText":"街道名称",
+              "userField":"customValues.streetName"
+            }
+         }
+    }
+}

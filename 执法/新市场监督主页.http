@@ -72,7 +72,8 @@ content-type: application/json
               {
                 "svg":"record",
                 "title":"执法记录",
-                "nav":"/pages/enforcement/myEnforcement",
+                //"nav":"/pages/enforcement/myEnforcement",
+                "nav":"/pages/defaultPage/defaultPage?id=789115",
                 "container":{
                 "background":"#EAFAFF"
                 }
@@ -276,15 +277,15 @@ content-type: application/json
                     "background":"#649AD2",
                     "textColor":"#ffffff"
                 },
-             {
-                    "title":"执法记录",
-                    "nav":"enforcement/myEnforcement",
-                    "svg":{
-                        "icon":"record_white"
-                    },
-                    "background":"#527384",
-                    "textColor":"#ffffff"
-              }
+                {
+                      "title":"执法记录",
+                      "nav":"enforcement/myEnforcement",
+                      "svg":{
+                          "icon":"record_white"
+                      },
+                      "background":"#527384",
+                      "textColor":"#ffffff"
+                }
             ],
           "itemModule":
             {

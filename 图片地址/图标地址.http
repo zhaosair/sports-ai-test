@@ -217,7 +217,10 @@ content-type: application/json
     "navMap_white":"https://ai.hdqmjs.com/attachments/nav/map-white.png",
     "navEnforcement_white":"https://ai.hdqmjs.com/attachments/nav/enforcement-white.png",
     "navBook_white":"https://ai.hdqmjs.com/attachments/nav/book-white.png",
-    "navReSetting_white":"https://ai.hdqmjs.com/attachments/nav/reSetting-white.png"
+    "navReSetting_white":"https://ai.hdqmjs.com/attachments/nav/reSetting-white.png",
+    "navJyqk_white":"https://ai.hdqmjs.com/attachments/nav/navJyqk_white.png",
+    "navCf_white":"https://ai.hdqmjs.com/attachments/nav/navCf_white.png",
+    "navZg_white":"https://ai.hdqmjs.com/attachments/nav/navZg_white.png"
 }
 
 
