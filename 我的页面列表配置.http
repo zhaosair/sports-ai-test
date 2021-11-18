@@ -13,6 +13,7 @@ Content-Type: application/json
         {"icon":"listZf","title":"执法记录","nav":"/companyHome/my/lawEnforcementRecord"},
         {"icon":"listFg","title":"经营上报记录","nav":"/companyHome/my/returnToWorkRecord"},
         {"icon":"navAqyReport","title":"执业人员信息登记","nav":"/defaultPage/defaultPage?id=53125"},
+        {"icon":"navAqyReport","title":"证书信息","nav":"/defaultPage/defaultPage?id=564064"},
         {"icon":"listGgqyxx","title":"更改企业信息","nav":"/companyHome/my/reCompanyMes"}
     ]
 }
@@ -43,7 +44,7 @@ Content-Type: application/json
 
 {
     "list":[
-        {"icon":"record","title":"执法记录","nav":"/enforcement/myEnforcement"},
+        {"icon":"record","title":"执法记录","nav":"/defaultPage/defaultPage?id=789115"},
         {"icon":"record","title":"印章管理","nav":"/sealConfig"}
     ]
 }

@@ -1,0 +1,60 @@
+@endpoint = https://ai.hdqmjs.com/form
+
+### 获取安全员信息
+GET {{endpoint}}?id=564064
+
+### 提交安全员信息
+POST {{endpoint}}/564064
+Content-Type: application/json
+
+{
+    "version": "1",
+    "name": "aqy",
+    "title": "",
+    "pageStyle": {
+        "background": "#EFEFEF",
+        "padding": "10px"
+    },
+    "loadApi": "",
+    "response": {
+      "data":"data.data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type": "autolist",
+        "name":"",
+        "key":"e59992z8-bb88-a788-9922-1623488775885",
+        "container":{
+            "height":""
+        }
+      }
+    ],
+    "moduleData": {
+         "e59992z8-bb88-a788-9922-1623488775885": {
+            "loadApi":"https://ai.hdqmjs.com/api.page.design.form/listDataPage",
+            "method":"POST",
+            "itemNavigation": "/enforcement/aqyReport?备注&姓名&证书类型&证书号码&证件证明材料",
+            "response":{
+                "list":"formDataPage.list"
+            },
+            "request":{
+                "default":{
+                    "pageSize":10,
+                    "code":"aqy"
+                },
+                "pn":"pageNo"
+            },
+            "options":{
+                "hideNext":true
+            },
+            "itemModule":{
+            "type":"custom_component",
+            "name":"aqyItem"
+            }
+        }
+    }
+}
