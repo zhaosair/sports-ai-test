@@ -1,0 +1,113 @@
+@endpoint=https://ai.hdqmjs.com
+# @endpoint = https://ky.zbsoft.top
+
+###
+GET {{endpoint}}/form?id=412536
+
+###
+POST {{endpoint}}/form/412536
+Content-Type: application/json
+
+{  
+    "version": "1",
+    "name": "loginPage",
+    "title": "企业端口",
+    "pageStyle": {},
+    "loadApi": "",
+    "response": {
+      "data":"data"
+    },
+    "request": {
+    },
+    "moduleContainer":{
+    },
+    "modules": [
+      {
+        "type":"banner",
+        "name":"",
+        "key":"89084045-v4d5-7122-3300-1623511112885"
+      },
+      {
+        "type":"navlist",
+        "name":"企业功能列表",
+        "key":"d4a555sd-hf22-qqds-8412-16234da445885",
+        "container":{
+                "grid-template-columns":"repeat(2, 50%)"
+            }
+      }
+    ],
+    "moduleData": {
+        "89084045-v4d5-7122-3300-1623511112885": {
+            "banners": [
+                {
+                    "img": "https://ai.hdqmjs.com/attachments/banner/banner.png",
+                    "itemNavigation": "/?id=1"
+                }
+            ]
+        },
+        "d4a555sd-hf22-qqds-8412-16234da445885": {
+            "itemModule":{
+              "name":"subTitleCardItem"
+           },
+            "navList": [
+                {
+                    "svg":"navCompany",
+                    //"svg":"enterprise",
+                    "title":"企业入口",
+                    "subTitle":"企业工作人员绑定",
+                    "nav":"/pages/login/third-Login/IsLogin?id=4",
+                    "container":{
+                    }
+                },
+                {
+                    "svg":"inputCompany",
+                    //"img":"https://ai.hdqmjs.com/attachments/input/company.png",
+                    "title":"企业备案库",
+                    "subTitle":"营业执照备案登记",
+                    "nav":"/pages/login/addCompany",
+                    "container":{
+                    }
+                },
+                {
+                    "svg":"inputCompany",
+                    //"img":"https://ai.hdqmjs.com/attachments/input/company.png",
+                    "title":"民办非企业登记",
+                    "subTitle":"民办非企业备案登记",
+                    "nav":"/pages/defaultPage/defaultPage?id=412155&type=yyzz",
+                    "container":{
+                    }
+                },
+                {
+                    "svg":"inputCompany",
+                    //"img":"https://ai.hdqmjs.com/attachments/input/company.png",
+                    "title":"事业单位法人登记",
+                    "subTitle":"事业单位备案登记",
+                    "nav":"/pages/defaultPage/defaultPage?id=412158&type=yyzz",
+                    "container":{
+                    }
+                },
+                {
+                    "svg":"record",
+                    //"img":"https://ai.hdqmjs.com/attachments/input/company.png",
+                    "title":"操作手册",
+                    "subTitle":"企业用户操作手册",
+                    "nav":"/pages/NoticeDetail?id=61",
+                    "container":{
+                    }
+                },
+                {
+                    "svg":"scan",
+                    "title":"企业扫码绑定",
+                    "subTitle":"企业扫描二维码绑定",
+                    "nav":"/pages/scan"
+                },
+                {
+                    "svg":"tabbarPolicyActive",
+                    "title":"在线反馈",
+                    "subTitle":"企业问题在线反馈",
+                    "nav":"/pages/defaultPage/defaultPage?id=84151"
+                }
+            ]
+        }
+    }
+}

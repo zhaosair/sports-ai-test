@@ -1,4 +1,5 @@
 @endpoint=https://ai.hdqmjs.com
+# @endpoint = https://ky.zbsoft.top
 
 ## 新首页(第三方接口)
 
@@ -66,7 +67,7 @@ content-type: application/json
                     //"svg":"enterprise",
                     "title":"企业端口",
                     "subTitle":"企业工作人员绑定",
-                    "nav":"/pages/login/third-Login/IsLogin?id=4",
+                    "nav":"/pages/defaultPage/defaultPage?id=412536",
                     "container":{
                     }
                 },
@@ -78,30 +79,6 @@ content-type: application/json
                     "nav":"/pages/login/third-Login/IsLogin?id=3",
                     "container":{
                     }
-                },
-                {
-                    "svg":"inputCompany",
-                    //"img":"https://ai.hdqmjs.com/attachments/input/company.png",
-                    "title":"企业备案库",
-                    "subTitle":"企业信息添加申请",
-                    "nav":"/pages/login/addCompany",
-                    "container":{
-                    }
-                },
-                {
-                    "svg":"record",
-                    //"img":"https://ai.hdqmjs.com/attachments/input/company.png",
-                    "title":"操作手册",
-                    "subTitle":"企业用户操作手册",
-                    "nav":"/pages/NoticeDetail?id=28",
-                    "container":{
-                    }
-                },
-                {
-                    "svg":"scan",
-                    "title":"企业扫码绑定",
-                    "subTitle":"企业扫描二维码绑定",
-                    "nav":"/pages/scan"
                 }
             ]
         }

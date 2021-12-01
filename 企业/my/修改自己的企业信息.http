@@ -23,7 +23,9 @@ content-type: application/json
           "type": "autoform", 
           "key": "96afd71a-c8d5-11eb-aca5-0800271e55b7", 
           "name": "", 
-          "container": {}
+          "container": {
+              "background":"#ffffff"
+          }
         }
     ],
     "moduleData": {
@@ -282,6 +284,7 @@ content-type: application/json
                 "width": "100%"
                 },
                 "disabled": false,
+                "hasButton": true,
                 "clearable": true,
                 "format": "yyyy-MM-dd",
                 "value-format": "yyyy-MM-dd",

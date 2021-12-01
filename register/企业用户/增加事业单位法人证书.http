@@ -1,0 +1,37 @@
+@endpoint=https://ai.hdqmjs.com
+# @endpoint = https://ky.zbsoft.top
+
+###
+GET {{endpoint}}/form?id=412158
+
+###
+POST {{endpoint}}/form/412158
+Content-Type: application/json
+
+{
+    "version":"1",
+    "name":"sydwfrzs",
+    "title":"事业单位法人证书",
+    "pageStyle":{},
+    "loadApi":"",
+    "request":{
+    },
+    "response":{
+        "data":"data"
+    },
+    "moduleContainer":{
+    },
+    "modules":[
+        {
+            "type":"autoform",
+            "key":"555sd22-ad44-55ea-ca11-4225534d52b7",
+            "name":"autoform",
+            "container":{
+                "background":"white"
+            },
+            "FormKey":"sydwfrdj",
+            "isYyzz":true,
+            "API":"/api.page.design.form/loadFormInfo"
+        }
+    ]
+}
