@@ -96,7 +96,7 @@ content-type: application/json
                     "title":"通知公告",
                     "nav":"notice",
                     "svg":{
-                        "icon":"notice"
+                        "icon":"noticeWhite"
                     },
                     "background":"#6071B5",
                     "textColor":"#ffffff"

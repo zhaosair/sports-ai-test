@@ -174,7 +174,7 @@ content-type: application/json
     "navBook":"https://ai.hdqmjs.com/attachments/nav/book.png",
     "navTodo_white":"https://ai.hdqmjs.com/attachments/nav/todo.png",
     "navReport":"https://ai.hdqmjs.com/attachments/nav/report.png",
-    "navNotice":"https://ai.hdqmjs.com/attachments/nav/notice.png",
+    "navNoticeWhite":"https://ai.hdqmjs.com/attachments/nav/notice.png",
 
     "navCpdx":"https://ai.hdqmjs.com/attachments/nav/cpdx.png",
     "navWcnrcp":"https://ai.hdqmjs.com/attachments/nav/wcnrcp.png",
