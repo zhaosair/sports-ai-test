@@ -98,7 +98,7 @@ content-type: application/json
             "svg":{
               "icon":"aqyReport"
             },
-            "nav":"/defaultPage/defaultPage?id=53125"
+            "nav":"/defaultPage/NextPage?id=53125&lastKey=zyry"
           },
           {
             "title":"检查记录",

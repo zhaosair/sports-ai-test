@@ -27,12 +27,12 @@ content-type: application/json
             "container":{
                 "background":"white"
             },
-           //"FormKey":"zyry",
-           //"workflow":true,
-           //"noCommit":true,
-           //"hideLast":true,
-           "code":"aqy",
-            "API":"/api.page.design.form/loadFormInfo"
+           "FormKey":"zyry",
+           "workflow":true,
+           "noCommit":true,
+           "hideLast":true
+           //"code":"aqy",
+            //"API":"/api.page.design.form/loadFormInfo"
         }
     ]
 }

@@ -35,6 +35,7 @@ POST {{endpoint}}/data/9999999 HTTP/1.1
 content-type: application/json
 
 {
+  "modalExit":"https://ai.hdqmjs.com/attachments/public/modal-exit.png",
     "add":"https://ai.hdqmjs.com/attachments/public/add.png",
     "qrcode":"https://ai.hdqmjs.com/attachments/public/qrcode.png",
     "scan":"https://ai.hdqmjs.com/attachments/public/scanQrCode.png",

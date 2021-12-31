@@ -1351,6 +1351,68 @@ content-type: application/json
                 },
                 {
                     "__config__": {
+                    "label": "高危证书到期时间",
+                    "tag": "el-date-picker",
+                    "tagIcon": "date",
+                    "defaultValue": null,
+                    "showLabel": true,
+                    "labelWidth": null,
+                    "span": 8,
+                    "layout": "colFormItem",
+                    "required": false,
+                    "regList": [],
+                    "changeTag": true,
+                    "document": "https://element.eleme.cn/#/zh-CN/component/date-picker",
+                    "formId": 114,
+                    "renderKey": "1141640967289618"
+                    },
+                    "placeholder": "请选择高危证书到期时间",
+                    "type": "date",
+                    "style": {
+                    "width": "100%"
+                    },
+                    "disabled": false,
+                    "clearable": true,
+                    "format": "yyyy-MM-dd",
+                    "value-format": "yyyy-MM-dd",
+                    "readonly": true,
+                    "__vModel__": "dangerousCertDate"
+                }, {
+                    "__config__": {
+                    "label": "高危证书文件",
+                    "tag": "el-upload",
+                    "tagIcon": "upload",
+                    "layout": "colFormItem",
+                    "defaultValue": null,
+                    "showLabel": true,
+                    "labelWidth": null,
+                    "required": false,
+                    "span": 8,
+                    "showTip": false,
+                    "buttonText": "点击上传",
+                    "regList": [],
+                    "changeTag": true,
+                    "fileSize": 2,
+                    "sizeUnit": "MB",
+                    "document": "https://element.eleme.cn/#/zh-CN/component/upload",
+                    "formId": 115,
+                    "renderKey": "1151640967337636"
+                    },
+                    "__slot__": {
+                    "list-type": true
+                    },
+                    "action": "https://jsonplaceholder.typicode.com/posts/",
+                    "readonly":true,
+                    "disabled": false,
+                    "accept": "",
+                    "name": "file",
+                    "auto-upload": true,
+                    "list-type": "text",
+                    "multiple": false,
+                    "__vModel__": "dangerousCertFilesUrl"
+                },
+                {
+                    "__config__": {
                     "label": "营业执照图片",
                     "tag": "el-upload",
                     "tagIcon": "upload",
